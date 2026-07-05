@@ -1,0 +1,44 @@
+Title: Lucky Shot Espresso
+– Variety Coffee
+Description: This is our primary espresso blend. This coffee is comprised of 50% Colombian, and 50% Ethiopian coffees. The composition of the blend will vary based on harvest seasons.
+1
+/
+of
+2
+Coffee
+Lucky Shot Espresso
+This is our primary espresso blend. This coffee is comprised of 50% Colombian, and 50% Ethiopian coffees. The composition of the blend will vary based on harvest seasons.
+Overview
+Origin
+Ethiopia & Colombia
+Tasting Notes
+Dutch Cocoa, Molasses, Fig Jam
+Varieties
+Castillo, Caturra, Catuai, Ethiopia Landraces
+Elevation
+1600-2100 masl
+Process
+Washed
+Size
+300g
+5lb
+Quantity
+3
+4
+$19.25
+Add to bag
+Subscription
+What’s worse than running out of coffee?
+Literally nothing
+. Get a fresh delivery of your favorites before you even know you need it.
+Explore
+How to brew
+Don’t waste good beans on bad brews. Our brew guides are designed to help you make a delicious cup every time— from French press and Pour over to coffee maker or cold brew, whether you're in your kitchen or over a campfire. We got you.
+BREW GUIDES
+
+Embedded product variant data:
+- id=32078925824100; title=300g; name=Lucky Shot Espresso - 300g; sku=unknown; price=19.25 USD; package_grams=300.000g [selected_by_url default_for_inference]
+- id=32078925856868; title=5lb; name=Lucky Shot Espresso - 5lb; sku=unknown; price=131.00 USD; package_grams=2267.962g
+- id=32078925824100; title=unknown; name=unknown; sku=unknown; price=19.25 USD; package_grams=unknown grams [selected_by_url]
+- id=32078925856868; title=unknown; name=unknown; sku=unknown; price=131.00 USD; package_grams=unknown grams
+Use the selected_by_url variant when present. Otherwise use the default_for_inference variant, chosen as the package size closest to 10 oz.

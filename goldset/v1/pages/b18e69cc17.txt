@@ -1,0 +1,54 @@
+Title: All Day | Black Fox Coffee Co. | NYC Coffee Roaster
+Description: All Day is a community coffee.&nbsp; It was grown&nbsp;in Herrera, Colombia by neighboring local producers and blended by hand and machine&nbsp;using color sorters, density separation&nbsp;and experienced&nbsp;quality assurance professionals. We receive 4-5 shipments each year as we attempt to&nbsp;follow the unique Colombian harvest calendar. In Summer and Fall we source our All Day component&nbsp;from central Colombian growing regions like this one in Tolima. In Winter and Spring we look to harvests further south in Huila. Due to the challenging nature of sourcing micro-lots from single farms and producers, we only ever see a small selection of them every year. Community lots provide us with a wider net when seeking a specific regional profile and we love how All Day represents each unique growing area. As a roaster, community blends are a great way to support small producers, co-operatives and importers. By offering a single lot coffee in lieu of a 'House Blend'&nbsp;we are able to&nbsp;increase our commitment to a single contract and have a larger&nbsp;impact on a local market. This&nbsp;is one of the&nbsp;ways we practice sustainable buying. &nbsp; Right now 100% of All Day is made up of&nbsp;a coffee named&nbsp;'El Meridiano'.&nbsp; Producers that live around the small town of Herrera grow mostly Castillo, Caturra and Colombia - El Meridiano is a blend of&nbsp;their&nbsp;washed processed lots.&nbsp;This coffee gives us big, bright acidity with&nbsp;a lingering Panela sugar sweetness. All Day is great to brew any way you want.&nbsp;We use it as Espresso in our shops but brew it as drip at home. It's great black and with the addition of milk you will experience sweet chocolate and nougat flavors. This is a coffee for you and all your loved ones.
+Black Fox Coffee
+All Day
+Regular price
+$22.00
+A buttery Colombian lot to enjoy all day with notes of honey, red apple and lingering toffee.
+/
+Size
+250g
+5lb
+Grind
+Whole Bean
+Auto Drip
+Pourover
+French Press
+Aeropress
+Espresso
+Stovetop / Moka
+Cold Brew
+250g - $22.00 USD
+5lb - $125.00 USD
+Quantity
+−
++
+Add to cart
+[{"id":37621823570077,"title":"250g","option1":"250g","option2":null,"option3":null,"sku":"BFC-BLACKFOX-ALLDAY-250","requires_shipping":true,"taxable":false,"featured_image":null,"available":true,"name":"All Day - 250g","public_title":"250g","options":["250g"],"price":2200,"weight":267,"compare_at_price":null,"inventory_management":null,"barcode":"","requires_selling_plan":false,"selling_plan_allocations":[],"quantity_rule":{"min":1,"max":null,"increment":1}},{"id":41436427616413,"title":"5lb","option1":"5lb","option2":null,"option3":null,"sku":"BFC-BLACKFOX-ALLDAY-5LB","requires_shipping":true,"taxable":false,"featured_image":null,"available":true,"name":"All Day - 5lb","public_title":"5lb","options":["5lb"],"price":12500,"weight":2268,"compare_at_price":null,"inventory_management":"shopify","barcode":"","requires_selling_plan":false,"selling_plan_allocations":[],"quantity_rule":{"min":1,"max":null,"increment":1}}]
+All Day is a community coffee.
+It was grown in Huila, Colombia by neighboring local producers and blended using color sorters, density separation and experienced quality assurance professionals. We receive 3-4 shipments each year as we attempt to follow the unique harvest calendar in Colombia. In Winter and Spring All Day is sourced from southern parts of Hulia, comprising mostly of coffees grown around the township of Pitalito. In Summer and Fall we look to harvests further north in Santa Maria.
+Due to the challenging nature of sourcing micro-lots from single farms and producers, we only ever see a small selection of them every year. Community lots provide us with a wider net when seeking a specific regional profile and we love how All Day represents Huila as a truly unique growing area.
+As a roaster, community blends are a great way to support small producers, co-operatives and importers. By offering a single lot coffee in lieu of a 'House Blend' we are able to increase our commitment to a single contract and have a larger impact on a local market. This is one of the ways we practice sustainable buying.
+Right now 100% of All Day is made up of a coffee named 'El Nevado del Huila' named after Colombia's highest volcano and sourced by the team at The Coffee Quest.
+Producers that contribute to this community coffee grow mostly Castillo, Caturra and Colombia - El Nevado del Huila is a blend of their washed processed lots. This coffee gives us juicy, bright acidity with a lingering Panela sugar sweetness.
+All Day is great to brew any way you want. We use it as Espresso in our shops but brew it as drip at home. It's great black, and with the addition of milk you will experience sweet chocolate and nougat flavors. This is a coffee for you and all your loved ones.
+Lot Name →
+El Nevado del Huila
+Producers →
+Small-scale producers from Huila
+Location
+→
+Huila, Colombia
+Altitude
+1,600 - 1,900 masl
+Varieties
+Castillo, Caturra, Colombia
+Process
+Washed
+Back to All Products
+
+Embedded product variant data:
+- id=37621823570077; title=250g; name=All Day - 250g; sku=BFC-BLACKFOX-ALLDAY-250; price=22.00 USD; package_grams=250.000g [default_for_inference]
+- id=41436427616413; title=5lb; name=All Day - 5lb; sku=BFC-BLACKFOX-ALLDAY-5LB; price=125.00 USD; package_grams=2267.962g
+- id=unknown; title=unknown; name=unknown; sku=unknown; price=22.00 USD; package_grams=unknown grams
+Use the selected_by_url variant when present. Otherwise use the default_for_inference variant, chosen as the package size closest to 10 oz.

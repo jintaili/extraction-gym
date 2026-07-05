@@ -1,0 +1,41 @@
+Title: Philtered Soul - Philz Coffee
+Description: Philtered Soul has distinctively nutty flavors with a satisfying finish that’s sure to please your soul. It’s the blend of choice for many frequent guests....
+Philtered Soul
+Home
+Subscribable
+Flavor Profile:
+Hazelnut Flavoring, Maple, Caramel
+Acidity:
+Low
+Body:
+Medium
+Size:
+16oz
+Description
+Philtered Soul has distinctively nutty flavors with a satisfying finish that’s sure to please your soul. It’s the blend of choice for many frequent guests. Contains artificial hazelnut flavoring.
+*Contains artificial hazelnut flavoring.
+Grind
+Whole Bean
+Quantity
+−
++
+Save by making it a subscription
+Select Frequency
+1 week
+2 weeks
+3 weeks
+4 weeks
+5 weeks
+6 weeks
+7 weeks
+8 weeks
+Add To Cart
+-
+$22.50
+Oops!
+Sorry, it looks like some products are not available in selected quantity.
+OK
+
+Embedded product variant data:
+- id=unknown; title=unknown; name=unknown; sku=unknown; price=22.50 USD; package_grams=unknown grams [default_for_inference]
+Use the selected_by_url variant when present. Otherwise use the default_for_inference variant, chosen as the package size closest to 10 oz.

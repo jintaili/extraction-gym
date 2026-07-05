@@ -27,7 +27,7 @@ what matters is roughly half ordinary / half hard, no empty stratum, no dominant
 - [ ] https://hydrangea.coffee/products/letty-bermudez `[history]`
 - [x] https://hydrangea.coffee/products/salma-bermudez `[history]` (README example)
 - [x] https://shoebox.coffee/products/colombia-finca-los-angeles-gesha-washed `[history]`
-- [x] https://ilsecoffee.com/collections/all-products/products/kenya-ibonia-estate-ab `[history]`
+- [ ] https://ilsecoffee.com/collections/all-products/products/kenya-ibonia-estate-ab SNAPSHOT FAILED: DEAD 404 at snapshot time (product rotated out); replacement candidate in next delta or drop — `[history]`
 - [x] https://www.seycoffee.com/collections/coffee/products/2026-danche-white-honey-ethiopia `[history]` white honey process
 - [x] https://www.seycoffee.com/collections/coffee/products/2026-jose-pena-los-naranjos-colombia `[history]`
 - [x] https://moonwakecoffeeroasters.com/products/gilber-huayllas-llaqta-pata-anaerobic-washed-sl-9-peru `[history]` SL-9 variety edge case
@@ -52,7 +52,7 @@ what matters is roughly half ordinary / half hard, no empty stratum, no dominant
 - [x] https://blackfoxcoffee.com/collections/all-products/products/all-day-blend `[history]`
 - [x] https://varietycoffeeroasters.com/products/lucky-shot-espresso?variant=32078925824100 `[history]` espresso blend + variant param
 - [x] https://www.drinktrade.com/products/pump-house?variant=45942406873407 `[history]` marketplace-style blend page
-- [x] https://onyxcoffeelab.com/products/monarch `[proposed]` house blend
+- [ ] https://onyxcoffeelab.com/products/monarch `[proposed]` house blend
 - [x] https://onyxcoffeelab.com/products/southern-weather?variant=31862699917410 `[history]` blend + variant param
 - [x] https://coffeeprojectnyshop.square.site/product/-crowd-pleaser-house-espresso/52?cs=true&cst=custom `[history]` square.site platform oddity
 
@@ -60,21 +60,23 @@ what matters is roughly half ordinary / half hard, no empty stratum, no dominant
 
 - [x] https://perccoffee.com/products/decaf?variant=44057029869882 `[history]` decaf only in product title
 - [x] https://onyxcoffeelab.com/products/decaf-ethiopia-suke-quto-26 `[proposed]`
-- [x] TO FILL: one more decaf where "decaf" appears only in a variant name (agent finds during snapshotting)
+- [x] https://drinkpassenger.com/products/los-suenos-decaf `[delta]` multi-size decaf, "from" pricing
+- [ ] TO FILL note: a page with decaf only in a variant name was not found in the wild; that case
+  goes to the adversary suite instead (agent decision, revisit if you know one)
 
 ## Stratum D: non-English (target ~6, at least 3 languages)
 
 I am not sure if we necessarily need to test Estonian. Spanish and some nordic language is needed. Japanese is good to have
 
-- [x] https://acidcoffee.stores.jp/items/69a76fe8fe1d6b005e3e0001 `[history]` Japanese, stores.jp platform
+- [ ] https://acidcoffee.stores.jp/items/69a76fe8fe1d6b005e3e0001 SNAPSHOT FAILED: FETCH BLOCKED 403 (stores.jp bot protection); Japanese still covered by three Leaves pages — `[history]` Japanese, stores.jp platform
 - [ ] https://shop.leavescoffee.jp/products/origami-pinn `[proposed]` Japanese, JPY
 - [x] https://leavescoffee.jp/products/colombia-los-eucaliptos `[proposed]` Japanese, JPY (URL revised by curator; annotation fixed, no longer the sampler)
 - [x] https://nomadcoffee.es/products/aji-las-flores `[history]` Spain, check ES vs EN rendering
 - [ ] TO FILL: Korean page (Momos or Fritz, JS-heavy sites, agent validates during snapshotting)
 - [ ] TO FILL: Italian page (Gardelli shop redirect issue, agent retries during snapshotting)
-- [X] TO FILL: Famous nordic roaster page in native language, e.g., Denmark, Norway, Sweden
+- [x] https://coffeecollective.dk/da/products/penas-blancas-gesha-200g `[delta]` Danish-language page, DKK, 200g nonstandard size (fills the Nordic native-language slot; EN twin is unchecked in E so no redundancy)
 - [x] https://www.thebrickcoffee.ee/en/shop/tooted/el-salvador-las-nubes-1-1 `[history]` Estonian site, EN path, EUR
-- [x] https://www.thebrickcoffee.ee/en/shop/tooted/honduras-emiliana-montoya `[history]`
+- [ ] https://www.thebrickcoffee.ee/en/shop/tooted/honduras-emiliana-montoya SNAPSHOT FAILED: DEAD 404 at snapshot time; one Brick page suffices given Estonian ambivalence — `[history]`
 
 ## Stratum E: multi-variant with tricky defaults (target ~5) 
 
@@ -84,6 +86,8 @@ I am not sure if we necessarily need to test Estonian. Spanish and some nordic l
 - [ ] https://hydrangea.coffee/products/gesha-hybrid-washed-mikava-estates-marsella-ultralight `[history]` ultralight roast variant naming
 - [ ] https://coffeecollective.dk/products/penas-blancas-gesha-200g `[proposed]` 200g nonstandard size
 - [x] https://lovelesscoffees.coffee/products/yessica-parra-natural-gesha-pitalito-colombia?variant=48665088589979
+- [x] https://drinkpassenger.com/products/ivan-gutierrez-sl28-washed-process-2025 `[delta]` multi-size "from" pricing, low-stock availability signal, SL28
+- [x] https://drinkpassenger.com/products/fausto-romo-sidra-honey-honey-process-2025 `[delta]` multi-size, Sidra variety (unrepresentable in schema v1), honey process
 - [x] https://onyxcoffeelab.com/products/colombia-el-jardin-gesha same URL as Stratum A entry: snapshotted once, tagged with both strata (tooling supports multi-stratum tags; it does not count twice toward the 50)
 
 ## Stratum F: subscription / sampler / luxury price (target ~5)
@@ -92,7 +96,7 @@ I could not find samplers. Please suggest. It's ok if you cannot find any good o
 
 Agent sampler suggestions (approve by checking):
 
-- [ ] https://shop.leavescoffee.jp/products/the-african-trio `[proposed]` 3-coffee sampler, Japanese, JPY (double stratum with D; was dropped when its slot was rewritten)
+- [x] https://shop.leavescoffee.jp/products/the-african-trio `[proposed]` 3-coffee sampler, Japanese, JPY (double stratum with D; was dropped when its slot was rewritten)
 - [ ] Onyx box set: concrete URL comes in the backfill delta list from /collections/special
 
 NOTE (agent): https://www.drinktrade.com/collections is a category listing, not a product
@@ -112,7 +116,7 @@ fields are null by contract. All four are from real production traffic.
 
 - [x] https://www.amazon.ae/Coffee-Planet-Breakfast-Specialty-Ground/dp/B07MV2WHXG `[history]` coffee product, marketplace, non-specialty, AED
 - [x] https://www.target.com/p/dunkin-39-original-blend-whole-bean-medium-roast-coffee-18oz/-/A-91290408 `[history]` coffee product, mass-market, non-specialty
-- [x] https://clivecoffee.com/products/lelit-mara-x-espresso-machine `[history]` coffee equipment, not coffee
+- [ ] https://clivecoffee.com/products/lelit-mara-x-espresso-machine SNAPSHOT FAILED: DEAD 404 at snapshot time; G still has 4 pages without it — `[history]` coffee equipment, not coffee
 - [x] https://home.lamarzoccousa.com/espresso-machines/linea-mini/ `[history]` coffee equipment, marketing-style page
 - [x] https://www.drinktrade.com/collections category listing page, not_a_product_page (moved from Stratum F by agent; uncheck if unintended)
 

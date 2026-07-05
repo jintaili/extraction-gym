@@ -1,0 +1,55 @@
+Title: Purple Caturra - Pineapple Washed - Finca Monteblanco
+– Hydrangea Coffee Roasters
+Description: Tastes Like: Pineapple, Pine Ame, Passionfruit Origin: Finca Monteblanco, Huila, Colombia Variety: Purple Caturra Producer: Rodrigo Sanchez Elevation: 1730 MASL Process: Washed Co-Fermentation with Pineapple
+Skip to product information
+Open media 1 in modal
+Open media 2 in modal
+1
+/
+of
+2
+Hydrangea Coffee Roasters
+Purple Caturra
+Pineapple Washed
+Finca Monteblanco
+Purple Caturra - Pineapple Washed - Finca Monteblanco
+NO LONGER AVAILABLE
+Unit price
+per
+Sale
+Sold out
+Tastes Like: Pineapple, Pine Ame, Passionfruit
+Origin: Finca Monteblanco, Huila, Colombia
+Variety: Purple Caturra
+Producer:
+R
+odrigo Sanchez
+Elevation: 1730 MASL
+Process:
+Washed Co-Fermentation
+with Pineapple
+View full details
+Brewing Accesories
+CAFEC Abaca Filters
+Regular price
+$10.00 USD
+Sale price
+APAX LAB Mineral Concentrates
+From $30.40 USD
+Yearn Tour x Hydrangea Pink Double Walled Tasting Cup
+$15.00 USD
+Hydrangea "Pepe" Fellow Stagg EKG Kettle
+$210.00 USD
+
+Embedded product variant data:
+- id=52845459439938; title=4oz (114g); name=Purple Caturra - Pineapple Washed - Finca Monteblanco - 4oz (114g); sku=4OZ-MONTEBLNACO-PINEAPPLE; price=17.00 USD; package_grams=113.398g
+- id=52845459472706; title=8oz (227g); name=Purple Caturra - Pineapple Washed - Finca Monteblanco - 8oz (227g); sku=8OZ-MONTEBLNACO-PINEAPPLE; price=25.00 USD; package_grams=226.796g [default_for_inference]
+- id=52845459505474; title=2lbs (907g); name=Purple Caturra - Pineapple Washed - Finca Monteblanco - 2lbs (907g); sku=2LBS-MONTEBLNACO-PINEAPPLE; price=80.00 USD; package_grams=907.185g
+- id=52845459439938; title=unknown; name=unknown; sku=4OZ-MONTEBLNACO-PINEAPPLE; price=17.00 USD; package_grams=113.398g
+- id=52845459472706; title=unknown; name=unknown; sku=8OZ-MONTEBLNACO-PINEAPPLE; price=25.00 USD; package_grams=226.796g
+- id=52845459505474; title=unknown; name=unknown; sku=2LBS-MONTEBLNACO-PINEAPPLE; price=80.00 USD; package_grams=907.185g
+Use the selected_by_url variant when present. Otherwise use the default_for_inference variant, chosen as the package size closest to 10 oz.
+
+URL/domain-derived roaster evidence:
+- inferred_roaster_country=United States; evidence=known roaster domain hydrangea.coffee
+Use this for roaster_country when page text does not state a more specific roaster country.

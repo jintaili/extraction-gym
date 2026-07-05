@@ -1,0 +1,82 @@
+Title: Stellar Collisions Next Generation - Peach Co-ferment Blend
+– Brandywine Coffee Roasters
+Description: New Coffees. New Stories. New Worlds To Explore. Stellar Collisions Next Generation Meet the next evolution of Stellar Collisions—a playful co-ferment blend born from an collaborative partnership with our good friends at Unblended coffee. Developed over a year this blend is composed completely at origin, which is som
+Close (esc)
+Stellar Collisions Next Generation - Peach Co-ferment Blend
+Regular price
+$ 28.00
+/
+Size
+12oz
+2lb
+5lb
+Add to cart
+12oz - $ 28.00 USD
+2lb - $ 65.00 USD
+5lb - $ 155.00 USD
+New Coffees. New Stories. New Worlds To Explore. Stellar Collisions Next Generation
+Meet the next evolution of Stellar Collisions—a playful co-ferment blend born from an collaborative partnership with our good friends at Unblended coffee. Developed over a year this blend is composed completely at origin, which is something we've never done before. It was inspired by the happy accident development lot initiatives started by Unblended and mirror our own values strongly. Every cup delivers a joyful burst of peachy sweetness with surprising complexity and . This collaboration extends availability while directly supporting the next generation of coffee producers we're proud to work alongside. Discover what happens when passion meets purpose in a cup of cosmic coffee.
+Coffee Info:
+We Taste: Peaches, Brown Sugar, Peach Sweet Tea,
+Stellar Collisions The Next Generation is made up of the following coffees:
+PEACH — Sebastian Ramirez
+Farm Name:
+Fincas El Placer
+Location:
+Quindío, Colombia
+Elevation:
+1744 masl
+Variety:
+Caturra
+Process:
+Black Honey / Co-Fermented
+RECRUITMENT
+LOT
+— Community
+Lot
+Recruitment
+Andes, Antioquia, Colombia
+1800-2000 masl
+Castillo, Caturra & Colombia
+Washed
+Currently taking place in Andes, Antioquia,
+The
+program
+aims to identify and attract young coffee producers interested in turning their farms into successful businesses in the specialty coffee market.
+The program establishes quality parameters and taste profiles, holds joint cuppings, and collaborates with
+Cabresto
+to reach more people in the region. By evaluating the quality and taste of each coffee lot, the team hopes to identify potential candidates for the program and provide support through the
+Young Producer Association (YPA)
+in town. This lot is the result of that identification process, and we're delighted to share it with you.
+Ask a question
+Name
+Email
+Message
+Send
+This site is protected by hCaptcha and the hCaptcha
+Privacy Policy
+and
+Terms of Service
+apply.
+Share
+Share on Facebook
+Tweet
+Tweet on Twitter
+Pin it
+Pin on Pinterest
+[{"id":42598749864023,"title":"12oz","option1":"12oz","option2":null,"option3":null,"sku":"PSC","requires_shipping":true,"taxable":false,"featured_image":null,"available":true,"name":"Stellar Collisions Next Generation - Peach Co-ferment Blend - 12oz","public_title":"12oz","options":["12oz"],"price":2800,"weight":425,"compare_at_price":null,"inventory_quantity":12,"inventory_management":"shopify","inventory_policy":"deny","barcode":"","requires_selling_plan":false,"selling_plan_allocations":[],"quantity_rule":{"min":1,"max":null,"increment":1}},{"id":42598749896791,"title":"2lb","option1":"2lb","option2":null,"option3":null,"sku":"PSC-2lb","requires_shipping":true,"taxable":false,"featured_image":{"id":34234867875927,"product_id":7588937007191,"position":3,"created_at":"2025-11-17T14:50:41-05:00","updated_at":"2026-04-15T13:40:43-04:00","alt":null,"width":1024,"height":1024,"src":"\/\/www.brandywinecoffeeroasters.com\/cdn\/shop\/files\/2lb_mockup_0e1f83f1-bbf4-4560-a2af-5977dbf95d32.webp?v=1776274843","variant_ids":[42598749896791]},"available":true,"name":"Stellar Collisions Next Generation - Peach Co-ferment Blend - 2lb","public_title":"2lb","options":["2lb"],"price":6500,"weight":992,"compare_at_price":null,"inventory_quantity":50,"inventory_management":"shopify","inventory_policy":"deny","barcode":"","featured_media":{"alt":null,"id":26143110365271,"position":3,"preview_image":{"aspect_ratio":1.0,"height":1024,"width":1024,"src":"\/\/www.brandywinecoffeeroasters.com\/cdn\/shop\/files\/2lb_mockup_0e1f83f1-bbf4-4560-a2af-5977dbf95d32.webp?v=1776274843"}},"requires_selling_plan":false,"selling_plan_allocations":[],"quantity_rule":{"min":1,"max":null,"increment":1}},{"id":42598749929559,"title":"5lb","option1":"5lb","option2":null,"option3":null,"sku":"PSC-5lb","requires_shipping":true,"taxable":false,"featured_image":{"id":34234870562903,"product_id":7588937007191,"position":2,"created_at":"2025-11-17T14:50:56-05:00","updated_at":"2026-04-15T13:40:43-04:00","alt":null,"width":713,"height":715,"src":"\/\/www.brandywinecoffeeroasters.com\/cdn\/shop\/files\/5LB_MockUp_8a6ead1c-1be3-4a40-a38d-c4148f0cebeb.webp?v=1776274843","variant_ids":[42598749929559]},"available":true,"name":"Stellar Collisions Next Generation - Peach Co-ferment Blend - 5lb","public_title":"5lb","options":["5lb"],"price":15500,"weight":2359,"compare_at_price":null,"inventory_quantity":50,"inventory_management":"shopify","inventory_policy":"deny","barcode":"","featured_media":{"alt":null,"id":26143113052247,"position":2,"preview_image":{"aspect_ratio":0.997,"height":715,"width":713,"src":"\/\/www.brandywinecoffeeroasters.com\/cdn\/shop\/files\/5LB_MockUp_8a6ead1c-1be3-4a40-a38d-c4148f0cebeb.webp?v=1776274843"}},"requires_selling_plan":false,"selling_plan_allocations":[],"quantity_rule":{"min":1,"max":null,"increment":1}}]
+You may also like
+Quick view
+from $ 28.00
+"Close (esc)"
+Next: Coffee For A Cause Take Care Of Each Other 2026- 8oz
+Back to All Coffee
+
+Embedded product variant data:
+- id=42598749864023; title=12oz; name=Stellar Collisions Next Generation - Peach Co-ferment Blend - 12oz; sku=PSC; price=28.00 USD; package_grams=425.000g [default_for_inference]
+- id=42598749896791; title=2lb; name=Stellar Collisions Next Generation - Peach Co-ferment Blend - 2lb; sku=PSC-2lb; price=65.00 USD; package_grams=992.000g
+- id=42598749929559; title=5lb; name=Stellar Collisions Next Generation - Peach Co-ferment Blend - 5lb; sku=PSC-5lb; price=155.00 USD; package_grams=2359.000g
+- id=42598749864023; title=unknown; name=unknown; sku=PSC; price=28.00 USD; package_grams=unknown grams
+- id=42598749896791; title=unknown; name=unknown; sku=PSC-2lb; price=65.00 USD; package_grams=907.185g
+- id=42598749929559; title=unknown; name=unknown; sku=PSC-5lb; price=155.00 USD; package_grams=2267.962g
+Use the selected_by_url variant when present. Otherwise use the default_for_inference variant, chosen as the package size closest to 10 oz.

@@ -1,0 +1,53 @@
+Title: Gesha - Washed - Finca El Turpial
+– Hydrangea Coffee Roasters
+Description: Tastes Like: Hibiscus, Lime, Nectarine Origin: Finca El Turpial, Nariño, Colombia Variety: Gesha Producer: Emerson Felipe Narvaez Elevation: 2,780 masl Process: Washed
+Skip to product information
+Open media 1 in modal
+Open media 2 in modal
+1
+/
+of
+2
+Hydrangea Coffee Roasters
+Gesha
+Washed
+Finca El Turpial
+Gesha - Washed - Finca El Turpial
+NO LONGER AVAILABLE
+Unit price
+per
+Sale
+Sold out
+Tastes Like:
+Hibiscus, Lime, Nectarine
+Origin: Finca El Turpial, Nariño, Colombia
+Variety: Gesha
+Producer:
+Emerson Felipe Narvaez
+Elevation: 2,780 masl
+Process: Washed
+View full details
+Brewing Accesories
+CAFEC Abaca Filters
+Regular price
+$10.00 USD
+Sale price
+APAX LAB Mineral Concentrates
+From $30.40 USD
+Yearn Tour x Hydrangea Pink Double Walled Tasting Cup
+$15.00 USD
+Hydrangea "Pepe" Fellow Stagg EKG Kettle
+$210.00 USD
+
+Embedded product variant data:
+- id=53378075623746; title=4oz (114g); name=Gesha - Washed - Finca El Turpial - 4oz (114g); sku=4OZ-EL-TURPIAL-WAHSED-GESHA; price=24.00 USD; package_grams=113.398g
+- id=53378075656514; title=8oz (227g); name=Gesha - Washed - Finca El Turpial - 8oz (227g); sku=8OZ-EL-TURPIAL-WAHSED-GESHA; price=35.00 USD; package_grams=226.796g [default_for_inference]
+- id=53378075689282; title=2lbs (907g); name=Gesha - Washed - Finca El Turpial - 2lbs (907g); sku=2LBS-EL-TURPIAL-WAHSED-GESHA; price=110.00 USD; package_grams=907.185g
+- id=53378075623746; title=unknown; name=unknown; sku=4OZ-EL-TURPIAL-WAHSED-GESHA; price=24.00 USD; package_grams=113.398g
+- id=53378075656514; title=unknown; name=unknown; sku=8OZ-EL-TURPIAL-WAHSED-GESHA; price=35.00 USD; package_grams=226.796g
+- id=53378075689282; title=unknown; name=unknown; sku=2LBS-EL-TURPIAL-WAHSED-GESHA; price=110.00 USD; package_grams=907.185g
+Use the selected_by_url variant when present. Otherwise use the default_for_inference variant, chosen as the package size closest to 10 oz.
+
+URL/domain-derived roaster evidence:
+- inferred_roaster_country=United States; evidence=known roaster domain hydrangea.coffee
+Use this for roaster_country when page text does not state a more specific roaster country.

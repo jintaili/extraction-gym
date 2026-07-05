@@ -1,0 +1,65 @@
+Title: Café de especialidad - Ají Las Flores - NOMAD COFFEE
+Description: Café de especialidad Bourbon Ají con notas de uva moscatel, cacao y hierbaluisa. Acidez brillante, cuerpo sedoso y matices de melocotón y caramelo.
+Filtro
+Colombia
+Ají Las Flores
+32,50€
+250gr / Café en Grano - 32,50€
+250gr / Cold Brew - 32,50€
+250gr / Moccamaster - 32,50€
+250gr / Aeropress - 32,50€
+250gr / French Press - 32,50€
+250gr / V60 - 32,50€
+250gr / Moka/Italiana/Oroley - 32,50€
+250gr / Máquina Espresso - 32,50€
+1kg / Café en Grano - 130,00€
+Cantidad
+-
++
+!
+Máxima cantidad añadida
+Agregar al carrito
+Comprar
+Categoría
+Competición
+Variedad
+Bourbon Ají
+Altitud
+1750 MSNM
+Proceso
+Lavado
+Cosecha
+2025
+Notas
+Uva Moscatel
+Manteca de cacao
+Hierbaluisa
+Nota de cata
+Historia
+Receta
+Este Bourbon Ají ofrece una taza intensa donde destacan notas de uva moscatel, manteca de cacao y hierbaluisa. La acidez es brillante, acompañada por un cuerpo sedoso que envuelve el paladar. A medida que evoluciona, surgen matices de melocotón, caramelo, piruleta de fresa y piel de lima, aportando una complejidad vibrante y un equilibrio elegante.
+Finca Las Flores nació en 1990 gracias a Edilberto Vergara y Nubia Ayure, quienes comenzaron con tan solo dos hectáreas de café. Con el tiempo, la finca creció hasta convertirse en uno de los referentes de Acevedo, Huila. En 2019, su hijo Jhoan Vergara alcanzó el reconocimiento internacional al ganar el concurso Master of Coffee con su Pink Bourbon, consolidando la reputación familiar.
+Hoy, Jhoan lidera la innovación en procesos y la introducción de variedades exóticas como Sidra, Java y Bourbon Ají. Este último, cultivado a 1.750 metros, refleja la curiosidad y la precisión que caracterizan su enfoque. Cada lote se procesa bajo control técnico riguroso, combinando fermentaciones controladas con bacterias cultivadas y choques térmicos que realzan la expresión aromática del grano.
+Finca Las Flores representa una nueva generación de caficultores que entienden el café como un producto científico y artístico, donde tradición y experimentación se encuentran para crear experiencias sensoriales únicas.
+Las cerezas de Bourbon Ají se someten a 12 horas de oxidación antes del despulpado, seguidas de un thermal shock a 50 °C que fija los compuestos aromáticos. Posteriormente, el café fermenta durante 80 horas en tanques plásticos controlados con bacterias inoculadas, y finalmente se seca en máquinas deshumidificadoras durante 60 horas hasta alcanzar un 10 % de humedad.
+El resultado es un café de alta intensidad sensorial, con estructura dulce y acidez nítida, donde el proceso resalta las notas florales, frutales y cítricas típicas del terroir de Acevedo.
+A la hora de replicar la receta, hay diferentes variables que pueden interferir en el resultado final de tu taza, tales como la fecha de tueste, conservación de los granos, ambiente, agua, etc. Es importante tener en cuenta que todos estos factores puedan influir y tengas que hacer pequeños ajustes al replicar esta receta.
+Método: OREA V4
+Molino: Fellow Ode #8
+Agua mineral recomendada: Lanjarón
+Hemos utilizado 19 gramos de café por 270 gramos de agua a una temperatura de 93º
+Añadimos el agua en 3 vertidos. Primer vertido 70 gr esperamos 40 segundos, el segundo vertido de 100gr para que luego al 1:15 hacer un vertido final de 100gr.
+El tiempo total de infusión debería de ser 2:14 minutos, consiguiendo con esta receta un TDS de 1,38% y un porcentaje de extracción del 19,98%
+Productos Relacionados
+
+Embedded product variant data:
+- id=56392208122239; title=250gr / Café en Grano; name=Ají Las Flores - 250gr / Café en Grano; sku=C.CO.AJI; price=32.50 EUR; package_grams=unknown grams
+- id=56392208155007; title=250gr / Cold Brew; name=Ají Las Flores - 250gr / Cold Brew; sku=C.CO.AJI.COLDBREW; price=32.50 EUR; package_grams=unknown grams
+- id=56392208187775; title=250gr / Moccamaster; name=Ají Las Flores - 250gr / Moccamaster; sku=C.CO.AJI.MOCCAMASTER; price=32.50 EUR; package_grams=unknown grams
+- id=56392208220543; title=250gr / Aeropress; name=Ají Las Flores - 250gr / Aeropress; sku=C.CO.AJI.AEROPRESS; price=32.50 EUR; package_grams=unknown grams
+- id=56392208253311; title=250gr / French Press; name=Ají Las Flores - 250gr / French Press; sku=C.CO.AJI.FRENCHPRESS; price=32.50 EUR; package_grams=unknown grams
+- id=56392208286079; title=250gr / V60; name=Ají Las Flores - 250gr / V60; sku=C.CO.AJI.V60; price=32.50 EUR; package_grams=unknown grams
+- id=56392208318847; title=250gr / Moka/Italiana/Oroley; name=Ají Las Flores - 250gr / Moka/Italiana/Oroley; sku=C.CO.AJI.MOKAPOT; price=32.50 EUR; package_grams=unknown grams
+- id=56392208351615; title=250gr / Máquina Espresso; name=Ají Las Flores - 250gr / Máquina Espresso; sku=C.CO.AJI.ESPRESSO; price=32.50 EUR; package_grams=unknown grams
+- id=56392208384383; title=1kg / Café en Grano; name=Ají Las Flores - 1kg / Café en Grano; sku=C.CO.AJI.1kg; price=130.00 EUR; package_grams=1000.000g [default_for_inference]
+Use the selected_by_url variant when present. Otherwise use the default_for_inference variant, chosen as the package size closest to 10 oz.

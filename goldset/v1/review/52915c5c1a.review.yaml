@@ -33,8 +33,6 @@ draft_label:
   coffee.producer_text: null
   price.listed_price: 124.0
   price.listed_currency: DKK
-  price.original_listed_price: null
-  price.original_listed_currency: null
   price.bag_size_value: 250.0
   price.bag_size_unit: g
   price.package_grams: 250.0
@@ -71,12 +69,6 @@ disagreements:
       11,5 USD/KG
 
       The price we''ve chosen to pay for the coffee based on quality'
-  price.original_listed_price:
-    a: null
-    b: 124.0
-  price.original_listed_currency:
-    a: null
-    b: DKK
 hand_check:
   price.listed_price:
     a: 124.0

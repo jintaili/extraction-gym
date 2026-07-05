@@ -33,8 +33,6 @@ draft_label:
   coffee.producer_text: null
   price.listed_price: 49.0
   price.listed_currency: USD
-  price.original_listed_price: null
-  price.original_listed_currency: null
   price.bag_size_value: 227.0
   price.bag_size_unit: g
   price.package_grams: 227.0

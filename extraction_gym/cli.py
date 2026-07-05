@@ -27,6 +27,11 @@ def main() -> None:
     pre.add_argument("--limit", type=int, default=None)
     pre.add_argument("--concurrency", type=int, default=4)
 
+    cold = sub.add_parser("coldforms", help="Write blank cold-label forms for the audit subset")
+    cold.add_argument("--goldset", default="goldset/v1")
+    cold.add_argument("--seed", type=int, default=20260705)
+    cold.add_argument("--count", type=int, default=10)
+
     args = parser.parse_args()
     if args.command == "snapshot":
         _cmd_snapshot(args)
@@ -34,6 +39,8 @@ def main() -> None:
         _cmd_verify(args)
     elif args.command == "prelabel":
         _cmd_prelabel(args)
+    elif args.command == "coldforms":
+        _cmd_coldforms(args)
 
 
 def _cmd_snapshot(args: argparse.Namespace) -> None:
@@ -66,6 +73,15 @@ def _cmd_prelabel(args: argparse.Namespace) -> None:
     print(f"pages: {summary['pages']}")
     for model, t in summary["totals"].items():
         print(f"{model}: {t['api_calls']} calls, {t['input_tokens']} in / {t['output_tokens']} out tokens")
+
+
+def _cmd_coldforms(args: argparse.Namespace) -> None:
+    from extraction_gym.core.coldforms import write_cold_forms
+
+    written = write_cold_forms(Path(args.goldset), seed=args.seed, count=args.count)
+    for page_id in written:
+        print(f"{args.goldset}/coldlabels/{page_id}.cold.yaml")
+    print(f"forms written: {len(written)}")
 
 
 def _cmd_verify(args: argparse.Namespace) -> None:

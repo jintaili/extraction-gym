@@ -27,8 +27,15 @@ HAND_CHECK_FIELDS = [
     "price.price_type",
 ]
 
-# Extractor self-reports and evidence, never part of the gold label.
-EXCLUDED_FROM_LABEL = {"quality", "coffee.source_snippets", "price.assumptions", "price.price_100g_usd"}
+# Extractor self-reports, evidence, and server-side conversion artifacts: never part of the gold label.
+EXCLUDED_FROM_LABEL = {
+    "quality",
+    "coffee.source_snippets",
+    "price.assumptions",
+    "price.price_100g_usd",
+    "price.original_listed_price",
+    "price.original_listed_currency",
+}
 
 
 def label_fields(extraction: dict) -> dict:

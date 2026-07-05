@@ -1,0 +1,40 @@
+# COLD LABEL FORM. Label from goldset/v1/pages/e5cb661a4e.txt ONLY.
+# Do NOT open review/e5cb661a4e.review.yaml until all cold forms are DONE.
+# Policy rules: docs/LABELING_POLICY.md (R1-R11). Confirm or amend rules as you go.
+# Verbatim fields (process_method, variety, roast_level, harvest_period, sensory_text,
+# producer_text): copy exact spans/terms from the page, no paraphrase (R7).
+page_id: e5cb661a4e
+url: https://www.seycoffee.com/products/2026-danche-white-honey-ethiopia
+page_text: goldset/v1/pages/e5cb661a4e.txt
+status: PENDING  # set to DONE when complete
+label:
+  page_type: null            # coffee_product | coffee_equipment | other_product | not_a_product_page
+  is_specialty_coffee: null  # true | false | null (null unless coffee_product; see R11)
+  coffee.coffee_name: null
+  coffee.roaster: null
+  coffee.roaster_location: null
+  coffee.roaster_country: null   # "unknown" if page gives no evidence
+  coffee.origin_country: null    # "blend_multi_origin" for multi-country blends (R9)
+  coffee.origin_region: null
+  coffee.process_method: []      # verbatim terms, e.g. ["white honey"]; ["unknown"] if absent
+  coffee.variety: []             # verbatim names, e.g. ["SL-9", "Geisha"]; ["unknown"] if absent
+  coffee.producer_or_farm: null
+  coffee.altitude: null          # as written, with units
+  coffee.roast_level: null       # verbatim, e.g. "Ultralight", "Agtron 58"
+  coffee.harvest_period: null    # verbatim crop year / harvest window
+  coffee.is_blend: null          # true | false
+  coffee.is_espresso: null       # true | false
+  coffee.is_decaf: null          # true | false
+  coffee.is_coferment_or_infused: null  # true | false; additives during processing only
+  coffee.sensory_text: null      # verbatim tasting notes span
+  coffee.display_tasting_notes: null    # concise comma-separated note names (R8)
+  coffee.producer_text: null     # verbatim origin/producer/process details span
+  price.listed_price: null       # as displayed for the default/pinned variant (R1, R5, R6)
+  price.listed_currency: null    # ISO-like code as rendered in the snapshot
+  price.bag_size_value: null
+  price.bag_size_unit: null      # g | kg | oz | lb
+  price.package_grams: null      # total grams; for samplers, sum across bags (R4)
+  price.bags_count: null         # integer; null for a single standard bag
+  price.price_type: null         # one_time | subscription | membership | unknown (R2)
+  price.availability: null       # in_stock | sold_out | preorder | unknown (R3)
+notes: ""  # anything ambiguous; candidate policy rules for the decision log

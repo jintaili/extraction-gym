@@ -1,0 +1,178 @@
+page_id: 4cdd06ccd9
+url: https://nomadcoffee.es/products/aji-las-flores
+final_url: https://nomadcoffee.es/products/aji-las-flores
+strata:
+- D
+review_status: PENDING
+instructions: 'Fill every null in draft_label by adjudicating disagreements against the snapshot text
+  (pages/{id}.txt), spot-check agreed values, and always hand-check the hand_check fields. Set review_status:
+  VERIFIED when done.'
+draft_label:
+  page_type: coffee_product
+  is_specialty_coffee: true
+  coffee.coffee_name: Ají Las Flores
+  coffee.roaster: NOMAD COFFEE
+  coffee.roaster_location: null
+  coffee.roaster_country: null
+  coffee.origin_country: Colombia
+  coffee.origin_region: Acevedo, Huila
+  coffee.process_method:
+  - Lavado
+  coffee.variety:
+  - Bourbon Ají
+  coffee.producer_or_farm: Finca Las Flores
+  coffee.altitude: 1750 MSNM
+  coffee.roast_level: null
+  coffee.harvest_period: '2025'
+  coffee.is_blend: false
+  coffee.is_espresso: false
+  coffee.is_decaf: false
+  coffee.is_coferment_or_infused: null
+  coffee.sensory_text: null
+  coffee.display_tasting_notes: null
+  coffee.producer_text: null
+  price.listed_price: null
+  price.listed_currency: EUR
+  price.original_listed_price: null
+  price.original_listed_currency: null
+  price.bag_size_value: null
+  price.bag_size_unit: null
+  price.package_grams: null
+  price.bags_count: null
+  price.price_type: one_time
+  price.availability: null
+disagreements:
+  coffee.roaster_country:
+    a: unknown
+    b: Spain
+  coffee.is_coferment_or_infused:
+    a: false
+    b: true
+  coffee.sensory_text:
+    a: Café de especialidad Bourbon Ají con notas de uva moscatel, cacao y hierbaluisa. Acidez brillante,
+      cuerpo sedoso y matices de melocotón y caramelo.
+    b: Muscat grape, cocoa butter, lemon verbena. This Bourbon Ají offers an intense cup where notes of
+      Muscat grape, cocoa butter and lemon verbena stand out. The acidity is bright, accompanied by a
+      silky body that envelops the palate. As it evolves, nuances of peach, caramel, strawberry lollipop
+      and lime peel emerge, bringing vibrant complexity and elegant balance. The result is a coffee of
+      high sensory intensity, with sweet structure and crisp acidity, where the process highlights the
+      floral, fruity and citrus notes typical of the terroir of Acevedo.
+  coffee.display_tasting_notes:
+    a: Uva Moscatel, Manteca de cacao, Hierbaluisa, Melocotón, Caramelo
+    b: Muscat grape, cocoa butter, lemon verbena, peach, caramel, strawberry lollipop, lime peel
+  coffee.producer_text:
+    a: Finca Las Flores nació en 1990 gracias a Edilberto Vergara y Nubia Ayure, quienes comenzaron con
+      tan solo dos hectáreas de café. Con el tiempo, la finca creció hasta convertirse en uno de los referentes
+      de Acevedo, Huila. En 2019, su hijo Jhoan Vergara alcanzó el reconocimiento internacional al ganar
+      el concurso Master of Coffee con su Pink Bourbon, consolidando la reputación familiar. Hoy, Jhoan
+      lidera la innovación en procesos y la introducción de variedades exóticas como Sidra, Java y Bourbon
+      Ají. Este último, cultivado a 1.750 metros, reflexiona la curiosidad y la precisión que caracterizan
+      su enfoque. Cada lote se procesa bajo control técnico riguroso, combinando fermentaciones controladas
+      con bacterias cultivadas y choques térmicos que realzan la expresión aromática del grano.
+    b: 'Category: Competition. Variety: Bourbon Ají. Altitude: 1750 MASL. Process: Washed. Harvest: 2025.
+      Finca Las Flores was born in 1990 thanks to Edilberto Vergara and Nubia Ayure, who began with just
+      two hectares of coffee. Over time, the farm grew to become one of the benchmarks of Acevedo, Huila.
+      In 2019, their son Jhoan Vergara achieved international recognition by winning the Master of Coffee
+      contest with his Pink Bourbon, consolidating the family reputation. Today, Jhoan leads innovation
+      in processes and the introduction of exotic varieties such as Sidra, Java and Bourbon Ají. This
+      latter, grown at 1,750 meters, reflects the curiosity and precision that characterize his approach.
+      Each lot is processed under rigorous technical control, combining controlled fermentations with
+      cultivated bacteria and thermal shocks that enhance the aromatic expression of the bean. Finca Las
+      Flores represents a new generation of coffee growers who understand coffee as a scientific and artistic
+      product, where tradition and experimentation meet to create unique sensory experiences. The Bourbon
+      Ají cherries undergo 12 hours of oxidation before pulping, followed by a thermal shock at 50 °C
+      that fixes the aromatic compounds. Subsequently, the coffee ferments for 80 hours in controlled
+      plastic tanks with inoculated bacteria, and finally dries in dehumidifying machines for 60 hours
+      until reaching 10% humidity.'
+  price.listed_price:
+    a: 32.5
+    b: 130.0
+  price.bag_size_value:
+    a: 250.0
+    b: 1.0
+  price.bag_size_unit:
+    a: g
+    b: kg
+  price.package_grams:
+    a: 250.0
+    b: 1000.0
+  price.availability:
+    a: in_stock
+    b: unknown
+hand_check:
+  price.listed_price:
+    a: 32.5
+    b: 130.0
+  price.listed_currency:
+    a: EUR
+    b: EUR
+  price.package_grams:
+    a: 250.0
+    b: 1000.0
+  price.bags_count:
+    a: null
+    b: null
+  price.price_type:
+    a: one_time
+    b: one_time
+evidence:
+  a_snippets:
+  - field: name
+    snippet: Ají Las Flores
+  - field: origin
+    snippet: Colombia
+  - field: process
+    snippet: Lavado
+  - field: variety
+    snippet: Bourbon Ají
+  - field: price
+    snippet: 32,50€
+  - field: bag_size
+    snippet: 250gr
+  b_snippets:
+  - field: name
+    snippet: 'Colombia
+
+      Ají Las Flores'
+  - field: origin
+    snippet: 'Filtro
+
+      Colombia
+
+      Ají Las Flores'
+  - field: region
+    snippet: referentes de Acevedo, Huila
+  - field: variety
+    snippet: 'Variedad
+
+      Bourbon Ají'
+  - field: altitude
+    snippet: 'Altitud
+
+      1750 MSNM'
+  - field: process
+    snippet: 'Proceso
+
+      Lavado'
+  - field: harvest_period
+    snippet: 'Cosecha
+
+      2025'
+  - field: tasting_notes
+    snippet: 'Notas
+
+      Uva Moscatel
+
+      Manteca de cacao
+
+      Hierbaluisa'
+  - field: tasting_notes
+    snippet: surgen matices de melocotón, caramelo, piruleta de fresa y piel de lima
+  - field: producer
+    snippet: Finca Las Flores nació en 1990 gracias a Edilberto Vergara y Nubia Ayure
+  - field: process_detail
+    snippet: fermenta durante 80 horas en tanques plásticos controlados con bacterias inoculadas
+models:
+  a: gpt-4o-mini
+  b: gpt-5.5
+  prompt_id: dab81a86fe

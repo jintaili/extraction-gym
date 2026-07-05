@@ -1,0 +1,155 @@
+page_id: b18e69cc17
+url: https://blackfoxcoffee.com/collections/all-products/products/all-day-blend
+final_url: https://blackfoxcoffee.com/collections/all-products/products/all-day-blend
+strata:
+- B
+review_status: PENDING
+instructions: 'Fill every null in draft_label by adjudicating disagreements against the snapshot text
+  (pages/{id}.txt), spot-check agreed values, and always hand-check the hand_check fields. Set review_status:
+  VERIFIED when done.'
+draft_label:
+  page_type: coffee_product
+  is_specialty_coffee: true
+  coffee.coffee_name: All Day
+  coffee.roaster: null
+  coffee.roaster_location: null
+  coffee.roaster_country: null
+  coffee.origin_country: Colombia
+  coffee.origin_region: Huila
+  coffee.process_method:
+  - Washed
+  coffee.variety:
+  - Castillo
+  - Caturra
+  - Colombia
+  coffee.producer_or_farm: Small-scale producers from Huila
+  coffee.altitude: 1,600 - 1,900 masl
+  coffee.roast_level: null
+  coffee.harvest_period: null
+  coffee.is_blend: true
+  coffee.is_espresso: null
+  coffee.is_decaf: false
+  coffee.is_coferment_or_infused: false
+  coffee.sensory_text: null
+  coffee.display_tasting_notes: null
+  coffee.producer_text: null
+  price.listed_price: 22.0
+  price.listed_currency: USD
+  price.original_listed_price: null
+  price.original_listed_currency: null
+  price.bag_size_value: 250.0
+  price.bag_size_unit: g
+  price.package_grams: 250.0
+  price.bags_count: null
+  price.price_type: one_time
+  price.availability: in_stock
+disagreements:
+  coffee.roaster:
+    a: Black Fox Coffee Co.
+    b: Black Fox Coffee
+  coffee.roaster_location:
+    a: null
+    b: NYC
+  coffee.roaster_country:
+    a: unknown
+    b: United States
+  coffee.is_espresso:
+    a: true
+    b: false
+  coffee.sensory_text:
+    a: juicy, bright acidity with a lingering Panela sugar sweetness
+    b: A buttery Colombian lot to enjoy all day with notes of honey, red apple and lingering toffee. This
+      coffee gives us juicy, bright acidity with a lingering Panela sugar sweetness. It's great black,
+      and with the addition of milk you will experience sweet chocolate and nougat flavors.
+  coffee.display_tasting_notes:
+    a: honey, red apple, lingering toffee,chocolate,nougat
+    b: Honey, red apple, toffee, Panela sugar, chocolate, nougat
+  coffee.producer_text:
+    a: 100% of All Day is made up of a coffee named 'El Nevado del Huila' sourced by the team at The Coffee
+      Quest. This coffee gives us juicy, bright acidity with a lingering Panela sugar sweetness. Producers
+      that contribute to this community coffee grow mostly Castillo, Caturra and Colombia - El Nevado
+      del Huila is a blend of their washed processed lots.
+    b: All Day is a community coffee. It was grown in Huila, Colombia by neighboring local producers and
+      blended using color sorters, density separation and experienced quality assurance professionals.
+      Right now 100% of All Day is made up of a coffee named 'El Nevado del Huila' named after Colombia's
+      highest volcano and sourced by the team at The Coffee Quest. Producers that contribute to this community
+      coffee grow mostly Castillo, Caturra and Colombia - El Nevado del Huila is a blend of their washed
+      processed lots. Lot Name → El Nevado del Huila. Producers → Small-scale producers from Huila. Location
+      → Huila, Colombia. Altitude 1,600 - 1,900 masl. Varieties Castillo, Caturra, Colombia. Process Washed.
+hand_check:
+  price.listed_price:
+    a: 22.0
+    b: 22.0
+  price.listed_currency:
+    a: USD
+    b: USD
+  price.package_grams:
+    a: 250.0
+    b: 250.0
+  price.bags_count:
+    a: null
+    b: null
+  price.price_type:
+    a: one_time
+    b: one_time
+evidence:
+  a_snippets:
+  - field: name
+    snippet: All Day
+  - field: origin
+    snippet: Huila, Colombia
+  - field: process
+    snippet: Washed
+  - field: variety
+    snippet: Castillo, Caturra, Colombia
+  - field: altitude
+    snippet: 1,600 - 1,900 masl
+  - field: tasting_notes
+    snippet: juicy, bright acidity with a lingering Panela sugar sweetness
+  - field: producer
+    snippet: Small-scale producers from Huila
+  b_snippets:
+  - field: name
+    snippet: 'Black Fox Coffee
+
+      All Day'
+  - field: roaster_location
+    snippet: 'Title: All Day | Black Fox Coffee Co. | NYC Coffee Roaster'
+  - field: origin
+    snippet: 'Location
+
+      →
+
+      Huila, Colombia'
+  - field: producer
+    snippet: 'Producers →
+
+      Small-scale producers from Huila'
+  - field: altitude
+    snippet: 'Altitude
+
+      1,600 - 1,900 masl'
+  - field: variety
+    snippet: 'Varieties
+
+      Castillo, Caturra, Colombia'
+  - field: process
+    snippet: 'Process
+
+      Washed'
+  - field: tasting_notes
+    snippet: A buttery Colombian lot to enjoy all day with notes of honey, red apple and lingering toffee.
+  - field: price
+    snippet: '250g - $22.00 USD
+
+      5lb - $125.00 USD'
+  - field: bag_size
+    snippet: 'Size
+
+      250g
+
+      5lb'
+models:
+  a: gpt-4o-mini
+  b: gpt-5.5
+  prompt_id: dab81a86fe

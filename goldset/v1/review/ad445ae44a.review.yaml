@@ -1,0 +1,187 @@
+page_id: ad445ae44a
+url: https://www.seycoffee.com/collections/coffee/products/2026-jose-pena-los-naranjos-colombia
+final_url: https://www.seycoffee.com/products/2026-jose-pena-los-naranjos-colombia
+strata:
+- A
+review_status: PENDING
+instructions: 'Fill every null in draft_label by adjudicating disagreements against the snapshot text
+  (pages/{id}.txt), spot-check agreed values, and always hand-check the hand_check fields. Set review_status:
+  VERIFIED when done.'
+draft_label:
+  page_type: coffee_product
+  is_specialty_coffee: true
+  coffee.coffee_name: null
+  coffee.roaster: SEY
+  coffee.roaster_location: null
+  coffee.roaster_country: null
+  coffee.origin_country: Colombia
+  coffee.origin_region: Urrao, Antioquia
+  coffee.process_method:
+  - Washed
+  coffee.variety:
+  - Chiroso
+  coffee.producer_or_farm: null
+  coffee.altitude: 2,000 masl
+  coffee.roast_level: null
+  coffee.harvest_period: February 2026
+  coffee.is_blend: false
+  coffee.is_espresso: false
+  coffee.is_decaf: false
+  coffee.is_coferment_or_infused: false
+  coffee.sensory_text: In the cup we find yellow tropical fruit, candied strawberry, and hops.
+  coffee.display_tasting_notes: yellow tropical fruit, candied strawberry, hops
+  coffee.producer_text: null
+  price.listed_price: 26.0
+  price.listed_currency: USD
+  price.original_listed_price: null
+  price.original_listed_currency: null
+  price.bag_size_value: 250.0
+  price.bag_size_unit: g
+  price.package_grams: 250.0
+  price.bags_count: null
+  price.price_type: one_time
+  price.availability: null
+disagreements:
+  coffee.coffee_name:
+    a: 2026 José Peña; Los Naranjos - Colombia
+    b: José Peña; Los Naranjos - Colombia
+  coffee.roaster_location:
+    a: null
+    b: 18 Grattan St Brooklyn, NY 11206
+  coffee.roaster_country:
+    a: unknown
+    b: USA
+  coffee.producer_or_farm:
+    a: José Peña
+    b: José Peña; Los Naranjos
+  coffee.producer_text:
+    a: Hand-picked at peak ripeness. Floated to further remove defects. Held in-cherry overnight. De-pulped.
+      Dry-fermented for 36 hours. Washed. Dried on raised beds until moisture content reaches 10.5%.
+    b: 'Our first coffee from José Peña continues our exploration of Urrao and the Chiroso variety. This
+      region and variety continue to shift the conversation around quality and the diversity of flavor
+      profiles within Colombian coffee, and we are excited to continue this exploration.
+
+
+      VARIETAL
+
+      Chiroso
+
+      REGION
+
+      Urrao, Antioquia
+
+      ALTITUDE
+
+      2,000 masl
+
+      HARVEST
+
+      February 2026
+
+      PROCESSING
+
+      Hand-picked at peak ripeness. Floated to further remove defects. Held in-cherry overnight. De-pulped.
+      Dry-fermented for 36 hours. Washed. Dried on raised beds until moisture content reaches 10.5%.
+
+
+      ABOUT JOSÉ PEÑA
+
+      We have been working on a project in Urrao for several years now. Each year, the cupping table brings
+      coffees from producers new to the project—an ongoing reminder of how much potential this region
+      holds and how deeply this program motivates the producers who are a part of it. This is the first
+      year we have tasted coffee from José Peña''s farm, and the quality is exceptional. The future of
+      this project continues to inspire.
+
+
+      ABOUT CHIROSO
+
+      Chiroso is a new variety being grown primarily in the region of Antioquia, Colombia. We only started
+      hearing about its cultivation a couple of years ago, but because of its cup quality potential, it
+      is beginning to spread. The variety has been genetically identified as an Ethiopian Landrace, but
+      unfortunately we cannot get any more specific than that at this time. We have been working very
+      hard building a buying program in the region of Urrao specifically around the variety of Chiroso.
+      We still don''t know where or how this variety came to be cultivated in this particular region,
+      but its cup quality is extraordinary. We will be working with our exporting partner, The Coffee
+      Quest, to continue developing this project, and hope that we''ll be able to bring you more of this
+      special coffee from this special region year after year.'
+  price.availability:
+    a: unknown
+    b: sold_out
+hand_check:
+  price.listed_price:
+    a: 26.0
+    b: 26.0
+  price.listed_currency:
+    a: USD
+    b: USD
+  price.package_grams:
+    a: 250.0
+    b: 250.0
+  price.bags_count:
+    a: null
+    b: null
+  price.price_type:
+    a: one_time
+    b: one_time
+evidence:
+  a_snippets:
+  - field: name
+    snippet: SEY - 2026 José Peña; Los Naranjos - Colombia
+  - field: origin
+    snippet: Colombia
+  - field: process
+    snippet: Washed
+  - field: variety
+    snippet: Chiroso
+  - field: altitude
+    snippet: 2,000 masl
+  - field: tasting_notes
+    snippet: In the cup we find yellow tropical fruit, candied strawberry, and hops
+  - field: producer
+    snippet: José Peña
+  b_snippets:
+  - field: name
+    snippet: 'José Peña
+
+      LOS NARANJOS
+
+      CHIROSO - WASHED
+
+      Colombia'
+  - field: origin
+    snippet: 'REGION
+
+      Urrao, Antioquia'
+  - field: process
+    snippet: CHIROSO - WASHED
+  - field: process
+    snippet: 'PROCESSING
+
+      Hand-picked at peak ripeness. Floated to further remove defects. Held in-cherry overnight. De-pulped.
+      Dry-fermented for 36 hours. Washed.'
+  - field: variety
+    snippet: 'VARIETAL
+
+      Chiroso'
+  - field: altitude
+    snippet: 'ALTITUDE
+
+      2,000 masl'
+  - field: harvest
+    snippet: 'HARVEST
+
+      February 2026'
+  - field: tasting_notes
+    snippet: In the cup we find yellow tropical fruit, candied strawberry, and hops.
+  - field: producer
+    snippet: ABOUT JOSÉ PEÑA
+  - field: producer
+    snippet: This is the first year we have tasted coffee from José Peña's farm
+  - field: roaster_location
+    snippet: 'Visit Us
+
+      18 Grattan St Brooklyn, NY 11206'
+models:
+  a: gpt-4o-mini
+  b: gpt-5.5
+  prompt_id: dab81a86fe

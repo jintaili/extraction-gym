@@ -1,0 +1,133 @@
+page_id: d408028853
+url: https://timwendelboe.no/products/finca-tamana-bourbon
+final_url: https://timwendelboe.no/products/finca-tamana-bourbon
+strata:
+- A
+review_status: PENDING
+instructions: 'Fill every null in draft_label by adjudicating disagreements against the snapshot text
+  (pages/{id}.txt), spot-check agreed values, and always hand-check the hand_check fields. Set review_status:
+  VERIFIED when done.'
+draft_label:
+  page_type: coffee_product
+  is_specialty_coffee: true
+  coffee.coffee_name: Finca Tamana Bourbon
+  coffee.roaster: Tim Wendelboe Coffee
+  coffee.roaster_location: null
+  coffee.roaster_country: null
+  coffee.origin_country: Colombia
+  coffee.origin_region: El Pital, Huila
+  coffee.process_method:
+  - Washed
+  coffee.variety:
+  - Bourbon
+  - Pink Bourbon (Ethiopian)
+  coffee.producer_or_farm: null
+  coffee.altitude: null
+  coffee.roast_level: null
+  coffee.harvest_period: May - June 2025
+  coffee.is_blend: false
+  coffee.is_espresso: false
+  coffee.is_decaf: false
+  coffee.is_coferment_or_infused: false
+  coffee.sensory_text: null
+  coffee.display_tasting_notes: Winey, red fruits, floral
+  coffee.producer_text: null
+  price.listed_price: 21.0
+  price.listed_currency: USD
+  price.original_listed_price: null
+  price.original_listed_currency: null
+  price.bag_size_value: 250.0
+  price.bag_size_unit: g
+  price.package_grams: 250.0
+  price.bags_count: null
+  price.price_type: one_time
+  price.availability: in_stock
+disagreements:
+  coffee.roaster_country:
+    a: unknown
+    b: Norway
+  coffee.producer_or_farm:
+    a: Elias Roa & Bellanid Sanchez
+    b: Elias Roa & Bellanid Sanchez; Finca Tamana
+  coffee.sensory_text:
+    a: A sweet and winey coffee with notes of flowers and red fruits.
+    b: 'A sweet and winey coffee with notes of flowers and red fruits. Flavour notes: Winey, red fruits
+      & floral'
+  coffee.producer_text:
+    a: Finca Tamana is a 57 hectare coffee plantation located in the mountains between El Pital and La
+      Plata in Huila, Colombia. It was acquired by Elias Roa in 2011....
+    b: 'Producer: Elias Roa & Bellanid Sanchez. Country: Colombia. Region: El Pital, Huila. Process: Washed.
+      Harvest date: May - June 2025. The coffee is selectively hand picked by hired pickers under supervision
+      of Elias. Cherries are hand-sorted before they are processed to make sure only ripe cherries are
+      processed together. The coffee cherries are stored in the cherry hopper in open air over night before
+      the coffee is de-pulped in the morning. After de-pulping, the parchment coffee with the mucilage
+      on is fermented for 24 hours in clean stainless steel tanks. The coffee is then washed in clean
+      water by using an eco-mill. After washing the coffees are soaked for 24 hours in clean water in
+      tiled cement tanks. After the soaking stage the clean parchment coffee is dried in parabolic dryers
+      and drying beds covered with shade nets. Finca Tamana is a 57 hectare coffee plantation located
+      in the mountains between El Pital and La Plata in Huila Colombia. It was acquired by Elias Roa in
+      2011 after being abandoned for a while and today the farm is managed by Elias and his family.'
+hand_check:
+  price.listed_price:
+    a: 21.0
+    b: 21.0
+  price.listed_currency:
+    a: USD
+    b: USD
+  price.package_grams:
+    a: 250.0
+    b: 250.0
+  price.bags_count:
+    a: null
+    b: null
+  price.price_type:
+    a: one_time
+    b: one_time
+evidence:
+  a_snippets:
+  - field: name
+    snippet: Finca Tamana Bourbon
+  - field: origin
+    snippet: Colombia
+  - field: process
+    snippet: Washed
+  - field: variety
+    snippet: Bourbon, Pink Bourbon (Ethiopian)
+  - field: price
+    snippet: $21.00
+  - field: bag_size
+    snippet: 250g
+  - field: tasting_notes
+    snippet: A sweet and winey coffee with notes of flowers and red fruits.
+  - field: producer
+    snippet: Elias Roa & Bellanid Sanchez
+  b_snippets:
+  - field: name
+    snippet: Finca Tamana Bourbon
+  - field: tasting_notes
+    snippet: A sweet and winey coffee with notes of flowers and red fruits.
+  - field: tasting_notes
+    snippet: 'Flavour notes: Winey, red fruits & floral'
+  - field: variety
+    snippet: 'Cultivar: Bourbon, Pink Bourbon (Ethiopian)'
+  - field: producer
+    snippet: 'Producer: Elias Roa & Bellanid Sanchez'
+  - field: origin
+    snippet: 'Country: Colombia Region: El Pital, Huila'
+  - field: process
+    snippet: 'Process: Washed'
+  - field: harvest_period
+    snippet: 'Harvest date: May - June 2025'
+  - field: producer
+    snippet: Finca Tamana is a 57 hectare coffee plantation located in the mountains between El Pital
+      and La Plata in Huila Colombia.
+  - field: bag_size
+    snippet: 250g whole coffee beans
+  - field: price
+    snippet: $21.00
+  - field: roaster_country
+    snippet: All our coffees from Finca Tamana are vacuum packed before it is shipped to Norway.
+models:
+  a: gpt-4o-mini
+  b: gpt-5.5
+  prompt_id: dab81a86fe

@@ -1,0 +1,135 @@
+page_id: c0523b587d
+url: https://coffeecollective.dk/products/bombona-250-g
+final_url: https://coffeecollective.dk/products/bombona-250-g
+strata:
+- A
+review_status: PENDING
+instructions: 'Fill every null in draft_label by adjudicating disagreements against the snapshot text
+  (pages/{id}.txt), spot-check agreed values, and always hand-check the hand_check fields. Set review_status:
+  VERIFIED when done.'
+draft_label:
+  page_type: coffee_product
+  is_specialty_coffee: true
+  coffee.coffee_name: null
+  coffee.roaster: Coffee Collective
+  coffee.roaster_location: null
+  coffee.roaster_country: null
+  coffee.origin_country: Colombia
+  coffee.origin_region: Huila
+  coffee.process_method:
+  - Washed
+  coffee.variety:
+  - Colombia
+  coffee.producer_or_farm: Jhonathan Gasca
+  coffee.altitude: 1850 masl
+  coffee.roast_level: null
+  coffee.harvest_period: null
+  coffee.is_blend: false
+  coffee.is_espresso: false
+  coffee.is_decaf: false
+  coffee.is_coferment_or_infused: false
+  coffee.sensory_text: Bright and silky. Notes of caramel, blackberries and chocolate.
+  coffee.display_tasting_notes: caramel, blackberries, chocolate
+  coffee.producer_text: null
+  price.listed_price: 120.8
+  price.listed_currency: DKK
+  price.original_listed_price: null
+  price.original_listed_currency: null
+  price.bag_size_value: 250.0
+  price.bag_size_unit: g
+  price.package_grams: 250.0
+  price.bags_count: null
+  price.price_type: one_time
+  price.availability: in_stock
+disagreements:
+  coffee.coffee_name:
+    a: Bombona, 250g
+    b: Bombona
+  coffee.roaster_country:
+    a: unknown
+    b: Denmark
+  coffee.roast_level:
+    a: Whole bean coffee roasted for filter
+    b: null
+  coffee.producer_text:
+    a: A fruity, silky Colombia lot by Jhonathan Gasca. The Gasca family are fourth-generation coffee
+      farmers. They have focused on quality coffees during their time in charge of the farm.
+    b: 'Origin Huila, Colombia
+
+      Process Washed
+
+      Varieties Colombia
+
+      Altitude 1850 masl
+
+      Roast Whole bean coffee roasted for filter
+
+      Jhonathan Gasca Produced together with
+
+      A fruity, silky Colombia lot by Jhonathan Gasca. The Gasca family are fourth-generation coffee farmers.
+      They have focused on quality coffees during their time in charge of the farm.'
+hand_check:
+  price.listed_price:
+    a: 120.8
+    b: 120.8
+  price.listed_currency:
+    a: DKK
+    b: DKK
+  price.package_grams:
+    a: 250.0
+    b: 250.0
+  price.bags_count:
+    a: null
+    b: null
+  price.price_type:
+    a: one_time
+    b: one_time
+evidence:
+  a_snippets:
+  - field: name
+    snippet: Bombona, 250g
+  - field: origin
+    snippet: Huila, Colombia
+  - field: process
+    snippet: Washed
+  - field: variety
+    snippet: Colombia
+  - field: altitude
+    snippet: 1850 masl
+  - field: tasting_notes
+    snippet: Bright and silky. Notes of caramel, blackberries and chocolate.
+  - field: producer
+    snippet: Jhonathan Gasca
+  b_snippets:
+  - field: name
+    snippet: Bombona
+  - field: tasting_notes
+    snippet: Bright and silky. Notes of caramel, blackberries and chocolate.
+  - field: origin
+    snippet: 'Origin
+
+      Huila, Colombia'
+  - field: process
+    snippet: 'Process
+
+      Washed'
+  - field: variety
+    snippet: 'Varieties
+
+      Colombia'
+  - field: altitude
+    snippet: 'Altitude
+
+      1850 masl'
+  - field: producer
+    snippet: 'Jhonathan Gasca
+
+      Produced together with'
+  - field: roast
+    snippet: 'Roast
+
+      Whole bean coffee roasted for filter'
+models:
+  a: gpt-4o-mini
+  b: gpt-5.5
+  prompt_id: dab81a86fe

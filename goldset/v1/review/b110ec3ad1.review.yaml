@@ -1,0 +1,151 @@
+page_id: b110ec3ad1
+url: https://www.thebrickcoffee.ee/en/shop/tooted/el-salvador-las-nubes-1-1
+final_url: https://www.thebrickcoffee.ee/en/shop/tooted/el-salvador-las-nubes-1-1
+strata:
+- D
+review_status: PENDING
+instructions: 'Fill every null in draft_label by adjudicating disagreements against the snapshot text
+  (pages/{id}.txt), spot-check agreed values, and always hand-check the hand_check fields. Set review_status:
+  VERIFIED when done.'
+draft_label:
+  page_type: coffee_product
+  is_specialty_coffee: true
+  coffee.coffee_name: Pastor Ordoñez SL-28 Colombia
+  coffee.roaster: null
+  coffee.roaster_location: null
+  coffee.roaster_country: null
+  coffee.origin_country: Colombia
+  coffee.origin_region: Las Chinas, San Agustin, Huila
+  coffee.process_method:
+  - washed
+  coffee.variety:
+  - SL-28
+  coffee.producer_or_farm: null
+  coffee.altitude: 1800masl
+  coffee.roast_level: null
+  coffee.harvest_period: december - february
+  coffee.is_blend: false
+  coffee.is_espresso: false
+  coffee.is_decaf: false
+  coffee.is_coferment_or_infused: false
+  coffee.sensory_text: rhubarb, black currants, pear, yellow plum
+  coffee.display_tasting_notes: rhubarb, black currants, pear, yellow plum
+  coffee.producer_text: null
+  price.listed_price: 21.5
+  price.listed_currency: EUR
+  price.original_listed_price: null
+  price.original_listed_currency: null
+  price.bag_size_value: 250.0
+  price.bag_size_unit: g
+  price.package_grams: 250.0
+  price.bags_count: null
+  price.price_type: one_time
+  price.availability: null
+disagreements:
+  coffee.roaster:
+    a: unknown
+    b: The Brick Coffee
+  coffee.roaster_location:
+    a: unknown
+    b: null
+  coffee.roaster_country:
+    a: unknown
+    b: Estonia
+  coffee.producer_or_farm:
+    a: Finca El Placer
+    b: Pastor Ordoñez, Finca El Placer
+  coffee.roast_level:
+    a: null
+    b: Filter
+  coffee.producer_text:
+    a: 'farm: Finca El Placer, varietal: SL-28, washed, altitude: 1800masl, region: Las Chinas, San Agustin,
+      Huila, harvest: december - february, farm size: 4 ha'
+    b: 'farm: Finca El Placer
+
+      varietal: SL-28
+
+      processing: washed
+
+      altitude: 1800masl
+
+      region: Las Chinas, San Agustin, Huila
+
+      harvest: december - february
+
+      farm size: 4 ha
+
+      We were first introduced to Don Pastor and the Monkaaba Project through Semilla Coffee in 2025,
+      when we sourced his Pink Bourbon. Despite the region''s strong reputation, many smallholder farmers
+      still lack access to stable, sustainable markets. Monkaaba was created in response, built on a shared
+      vision of fairer trade, transparency, and dignity for producers.
+
+      Planting around 500 SL-28 trees as a small trial to see how the variety performs on his farm is
+      part of a broader move away from Caturra due to leaf rust pressure. Over the past 15 years, he has
+      gradually introduced varieties such as Gesha, Papayo and Pink Bourbon.
+
+      Cherries are first rested for 8 hours in sealed bags, then held in the depulper hopper for 12 hours
+      before depulping. The parchment dry-ferments for 36 hours, after which the coffee is washed 3-5
+      times and transferred to raised beds. Drying takes 18-30 days depending on sun intensity, with a
+      sliding roof used to control shade and slow the process when needed.'
+  price.availability:
+    a: in_stock
+    b: unknown
+hand_check:
+  price.listed_price:
+    a: 21.5
+    b: 21.5
+  price.listed_currency:
+    a: EUR
+    b: EUR
+  price.package_grams:
+    a: 250.0
+    b: 250.0
+  price.bags_count:
+    a: null
+    b: null
+  price.price_type:
+    a: one_time
+    b: one_time
+evidence:
+  a_snippets:
+  - field: name
+    snippet: Pastor Ordoñez SL-28 Colombia
+  - field: origin
+    snippet: Colombia
+  - field: process
+    snippet: washed
+  - field: variety
+    snippet: SL-28
+  - field: taste notes
+    snippet: rhubarb, black currants, pear, yellow plum
+  - field: producer
+    snippet: Finca El Placer
+  - field: altitude
+    snippet: 1800masl
+  b_snippets:
+  - field: name
+    snippet: Pastor Ordoñez SL-28 Colombia
+  - field: price
+    snippet: €21.50 – €65.00
+  - field: bag_size
+    snippet: Kogus --- 250g 1kg
+  - field: producer
+    snippet: 'farm: Finca El Placer'
+  - field: variety
+    snippet: 'varietal: SL-28'
+  - field: process
+    snippet: 'processing : washed'
+  - field: altitude
+    snippet: 'altitude: 1800masl'
+  - field: origin
+    snippet: 'region: Las Chinas, San Agustin, Huila'
+  - field: harvest
+    snippet: 'harvest: december - february'
+  - field: tasting_notes
+    snippet: 'taste notes: rhubarb, black currants, pear, yellow plum'
+  - field: roast_level
+    snippet: Röst Filter
+models:
+  a: gpt-4o-mini
+  b: gpt-5.5
+  prompt_id: dab81a86fe

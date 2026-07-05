@@ -1,0 +1,107 @@
+page_id: c0984e4abd
+url: https://www.target.com/p/dunkin-39-original-blend-whole-bean-medium-roast-coffee-18oz/-/A-91290408
+final_url: https://www.target.com/p/dunkin-39-original-blend-whole-bean-medium-roast-coffee-18oz/-/A-91290408
+strata:
+- G
+review_status: PENDING
+instructions: 'Fill every null in draft_label by adjudicating disagreements against the snapshot text
+  (pages/{id}.txt), spot-check agreed values, and always hand-check the hand_check fields. Set review_status:
+  VERIFIED when done.'
+draft_label:
+  page_type: coffee_product
+  is_specialty_coffee: false
+  coffee.coffee_name: null
+  coffee.roaster: Dunkin' Donuts
+  coffee.roaster_location: null
+  coffee.roaster_country: unknown
+  coffee.origin_country: unknown
+  coffee.origin_region: unknown
+  coffee.process_method:
+  - unknown
+  coffee.variety:
+  - unknown
+  coffee.producer_or_farm: null
+  coffee.altitude: null
+  coffee.roast_level: null
+  coffee.harvest_period: null
+  coffee.is_blend: null
+  coffee.is_espresso: false
+  coffee.is_decaf: false
+  coffee.is_coferment_or_infused: false
+  coffee.sensory_text: null
+  coffee.display_tasting_notes: null
+  coffee.producer_text: null
+  price.listed_price: null
+  price.listed_currency: null
+  price.original_listed_price: null
+  price.original_listed_currency: null
+  price.bag_size_value: 18.0
+  price.bag_size_unit: oz
+  price.package_grams: null
+  price.bags_count: null
+  price.price_type: unknown
+  price.availability: null
+disagreements:
+  coffee.coffee_name:
+    a: Dunkin' Original Blend Whole Bean Medium Roast Coffee
+    b: Dunkin' Original Blend Whole Bean Medium Roast Coffee - 18oz
+  coffee.roast_level:
+    a: Medium
+    b: Medium Roast
+  coffee.is_blend:
+    a: false
+    b: true
+  coffee.sensory_text:
+    a: unknown
+    b: ''
+  coffee.display_tasting_notes:
+    a: unknown
+    b: ''
+  coffee.producer_text:
+    a: unknown
+    b: ''
+  price.package_grams:
+    a: 510.291
+    b: 510.2914158
+  price.availability:
+    a: unknown
+    b: in_stock
+hand_check:
+  price.listed_price:
+    a: null
+    b: null
+  price.listed_currency:
+    a: null
+    b: null
+  price.package_grams:
+    a: 510.291
+    b: 510.2914158
+  price.bags_count:
+    a: null
+    b: null
+  price.price_type:
+    a: unknown
+    b: unknown
+evidence:
+  a_snippets:
+  - field: name
+    snippet: Dunkin' Original Blend Whole Bean Medium Roast Coffee
+  - field: roaster
+    snippet: Dunkin' Donuts
+  - field: roast_level
+    snippet: Medium
+  b_snippets:
+  - field: name
+    snippet: Dunkin' Original Blend Whole Bean Medium Roast Coffee - 18oz
+  - field: roaster
+    snippet: Shop all Dunkin' Donuts
+  - field: roast_level
+    snippet: Whole Bean Medium Roast Coffee
+  - field: bag_size
+    snippet: 18oz
+  - field: availability
+    snippet: Add to cart
+models:
+  a: gpt-4o-mini
+  b: gpt-5.5
+  prompt_id: dab81a86fe

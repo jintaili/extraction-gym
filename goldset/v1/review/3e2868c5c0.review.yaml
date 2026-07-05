@@ -1,0 +1,121 @@
+page_id: 3e2868c5c0
+url: https://coffeeprojectnyshop.square.site/product/-crowd-pleaser-house-espresso/52?cs=true&cst=custom
+final_url: https://coffeeprojectnyshop.square.site/product/-crowd-pleaser-house-espresso/52?cs=true&cst=custom
+strata:
+- B
+review_status: PENDING
+instructions: 'Fill every null in draft_label by adjudicating disagreements against the snapshot text
+  (pages/{id}.txt), spot-check agreed values, and always hand-check the hand_check fields. Set review_status:
+  VERIFIED when done.'
+draft_label:
+  page_type: coffee_product
+  is_specialty_coffee: true
+  coffee.coffee_name: null
+  coffee.roaster: Coffee Project New York
+  coffee.roaster_location: null
+  coffee.roaster_country: unknown
+  coffee.origin_country: blend_multi_origin
+  coffee.origin_region: null
+  coffee.process_method:
+  - natural
+  - washed
+  coffee.variety:
+  - unknown
+  coffee.producer_or_farm: null
+  coffee.altitude: null
+  coffee.roast_level: null
+  coffee.harvest_period: null
+  coffee.is_blend: true
+  coffee.is_espresso: true
+  coffee.is_decaf: false
+  coffee.is_coferment_or_infused: false
+  coffee.sensory_text: Black cherry, chocolate bar, honey. Medium acidity, syrupy body.
+  coffee.display_tasting_notes: null
+  coffee.producer_text: null
+  price.listed_price: null
+  price.listed_currency: null
+  price.original_listed_price: null
+  price.original_listed_currency: null
+  price.bag_size_value: 10.0
+  price.bag_size_unit: oz
+  price.package_grams: null
+  price.bags_count: null
+  price.price_type: unknown
+  price.availability: unknown
+disagreements:
+  coffee.coffee_name:
+    a: Crowd Pleaser House Espresso
+    b: '"Crowd Pleaser" House Espresso'
+  coffee.roaster_location:
+    a: null
+    b: New York
+  coffee.origin_region:
+    a: Ayarza, Huila
+    b: multi_origin
+  coffee.producer_or_farm:
+    a: cooperative in Ayarza, smallholder farm in Huila
+    b: cooperative in Ayarza; smallholder farm in Huila
+  coffee.display_tasting_notes:
+    a: Black cherry, chocolate, honey
+    b: Black cherry, chocolate bar, honey
+  coffee.producer_text:
+    a: Natural Guatemala from a cooperative in Ayarza and a washed Colombia from a smallholder farm in
+      Huila.
+    b: 'The Crowd Pleaser Espresso is a blend of two component coffees: a natural Guatemala from a cooperative
+      in Ayarza and a washed Colombia from a smallholder farm in Huila. We have cultivated ongoing relationships
+      with both of these producers since 2020 and have grown together to earn the title “relationship
+      coffee.” Over the years, the farm in Colombia has grown from 4 families to 12; long-term support
+      like ours allows for greater sales stability and therefore opportunities to invest in resources,
+      education, quality, and new initiatives. Our continued business contributes to uplifting entire
+      communities with coffee. While both of these coffees can hold their own as quality single origins,
+      we incorporate them into blends to elevate our house signatures, which are just as important to
+      us as the finest single origin Panama Gesha. In the Crowd Pleaser, these coffees unite in a blend
+      built for versatility and blending with milk, ice, sugar, and more.'
+  price.package_grams:
+    a: 283.5
+    b: 283.495231
+hand_check:
+  price.listed_price:
+    a: null
+    b: null
+  price.listed_currency:
+    a: null
+    b: null
+  price.package_grams:
+    a: 283.5
+    b: 283.495231
+  price.bags_count:
+    a: null
+    b: null
+  price.price_type:
+    a: unknown
+    b: unknown
+evidence:
+  a_snippets:
+  - field: name
+    snippet: Crowd Pleaser House Espresso
+  - field: origin
+    snippet: natural Guatemala from a cooperative in Ayarza and a washed Colombia from a smallholder farm
+      in Huila
+  - field: process
+    snippet: Natural, washed
+  - field: tasting_notes
+    snippet: Black cherry, chocolate bar, honey. Medium acidity, syrupy body.
+  b_snippets:
+  - field: name
+    snippet: 'Title: "Crowd Pleaser" House Espresso | Coffee Project New York'
+  - field: tasting_notes
+    snippet: We Taste:Black cherry, chocolate bar, honey. Medium acidity, syrupy body.
+  - field: origin
+    snippet: a natural Guatemala from a cooperative in Ayarza and a washed Colombia from a smallholder
+      farm in Huila
+  - field: process
+    snippet: a natural Guatemala ... and a washed Colombia
+  - field: producer
+    snippet: a cooperative in Ayarza ... a smallholder farm in Huila
+  - field: bag_size
+    snippet: 'Sizes: 10 oz. / 2 lb. / 5 lb.'
+models:
+  a: gpt-4o-mini
+  b: gpt-5.5
+  prompt_id: dab81a86fe

@@ -1,0 +1,136 @@
+page_id: 52915c5c1a
+url: https://coffeecollective.dk/products/familia-ccapa-250g
+final_url: https://coffeecollective.dk/products/familia-ccapa-250g
+strata:
+- A
+review_status: PENDING
+instructions: 'Fill every null in draft_label by adjudicating disagreements against the snapshot text
+  (pages/{id}.txt), spot-check agreed values, and always hand-check the hand_check fields. Set review_status:
+  VERIFIED when done.'
+draft_label:
+  page_type: coffee_product
+  is_specialty_coffee: true
+  coffee.coffee_name: Familia Ccapa
+  coffee.roaster: Coffee Collective
+  coffee.roaster_location: null
+  coffee.roaster_country: null
+  coffee.origin_country: Peru
+  coffee.origin_region: Cusco
+  coffee.process_method:
+  - Washed
+  coffee.variety:
+  - Typica
+  coffee.producer_or_farm: null
+  coffee.altitude: null
+  coffee.roast_level: Whole bean coffee roasted for filter
+  coffee.harvest_period: null
+  coffee.is_blend: false
+  coffee.is_espresso: false
+  coffee.is_decaf: false
+  coffee.is_coferment_or_infused: false
+  coffee.sensory_text: Elegant and smooth. Notes of milk chocolate, marzipan, and blueberries.
+  coffee.display_tasting_notes: milk chocolate, marzipan, blueberries
+  coffee.producer_text: null
+  price.listed_price: 124.0
+  price.listed_currency: DKK
+  price.original_listed_price: null
+  price.original_listed_currency: null
+  price.bag_size_value: 250.0
+  price.bag_size_unit: g
+  price.package_grams: 250.0
+  price.bags_count: null
+  price.price_type: one_time
+  price.availability: in_stock
+disagreements:
+  coffee.roaster_country:
+    a: unknown
+    b: Denmark
+  coffee.producer_or_farm:
+    a: null
+    b: Familia Ccapa
+  coffee.producer_text:
+    a: Produced together with 11,5 USD/KG
+    b: 'Origin
+
+      Cusco, Peru
+
+      Process
+
+      Washed
+
+      Varieties
+
+      Typica
+
+      Roast
+
+      Whole bean coffee roasted for filter
+
+      Produced together with
+
+      11,5 USD/KG
+
+      The price we''ve chosen to pay for the coffee based on quality'
+  price.original_listed_price:
+    a: null
+    b: 124.0
+  price.original_listed_currency:
+    a: null
+    b: DKK
+hand_check:
+  price.listed_price:
+    a: 124.0
+    b: 124.0
+  price.listed_currency:
+    a: DKK
+    b: DKK
+  price.package_grams:
+    a: 250.0
+    b: 250.0
+  price.bags_count:
+    a: null
+    b: null
+  price.price_type:
+    a: one_time
+    b: one_time
+evidence:
+  a_snippets:
+  - field: origin
+    snippet: 'Origin: Cusco, Peru'
+  - field: process
+    snippet: 'Process: Washed'
+  - field: variety
+    snippet: 'Varieties: Typica'
+  - field: tasting_notes
+    snippet: Notes of milk chocolate, marzipan, and blueberries.
+  b_snippets:
+  - field: name
+    snippet: Familia Ccapa
+  - field: origin
+    snippet: 'Origin
+
+      Cusco, Peru'
+  - field: process
+    snippet: 'Process
+
+      Washed'
+  - field: variety
+    snippet: 'Varieties
+
+      Typica'
+  - field: roast_level
+    snippet: 'Roast
+
+      Whole bean coffee roasted for filter'
+  - field: tasting_notes
+    snippet: Elegant and smooth. Notes of milk chocolate, marzipan, and blueberries.
+  - field: price
+    snippet: 'Buy
+
+      124 DKK'
+  - field: bag_size
+    snippet: 250 G
+models:
+  a: gpt-4o-mini
+  b: gpt-5.5
+  prompt_id: dab81a86fe

@@ -1,0 +1,119 @@
+page_id: f74ee80d9b
+url: https://drinkpassenger.com/products/fausto-romo-sidra-honey-honey-process-2025
+final_url: https://drinkpassenger.com/products/fausto-romo-sidra-honey-honey-process-2025?Size=250+g
+strata:
+- E
+review_status: PENDING
+instructions: 'Fill every null in draft_label by adjudicating disagreements against the snapshot text
+  (pages/{id}.txt), spot-check agreed values, and always hand-check the hand_check fields. Set review_status:
+  VERIFIED when done.'
+draft_label:
+  page_type: coffee_product
+  is_specialty_coffee: true
+  coffee.coffee_name: Fausto Romo Sidra - Honey Process - 2025
+  coffee.roaster: null
+  coffee.roaster_location: null
+  coffee.roaster_country: unknown
+  coffee.origin_country: Ecuador
+  coffee.origin_region: null
+  coffee.process_method:
+  - Honey Process
+  coffee.variety:
+  - Sidra
+  coffee.producer_or_farm: null
+  coffee.altitude: null
+  coffee.roast_level: null
+  coffee.harvest_period: null
+  coffee.is_blend: false
+  coffee.is_espresso: false
+  coffee.is_decaf: false
+  coffee.is_coferment_or_infused: false
+  coffee.sensory_text: null
+  coffee.display_tasting_notes: Lychee, Green Apple, Caramel
+  coffee.producer_text: Released alongside a washed process lot from the 2025 harvest at La Carolina in
+    Pichincha, Ecuador, this honey processed sidra variety separation from producer Fausto Romo exemplifies
+    why sidra has become synonymous with specialty coffees from Ecuador.
+  price.listed_price: 34.25
+  price.listed_currency: USD
+  price.original_listed_price: null
+  price.original_listed_currency: null
+  price.bag_size_value: 250.0
+  price.bag_size_unit: g
+  price.package_grams: 250.0
+  price.bags_count: null
+  price.price_type: one_time
+  price.availability: in_stock
+disagreements:
+  coffee.roaster:
+    a: unknown
+    b: null
+  coffee.roaster_location:
+    a: unknown
+    b: null
+  coffee.origin_region:
+    a: Pichincha
+    b: La Carolina, Pichincha
+  coffee.producer_or_farm:
+    a: Fausto Romo
+    b: Fausto Romo, La Carolina
+  coffee.harvest_period:
+    a: '2025'
+    b: 2025 harvest
+  coffee.sensory_text:
+    a: notably fruitier flavor profile, fresh raspberry, lychee, tangy green apple, caramel, subtle watermelon
+    b: Notes of Lychee, Green Apple, Caramel. Featuring a notably fruitier flavor profile compared to
+      its washed-process counterpart, we taste fresh raspberry and lychee in the cup as well as tangy
+      green apple, caramel, and subtle watermelon in the finish.
+hand_check:
+  price.listed_price:
+    a: 34.25
+    b: 34.25
+  price.listed_currency:
+    a: USD
+    b: USD
+  price.package_grams:
+    a: 250.0
+    b: 250.0
+  price.bags_count:
+    a: null
+    b: null
+  price.price_type:
+    a: one_time
+    b: one_time
+evidence:
+  a_snippets:
+  - field: origin
+    snippet: Ecuador
+  - field: process
+    snippet: Honey Process
+  - field: variety
+    snippet: Sidra
+  - field: producer
+    snippet: Fausto Romo
+  - field: harvest
+    snippet: '2025'
+  b_snippets:
+  - field: name
+    snippet: 'Title: Fausto Romo Sidra - Honey Process - 2025'
+  - field: origin
+    snippet: Ecuador
+  - field: origin_region
+    snippet: La Carolina in Pichincha, Ecuador
+  - field: process
+    snippet: Honey Process
+  - field: variety
+    snippet: sidra variety separation
+  - field: producer
+    snippet: producer Fausto Romo
+  - field: harvest_period
+    snippet: 2025 harvest
+  - field: tasting_notes
+    snippet: Notes of Lychee, Green Apple, Caramel
+  - field: bag_size
+    snippet: 250 g
+  - field: price
+    snippet: $34.25
+models:
+  a: gpt-4o-mini
+  b: gpt-5.5
+  prompt_id: dab81a86fe

@@ -1,0 +1,149 @@
+page_id: 6d81fa2397
+url: https://lacabra.com/products/hermanos-burbano
+final_url: https://lacabra.com/products/hermanos-burbano
+strata:
+- A
+review_status: PENDING
+instructions: 'Fill every null in draft_label by adjudicating disagreements against the snapshot text
+  (pages/{id}.txt), spot-check agreed values, and always hand-check the hand_check fields. Set review_status:
+  VERIFIED when done.'
+draft_label:
+  page_type: coffee_product
+  is_specialty_coffee: true
+  coffee.coffee_name: Hermanos Burbano
+  coffee.roaster: La Cabra
+  coffee.roaster_location: null
+  coffee.roaster_country: Denmark
+  coffee.origin_country: Colombia
+  coffee.origin_region: null
+  coffee.process_method:
+  - Washed
+  coffee.variety:
+  - Geisha
+  coffee.producer_or_farm: null
+  coffee.altitude: 2000 masl
+  coffee.roast_level: null
+  coffee.harvest_period: August 2025
+  coffee.is_blend: false
+  coffee.is_espresso: null
+  coffee.is_decaf: false
+  coffee.is_coferment_or_infused: false
+  coffee.sensory_text: null
+  coffee.display_tasting_notes: Jasmine, peach, oolong
+  coffee.producer_text: null
+  price.listed_price: 179.0
+  price.listed_currency: DKK
+  price.original_listed_price: null
+  price.original_listed_currency: null
+  price.bag_size_value: 200.0
+  price.bag_size_unit: g
+  price.package_grams: 200.0
+  price.bags_count: null
+  price.price_type: one_time
+  price.availability: sold_out
+disagreements:
+  coffee.roaster_location:
+    a: San Agustin
+    b: null
+  coffee.origin_region:
+    a: Huila
+    b: Huila, San Agustin
+  coffee.producer_or_farm:
+    a: Burbano brothers
+    b: Jose, Miguel and Jesus Burbano; Monkaaba project
+  coffee.is_espresso:
+    a: true
+    b: false
+  coffee.sensory_text:
+    a: A perfumed, sweet and balanced washed Geisha; aromas of jasmine, followed by soft, ripe peach and
+      a round oolong finish.
+    b: Jasmine, peach, oolong; This is a perfumed washed Geisha, the first export from the farm; we find
+      aromas of jasmine, followed by soft, ripe peach and a round oolong finish.
+  coffee.producer_text:
+    a: Produced by three brothers; Jose, Miguel and Jesus Burbano, members of the Monkaaba project; first
+      export from the farm.
+    b: 'Produced by three brothers; Jose, Miguel and Jesus Burbano, each members of the Monkaaba project
+      in San Agustin, Huila. Region: Huila. Altitude: 2000 masl. Varietal: Geisha. Process: Washed. Harvest:
+      August 2025. The Burbano brothers have all been members of Monkaaba for many years. Jose, Miguel
+      and Jesus grew up in a coffee family, and have always had the interests of coffee communities at
+      heart. Together, the brothers have aimed for top end quality, planting Geisha, Chiroso, Laurina
+      and Pacamara. 2025 saw the first exportable harvest from this 3.5 hectare plot, and we have purchased
+      the production of washed Geisha.'
+hand_check:
+  price.listed_price:
+    a: 179.0
+    b: 179.0
+  price.listed_currency:
+    a: DKK
+    b: DKK
+  price.package_grams:
+    a: 200.0
+    b: 200.0
+  price.bags_count:
+    a: null
+    b: null
+  price.price_type:
+    a: one_time
+    b: one_time
+evidence:
+  a_snippets:
+  - field: origin
+    snippet: Colombia
+  - field: process
+    snippet: Washed
+  - field: variety
+    snippet: Geisha
+  - field: price
+    snippet: Kr. 179,00 DKK
+  - field: bag_size
+    snippet: 200g
+  - field: tasting_notes
+    snippet: Jasmine, peach, oolong
+  - field: producer
+    snippet: Burbano brothers
+  - field: altitude
+    snippet: 2000 masl
+  b_snippets:
+  - field: name
+    snippet: 'Colombia
+
+      Hermanos Burbano'
+  - field: origin
+    snippet: The Burbanos are members of the Monkaaba project in San Agustin, Huila.
+  - field: producer
+    snippet: Produced by three brothers; Jose, Miguel and Jesus Burbano, each members of the Monkaaba
+      project in San Agustin, Huila.
+  - field: altitude
+    snippet: 'Altitude
+
+      2000 masl'
+  - field: variety
+    snippet: 'Varietal
+
+      Geisha'
+  - field: process
+    snippet: 'Process
+
+      Washed'
+  - field: harvest
+    snippet: 'Harvest
+
+      August 2025'
+  - field: tasting_notes
+    snippet: we find aromas of jasmine, followed by soft, ripe peach and a round oolong finish.
+  - field: price
+    snippet: 'Regular price
+
+      Kr. 179,00 DKK'
+  - field: bag_size
+    snippet: 'Amount
+
+      200g
+
+      Variant sold out or unavailable
+
+      1kg'
+models:
+  a: gpt-4o-mini
+  b: gpt-5.5
+  prompt_id: dab81a86fe

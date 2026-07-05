@@ -1,0 +1,123 @@
+page_id: f19616f060
+url: https://www.amazon.ae/Coffee-Planet-Breakfast-Specialty-Ground/dp/B07MV2WHXG
+final_url: https://www.amazon.ae/Coffee-Planet-Breakfast-Specialty-Ground/dp/B07MV2WHXG
+strata:
+- G
+review_status: PENDING
+instructions: 'Fill every null in draft_label by adjudicating disagreements against the snapshot text
+  (pages/{id}.txt), spot-check agreed values, and always hand-check the hand_check fields. Set review_status:
+  VERIFIED when done.'
+draft_label:
+  page_type: coffee_product
+  is_specialty_coffee: null
+  coffee.coffee_name: null
+  coffee.roaster: Coffee Planet
+  coffee.roaster_location: null
+  coffee.roaster_country: United Arab Emirates
+  coffee.origin_country: unknown
+  coffee.origin_region: unknown
+  coffee.process_method:
+  - unknown
+  coffee.variety: null
+  coffee.producer_or_farm: null
+  coffee.altitude: null
+  coffee.roast_level: Medium Roast
+  coffee.harvest_period: null
+  coffee.is_blend: false
+  coffee.is_espresso: false
+  coffee.is_decaf: false
+  coffee.is_coferment_or_infused: false
+  coffee.sensory_text: null
+  coffee.display_tasting_notes: Almonds, caramel, dark chocolate
+  coffee.producer_text: null
+  price.listed_price: 32.75
+  price.listed_currency: AED
+  price.original_listed_price: null
+  price.original_listed_currency: null
+  price.bag_size_value: 250.0
+  price.bag_size_unit: g
+  price.package_grams: 250.0
+  price.bags_count: null
+  price.price_type: one_time
+  price.availability: in_stock
+disagreements:
+  is_specialty_coffee:
+    a: null
+    b: false
+  coffee.coffee_name:
+    a: Coffee Planet Breakfast Specialty Coffee Ground
+    b: Coffee Planet Breakfast Specialty Coffee Ground - 250G
+  coffee.variety:
+    a:
+    - Breakfast Specialty Coffee
+    b:
+    - unknown
+  coffee.producer_or_farm:
+    a: unknown
+    b: null
+  coffee.altitude:
+    a: unknown
+    b: null
+  coffee.sensory_text:
+    a: A medium roast with a taste of almonds, caramel and dark chocolate.
+    b: 'Tasting Notes: A medium roast with a taste of almonds, caramel and dark chocolate.'
+  coffee.producer_text:
+    a: 100% Arabica Specialty Ground Coffee
+    b: 'Ingredients: 100% Arabica Specialty Ground Coffee. Country of Origin: United Arab Emirates. Freshly
+      roasted coffee, ground to suit a variety of brewing gadgets including cafetières, filter coffee
+      machines and drip coffee brew methods.'
+hand_check:
+  price.listed_price:
+    a: 32.75
+    b: 32.75
+  price.listed_currency:
+    a: AED
+    b: AED
+  price.package_grams:
+    a: 250.0
+    b: 250.0
+  price.bags_count:
+    a: null
+    b: null
+  price.price_type:
+    a: one_time
+    b: one_time
+evidence:
+  a_snippets:
+  - field: coffee_name
+    snippet: Coffee Planet Breakfast Specialty Coffee Ground
+  - field: roaster
+    snippet: Coffee Planet
+  - field: origin_country
+    snippet: United Arab Emirates
+  - field: roast_level
+    snippet: Medium Roast
+  - field: variety
+    snippet: Breakfast Specialty Coffee
+  - field: process
+    snippet: unknown
+  - field: tasting_notes
+    snippet: A medium roast with a taste of almonds, caramel and dark chocolate
+  b_snippets:
+  - field: name
+    snippet: Coffee Planet Breakfast Specialty Coffee Ground - 250G
+  - field: roaster
+    snippet: 'Brand: Coffee Planet'
+  - field: roaster_country
+    snippet: Country of Origin United Arab Emirates
+  - field: roast_level
+    snippet: Roasting level Medium Roast
+  - field: bag_size
+    snippet: 'Size: 250 g'
+  - field: price
+    snippet: One-time purchase AED32.75
+  - field: availability
+    snippet: In Stock
+  - field: tasting_notes
+    snippet: 'Tasting Notes: A medium roast with a taste of almonds, caramel and dark chocolate.'
+  - field: producer_text
+    snippet: Ingredients 100% Arabica Specialty Ground Coffee
+models:
+  a: gpt-4o-mini
+  b: gpt-5.5
+  prompt_id: dab81a86fe

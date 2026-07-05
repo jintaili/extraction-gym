@@ -1,0 +1,155 @@
+page_id: 54a84eba12
+url: https://shoebox.coffee/products/colombia-finca-los-angeles-gesha-washed
+final_url: https://shoebox.coffee/products/colombia-finca-los-angeles-gesha-washed
+strata:
+- A
+review_status: PENDING
+instructions: 'Fill every null in draft_label by adjudicating disagreements against the snapshot text
+  (pages/{id}.txt), spot-check agreed values, and always hand-check the hand_check fields. Set review_status:
+  VERIFIED when done.'
+draft_label:
+  page_type: coffee_product
+  is_specialty_coffee: true
+  coffee.coffee_name: Colombia Finca Los Angeles Gesha Washed
+  coffee.roaster: Shoebox Coffee
+  coffee.roaster_location: null
+  coffee.roaster_country: unknown
+  coffee.origin_country: Colombia
+  coffee.origin_region: Narino
+  coffee.process_method:
+  - Washed
+  coffee.variety:
+  - Gesha
+  coffee.producer_or_farm: Jose Ignacio Gomez Lopez // Finca Los Angeles
+  coffee.altitude: null
+  coffee.roast_level: null
+  coffee.harvest_period: null
+  coffee.is_blend: false
+  coffee.is_espresso: false
+  coffee.is_decaf: false
+  coffee.is_coferment_or_infused: null
+  coffee.sensory_text: null
+  coffee.display_tasting_notes: null
+  coffee.producer_text: null
+  price.listed_price: 25.0
+  price.listed_currency: USD
+  price.original_listed_price: null
+  price.original_listed_currency: null
+  price.bag_size_value: 125.0
+  price.bag_size_unit: g
+  price.package_grams: 125.0
+  price.bags_count: null
+  price.price_type: one_time
+  price.availability: sold_out
+disagreements:
+  coffee.roaster_location:
+    a: unknown
+    b: null
+  coffee.altitude:
+    a: over 2000masl
+    b: over 2,000masl
+  coffee.harvest_period:
+    a: null
+    b: This year's harvest
+  coffee.is_coferment_or_infused:
+    a: true
+    b: false
+  coffee.sensory_text:
+    a: honeycrisp apple, blood orange, honeysuckle
+    b: 'Tasting notes: honeycrisp apple, blood orange, honeysuckle. In the cup, we experienced an insane
+      transformation from hot to cold here, starting off with loud notes of honeycrisp apple, blood orange,
+      and honeysuckle before cooling into a predominantly floral and clean cup that consisted of apricot,
+      orange blossom, and jasmine, much like some washed Ethiopians we''ve had.'
+  coffee.display_tasting_notes:
+    a: honeycrisp apple, blood orange, honeysuckle
+    b: Honeycrisp apple, blood orange, honeysuckle, apricot, orange blossom, jasmine
+  coffee.producer_text:
+    a: José Ignacio Gómez López began planting specialty coffee in the 90s, one of the first in the surrounding
+      area of Buesaco to do so. Finca Los Angeles sits at over 2,000masl and covers roughly 9 hectares,
+      where José also plants various fruit trees and plantains for shade, allowing the coffee cherries
+      to ripen more slowly and promote nitrogen fixing in the soil. Finca Los Angeles is home to several
+      coffee varieties including gesha, pink bourbon, and papayo. Processing for this washed gesha lot
+      was extremely tightly controlled and documented, and includes an unusual step that we have begun
+      to see a bit more of this year. Coffees are first floated and sorted for defects before undergoing
+      a 24hr anaerobic held in cherry step, then after the mucilage is removed and the beans are fully
+      washed, they are left dry, without water in sealed tanks for 72 hours as a 'bulk' or 'spontaneous'
+      fermentation.
+    b: 'Region: Narino, Colombia
+
+      Producer: Jose Ignacio Gomez Lopez // Finca Los Angeles
+
+      Varietal: Gesha
+
+      Process: Washed
+
+      José Ignacio Gómez López began planting specialty coffee in the 90s, one of the first in the surrounding
+      area of Buesaco to do so. Finca Los Angeles sits at over 2,000masl and covers roughly 9 hectares,
+      where José also plants various fruit trees and plantains for shade, allowing the coffee cherries
+      to ripen more slowly and promote nitrogen fixing in the soil. Finca Los Angeles is home to several
+      coffee varieties including gesha, pink bourbon, and papayo. Processing for this washed gesha lot
+      was extremely tightly controlled and documented, and includes an unusual step that we have begun
+      to see a bit more of this year. Coffees are first floated and sorted for defects before undergoing
+      a 24hr anaerobic held in cherry step, then after the mucilage is removed and the beans are fully
+      washed, they are left dry, without water in sealed tanks for 72 hours as a "bulk" or "spontaneous"
+      fermentation. Both Alo''s moonshadow washed process and Durley Sanchez''s pink bourbon also utilized
+      this step, and we''ve found across all 3 coffees this creates an intensely unique and punchy floral
+      sweetness, as well as deepened complexity compared to standard washed processes. Last year we sourced
+      Finca Los Angeles''s washed gesha for an exclusive collab with Airworks Coffee and were absolutely
+      blown away by the clarity and complexity the green had to offer. This year''s harvest is no different,
+      and of the 3 Narino geshas we''ve had recently this one is hitting the hardest on the QC bench for
+      us. Source: PROCAAL'
+hand_check:
+  price.listed_price:
+    a: 25.0
+    b: 25.0
+  price.listed_currency:
+    a: USD
+    b: USD
+  price.package_grams:
+    a: 125.0
+    b: 125.0
+  price.bags_count:
+    a: null
+    b: null
+  price.price_type:
+    a: one_time
+    b: one_time
+evidence:
+  a_snippets:
+  - field: name
+    snippet: Colombia Finca Los Angeles Gesha Washed
+  - field: origin
+    snippet: 'Region: Narino, Colombia'
+  - field: process
+    snippet: 'Process: Washed'
+  - field: variety
+    snippet: 'Varietal: Gesha'
+  - field: tasting_notes
+    snippet: 'Tasting notes: honeycrisp apple, blood orange, honeysuckle'
+  - field: producer
+    snippet: 'Producer: Jose Ignacio Gomez Lopez // Finca Los Angeles'
+  - field: altitude
+    snippet: over 2000masl
+  b_snippets:
+  - field: name
+    snippet: Colombia Finca Los Angeles Gesha Washed
+  - field: origin
+    snippet: 'Region: Narino, Colombia'
+  - field: producer
+    snippet: 'Producer: Jose Ignacio Gomez Lopez // Finca Los Angeles'
+  - field: variety
+    snippet: 'Varietal: Gesha'
+  - field: process
+    snippet: 'Process: Washed'
+  - field: tasting_notes
+    snippet: 'Tasting notes: honeycrisp apple, blood orange, honeysuckle'
+  - field: altitude
+    snippet: Finca Los Angeles sits at over 2,000masl
+  - field: price
+    snippet: Regular price $25.00 USD
+  - field: bag_size
+    snippet: title=BC-25 - 125g; price=25.00 USD; package_grams=125.000g [default_for_inference]
+models:
+  a: gpt-4o-mini
+  b: gpt-5.5
+  prompt_id: dab81a86fe

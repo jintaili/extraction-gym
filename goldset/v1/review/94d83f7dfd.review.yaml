@@ -1,0 +1,82 @@
+page_id: 94d83f7dfd
+url: https://home.lamarzoccousa.com/espresso-machines/linea-mini/
+final_url: https://home.lamarzoccousa.com/espresso-machines/linea-mini/
+strata:
+- G
+review_status: PENDING
+instructions: 'Fill every null in draft_label by adjudicating disagreements against the snapshot text
+  (pages/{id}.txt), spot-check agreed values, and always hand-check the hand_check fields. Set review_status:
+  VERIFIED when done.'
+draft_label:
+  page_type: coffee_equipment
+  is_specialty_coffee: null
+  coffee.coffee_name: null
+  coffee.roaster: null
+  coffee.roaster_location: null
+  coffee.roaster_country: unknown
+  coffee.origin_country: unknown
+  coffee.origin_region: unknown
+  coffee.process_method:
+  - unknown
+  coffee.variety:
+  - unknown
+  coffee.producer_or_farm: null
+  coffee.altitude: null
+  coffee.roast_level: null
+  coffee.harvest_period: null
+  coffee.is_blend: false
+  coffee.is_espresso: false
+  coffee.is_decaf: false
+  coffee.is_coferment_or_infused: false
+  coffee.sensory_text: ''
+  coffee.display_tasting_notes: ''
+  coffee.producer_text: ''
+  price.listed_price: null
+  price.listed_currency: null
+  price.original_listed_price: null
+  price.original_listed_currency: null
+  price.bag_size_value: null
+  price.bag_size_unit: null
+  price.package_grams: null
+  price.bags_count: null
+  price.price_type: null
+  price.availability: unknown
+disagreements:
+  price.listed_price:
+    a: 6600.0
+    b: null
+  price.listed_currency:
+    a: USD
+    b: null
+  price.price_type:
+    a: one_time
+    b: unknown
+hand_check:
+  price.listed_price:
+    a: 6600.0
+    b: null
+  price.listed_currency:
+    a: USD
+    b: null
+  price.package_grams:
+    a: null
+    b: null
+  price.bags_count:
+    a: null
+    b: null
+  price.price_type:
+    a: one_time
+    b: unknown
+evidence:
+  a_snippets: []
+  b_snippets:
+  - field: page_type
+    snippet: Espresso machines
+  - field: name
+    snippet: Linea Mini
+  - field: equipment
+    snippet: technical specifications Height (in) 15 Width (in) 14.2 Depth (in) 21.3 Weight (lbs) 66
+models:
+  a: gpt-4o-mini
+  b: gpt-5.5
+  prompt_id: dab81a86fe

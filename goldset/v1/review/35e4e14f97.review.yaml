@@ -1,0 +1,129 @@
+page_id: 35e4e14f97
+url: https://philzcoffee.com/products/philtered-soul
+final_url: https://philzcoffee.com/products/philtered-soul
+strata:
+- B
+review_status: PENDING
+instructions: 'Fill every null in draft_label by adjudicating disagreements against the snapshot text
+  (pages/{id}.txt), spot-check agreed values, and always hand-check the hand_check fields. Set review_status:
+  VERIFIED when done.'
+draft_label:
+  page_type: coffee_product
+  is_specialty_coffee: null
+  coffee.coffee_name: Philtered Soul
+  coffee.roaster: Philz Coffee
+  coffee.roaster_location: null
+  coffee.roaster_country: unknown
+  coffee.origin_country: unknown
+  coffee.origin_region: unknown
+  coffee.process_method:
+  - unknown
+  coffee.variety:
+  - unknown
+  coffee.producer_or_farm: null
+  coffee.altitude: null
+  coffee.roast_level: null
+  coffee.harvest_period: null
+  coffee.is_blend: true
+  coffee.is_espresso: false
+  coffee.is_decaf: false
+  coffee.is_coferment_or_infused: null
+  coffee.sensory_text: null
+  coffee.display_tasting_notes: null
+  coffee.producer_text: null
+  price.listed_price: 22.5
+  price.listed_currency: USD
+  price.original_listed_price: null
+  price.original_listed_currency: null
+  price.bag_size_value: 16.0
+  price.bag_size_unit: oz
+  price.package_grams: null
+  price.bags_count: null
+  price.price_type: one_time
+  price.availability: null
+disagreements:
+  is_specialty_coffee:
+    a: true
+    b: false
+  coffee.is_coferment_or_infused:
+    a: false
+    b: true
+  coffee.sensory_text:
+    a: Philtered Soul has distinctively nutty flavors with a satisfying finish that’s sure to please your
+      soul.
+    b: 'Flavor Profile: Hazelnut Flavoring, Maple, Caramel
+
+      Acidity: Low
+
+      Body: Medium
+
+      Philtered Soul has distinctively nutty flavors with a satisfying finish that’s sure to please your
+      soul. Contains artificial hazelnut flavoring.'
+  coffee.display_tasting_notes:
+    a: Hazelnut, Maple, Caramel
+    b: Hazelnut flavoring, maple, caramel
+  coffee.producer_text:
+    a: Contains artificial hazelnut flavoring.
+    b: 'Philtered Soul has distinctively nutty flavors with a satisfying finish that’s sure to please
+      your soul. It’s the blend of choice for many frequent guests. Contains artificial hazelnut flavoring.
+
+      *Contains artificial hazelnut flavoring.'
+  price.package_grams:
+    a: 453.59237
+    b: 453.5923696
+  price.availability:
+    a: in_stock
+    b: unknown
+hand_check:
+  price.listed_price:
+    a: 22.5
+    b: 22.5
+  price.listed_currency:
+    a: USD
+    b: USD
+  price.package_grams:
+    a: 453.59237
+    b: 453.5923696
+  price.bags_count:
+    a: null
+    b: null
+  price.price_type:
+    a: one_time
+    b: one_time
+evidence:
+  a_snippets:
+  - field: name
+    snippet: Philtered Soul
+  - field: price
+    snippet: $22.50
+  - field: bag_size
+    snippet: 16oz
+  b_snippets:
+  - field: name
+    snippet: Philtered Soul
+  - field: roaster
+    snippet: Philtered Soul - Philz Coffee
+  - field: tasting_notes
+    snippet: 'Flavor Profile: Hazelnut Flavoring, Maple, Caramel'
+  - field: sensory_text
+    snippet: 'Acidity: Low
+
+      Body: Medium'
+  - field: bag_size
+    snippet: 'Size:
+
+      16oz'
+  - field: price
+    snippet: 'Add To Cart
+
+      -
+
+      $22.50'
+  - field: blend
+    snippet: It’s the blend of choice for many frequent guests.
+  - field: infused
+    snippet: Contains artificial hazelnut flavoring.
+models:
+  a: gpt-4o-mini
+  b: gpt-5.5
+  prompt_id: dab81a86fe

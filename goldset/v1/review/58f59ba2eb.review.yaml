@@ -1,0 +1,118 @@
+page_id: 58f59ba2eb
+url: https://timwendelboe.no/products/gachatha
+final_url: https://timwendelboe.no/products/gachatha
+strata:
+- A
+review_status: PENDING
+instructions: 'Fill every null in draft_label by adjudicating disagreements against the snapshot text
+  (pages/{id}.txt), spot-check agreed values, and always hand-check the hand_check fields. Set review_status:
+  VERIFIED when done.'
+draft_label:
+  page_type: coffee_product
+  is_specialty_coffee: true
+  coffee.coffee_name: Gachatha
+  coffee.roaster: Tim Wendelboe Coffee
+  coffee.roaster_location: null
+  coffee.roaster_country: Norway
+  coffee.origin_country: Kenya
+  coffee.origin_region: Nyeri
+  coffee.process_method:
+  - Washed
+  coffee.variety:
+  - SL28
+  - SL34
+  - Ruiru 11
+  - Batian
+  coffee.producer_or_farm: null
+  coffee.altitude: null
+  coffee.roast_level: null
+  coffee.harvest_period: December 2025
+  coffee.is_blend: false
+  coffee.is_espresso: false
+  coffee.is_decaf: false
+  coffee.is_coferment_or_infused: false
+  coffee.sensory_text: null
+  coffee.display_tasting_notes: Blackcurrants, blackberries, raisins
+  coffee.producer_text: null
+  price.listed_price: 19.0
+  price.listed_currency: USD
+  price.original_listed_price: null
+  price.original_listed_currency: null
+  price.bag_size_value: 250.0
+  price.bag_size_unit: g
+  price.package_grams: 250.0
+  price.bags_count: null
+  price.price_type: one_time
+  price.availability: in_stock
+disagreements:
+  coffee.producer_or_farm:
+    a: Several smallholders farmers
+    b: Gachatha wet mill; Several smallholders farmers
+  coffee.sensory_text:
+    a: intense fruity flavours of blackcurrants, blackberries and raisins
+    b: 'This Kenyan coffee from the Gachatha wet mill has intense fruity flavours of blackcurrants, blackberries
+      and raisins. Flavour notes: Blackcurrants, blackberries & raisins'
+  coffee.producer_text:
+    a: This coffee is produced by several hundred farmers, most of them growing the famous Kenyan SL28
+      and SL34 cultivars. While some have planted newer hybrids like Ruiru 11 and Batian you can clearly
+      taste the clean and fruity flavours in this coffee that are so common for the SL cultivars.
+    b: 'This coffee is produced by several hundred farmers, most of them growing the famous Kenyan SL28
+      and SL34 cultivars. While some have planted newer hybrids like Ruiru 11 and Batian you can clearly
+      taste the clean and fruity flavours in this coffee that are so common for the SL cultivars. Producer:
+      Several smallholders farmers. Country: Kenya. Region: Nyeri. Harvest date: December 2025. Process:
+      Washed. I have visited the Gachatha wet mill several times and even though it looks like most wet
+      mills do in Nyeri, it has proven to be one of the best producers of high quality coffees in the
+      area over many years.'
+hand_check:
+  price.listed_price:
+    a: 19.0
+    b: 19.0
+  price.listed_currency:
+    a: USD
+    b: USD
+  price.package_grams:
+    a: 250.0
+    b: 250.0
+  price.bags_count:
+    a: null
+    b: null
+  price.price_type:
+    a: one_time
+    b: one_time
+evidence:
+  a_snippets:
+  - field: name
+    snippet: Gachatha
+  - field: origin
+    snippet: Kenya
+  - field: process
+    snippet: Washed
+  - field: variety
+    snippet: SL28, SL34, Ruiru 11, Batian
+  - field: price
+    snippet: $19.00
+  - field: bag_size
+    snippet: 250g
+  b_snippets:
+  - field: name
+    snippet: Gachatha
+  - field: tasting_notes
+    snippet: 'Flavour notes: Blackcurrants, blackberries & raisins'
+  - field: origin
+    snippet: 'Country: Kenya Region: Nyeri'
+  - field: variety
+    snippet: 'Cultivar: SL28, SL34, Ruiru 11, Batian'
+  - field: producer
+    snippet: 'Producer: Several smallholders farmers'
+  - field: process
+    snippet: 'Process: Washed'
+  - field: harvest_period
+    snippet: 'Harvest date: December 2025'
+  - field: bag_size
+    snippet: 250g whole coffee beans
+  - field: price
+    snippet: Add to cart - $19.00
+models:
+  a: gpt-4o-mini
+  b: gpt-5.5
+  prompt_id: dab81a86fe

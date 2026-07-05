@@ -1,0 +1,122 @@
+page_id: 5ada5bba08
+url: https://drinkpassenger.com/products/ivan-gutierrez-sl28-washed-process-2025
+final_url: https://drinkpassenger.com/products/ivan-gutierrez-sl28-washed-process-2025?Size=250+g
+strata:
+- E
+review_status: PENDING
+instructions: 'Fill every null in draft_label by adjudicating disagreements against the snapshot text
+  (pages/{id}.txt), spot-check agreed values, and always hand-check the hand_check fields. Set review_status:
+  VERIFIED when done.'
+draft_label:
+  page_type: coffee_product
+  is_specialty_coffee: true
+  coffee.coffee_name: Ivan Gutierrez SL28 - 2025
+  coffee.roaster: null
+  coffee.roaster_location: null
+  coffee.roaster_country: unknown
+  coffee.origin_country: Costa Rica
+  coffee.origin_region: La Esmeralda
+  coffee.process_method:
+  - Washed Process
+  coffee.variety:
+  - SL28
+  coffee.producer_or_farm: null
+  coffee.altitude: null
+  coffee.roast_level: null
+  coffee.harvest_period: '2025'
+  coffee.is_blend: false
+  coffee.is_espresso: false
+  coffee.is_decaf: false
+  coffee.is_coferment_or_infused: false
+  coffee.sensory_text: null
+  coffee.display_tasting_notes: Toffee, Cranberry, Citrus
+  coffee.producer_text: null
+  price.listed_price: 48.5
+  price.listed_currency: USD
+  price.original_listed_price: null
+  price.original_listed_currency: null
+  price.bag_size_value: 250.0
+  price.bag_size_unit: g
+  price.package_grams: 250.0
+  price.bags_count: null
+  price.price_type: one_time
+  price.availability: sold_out
+disagreements:
+  coffee.roaster:
+    a: Passenger Coffee
+    b: null
+  coffee.producer_or_farm:
+    a: Ivan Gutierrez
+    b: Ivan Gutierrez; La Esmeralda
+  coffee.sensory_text:
+    a: flavors of tart cranberry, toffee, and citrus peel alongside subtle spices and botanicals in the
+      finish
+    b: Notes of Toffee, Cranberry, Citrus. As we’ve come to expect, the plant genetics of this classic
+      Kenyan SL28 variety shine through in this coffee with flavors of tart cranberry, toffee, and citrus
+      peel alongside subtle spices and botanicals in the finish.
+  coffee.producer_text:
+    a: This is our fifth consecutive year presenting SL28 and gesha separations from award-winning producer
+      Ivan Gutierrez.
+    b: This is our fifth consecutive year presenting SL28 and gesha separations from award-winning producer
+      Ivan Gutierrez. We had the opportunity to visit Ivan last fall and stay on his farm, La Esmeralda,
+      where we learned a bit more about how both weather challenges and beneficial farm investments have
+      impacted the flavor profile of his coffees over the years.
+  price.original_listed_price:
+    a: null
+    b: 48.5
+  price.original_listed_currency:
+    a: null
+    b: USD
+hand_check:
+  price.listed_price:
+    a: 48.5
+    b: 48.5
+  price.listed_currency:
+    a: USD
+    b: USD
+  price.package_grams:
+    a: 250.0
+    b: 250.0
+  price.bags_count:
+    a: null
+    b: null
+  price.price_type:
+    a: one_time
+    b: one_time
+evidence:
+  a_snippets:
+  - field: origin
+    snippet: Costa Rica
+  - field: producer
+    snippet: Ivan Gutierrez
+  - field: variety
+    snippet: SL28
+  - field: process
+    snippet: Washed Process
+  - field: tasting_notes
+    snippet: Notes of Toffee, Cranberry, Citrus
+  b_snippets:
+  - field: name
+    snippet: 'Title: Ivan Gutierrez SL28 - 2025'
+  - field: origin
+    snippet: Costa Rica
+  - field: process
+    snippet: Washed Process
+  - field: variety
+    snippet: plant genetics of this classic Kenyan SL28 variety
+  - field: producer
+    snippet: award-winning producer Ivan Gutierrez
+  - field: producer
+    snippet: stay on his farm, La Esmeralda
+  - field: tasting_notes
+    snippet: Notes of Toffee, Cranberry, Citrus
+  - field: price
+    snippet: $48.50
+  - field: bag_size
+    snippet: 250 g
+  - field: availability
+    snippet: Out of stock
+models:
+  a: gpt-4o-mini
+  b: gpt-5.5
+  prompt_id: dab81a86fe

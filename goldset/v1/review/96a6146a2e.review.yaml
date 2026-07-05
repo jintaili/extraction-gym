@@ -1,0 +1,155 @@
+page_id: 96a6146a2e
+url: https://coffeecollective.dk/products/nueva-alianza-gesha-250-g
+final_url: https://coffeecollective.dk/products/nueva-alianza-gesha-250-g
+strata:
+- A
+review_status: PENDING
+instructions: 'Fill every null in draft_label by adjudicating disagreements against the snapshot text
+  (pages/{id}.txt), spot-check agreed values, and always hand-check the hand_check fields. Set review_status:
+  VERIFIED when done.'
+draft_label:
+  page_type: coffee_product
+  is_specialty_coffee: true
+  coffee.coffee_name: Nueva Alianza Gesha
+  coffee.roaster: Coffee Collective
+  coffee.roaster_location: null
+  coffee.roaster_country: unknown
+  coffee.origin_country: Peru
+  coffee.origin_region: Cusco
+  coffee.process_method:
+  - Washed
+  coffee.variety:
+  - Gesha
+  coffee.producer_or_farm: null
+  coffee.altitude: 1820 masl
+  coffee.roast_level: Whole bean coffee roasted for filter
+  coffee.harvest_period: null
+  coffee.is_blend: false
+  coffee.is_espresso: false
+  coffee.is_decaf: false
+  coffee.is_coferment_or_infused: false
+  coffee.sensory_text: Balanced and aromatic. Floral aromas alongside notes of peach, citrus and muscovado
+    sugar.
+  coffee.display_tasting_notes: Floral, peach, citrus, muscovado sugar
+  coffee.producer_text: null
+  price.listed_price: null
+  price.listed_currency: DKK
+  price.original_listed_price: null
+  price.original_listed_currency: null
+  price.bag_size_value: 250.0
+  price.bag_size_unit: g
+  price.package_grams: 250.0
+  price.bags_count: null
+  price.price_type: one_time
+  price.availability: in_stock
+disagreements:
+  coffee.producer_or_farm:
+    a: Dwight Aguilar
+    b: Dwight Aguilar; Nueva Allianza
+  coffee.producer_text:
+    a: Dwight Aguilar grew up on his farm, Nueva Allianza, and has farmed it since a young age.
+    b: 'Origin
+
+      Cusco, Peru
+
+      Process
+
+      Washed
+
+      Varieties
+
+      Gesha
+
+      Altitude
+
+      1820 masl
+
+      Roast
+
+      Whole bean coffee roasted for filter
+
+      Dwight Aguilar
+
+      Produced together with
+
+      22,05 USD/KG
+
+      The price we''ve chosen to pay for the coffee based on quality
+
+      Dwight Aguilar grew up on his farm, Nueva Allianza, and has farmed it since a young age.'
+  price.listed_price:
+    a: 159.0
+    b: 159.2
+hand_check:
+  price.listed_price:
+    a: 159.0
+    b: 159.2
+  price.listed_currency:
+    a: DKK
+    b: DKK
+  price.package_grams:
+    a: 250.0
+    b: 250.0
+  price.bags_count:
+    a: null
+    b: null
+  price.price_type:
+    a: one_time
+    b: one_time
+evidence:
+  a_snippets:
+  - field: origin
+    snippet: Cusco, Peru
+  - field: process
+    snippet: Washed
+  - field: variety
+    snippet: Gesha
+  - field: price
+    snippet: 159 DKK
+  - field: bag_size
+    snippet: 250 G
+  - field: tasting_notes
+    snippet: Balanced and aromatic. Floral aromas alongside notes of peach, citrus and muscovado sugar.
+  - field: producer
+    snippet: Dwight Aguilar
+  - field: altitude
+    snippet: 1820 masl
+  b_snippets:
+  - field: name
+    snippet: Nueva Alianza Gesha
+  - field: origin
+    snippet: 'Origin
+
+      Cusco, Peru'
+  - field: process
+    snippet: 'Process
+
+      Washed'
+  - field: variety
+    snippet: 'Varieties
+
+      Gesha'
+  - field: altitude
+    snippet: 'Altitude
+
+      1820 masl'
+  - field: roast_level
+    snippet: 'Roast
+
+      Whole bean coffee roasted for filter'
+  - field: producer
+    snippet: 'Dwight Aguilar
+
+      Produced together with'
+  - field: tasting_notes
+    snippet: Balanced and aromatic. Floral aromas alongside notes of peach, citrus and muscovado sugar.
+  - field: price
+    snippet: 'Buy
+
+      159 DKK'
+  - field: bag_size
+    snippet: 250 G
+models:
+  a: gpt-4o-mini
+  b: gpt-5.5
+  prompt_id: dab81a86fe

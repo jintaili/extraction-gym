@@ -21,11 +21,19 @@ def main() -> None:
     verify = sub.add_parser("verify", help="Verify gold set page checksums")
     verify.add_argument("--goldset", default="goldset/v1")
 
+    pre = sub.add_parser("prelabel", help="Run two extractors over all snapshots; write review files")
+    pre.add_argument("--goldset", default="goldset/v1")
+    pre.add_argument("--models", nargs=2, metavar=("UNDER_TEST", "FRONTIER"), required=True)
+    pre.add_argument("--limit", type=int, default=None)
+    pre.add_argument("--concurrency", type=int, default=4)
+
     args = parser.parse_args()
     if args.command == "snapshot":
         _cmd_snapshot(args)
     elif args.command == "verify":
         _cmd_verify(args)
+    elif args.command == "prelabel":
+        _cmd_prelabel(args)
 
 
 def _cmd_snapshot(args: argparse.Namespace) -> None:
@@ -43,6 +51,21 @@ def _cmd_snapshot(args: argparse.Namespace) -> None:
     )
     action = "stored" if stored.created else "exists (strata merged)"
     print(f"{stored.page_id}  {action}  strata={','.join(stored.strata) or '-'}  chars={stored.chars}")
+
+
+def _cmd_prelabel(args: argparse.Namespace) -> None:
+    from extraction_gym.core.prelabel import prelabel_goldset
+
+    summary = asyncio.run(
+        prelabel_goldset(
+            Path(args.goldset), models=list(args.models), concurrency=args.concurrency, limit=args.limit
+        )
+    )
+    for line in summary["lines"]:
+        print(line)
+    print(f"pages: {summary['pages']}")
+    for model, t in summary["totals"].items():
+        print(f"{model}: {t['api_calls']} calls, {t['input_tokens']} in / {t['output_tokens']} out tokens")
 
 
 def _cmd_verify(args: argparse.Namespace) -> None:

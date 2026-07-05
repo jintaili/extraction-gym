@@ -1,0 +1,160 @@
+page_id: 672c1b9795
+url: https://lovelesscoffees.coffee/products/yessica-parra-natural-gesha-pitalito-colombia?variant=48665088589979
+final_url: https://lovelesscoffees.coffee/products/yessica-parra-natural-gesha-pitalito-colombia?variant=48665088589979
+strata:
+- E
+review_status: PENDING
+instructions: 'Fill every null in draft_label by adjudicating disagreements against the snapshot text
+  (pages/{id}.txt), spot-check agreed values, and always hand-check the hand_check fields. Set review_status:
+  VERIFIED when done.'
+draft_label:
+  page_type: coffee_product
+  is_specialty_coffee: true
+  coffee.coffee_name: Yessica Parra - Natural Gesha - Pitalito, Colombia *Roasted 6/16/26*
+  coffee.roaster: Loveless Coffees
+  coffee.roaster_location: null
+  coffee.roaster_country: null
+  coffee.origin_country: Colombia
+  coffee.origin_region: null
+  coffee.process_method:
+  - Natural
+  coffee.variety:
+  - Gesha
+  coffee.producer_or_farm: Yessica & Diego Parra
+  coffee.altitude: 1750m
+  coffee.roast_level: null
+  coffee.harvest_period: Winter 2025-2026
+  coffee.is_blend: false
+  coffee.is_espresso: false
+  coffee.is_decaf: false
+  coffee.is_coferment_or_infused: false
+  coffee.sensory_text: null
+  coffee.display_tasting_notes: null
+  coffee.producer_text: null
+  price.listed_price: 25.0
+  price.listed_currency: USD
+  price.original_listed_price: null
+  price.original_listed_currency: null
+  price.bag_size_value: 4.0
+  price.bag_size_unit: oz
+  price.package_grams: 113.398
+  price.bags_count: null
+  price.price_type: one_time
+  price.availability: null
+disagreements:
+  coffee.roaster_location:
+    a: Pitalito, Huila
+    b: null
+  coffee.roaster_country:
+    a: Colombia
+    b: unknown
+  coffee.origin_region:
+    a: Huila
+    b: Pitalito, Huila
+  coffee.sensory_text:
+    a: Coffee from Colombia can't be easily generalized, but it's particularly famous for malic acidity
+      (think apple & pear), big sweetness, and delicate florals on the aroma. The final product is very
+      sweet, and presents distinctive winey flavors and red fruit acidity.
+    b: malic acidity (think apple & pear), big sweetness, and delicate florals on the aroma. The final
+      product is very sweet, and presents distinctive winey flavors and red fruit acidity.
+  coffee.display_tasting_notes:
+    a: Malic acidity, sweetness, florals, winey flavors, red fruit acidity
+    b: Apple, pear, florals, winey, red fruit
+  coffee.producer_text:
+    a: 'Producer: Yessica & Diego Parra, Location: Pitalito, Huila, Colombia, Variety: Gesha, Process:
+      Natural, Altitude: 1750m, Harvest: Winter 2025-2026'
+    b: 'Category: Rare
+
+      Producer: Yessica & Diego Parra
+
+      Location: Pitalito, Huila, Colombia
+
+      Variety: Gesha
+
+      Process: Natural
+
+      Harvest: Winter 2025-2026
+
+      Farm Altitude: 1750m
+
+      Importer: Unblended Coffee
+
+      Contract Price: $16.40 per pound
+
+      Colombian coffee producers are incredibly innovative. In response to decades devastating coffee
+      rust disease, they developed high quality disease resistant varietals like Colombia and Castillo.
+      As the specialty coffee industry has evolved, they''ve been at the forefront inventing delicious
+      new techniques for fermenting coffee, vastly expanding the range of flavors possible in the cup.
+      Coffee from Colombia can''t be easily generalized, but it''s particularly famous for malic acidity
+      (think apple & pear), big sweetness, and delicate florals on the aroma.
+
+      The oldest method of processing coffee. The coffee cherries are dried in the sun with skin and mucilage
+      intact before de-pulping, leading to significant changes in flavor, sweetness, and acidity. The
+      process is overall simpler than washed, but to produce high quality natural coffees a lot of monitoring
+      and care is necessary, requiring the constant removal of individual cherries that begin to rot or
+      over-ferment. The final product is very sweet, and presents distinctive winey flavors and red fruit
+      acidity.'
+  price.availability:
+    a: sold_out
+    b: unknown
+hand_check:
+  price.listed_price:
+    a: 25.0
+    b: 25.0
+  price.listed_currency:
+    a: USD
+    b: USD
+  price.package_grams:
+    a: 113.398
+    b: 113.398
+  price.bags_count:
+    a: null
+    b: null
+  price.price_type:
+    a: one_time
+    b: one_time
+evidence:
+  a_snippets:
+  - field: name
+    snippet: Yessica Parra - Natural Gesha - Pitalito, Colombia *Roasted 6/16/26*
+  - field: origin
+    snippet: Pitalito, Huila, Colombia
+  - field: process
+    snippet: Natural
+  - field: variety
+    snippet: Gesha
+  - field: price
+    snippet: $25.00 USD
+  - field: bag_size
+    snippet: 4oz
+  - field: tasting_notes
+    snippet: malic acidity, sweetness, florals, winey flavors, red fruit acidity
+  - field: producer
+    snippet: Yessica & Diego Parra
+  - field: altitude
+    snippet: 1750m
+  b_snippets:
+  - field: name
+    snippet: Yessica Parra - Natural Gesha - Pitalito, Colombia *Roasted 6/16/26*
+  - field: roaster
+    snippet: Loveless Coffees
+  - field: origin
+    snippet: 'Location: Pitalito, Huila, Colombia'
+  - field: producer
+    snippet: 'Producer: Yessica & Diego Parra'
+  - field: variety
+    snippet: 'Variety: Gesha'
+  - field: process
+    snippet: 'Process: Natural'
+  - field: harvest_period
+    snippet: 'Harvest: Winter 2025-2026'
+  - field: altitude
+    snippet: 'Farm Altitude: 1750m'
+  - field: tasting_notes
+    snippet: malic acidity (think apple & pear), big sweetness, and delicate florals on the aroma
+  - field: tasting_notes
+    snippet: very sweet, and presents distinctive winey flavors and red fruit acidity
+models:
+  a: gpt-4o-mini
+  b: gpt-5.5
+  prompt_id: dab81a86fe

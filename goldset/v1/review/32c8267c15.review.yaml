@@ -1,0 +1,127 @@
+page_id: 32c8267c15
+url: https://aviary.coffee/collections/2026-season-coffees/products/025-maria-nieves
+final_url: https://aviary.coffee/collections/2026-season-coffees/products/025-maria-nieves
+strata:
+- A
+review_status: PENDING
+instructions: 'Fill every null in draft_label by adjudicating disagreements against the snapshot text
+  (pages/{id}.txt), spot-check agreed values, and always hand-check the hand_check fields. Set review_status:
+  VERIFIED when done.'
+draft_label:
+  page_type: coffee_product
+  is_specialty_coffee: true
+  coffee.coffee_name: 025 - Maria Nieves
+  coffee.roaster: Aviary
+  coffee.roaster_location: null
+  coffee.roaster_country: unknown
+  coffee.origin_country: Peru
+  coffee.origin_region: null
+  coffee.process_method:
+  - fermented in cherry for 12 hours
+  - pulped and floated
+  - fermented in tile tanks under water for 24 hours
+  - washed
+  - dried on raised beds under shade for 20-25 days
+  coffee.variety:
+  - Gesha
+  coffee.producer_or_farm: null
+  coffee.altitude: 1850 masl
+  coffee.roast_level: Light
+  coffee.harvest_period: September 2025
+  coffee.is_blend: false
+  coffee.is_espresso: false
+  coffee.is_decaf: false
+  coffee.is_coferment_or_infused: false
+  coffee.sensory_text: null
+  coffee.display_tasting_notes: raspberry, bergamot, passionfruit, tangerine, jasmine
+  coffee.producer_text: null
+  price.listed_price: 42.0
+  price.listed_currency: USD
+  price.original_listed_price: null
+  price.original_listed_currency: null
+  price.bag_size_value: 200.0
+  price.bag_size_unit: g
+  price.package_grams: 200.0
+  price.bags_count: null
+  price.price_type: one_time
+  price.availability: sold_out
+disagreements:
+  coffee.origin_region:
+    a: Cajamarca
+    b: Barro Negro, Cajamarca
+  coffee.producer_or_farm:
+    a: Maria Nieves Tantalean Fernandez, Alpes Andinos
+    b: Maria Nieves at El Chin Chin
+  coffee.sensory_text:
+    a: a complex, mouth-filling, bright, vibrant coffee with notes of bergamot, rosehip, passionfruit,
+      raspberry and tangerine
+    b: 'a complex, mouth-filling, bright, vibrant coffee with notes of bergamot, rosehip, passionfruit,
+      raspberry and tangerine. TASTING NOTES: Bright raspberry, bergamot, passionfruit, tangerine and
+      jasmine. ACIDITY: Bright and articulate citrus acidity. FUNK: Very little; some slight jammy blackberry/blueberry
+      but presents as bright and ripe'
+  coffee.producer_text:
+    a: Gesha grown at 1850 masl using organic methods by Maria Nieves at El Chin Chin in Barro Negro,
+      Cajamarca, Peru; selectively hand-picked and sorted in September 2025.
+    b: Gesha grown at 1850 masl using organic methods by Maria Nieves at El Chin Chin in Barro Negro,
+      Cajamarca, Peru; selectively hand-picked and sorted in September 2025; fermented in cherry for 12
+      hours; pulped and floated; fermented in tile tanks under water for 24 hours; washed; dried on raised
+      beds under shade for 20-25 days; exported through ASPROCAFE; imported by Yellow Rooster
+hand_check:
+  price.listed_price:
+    a: 42.0
+    b: 42.0
+  price.listed_currency:
+    a: USD
+    b: USD
+  price.package_grams:
+    a: 200.0
+    b: 200.0
+  price.bags_count:
+    a: null
+    b: null
+  price.price_type:
+    a: one_time
+    b: one_time
+evidence:
+  a_snippets:
+  - field: name
+    snippet: 025 - Maria Nieves
+  - field: origin
+    snippet: Cajamarca, Peru
+  - field: process
+    snippet: fermented in cherry for 12 hours, pulped and floated, fermented in tile tanks under water
+      for 24 hours, washed, dried on raised beds under shade for 20-25 days
+  - field: variety
+    snippet: Gesha
+  - field: sizing
+    snippet: 200g
+  b_snippets:
+  - field: name
+    snippet: 025 - Maria Nieves
+  - field: price
+    snippet: Regular price $42.00
+  - field: bag_size
+    snippet: Size 200g
+  - field: roast_level
+    snippet: 200g / Light - Sold Out
+  - field: availability
+    snippet: Sold Out
+  - field: tasting_notes
+    snippet: 'TASTING NOTES: Bright raspberry, bergamot, passionfruit, tangerine and jasmine'
+  - field: origin
+    snippet: El Chin Chin in Barro Negro, Cajamarca, Peru
+  - field: variety
+    snippet: Gesha grown at 1850 masl
+  - field: altitude
+    snippet: 1850 masl
+  - field: producer
+    snippet: Maria Nieves at El Chin Chin
+  - field: process
+    snippet: fermented in cherry for 12 hours; pulped and floated; fermented in tile tanks under water
+      for 24 hours; washed; dried on raised beds under shade for 20-25 days
+  - field: harvest_period
+    snippet: selectively hand-picked and sorted in September 2025
+models:
+  a: gpt-4o-mini
+  b: gpt-5.5
+  prompt_id: dab81a86fe

@@ -1,0 +1,120 @@
+page_id: cc79f136ae
+url: https://shop.leavescoffee.jp/products/subscription
+final_url: https://shop.leavescoffee.jp/products/subscription
+strata:
+- F
+review_status: PENDING
+instructions: 'Fill every null in draft_label by adjudicating disagreements against the snapshot text
+  (pages/{id}.txt), spot-check agreed values, and always hand-check the hand_check fields. Set review_status:
+  VERIFIED when done.'
+draft_label:
+  page_type: coffee_product
+  is_specialty_coffee: null
+  coffee.coffee_name: Subscription
+  coffee.roaster: Leaves Coffee Roasters
+  coffee.roaster_location: null
+  coffee.roaster_country: null
+  coffee.origin_country: unknown
+  coffee.origin_region: unknown
+  coffee.process_method:
+  - unknown
+  coffee.variety:
+  - unknown
+  coffee.producer_or_farm: null
+  coffee.altitude: null
+  coffee.roast_level: null
+  coffee.harvest_period: null
+  coffee.is_blend: null
+  coffee.is_espresso: false
+  coffee.is_decaf: false
+  coffee.is_coferment_or_infused: false
+  coffee.sensory_text: null
+  coffee.display_tasting_notes: null
+  coffee.producer_text: null
+  price.listed_price: 26.0
+  price.listed_currency: USD
+  price.original_listed_price: null
+  price.original_listed_currency: null
+  price.bag_size_value: null
+  price.bag_size_unit: g
+  price.package_grams: 400.0
+  price.bags_count: null
+  price.price_type: subscription
+  price.availability: null
+disagreements:
+  coffee.roaster_country:
+    a: unknown
+    b: Japan
+  coffee.producer_or_farm:
+    a: unknown
+    b: null
+  coffee.altitude:
+    a: unknown
+    b: null
+  coffee.is_blend:
+    a: false
+    b: true
+  coffee.sensory_text:
+    a: unknown
+    b: ''
+  coffee.display_tasting_notes:
+    a: unknown
+    b: ''
+  coffee.producer_text:
+    a: unknown
+    b: We select one member-only origin that only subscribers can enjoy, and one seasonal origin from
+      the daily lineup. The amount of beans delivered is 200g × 2 kinds, for a total of 400g, so you can
+      enjoy one cup per day for 30 days using the original recipe included at delivery. Shipped on the
+      10th of every month. Domestic delivery is free; overseas shipping is also available but costs extra.
+  price.bag_size_value:
+    a: 400.0
+    b: 200.0
+  price.bags_count:
+    a: null
+    b: 2
+  price.availability:
+    a: unknown
+    b: in_stock
+hand_check:
+  price.listed_price:
+    a: 26.0
+    b: 26.0
+  price.listed_currency:
+    a: USD
+    b: USD
+  price.package_grams:
+    a: 400.0
+    b: 400.0
+  price.bags_count:
+    a: null
+    b: 2
+  price.price_type:
+    a: subscription
+    b: subscription
+evidence:
+  a_snippets:
+  - field: name
+    snippet: Subscription
+  - field: roaster
+    snippet: Leaves Coffee Roasters
+  b_snippets:
+  - field: name
+    snippet: 'Leaves Coffee Roasters
+
+      Subscription'
+  - field: roaster
+    snippet: Leaves Coffee Roasters
+  - field: producer_text
+    snippet: ご登録者の皆さまだけが楽しめるメンバー限定のオリジンを1種類と、デイリーのラインナップからその時の旬なオリジンを1種類選定いたします。
+  - field: bag_size
+    snippet: 200g × 2種類で計400g
+  - field: subscription
+    snippet: 毎月10日に発送するので
+  - field: price
+    snippet: '通常価格
+
+      $26.00 USD'
+models:
+  a: gpt-4o-mini
+  b: gpt-5.5
+  prompt_id: dab81a86fe

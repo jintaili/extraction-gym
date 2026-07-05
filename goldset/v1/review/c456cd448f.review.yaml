@@ -1,0 +1,134 @@
+page_id: c456cd448f
+url: https://www.drinktrade.com/products/pump-house?variant=45942406873407
+final_url: https://www.drinktrade.com/products/pump-house?variant=45942406873407
+strata:
+- B
+review_status: PENDING
+instructions: 'Fill every null in draft_label by adjudicating disagreements against the snapshot text
+  (pages/{id}.txt), spot-check agreed values, and always hand-check the hand_check fields. Set review_status:
+  VERIFIED when done.'
+draft_label:
+  page_type: coffee_product
+  is_specialty_coffee: true
+  coffee.coffee_name: The Optimist Blend
+  coffee.roaster: Bird Rock
+  coffee.roaster_location: San Diego, CA
+  coffee.roaster_country: null
+  coffee.origin_country: null
+  coffee.origin_region: null
+  coffee.process_method:
+  - Washed
+  coffee.variety:
+  - unknown
+  coffee.producer_or_farm: null
+  coffee.altitude: null
+  coffee.roast_level: Medium
+  coffee.harvest_period: null
+  coffee.is_blend: true
+  coffee.is_espresso: false
+  coffee.is_decaf: false
+  coffee.is_coferment_or_infused: false
+  coffee.sensory_text: null
+  coffee.display_tasting_notes: Chocolate, Caramel, Cherry
+  coffee.producer_text: null
+  price.listed_price: 21.99
+  price.listed_currency: USD
+  price.original_listed_price: null
+  price.original_listed_currency: null
+  price.bag_size_value: 10.0
+  price.bag_size_unit: oz
+  price.package_grams: null
+  price.bags_count: null
+  price.price_type: one_time
+  price.availability: in_stock
+disagreements:
+  coffee.roaster_country:
+    a: unknown
+    b: United States
+  coffee.origin_country:
+    a: Colombia, Brazil, Sulawesi
+    b: blend_multi_origin
+  coffee.origin_region:
+    a: unknown
+    b: multi_origin
+  coffee.producer_or_farm:
+    a: unknown
+    b: null
+  coffee.altitude:
+    a: unknown
+    b: null
+  coffee.sensory_text:
+    a: Big caramel sweetness and just a hint of fruity acidity make this coffee perfect for any brew method.
+    b: 'Syrupy & Smooth. Big caramel sweetness and just a hint of fruity acidity make this coffee perfect
+      for any brew method (formerly known as Pump House). Tasting Notes: Chocolate, Caramel, Cherry.'
+  coffee.producer_text:
+    a: unknown
+    b: 'Origin & Sourcing. Country Of Origin: Colombia, Brazil, Sulawesi. Process: Washed. Since 2006,
+      this San Diego roaster has sourced exclusively from top-tier growers and fostered supportive long-term
+      relationships with its partners.'
+  price.package_grams:
+    a: 283.5
+    b: 283.495231
+hand_check:
+  price.listed_price:
+    a: 21.99
+    b: 21.99
+  price.listed_currency:
+    a: USD
+    b: USD
+  price.package_grams:
+    a: 283.5
+    b: 283.495231
+  price.bags_count:
+    a: null
+    b: null
+  price.price_type:
+    a: one_time
+    b: one_time
+evidence:
+  a_snippets:
+  - field: origin
+    snippet: Country Of Origin Colombia, Brazil, Sulawesi
+  - field: process
+    snippet: Process Washed
+  - field: tasting_notes
+    snippet: Chocolate, Caramel, Cherry
+  - field: roast
+    snippet: Roast Level Medium
+  - field: blend
+    snippet: Blends
+  b_snippets:
+  - field: name
+    snippet: The Optimist Blend
+  - field: roaster
+    snippet: Bird Rock
+  - field: roaster_location
+    snippet: 'ABOUT THE ROASTER
+
+      San Diego, CA'
+  - field: price
+    snippet: Standard Bag / Whole Bean - $21.99
+  - field: bag_size
+    snippet: 'Bag Size
+
+      Standard: 10 oz (About 18 Cups)'
+  - field: roast_level
+    snippet: Medium roast
+  - field: tasting_notes
+    snippet: 'Tasting Notes
+
+      Chocolate, Caramel, Cherry'
+  - field: origin
+    snippet: 'Country Of Origin
+
+      Colombia, Brazil, Sulawesi'
+  - field: process
+    snippet: 'Process
+
+      Washed'
+  - field: blend
+    snippet: Blends
+models:
+  a: gpt-4o-mini
+  b: gpt-5.5
+  prompt_id: dab81a86fe

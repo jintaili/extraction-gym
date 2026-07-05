@@ -1,0 +1,55 @@
+Title: Diego Samuel Bermudez "Salma Bermudez" - Finca El Paraiso
+– Hydrangea Coffee Roasters
+Description: Tastes Like: Mango, Dulce de Leches, Elderflower Origin: El Paraiso, Cauca, Colombia Variety: Gesha Producer: Samuel Diego Bermudez Elevation: 1930 masl Process: Special Fermentation Washed Salma is a Gesha profile that begins with the harvest of overripe cherries, followed by a 72-hour submerged anaerobic fermentatio
+Skip to product information
+Open media 1 in modal
+Open media 2 in modal
+1
+/
+of
+2
+Hydrangea Coffee Roasters
+Gesha
+Salma Bermudez
+Finca El Paraiso
+Gesha - Salma Bermudez - Finca El Paraiso
+NO LONGER AVAILABLE
+Unit price
+per
+Sale
+Sold out
+Tastes Like: Mango, Dulce de Leches, Elderflower
+Origin: El Paraiso, Cauca, Colombia
+Variety: Gesha
+Producer: Samuel Diego Bermudez
+Elevation: 1930 masl
+Process:
+Special Fermentation Washed
+Salma is a Gesha profile that begins with the harvest of overripe cherries, followed by a 72-hour submerged anaerobic fermentation with yeast. The coffee is dried using a dehumidifier to preserve softness and aromatic clarity.
+In the cup, look for mango, dulce de leches, and elderflower, with a silky body and citric acidity.
+We chose this lot for its rich sweetness, tropical character, and floral complexity.
+View full details
+Brewing Accesories
+CAFEC Abaca Filters
+Regular price
+$10.00 USD
+Sale price
+APAX LAB Mineral Concentrates
+From $30.40 USD
+Yearn Tour x Hydrangea Pink Double Walled Tasting Cup
+$15.00 USD
+Hydrangea "Pepe" Fellow Stagg EKG Kettle
+$210.00 USD
+
+Embedded product variant data:
+- id=45267291570498; title=4oz (114g); name=Gesha - Salma Bermudez - Finca El Paraiso - 4oz (114g); sku=4OZ-EL-PARAISO-SALMA-GESHA; price=28.00 USD; package_grams=113.398g
+- id=45267291537730; title=8oz (227g); name=Gesha - Salma Bermudez - Finca El Paraiso - 8oz (227g); sku=8OZ-EL-PARAISO-SALMA-GESHA; price=46.00 USD; package_grams=226.796g [default_for_inference]
+- id=49578072015170; title=2lbs (907g); name=Gesha - Salma Bermudez - Finca El Paraiso - 2lbs (907g); sku=2LBS-EL-PARAISO-SALMA-GESHA; price=160.00 USD; package_grams=907.185g
+- id=45267291570498; title=unknown; name=unknown; sku=4OZ-EL-PARAISO-SALMA-GESHA; price=28.00 USD; package_grams=113.398g
+- id=45267291537730; title=unknown; name=unknown; sku=8OZ-EL-PARAISO-SALMA-GESHA; price=46.00 USD; package_grams=226.796g
+- id=49578072015170; title=unknown; name=unknown; sku=2LBS-EL-PARAISO-SALMA-GESHA; price=160.00 USD; package_grams=907.185g
+Use the selected_by_url variant when present. Otherwise use the default_for_inference variant, chosen as the package size closest to 10 oz.
+
+URL/domain-derived roaster evidence:
+- inferred_roaster_country=United States; evidence=known roaster domain hydrangea.coffee
+Use this for roaster_country when page text does not state a more specific roaster country.

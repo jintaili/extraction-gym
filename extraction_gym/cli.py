@@ -32,6 +32,9 @@ def main() -> None:
     cold.add_argument("--seed", type=int, default=20260705)
     cold.add_argument("--count", type=int, default=10)
 
+    check = sub.add_parser("checkforms", help="Validate filled cold-label forms")
+    check.add_argument("--goldset", default="goldset/v1")
+
     args = parser.parse_args()
     if args.command == "snapshot":
         _cmd_snapshot(args)
@@ -41,6 +44,8 @@ def main() -> None:
         _cmd_prelabel(args)
     elif args.command == "coldforms":
         _cmd_coldforms(args)
+    elif args.command == "checkforms":
+        _cmd_checkforms(args)
 
 
 def _cmd_snapshot(args: argparse.Namespace) -> None:
@@ -82,6 +87,22 @@ def _cmd_coldforms(args: argparse.Namespace) -> None:
     for page_id in written:
         print(f"{args.goldset}/coldlabels/{page_id}.cold.yaml")
     print(f"forms written: {len(written)}")
+
+
+def _cmd_checkforms(args: argparse.Namespace) -> None:
+    from extraction_gym.core.checkforms import check_all
+
+    results = check_all(Path(args.goldset))
+    bad = 0
+    for name, problems in results.items():
+        if problems:
+            bad += 1
+            print(f"{name}:")
+            for p in problems:
+                print(f"  - {p}")
+    print(f"forms: {len(results)}, with problems: {bad}")
+    if bad:
+        sys.exit(1)
 
 
 def _cmd_verify(args: argparse.Namespace) -> None:

@@ -21,14 +21,18 @@ label:
   coffee.producer_or_farm: null
   coffee.altitude: null          # as written, with units
   coffee.roast_level: null       # verbatim, e.g. "Ultralight", "Agtron 58"
-  coffee.harvest_period: null    # verbatim crop year / harvest window
+  coffee.harvest_period: null    # verbatim crop year / harvest window, quoted: "2025"
   coffee.is_blend: null          # true | false
   coffee.is_espresso: null       # true | false
   coffee.is_decaf: null          # true | false
   coffee.is_coferment_or_infused: null  # true | false; additives during processing only
-  coffee.sensory_text: null      # verbatim tasting notes span
+  # Long verbatim fields use YAML block style (|-) so colons and quotes in prose are safe.
+  # Replace ~ with your text on the indented lines; keep the |- marker.
+  coffee.sensory_text: |-
+    ~
   coffee.display_tasting_notes: null    # concise comma-separated note names (R8)
-  coffee.producer_text: null     # verbatim origin/producer/process details span
+  coffee.producer_text: |-
+    ~
   price.listed_price: null       # as displayed for the default/pinned variant (R1, R5, R6)
   price.listed_currency: null    # ISO-like code as rendered in the snapshot
   price.bag_size_value: null

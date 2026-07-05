@@ -68,9 +68,26 @@ least one of: process method, variety, or roast date. Mass-market pages (Dunkin'
 blends with no origin story) are false. Null unless `page_type` is `coffee_product`.
 Report-only in gates until this rule survives a full labeling pass.
 
-## Decision log
+## R12. Multiple tasting-note blocks (PROPOSED, from cold form 2f273f134c)
 
-Append one line per adjudication that required judgment beyond the rules above:
+Pages often split sensory prose across non-adjacent blocks (a marketing intro plus an
+"In the cup" section). Curator's cold label stitched both. Proposed amendment to R7:
+sensory_text may join ALL tasting-note blocks in page order, separated by "; ". Confirm
+or restrict to adjacent blocks only.
+
+## R13. Producer vs farm when both are stated (PROPOSED, from cold form 2f273f134c)
+
+September page states Producer: Lamastus Family AND Farm: El Burro. Curator labeled the
+producer. Proposed rule: when both appear, record "producer, farm" joined with ", "
+(e.g. "Lamastus Family, El Burro"); scorer credits either component. Alternative: producer
+wins. Decide before assisted review.
+
+## Decision log
 
 | date | page id | field | decision | rule affected |
 |---|---|---|---|---|
+| 2026-07-05 | 2f273f134c | coffee.sensory_text | stitched non-adjacent blocks, pending R12 | R7 |
+| 2026-07-05 | 2f273f134c | coffee.producer_or_farm | chose producer over farm, pending R13 | new |
+| 2026-07-05 | 2f273f134c | price.bags_count | 1 canonicalized to null for single bags | R4 |
+
+Append one line per adjudication that required judgment beyond the rules above.

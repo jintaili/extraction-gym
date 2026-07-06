@@ -1,0 +1,142 @@
+{
+  "page_id": "03555bb24e",
+  "category": "multi-variant page where the default variant is a small sampler",
+  "invented_category": false,
+  "target_artifact_id": "ce68bd4c4e",
+  "generator_model": "gpt-5.5",
+  "judge_model": "gpt-5.4",
+  "judges": {
+    "consistency": {
+      "unsupported_fields": [],
+      "notes": "All non-null, non-empty, non-'unknown' labels are supported by the page text or embedded variant data. 'coffee.roaster_country' is supported indirectly via 'Portland, Oregon,' which entails United States."
+    },
+    "realism": {
+      "score": 5,
+      "reasons": "This reads very plausibly as an html-to-text extraction of a real specialty coffee product page. The structure is highly believable: skip link, top nav, product title, price range, size selector, add-to-cart, tasting notes, roast style, origin details, descriptive copy, recommendation links, embedded variant block, and footer. The voice is on-brand for specialty coffee—clean, mildly marketing-oriented, and specific without overreaching. The coffee details are coherent and realistic: Huila/Acevedo, Pink Bourbon, washed process, 1,780–1,920 masl, harvest timing, and process steps like floating, sealed-tank fermentation, and parabolic drying all fit current specialty coffee norms. Tasting notes and roast language also feel authentic. Pricing is believable for a roaster, including a sampler/default selected option. The variant data is internally consistent across ids, titles, names, SKUs, prices, and package weights. The only tiny tell is the footer email domain using '.example', which marks it as synthetic metadata rather than a live site, but aside from that it is essentially indistinguishable from a real rendered product page."
+    }
+  },
+  "label": {
+    "page_type": "coffee_product",
+    "is_specialty_coffee": true,
+    "coffee.coffee_name": "Colombia La Primavera Pink Bourbon",
+    "coffee.roaster": "Brightside Coffee Roasters",
+    "coffee.roaster_location": "Portland, Oregon",
+    "coffee.roaster_country": "United States",
+    "coffee.origin_country": "Colombia",
+    "coffee.origin_region": "Huila, Acevedo",
+    "coffee.process_method": [
+      "washed"
+    ],
+    "coffee.variety": [
+      "Pink Bourbon"
+    ],
+    "coffee.producer_or_farm": "Ana Maria Castro, Finca La Primavera",
+    "coffee.altitude": "1,780-1,920 masl",
+    "coffee.roast_level": "light filter",
+    "coffee.harvest_period": "May-June 2024",
+    "coffee.is_blend": false,
+    "coffee.is_espresso": false,
+    "coffee.is_decaf": false,
+    "coffee.is_coferment_or_infused": false,
+    "coffee.sensory_text": "Tasting notes: white peach, jasmine, panela\nIn the cup we find white peach and jasmine up front, with panela sweetness and a delicate citrus finish.",
+    "coffee.display_tasting_notes": "white peach, jasmine, panela",
+    "coffee.producer_text": "This small lot from Ana Maria Castro is the kind of clean, floral Colombian coffee we look forward to every year. Pink Bourbon grown on the upper slopes of Finca La Primavera is hand picked, floated for density, fermented for 28 hours in sealed tanks, and washed before a slow parabolic drying stage on raised beds.",
+    "price.listed_price": 8.5,
+    "price.listed_currency": "USD",
+    "price.bag_size_value": 100.0,
+    "price.bag_size_unit": "g",
+    "price.package_grams": 100.0,
+    "price.bags_count": null,
+    "price.price_type": "one_time",
+    "price.availability": "in_stock"
+  },
+  "incumbent": {
+    "model": "gpt-4o-mini",
+    "hit_fields": [],
+    "extraction": {
+      "page_type": "coffee_product",
+      "is_specialty_coffee": true,
+      "coffee": {
+        "coffee_name": "Colombia La Primavera Pink Bourbon",
+        "roaster": "Brightside Coffee Roasters",
+        "roaster_location": "Portland, Oregon",
+        "roaster_country": "unknown",
+        "origin_country": "Colombia",
+        "origin_region": "Huila, Acevedo",
+        "process_method": [
+          "washed"
+        ],
+        "variety": [
+          "Pink Bourbon"
+        ],
+        "producer_or_farm": "Ana Maria Castro, Finca La Primavera",
+        "altitude": "1,780-1,920 masl",
+        "roast_level": "light filter",
+        "harvest_period": "May-June 2024",
+        "is_blend": false,
+        "is_espresso": false,
+        "is_decaf": false,
+        "is_coferment_or_infused": false,
+        "sensory_text": "In the cup we find white peach and jasmine up front, with panela sweetness and a delicate citrus finish.",
+        "display_tasting_notes": "white peach, jasmine, panela",
+        "producer_text": "This small lot from Ana Maria Castro is the kind of clean, floral Colombian coffee we look forward to every year. Pink Bourbon grown on the upper slopes of Finca La Primavera is hand picked, floated for density, fermented for 28 hours in sealed tanks, and washed before a slow parabolic drying stage on raised beds.",
+        "source_snippets": [
+          {
+            "field": "origin",
+            "snippet": "Origin: Colombia"
+          },
+          {
+            "field": "process",
+            "snippet": "Process: washed"
+          },
+          {
+            "field": "variety",
+            "snippet": "Variety: Pink Bourbon"
+          },
+          {
+            "field": "price",
+            "snippet": "From $8.50"
+          },
+          {
+            "field": "bag_size",
+            "snippet": "Sampler 100g"
+          },
+          {
+            "field": "tasting_notes",
+            "snippet": "Tasting notes: white peach, jasmine, panela"
+          },
+          {
+            "field": "producer",
+            "snippet": "Producer: Ana Maria Castro, Finca La Primavera"
+          },
+          {
+            "field": "altitude",
+            "snippet": "Altitude: 1,780-1,920 masl"
+          }
+        ]
+      },
+      "price": {
+        "listed_price": 8.5,
+        "listed_currency": "USD",
+        "original_listed_price": 8.5,
+        "original_listed_currency": "USD",
+        "bag_size_value": 100.0,
+        "bag_size_unit": "g",
+        "package_grams": 100.0,
+        "bags_count": null,
+        "price_100g_usd": 8.5,
+        "price_type": "one_time",
+        "availability": "in_stock",
+        "assumptions": [
+          "currency assumed USD from $",
+          "default variant selected"
+        ]
+      },
+      "quality": {
+        "extraction_quality": "good",
+        "missing_fields": [],
+        "warnings": []
+      }
+    }
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "page_id": "742687fc4a",
+  "category": "Recommended-product spec block contaminates main product extraction",
+  "invented_category": true,
+  "target_artifact_id": "ce68bd4c4e",
+  "generator_model": "gpt-5.5",
+  "judge_model": "gpt-5.4",
+  "judges": {
+    "consistency": {
+      "unsupported_fields": [],
+      "notes": "All non-null, non-empty ground-truth labels are supported by the page text. Product title, roaster, location/country, origin, region, process, varieties, producer, altitude, roast level, harvest, tasting notes, producer text, price, currency, bag size, package grams, one-time price, and availability all appear directly or are entailed. Boolean fields are also supported: not a blend (single-origin Ethiopia with one origin/region/producer), not espresso (recommended for filter), not decaf (no decaf indication; the decaf mention is for a different product), and not coferment/infused (described as natural process only)."
+    },
+    "realism": {
+      "score": 5,
+      "reasons": "This reads as a highly plausible html-to-text rendering of a real specialty coffee roaster product page. The structure is exactly what a Shopify-style or similar roaster page often looks like: header nav, product title, price, bag size, add-to-cart/in-stock note, tasting notes, roast/use recommendation, origin details, descriptive copy, brew notes, variant block, related products, and footer. \n\nThe coffee details are coherent and realistic. Ethiopia / Guji / Hambela Wamena / Benti Nenka is a believable and familiar specialty-coffee origin chain; smallholders delivering to a washing station while the lot is processed as natural is normal. Variety numbers 74110 and 74112 are credible Ethiopian JARC selections. Altitude and harvest window make sense for the region. The tasting notes and roast language also sound authentic to specialty coffee marketing without overdoing it.\n\nThe descriptive copy is concise and commercially natural. Phrases like 'steep garden plots shaded by false banana and native trees,' 'dried slowly on raised beds,' and 'silky rather than jammy' are all very typical of real roaster copy. Brew guidance is also plausible and appropriately specific.\n\nThe variant data block is one of the strongest signals of realism rather than fakery. The IDs, SKUs, subscription variant, and package gram values look like extracted ecommerce metadata. Prices are believable: $22 for 250g and $78 for 1kg is commercially plausible, and the subscription discount to $19.80 is consistent.\n\nOnly very minor tells exist: 'washing station' attached to a natural lot is fully possible but may read slightly formulaic to some readers, and '[default_for_inference]' is not something a consumer-facing render would normally show, though it could appear in a synthetic extraction context. Those are tiny issues; overall it is very close to indistinguishable from a real product page."
+    }
+  },
+  "label": {
+    "page_type": "coffee_product",
+    "is_specialty_coffee": true,
+    "coffee.coffee_name": "Ethiopia Benti Nenka Natural",
+    "coffee.roaster": "Northline Coffee Roasters",
+    "coffee.roaster_location": "Portland, Oregon",
+    "coffee.roaster_country": "United States",
+    "coffee.origin_country": "Ethiopia",
+    "coffee.origin_region": "Hambela Wamena, Guji",
+    "coffee.process_method": [
+      "Natural"
+    ],
+    "coffee.variety": [
+      "74110",
+      "74112"
+    ],
+    "coffee.producer_or_farm": "Smallholder farmers delivering to Benti Nenka washing station",
+    "coffee.altitude": "2,050–2,200 masl",
+    "coffee.roast_level": "Light",
+    "coffee.harvest_period": "December 2024–January 2025",
+    "coffee.is_blend": false,
+    "coffee.is_espresso": false,
+    "coffee.is_decaf": false,
+    "coffee.is_coferment_or_infused": false,
+    "coffee.sensory_text": "Tastes like: Blueberry, jasmine, lemon candy\n\nIn the cup we find a vivid natural profile: blueberry up front, a jasmine-like floral lift, and a clean lemon candy finish.",
+    "coffee.display_tasting_notes": "Blueberry, jasmine, lemon candy",
+    "coffee.producer_text": "This lot comes to us through Benti Nenka washing station in Hambela Wamena, where smallholder growers cultivate coffee on steep garden plots shaded by false banana and native trees. Ripe cherries are hand-sorted and dried slowly on raised beds, with careful turning during the warm afternoons and covered resting overnight.",
+    "price.listed_price": 22.0,
+    "price.listed_currency": "USD",
+    "price.bag_size_value": 250.0,
+    "price.bag_size_unit": "g",
+    "price.package_grams": 250.0,
+    "price.bags_count": null,
+    "price.price_type": "one_time",
+    "price.availability": "in_stock"
+  },
+  "incumbent": {
+    "model": "gpt-4o-mini",
+    "hit_fields": [],
+    "extraction": {
+      "page_type": "coffee_product",
+      "is_specialty_coffee": true,
+      "coffee": {
+        "coffee_name": "Ethiopia Benti Nenka Natural",
+        "roaster": "Northline Coffee Roasters",
+        "roaster_location": null,
+        "roaster_country": "USA",
+        "origin_country": "Ethiopia",
+        "origin_region": "Hambela Wamena, Guji",
+        "process_method": [
+          "Natural"
+        ],
+        "variety": [
+          "74110",
+          "74112"
+        ],
+        "producer_or_farm": "Smallholder farmers delivering to Benti Nenka washing station",
+        "altitude": "2,050–2,200 masl",
+        "roast_level": "Light",
+        "harvest_period": "December 2024–January 2025",
+        "is_blend": false,
+        "is_espresso": false,
+        "is_decaf": false,
+        "is_coferment_or_infused": false,
+        "sensory_text": "In the cup we find a vivid natural profile: blueberry up front, a jasmine-like floral lift, and a clean lemon candy finish.",
+        "display_tasting_notes": "Blueberry, jasmine, lemon candy",
+        "producer_text": "This lot comes to us through Benti Nenka washing station in Hambela Wamena, where smallholder growers cultivate coffee on steep garden plots shaded by false banana and native trees. Ripe cherries are hand-sorted and dried slowly on raised beds, with careful turning during the warm afternoons and covered resting overnight.",
+        "source_snippets": [
+          {
+            "field": "origin",
+            "snippet": "Origin: Ethiopia"
+          },
+          {
+            "field": "process",
+            "snippet": "Process: Natural"
+          },
+          {
+            "field": "variety",
+            "snippet": "Variety: 74110, 74112"
+          },
+          {
+            "field": "altitude",
+            "snippet": "Altitude: 2,050–2,200 masl"
+          },
+          {
+            "field": "tasting_notes",
+            "snippet": "Tastes like: Blueberry, jasmine, lemon candy"
+          }
+        ]
+      },
+      "price": {
+        "listed_price": 22.0,
+        "listed_currency": "USD",
+        "original_listed_price": null,
+        "original_listed_currency": null,
+        "bag_size_value": 250.0,
+        "bag_size_unit": "g",
+        "package_grams": 250.0,
+        "bags_count": null,
+        "price_100g_usd": 8.8,
+        "price_type": "one_time",
+        "availability": "in_stock",
+        "assumptions": []
+      },
+      "quality": {
+        "extraction_quality": "good",
+        "missing_fields": [],
+        "warnings": []
+      }
+    }
+  }
+}

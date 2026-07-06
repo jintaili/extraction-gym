@@ -1,1 +1,5 @@
 {"logged_at": "2026-07-06T13:32:38+00:00", "event": "adversary_round", "target": "ce68bd4c4e", "generated": 6, "sanity_discard": 0, "consistency_discard": 2, "realism_discard": 0, "accepted": 4, "hits": 4, "spend_usd": 0.4203}
+{"logged_at": "2026-07-06T13:54:14+00:00", "event": "adversary_round", "target": "ce68bd4c4e", "generated": 15, "sanity_discard": 0, "consistency_discard": 9, "realism_discard": 0, "accepted": 6, "hits": 3, "spend_usd": 1.016}
+{"logged_at": "2026-07-06T13:56:23+00:00", "event": "mutation", "parent": "ce68bd4c4e", "artifact_id": "2f29e944a7", "mutation_note": "Added one labeled-field precedence instruction covering compound process labels, same-country blend composition evidence, and sensory_text inclusion of explicit tasting notes plus cup-specific prose."}
+{"logged_at": "2026-07-06T13:56:32+00:00", "event": "evalsuite", "artifact_id": "ce68bd4c4e", "pages": 10, "composite_mean": 0.9371881486618578}
+{"logged_at": "2026-07-06T13:57:54+00:00", "event": "evalsuite", "artifact_id": "2f29e944a7", "pages": 10, "composite_mean": 0.9572479928415272}

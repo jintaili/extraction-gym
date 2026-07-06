@@ -1,0 +1,135 @@
+{
+  "page_id": "8e746519a4",
+  "category": "co-ferment or infused coffee described only in marketing prose",
+  "invented_category": false,
+  "target_artifact_id": "ce68bd4c4e",
+  "generator_model": "gpt-5.5",
+  "judge_model": "gpt-5.4",
+  "judges": {
+    "consistency": {
+      "unsupported_fields": [],
+      "notes": "All non-null, non-unknown, non-empty label values are supported by the page text, including the specialty coffee/product details, variant price/size/package grams for the default 200g option, and availability implied by 'Add to cart'."
+    },
+    "realism": {
+      "score": 4,
+      "reasons": "This is quite plausible as an html-to-text rendering of a real specialty coffee product page. The structure is very believable: site chrome ('Skip to content', menu, cart, search), a clear product title, size variants, price, tasting notes, roast style, producer/origin/process/variety/altitude/harvest fields, narrative producer copy, a brew recipe, and a variant block that looks like extracted ecommerce metadata. The coffee details are coherent and current for specialty roasting: Pink Bourbon from Huila, producer named, anaerobic natural processing, high elevation, and a light filter roast all fit real market patterns. The tasting notes are vivid but still within specialty-coffee norms.\n\nThe strongest realism tell is the detailed process description and the explanatory sentence clarifying that fruit was used in fermentation rather than added after roasting; that mirrors real contemporary copy around co-fermented Colombian coffees. The variant data is also internally consistent: IDs, titles, names, SKUs, and gram weights line up, and the 1kg price at $108 is a believable bulk discount from $24/200g.\n\nMinor tells keep it from a 5. 'Solstice' as the product name plus 'Las Flores Colombia' reads slightly brand-styled in a synthetic way, and the copy is almost too neatly calibrated to current specialty language. Also, layering cherries with passionfruit pulp and dried orange peel pushes it toward co-fermentation/infused territory, which some roasters would label more explicitly; leaving the process simply as 'Anaerobic Natural' is a slight ambiguity. Still, these are minor, and overall it feels very close to a real roaster page."
+    }
+  },
+  "label": {
+    "page_type": "coffee_product",
+    "is_specialty_coffee": true,
+    "coffee.coffee_name": "Solstice — Las Flores Colombia",
+    "coffee.roaster": "North Star Roasters",
+    "coffee.roaster_location": null,
+    "coffee.roaster_country": "unknown",
+    "coffee.origin_country": "Colombia",
+    "coffee.origin_region": "Huila, Pitalito",
+    "coffee.process_method": [
+      "Anaerobic Natural"
+    ],
+    "coffee.variety": [
+      "Pink Bourbon"
+    ],
+    "coffee.producer_or_farm": "Jhoan Vergara, Finca Las Flores",
+    "coffee.altitude": "1,750–1,850 masl",
+    "coffee.roast_level": "Light filter roast",
+    "coffee.harvest_period": "November 2024",
+    "coffee.is_blend": false,
+    "coffee.is_espresso": false,
+    "coffee.is_decaf": false,
+    "coffee.is_coferment_or_infused": true,
+    "coffee.sensory_text": "mango nectar, key lime, jasmine, passionfruit sorbet\n\nThis tiny release from Finca Las Flores is all sunshine and lift: a syrupy cup that opens with tropical sweetness, then snaps into lime-like acidity and a clean floral finish. We are roasting it lightly to keep the aromatics high and the body silky rather than heavy.",
+    "coffee.display_tasting_notes": "mango nectar, key lime, jasmine, passionfruit sorbet",
+    "coffee.producer_text": "Jhoan Vergara and his family have become known for very controlled fermentations. For this lot, ripe Pink Bourbon cherries were hand sorted, placed in sealed fermentation tanks, and layered with fresh passionfruit pulp and a small amount of dried orange peel before drying on raised beds. The fruit is not a flavouring added after roasting; it is part of the fermentation environment at origin, which is why the cup reads so vividly of ripe tropical fruit while still tasting like beautiful Colombian coffee.\n\nFinca Las Flores sits above Pitalito in southern Huila, where warm afternoons and cool nights help Pink Bourbon develop dense sweetness.",
+    "price.listed_price": 24.0,
+    "price.listed_currency": "USD",
+    "price.bag_size_value": 200.0,
+    "price.bag_size_unit": "g",
+    "price.package_grams": 200.0,
+    "price.bags_count": null,
+    "price.price_type": "one_time",
+    "price.availability": "in_stock"
+  },
+  "incumbent": {
+    "model": "gpt-4o-mini",
+    "hit_fields": [
+      "coffee.sensory_text"
+    ],
+    "extraction": {
+      "page_type": "coffee_product",
+      "is_specialty_coffee": true,
+      "coffee": {
+        "coffee_name": "Solstice — Las Flores Colombia",
+        "roaster": "North Star Roasters",
+        "roaster_location": null,
+        "roaster_country": "unknown",
+        "origin_country": "Colombia",
+        "origin_region": "Huila, Pitalito",
+        "process_method": [
+          "Anaerobic Natural"
+        ],
+        "variety": [
+          "Pink Bourbon"
+        ],
+        "producer_or_farm": "Jhoan Vergara, Finca Las Flores",
+        "altitude": "1,750–1,850 masl",
+        "roast_level": "Light filter roast",
+        "harvest_period": "November 2024",
+        "is_blend": false,
+        "is_espresso": false,
+        "is_decaf": false,
+        "is_coferment_or_infused": true,
+        "sensory_text": "A syrupy cup that opens with tropical sweetness, then snaps into lime-like acidity and a clean floral finish.",
+        "display_tasting_notes": "mango nectar, key lime, jasmine, passionfruit sorbet",
+        "producer_text": "Jhoan Vergara and his family have become known for very controlled fermentations. For this lot, ripe Pink Bourbon cherries were hand sorted, placed in sealed fermentation tanks, and layered with fresh passionfruit pulp and a small amount of dried orange peel before drying on raised beds. The fruit is not a flavouring added after roasting; it is part of the fermentation environment at origin, which is why the cup reads so vividly of ripe tropical fruit while still tasting like beautiful Colombian coffee.",
+        "source_snippets": [
+          {
+            "field": "name",
+            "snippet": "Solstice — Las Flores Colombia"
+          },
+          {
+            "field": "origin",
+            "snippet": "Colombia"
+          },
+          {
+            "field": "process",
+            "snippet": "Anaerobic Natural"
+          },
+          {
+            "field": "variety",
+            "snippet": "Pink Bourbon"
+          },
+          {
+            "field": "price",
+            "snippet": "$24.00"
+          },
+          {
+            "field": "bag_size",
+            "snippet": "200g"
+          }
+        ]
+      },
+      "price": {
+        "listed_price": 24.0,
+        "listed_currency": "USD",
+        "original_listed_price": null,
+        "original_listed_currency": null,
+        "bag_size_value": 200.0,
+        "bag_size_unit": "g",
+        "package_grams": 200.0,
+        "bags_count": null,
+        "price_100g_usd": 12.0,
+        "price_type": "one_time",
+        "availability": "in_stock",
+        "assumptions": [
+          "default variant selected"
+        ]
+      },
+      "quality": {
+        "extraction_quality": "good",
+        "missing_fields": [],
+        "warnings": []
+      }
+    }
+  }
+}

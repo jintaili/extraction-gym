@@ -1,0 +1,150 @@
+{
+  "page_id": "d10d366a48",
+  "category": "blend presented like a single origin",
+  "invented_category": false,
+  "target_artifact_id": "ce68bd4c4e",
+  "generator_model": "gpt-5.5",
+  "judge_model": "gpt-5.4",
+  "judges": {
+    "consistency": {
+      "unsupported_fields": [],
+      "notes": "All non-null, non-empty, non-'unknown' labels are supported by the page text. 'coffee.roaster_country' is entailed by 'Roasted in Portland, ME' since Portland, ME is in the United States. 'coffee.is_blend' is supported by the lot composition statement combining two components/farms post-roast. 'coffee.is_espresso' is supported as false because the roast is labeled 'Filter / light-medium' and described for pour-over/AeroPress, not espresso. 'price.price_type' is supported as one-time because the product page shows a standard purchase price for this item, despite the site having a separate 'Subscriptions' navigation link."
+    },
+    "realism": {
+      "score": 4,
+      "reasons": "This is quite plausible as an html-to-text rendering of a real roaster product page. It has the expected ecommerce scaffolding, concise coffee metadata, tasting notes, shipping blurb, availability, and a believable variant block with IDs/SKUs/prices. The origin details are mostly coherent: Santa Ana / Apaneca-Ilamatepec, Bourbon and Pacamara, washed and natural processing, and the altitude range all fit El Salvador specialty coffee norms. The copy voice also sounds close to real specialty roaster language.\n\nMain tells keeping it from a 5: calling it a single origin while explicitly blending coffee from two farms, two varieties, and two processes is possible, but the explanation that they were 'combined post-roast' is a bit unusual for a standard product page and reads slightly engineered to justify a more complex lot concept. Many roasters would either label this more clearly as a regional blend/multi-producer lot or avoid emphasizing post-roast blending on the front-facing page. 'Both farms are in the Santa Ana department' is also a touch awkward given the page already uses region and department terminology, and 'default_for_inference' in the variant data feels synthetic rather than like a raw extracted storefront field. Still, these are minor tells; overall the structure and content feel very close to a real product page."
+    }
+  },
+  "label": {
+    "page_type": "coffee_product",
+    "is_specialty_coffee": true,
+    "coffee.coffee_name": "El Salvador Santa Ana",
+    "coffee.roaster": "North Pier Coffee",
+    "coffee.roaster_location": "Portland, ME",
+    "coffee.roaster_country": "United States",
+    "coffee.origin_country": "El Salvador",
+    "coffee.origin_region": "Santa Ana, Apaneca-Ilamatepec",
+    "coffee.process_method": [
+      "washed + natural"
+    ],
+    "coffee.variety": [
+      "Bourbon",
+      "Pacamara"
+    ],
+    "coffee.producer_or_farm": "Finca Las Brumas & Finca El Manzano",
+    "coffee.altitude": "1,450–1,650 masl",
+    "coffee.roast_level": "Filter / light-medium",
+    "coffee.harvest_period": "January–March 2025",
+    "coffee.is_blend": true,
+    "coffee.is_espresso": false,
+    "coffee.is_decaf": false,
+    "coffee.is_coferment_or_infused": false,
+    "coffee.sensory_text": "Tasting notes: red apple, honeycomb, cocoa nib\n\nIn the cup we find red apple and honeycomb up front, with cocoa nib and a soft dried-fruit accent as it cools.",
+    "coffee.display_tasting_notes": "red apple, honeycomb, cocoa nib",
+    "coffee.producer_text": "Lot composition: 60% washed Bourbon from Finca Las Brumas and 40% natural Pacamara from Finca El Manzano. Both farms are in the Santa Ana department and were cupped separately before being combined post-roast to give the cup a more layered fruit profile without losing the honeyed clarity of the washed component.",
+    "price.listed_price": 19.5,
+    "price.listed_currency": "USD",
+    "price.bag_size_value": 250.0,
+    "price.bag_size_unit": "g",
+    "price.package_grams": 250.0,
+    "price.bags_count": null,
+    "price.price_type": "one_time",
+    "price.availability": "in_stock"
+  },
+  "incumbent": {
+    "model": "gpt-4o-mini",
+    "hit_fields": [
+      "coffee.process_method",
+      "coffee.is_blend",
+      "coffee.sensory_text"
+    ],
+    "extraction": {
+      "page_type": "coffee_product",
+      "is_specialty_coffee": true,
+      "coffee": {
+        "coffee_name": "El Salvador Santa Ana",
+        "roaster": "North Pier Coffee",
+        "roaster_location": "Portland, ME",
+        "roaster_country": "unknown",
+        "origin_country": "El Salvador",
+        "origin_region": "Santa Ana, Apaneca-Ilamatepec",
+        "process_method": [
+          "washed",
+          "natural"
+        ],
+        "variety": [
+          "Bourbon",
+          "Pacamara"
+        ],
+        "producer_or_farm": "Finca Las Brumas & Finca El Manzano",
+        "altitude": "1,450–1,650 masl",
+        "roast_level": "Filter / light-medium",
+        "harvest_period": "January–March 2025",
+        "is_blend": false,
+        "is_espresso": false,
+        "is_decaf": false,
+        "is_coferment_or_infused": false,
+        "sensory_text": "At first glance this lot reads like a classic Santa Ana single origin: clean structure, highland sweetness, and the familiar cocoa finish we love from the Apaneca-Ilamatepec range. In the cup we find red apple and honeycomb up front, with cocoa nib and a soft dried-fruit accent as it cools.",
+        "display_tasting_notes": "red apple, honeycomb, cocoa nib",
+        "producer_text": "Lot composition: 60% washed Bourbon from Finca Las Brumas and 40% natural Pacamara from Finca El Manzano. Both farms are in the Santa Ana department and were cupped separately before being combined post-roast to give the cup a more layered fruit profile without losing the honeyed clarity of the washed component.",
+        "source_snippets": [
+          {
+            "field": "name",
+            "snippet": "El Salvador Santa Ana"
+          },
+          {
+            "field": "origin",
+            "snippet": "El Salvador"
+          },
+          {
+            "field": "process",
+            "snippet": "washed + natural"
+          },
+          {
+            "field": "variety",
+            "snippet": "Bourbon, Pacamara"
+          },
+          {
+            "field": "price",
+            "snippet": "$19.50"
+          },
+          {
+            "field": "bag_size",
+            "snippet": "250g"
+          },
+          {
+            "field": "tasting_notes",
+            "snippet": "red apple, honeycomb, cocoa nib"
+          },
+          {
+            "field": "producer",
+            "snippet": "Finca Las Brumas & Finca El Manzano"
+          },
+          {
+            "field": "altitude",
+            "snippet": "1,450–1,650 masl"
+          }
+        ]
+      },
+      "price": {
+        "listed_price": 19.5,
+        "listed_currency": "USD",
+        "original_listed_price": null,
+        "original_listed_currency": null,
+        "bag_size_value": 250.0,
+        "bag_size_unit": "g",
+        "package_grams": 250.0,
+        "bags_count": null,
+        "price_100g_usd": 7.8,
+        "price_type": "one_time",
+        "availability": "in_stock",
+        "assumptions": []
+      },
+      "quality": {
+        "extraction_quality": "good",
+        "missing_fields": [],
+        "warnings": []
+      }
+    }
+  }
+}

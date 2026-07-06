@@ -81,6 +81,24 @@ def main() -> None:
     adv.add_argument("--judge-model", default="gpt-5.4")
     adv.add_argument("--max-usd", type=float, default=15.0)
 
+    evs = sub.add_parser("evalsuite", help="Evaluate an artifact on the adversarial pressure suite")
+    evs.add_argument("artifact_id")
+    evs.add_argument("--suite", default="suites/adversarial")
+    evs.add_argument("--registry", default="registry")
+    evs.add_argument("--model", default=None)
+
+    mut = sub.add_parser("mutate", help="Propose+register one focused mutation from suite failures")
+    mut.add_argument("--target", required=True)
+    mut.add_argument("--registry", default="registry")
+    mut.add_argument("--suite", default="suites/adversarial")
+    mut.add_argument("--model", default="gpt-5.5")
+    mut.add_argument("--exemplars", type=int, default=3)
+
+    cht = sub.add_parser("chart", help="Render the headline chart for a loop run")
+    cht.add_argument("run_id")
+    cht.add_argument("--runs", default="runs")
+    cht.add_argument("--noise", default=None, help="noise band json for the shaded band")
+
     args = parser.parse_args()
     if args.command == "snapshot":
         _cmd_snapshot(args)
@@ -110,6 +128,12 @@ def main() -> None:
         _cmd_compare(args)
     elif args.command == "adversary":
         _cmd_adversary(args)
+    elif args.command == "evalsuite":
+        _cmd_evalsuite(args)
+    elif args.command == "mutate":
+        _cmd_mutate(args)
+    elif args.command == "chart":
+        _cmd_chart(args)
 
 
 def _cmd_snapshot(args: argparse.Namespace) -> None:
@@ -365,6 +389,76 @@ def _cmd_adversary(args: argparse.Namespace) -> None:
     registry.append_ledger({"event": "adversary_round", "target": target.artifact_id, **report["stats"],
                             "spend_usd": report["spend_usd"]})
     print(json.dumps(report, ensure_ascii=False, indent=2))
+
+
+def _cmd_evalsuite(args: argparse.Namespace) -> None:
+    from coffee_value_app.config import load_settings
+
+    from extraction_gym.adapters.coffee.extractor import CoffeeExtractor
+    from extraction_gym.core.cache import ExtractionCache
+    from extraction_gym.core.registry import PromptRegistry
+    from extraction_gym.eval.suite_eval import evaluate_on_suite
+
+    registry = PromptRegistry(Path(args.registry))
+    artifact = registry.get(args.artifact_id)
+    extractor = CoffeeExtractor()
+    report = asyncio.run(
+        evaluate_on_suite(
+            Path(args.suite), artifact, model=args.model or load_settings().extraction_model,
+            extract_fn=extractor.extract, cache=ExtractionCache(Path(".cache") / "extractions"),
+        )
+    )
+    registry.append_ledger({"event": "evalsuite", "artifact_id": artifact.artifact_id,
+                            "pages": report["pages"], "composite_mean": report["composite_mean"]})
+    print(f"{artifact.artifact_id} on {report['pages']} suite pages: composite {report['composite_mean']:.4f}")
+
+
+def _cmd_mutate(args: argparse.Namespace) -> None:
+    import json
+
+    from extraction_gym.adapters.coffee.extractor import CoffeeExtractor
+    from extraction_gym.core.registry import PromptRegistry
+    from extraction_gym.optimizer.mutate import MutationProposer, failure_exemplars_from_suite
+
+    registry = PromptRegistry(Path(args.registry))
+    target = registry.get(args.target)
+    suite_root = Path(args.suite)
+    metas = []
+    for meta_path in sorted(suite_root.glob("*.meta.json")):
+        meta = json.loads(meta_path.read_text(encoding="utf-8"))
+        meta["page_text"] = (suite_root / f"{meta['page_id']}.txt").read_text(encoding="utf-8")
+        metas.append(meta)
+    exemplars = failure_exemplars_from_suite(metas, limit=args.exemplars)
+    if not exemplars:
+        print("no incumbent failures in the suite; run gym adversary first")
+        sys.exit(1)
+    extractor = CoffeeExtractor()
+    proposer = MutationProposer(client=extractor.client, model=args.model)
+    proposal = asyncio.run(
+        proposer.propose(incumbent_text=target.text, exemplars=exemplars)
+    )
+    candidate = registry.register(
+        text=proposal.new_prompt, parent_id=target.artifact_id,
+        mutation_note=proposal.mutation_note, source="optimizer",
+    )
+    registry.append_ledger({"event": "mutation", "parent": target.artifact_id,
+                            "artifact_id": candidate.artifact_id,
+                            "mutation_note": proposal.mutation_note})
+    print(f"candidate: {candidate.artifact_id} (parent {target.artifact_id})")
+    print(f"note: {proposal.mutation_note}")
+    print(f"rationale: {proposal.rationale}")
+
+
+def _cmd_chart(args: argparse.Namespace) -> None:
+    import json
+
+    from extraction_gym.eval.chart import render_chart
+    from extraction_gym.optimizer.state import LoopState
+
+    state = LoopState.load(Path(args.runs), args.run_id)
+    band = json.loads(Path(args.noise).read_text(encoding="utf-8")) if args.noise else None
+    out = render_chart(state.history, band, Path(args.runs) / args.run_id / "chart.png")
+    print(f"written: {out}")
 
 
 def _cmd_verify(args: argparse.Namespace) -> None:

@@ -1,0 +1,131 @@
+{
+  "page_id": "ad0dc0e802",
+  "category": "multi-variant page where the default variant is a small sampler",
+  "invented_category": false,
+  "target_artifact_id": "ce68bd4c4e",
+  "generator_model": "gpt-5.5",
+  "judge_model": "gpt-5.4",
+  "judges": {
+    "consistency": {
+      "unsupported_fields": [],
+      "notes": "All non-null, non-empty ground-truth labels are supported by the page text or embedded variant data. The default selected variant is the 100g Sampler at $8.75 USD, available=true, supporting the price and bag-size fields. Footer supports roaster location as Portland, OR, and thus roaster country United States. Boolean fields are supported by absence/presence cues: single-origin/product naming and origin details support not a blend; 'Whole bean only' and recommended filter brew support not espresso; no decaf or coferment/infusion language is present."
+    },
+    "realism": {
+      "score": 5,
+      "reasons": "This is highly plausible as an html-to-text rendering of a real specialty coffee roaster product page. The structure is very typical: header utility links, free-shipping banner, shop nav, product title, price, size selector, purchase options, add-to-cart, sensory notes, production details, descriptive copy, brew guidance, related products, embedded variant data, and footer. The voice fits contemporary specialty coffee ecommerce well—specific but not overblown, with standard terminology like washed, Pink Bourbon, sealed-tank fermentation, raised-bed drying, and light roast for filter.\n\nThe origin/details block is coherent and realistic: producer Nestor Lasso at Finca El Diviso in Huila/Palestina is a recognizable kind of high-profile Colombian specialty context, and the combination of variety, altitude, process, and harvest window makes sense. Tasting notes are believable for a washed Pink Bourbon. The descriptive paragraphs read like normal marketing copy rather than synthetic filler.\n\nThe variant block is also convincing. IDs, SKUs, names, availability flags, and gram weights are formatted like extracted ecommerce data. The 2 lb bag converting to 907.185g is an especially realistic machine-derived detail. Pricing is plausible too: $8.75 for 100g, $21 for 250g, $74 for 2 lb aligns with premium microlot pricing. If there is any minor tell, it’s only that the page is unusually tidy and complete in plain text, but nothing stands out as fake."
+    }
+  },
+  "label": {
+    "page_type": "coffee_product",
+    "is_specialty_coffee": true,
+    "coffee.coffee_name": "Colombia Finca El Diviso Pink Bourbon",
+    "coffee.roaster": "Lumen Coffee Lab",
+    "coffee.roaster_location": "Portland, OR",
+    "coffee.roaster_country": "United States",
+    "coffee.origin_country": "Colombia",
+    "coffee.origin_region": "Huila, Palestina",
+    "coffee.process_method": [
+      "Washed"
+    ],
+    "coffee.variety": [
+      "Pink Bourbon"
+    ],
+    "coffee.producer_or_farm": "Nestor Lasso, Finca El Diviso",
+    "coffee.altitude": "1,750-1,900 masl",
+    "coffee.roast_level": "Light",
+    "coffee.harvest_period": "July-September 2024",
+    "coffee.is_blend": false,
+    "coffee.is_espresso": false,
+    "coffee.is_decaf": false,
+    "coffee.is_coferment_or_infused": false,
+    "coffee.sensory_text": "Tasting notes: white peach, jasmine, honeycomb, lime zest\n\nA tiny but memorable lot from Finca El Diviso, this Pink Bourbon is the coffee we keep brewing for visitors when we want to show how delicate Colombian coffees can be. In the cup we find white peach and lime zest up front, a lifted jasmine aroma, and a honeycomb sweetness that carries through the finish.",
+    "coffee.display_tasting_notes": "white peach, jasmine, honeycomb, lime zest",
+    "coffee.producer_text": "Nestor Lasso and his family have built Finca El Diviso into one of Huila's most talked-about farms by separating small day-lots and drying each one slowly under shade. This washed separation was picked at peak ripeness, fermented in sealed tanks, rinsed with clean mountain water, and dried on raised beds.",
+    "price.listed_price": 8.75,
+    "price.listed_currency": "USD",
+    "price.bag_size_value": 100.0,
+    "price.bag_size_unit": "g",
+    "price.package_grams": 100.0,
+    "price.bags_count": null,
+    "price.price_type": "one_time",
+    "price.availability": "in_stock"
+  },
+  "incumbent": {
+    "model": "gpt-4o-mini",
+    "hit_fields": [
+      "coffee.sensory_text"
+    ],
+    "extraction": {
+      "page_type": "coffee_product",
+      "is_specialty_coffee": true,
+      "coffee": {
+        "coffee_name": "Colombia Finca El Diviso Pink Bourbon",
+        "roaster": "Lumen Coffee Lab",
+        "roaster_location": "Portland",
+        "roaster_country": "unknown",
+        "origin_country": "Colombia",
+        "origin_region": "Huila, Palestina",
+        "process_method": [
+          "Washed"
+        ],
+        "variety": [
+          "Pink Bourbon"
+        ],
+        "producer_or_farm": "Nestor Lasso, Finca El Diviso",
+        "altitude": "1,750-1,900 masl",
+        "roast_level": "Light",
+        "harvest_period": "July-September 2024",
+        "is_blend": false,
+        "is_espresso": false,
+        "is_decaf": false,
+        "is_coferment_or_infused": false,
+        "sensory_text": "white peach, jasmine, honeycomb, lime zest",
+        "display_tasting_notes": "white peach, jasmine, honeycomb, lime zest",
+        "producer_text": "Nestor Lasso and his family have built Finca El Diviso into one of Huila's most talked-about farms by separating small day-lots and drying each one slowly under shade. This washed separation was picked at peak ripeness, fermented in sealed tanks, rinsed with clean mountain water, and dried on raised beds.",
+        "source_snippets": [
+          {
+            "field": "origin",
+            "snippet": "Origin: Colombia"
+          },
+          {
+            "field": "process",
+            "snippet": "Process: Washed"
+          },
+          {
+            "field": "variety",
+            "snippet": "Variety: Pink Bourbon"
+          },
+          {
+            "field": "price",
+            "snippet": "$8.75"
+          },
+          {
+            "field": "bag_size",
+            "snippet": "100g Sampler"
+          }
+        ]
+      },
+      "price": {
+        "listed_price": 8.75,
+        "listed_currency": "USD",
+        "original_listed_price": null,
+        "original_listed_currency": null,
+        "bag_size_value": 100.0,
+        "bag_size_unit": "g",
+        "package_grams": 100.0,
+        "bags_count": null,
+        "price_100g_usd": 8.75,
+        "price_type": "one_time",
+        "availability": "in_stock",
+        "assumptions": [
+          "currency assumed USD from $"
+        ]
+      },
+      "quality": {
+        "extraction_quality": "good",
+        "missing_fields": [],
+        "warnings": []
+      }
+    }
+  }
+}

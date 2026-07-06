@@ -1,0 +1,134 @@
+{
+  "page_id": "805aacc759",
+  "category": "Related-product variant data precedes main coffee variant data",
+  "invented_category": true,
+  "target_artifact_id": "ce68bd4c4e",
+  "generator_model": "gpt-5.5",
+  "judge_model": "gpt-5.4",
+  "judges": {
+    "consistency": {
+      "unsupported_fields": [],
+      "notes": "All non-null, non-empty, non-'unknown' labels are supported by the page text. Product title, roaster, location, origin, region, producer, process, variety, altitude, harvest, roast, tasting notes, producer text, and default variant price/size/package grams are explicitly stated. Availability is supported by the presence of quantity and 'Add to cart'. 'is_blend': false is supported because a single origin/country/region/producer/variety coffee is described with no indication of blending. 'is_espresso': false is supported because the product is presented as filter-forward and not labeled espresso; the separate 'You may also like' espresso product is distinct. 'is_decaf': false and 'is_coferment_or_infused': false are supported by absence of any decaf/coferment/infused indication alongside a standard washed Bourbon offering. 'is_specialty_coffee': true is supported by the specialty roaster context and detailed single-lot coffee attributes on the product page."
+    },
+    "realism": {
+      "score": 5,
+      "reasons": "Very plausible as an html-to-text render of a real specialty coffee product page. The structure is exactly what you'd expect: header/nav, cross-sell product, breadcrumb, product title, price, size selector, quantity/add-to-cart, origin/spec details, descriptive copy, brew recommendation, shipping/grind note, variant data, and footer. The coffee details are coherent and specific without feeling overengineered: Rwanda / Nyamasheke / Kanzu washing station / Bourbon / washed / 1,800–2,100 masl / seasonal harvest all fit together well for a specialty roaster. Tasting notes and copy are believable and in the right register for coffee marketing. The variant block is also internally consistent: sizes, SKUs, names, and gram weights align, and the pricing looks realistic for 250g and 1kg specialty coffee. Even the cross-sell block has plausible variant metadata. Minor tiny tell: 'Bourbon' for Rwanda is common enough in retail shorthand, though some roasters might use more specific cultivar language; otherwise this is indistinguishable from a real page."
+    }
+  },
+  "label": {
+    "page_type": "coffee_product",
+    "is_specialty_coffee": true,
+    "coffee.coffee_name": "Rwanda Kanzu Lot 14",
+    "coffee.roaster": "North Pier Coffee",
+    "coffee.roaster_location": "Duluth, Minnesota",
+    "coffee.roaster_country": "USA",
+    "coffee.origin_country": "Rwanda",
+    "coffee.origin_region": "Nyamasheke, Western Province",
+    "coffee.process_method": [
+      "Washed"
+    ],
+    "coffee.variety": [
+      "Bourbon"
+    ],
+    "coffee.producer_or_farm": "Kanzu Washing Station + surrounding smallholder farmers",
+    "coffee.altitude": "1,800–2,100 masl",
+    "coffee.roast_level": "Light",
+    "coffee.harvest_period": "June–August 2024",
+    "coffee.is_blend": false,
+    "coffee.is_espresso": false,
+    "coffee.is_decaf": false,
+    "coffee.is_coferment_or_infused": false,
+    "coffee.sensory_text": "Tasting Notes: red currant, orange marmalade, black tea, cane sugar\n\nIn the cup we find the classic sparkle we love from western Rwanda: red currant up front, orange marmalade sweetness through the middle, and a clean black-tea finish.",
+    "coffee.display_tasting_notes": "red currant, orange marmalade, black tea, cane sugar",
+    "coffee.producer_text": "This lot comes from the Kanzu washing station on the steep green hills above Lake Kivu. Farmers deliver hand-picked cherry in the afternoon, and the station team sorts, depulps, ferments, washes, and slow-dries the parchment on raised beds.",
+    "price.listed_price": 21.5,
+    "price.listed_currency": "USD",
+    "price.bag_size_value": 250.0,
+    "price.bag_size_unit": "g",
+    "price.package_grams": 250.0,
+    "price.bags_count": null,
+    "price.price_type": "one_time",
+    "price.availability": "in_stock"
+  },
+  "incumbent": {
+    "model": "gpt-4o-mini",
+    "hit_fields": [],
+    "extraction": {
+      "page_type": "coffee_product",
+      "is_specialty_coffee": true,
+      "coffee": {
+        "coffee_name": "Rwanda Kanzu Lot 14",
+        "roaster": "North Pier Coffee",
+        "roaster_location": "Duluth",
+        "roaster_country": "USA",
+        "origin_country": "Rwanda",
+        "origin_region": "Nyamasheke, Western Province",
+        "process_method": [
+          "Washed"
+        ],
+        "variety": [
+          "Bourbon"
+        ],
+        "producer_or_farm": "Kanzu Washing Station + surrounding smallholder farmers",
+        "altitude": "1,800–2,100 masl",
+        "roast_level": "Light",
+        "harvest_period": "June–August 2024",
+        "is_blend": false,
+        "is_espresso": false,
+        "is_decaf": false,
+        "is_coferment_or_infused": false,
+        "sensory_text": "In the cup we find the classic sparkle we love from western Rwanda: red currant up front, orange marmalade sweetness through the middle, and a clean black-tea finish.",
+        "display_tasting_notes": "red currant, orange marmalade, black tea, cane sugar",
+        "producer_text": "This lot comes from the Kanzu washing station on the steep green hills above Lake Kivu. Farmers deliver hand-picked cherry in the afternoon, and the station team sorts, depulps, ferments, washes, and slow-dries the parchment on raised beds.",
+        "source_snippets": [
+          {
+            "field": "origin",
+            "snippet": "Origin: Rwanda"
+          },
+          {
+            "field": "process",
+            "snippet": "Process: Washed"
+          },
+          {
+            "field": "variety",
+            "snippet": "Variety: Bourbon"
+          },
+          {
+            "field": "tasting_notes",
+            "snippet": "Tasting Notes: red currant, orange marmalade, black tea, cane sugar"
+          },
+          {
+            "field": "producer",
+            "snippet": "Producer: Kanzu Washing Station + surrounding smallholder farmers"
+          },
+          {
+            "field": "altitude",
+            "snippet": "Altitude: 1,800–2,100 masl"
+          }
+        ]
+      },
+      "price": {
+        "listed_price": 21.5,
+        "listed_currency": "USD",
+        "original_listed_price": null,
+        "original_listed_currency": null,
+        "bag_size_value": 250.0,
+        "bag_size_unit": "g",
+        "package_grams": 250.0,
+        "bags_count": null,
+        "price_100g_usd": 8.6,
+        "price_type": "one_time",
+        "availability": "in_stock",
+        "assumptions": [
+          "currency assumed USD from $",
+          "default variant selected"
+        ]
+      },
+      "quality": {
+        "extraction_quality": "good",
+        "missing_fields": [],
+        "warnings": []
+      }
+    }
+  }
+}

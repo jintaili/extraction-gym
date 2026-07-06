@@ -15,7 +15,7 @@ from pathlib import Path
 
 import yaml
 
-from extraction_gym.adapters.coffee.extractor import CoffeeExtractor, ExtractionResult
+from extraction_gym.adapters.coffee.extractor import CoffeeExtractor, ExtractionResult, production_prompt_id
 from extraction_gym.core.cache import ExtractionCache
 
 # Fields the labeling protocol hand-checks on every page regardless of model agreement.
@@ -109,7 +109,10 @@ async def prelabel_goldset(
         results: dict[str, dict] = {}
         for model in models:
             key = ExtractionCache.key(
-                page_text=page_text, prompt_id="prod-v2", model=model, params={"decoding": "default"}
+                page_text=page_text,
+                prompt_id=production_prompt_id(),
+                model=model,
+                params={"decoding": "default"},
             )
             cached = cache.get(key)
             if cached is None:

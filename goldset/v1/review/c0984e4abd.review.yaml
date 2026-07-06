@@ -10,7 +10,7 @@ instructions: 'Fill every null in draft_label by adjudicating disagreements agai
 draft_label:
   page_type: coffee_product
   is_specialty_coffee: false
-  coffee.coffee_name: null
+  coffee.coffee_name: Dunkin' Original Blend Whole Bean Medium Roast Coffee
   coffee.roaster: Dunkin' Donuts
   coffee.roaster_location: null
   coffee.roaster_country: unknown
@@ -22,23 +22,23 @@ draft_label:
   - unknown
   coffee.producer_or_farm: null
   coffee.altitude: null
-  coffee.roast_level: null
+  coffee.roast_level: Medium Roast
   coffee.harvest_period: null
-  coffee.is_blend: null
+  coffee.is_blend: true
   coffee.is_espresso: false
   coffee.is_decaf: false
   coffee.is_coferment_or_infused: false
-  coffee.sensory_text: null
-  coffee.display_tasting_notes: null
-  coffee.producer_text: null
+  coffee.sensory_text: ''
+  coffee.display_tasting_notes: ''
+  coffee.producer_text: ''
   price.listed_price: null
   price.listed_currency: null
   price.bag_size_value: 18.0
   price.bag_size_unit: oz
-  price.package_grams: null
+  price.package_grams: 510.2914158
   price.bags_count: null
   price.price_type: unknown
-  price.availability: null
+  price.availability: in_stock
 disagreements:
   coffee.coffee_name:
     a: Dunkin' Original Blend Whole Bean Medium Roast Coffee
@@ -103,3 +103,8 @@ models:
   a: gpt-4o-mini
   b: gpt-5.5
   prompt_id: dab81a86fe
+resolution_notes:
+  coffee.coffee_name: size suffix dropped (Bombona precedent)
+  coffee.is_blend: '''Original Blend'' in product name'
+  coffee.sensory_text: 'mass-market page states no tasting content: empty, not ''unknown'' junk'
+  price.package_grams: 18oz x 28.3495231 full precision

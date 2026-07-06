@@ -16,10 +16,11 @@ draft_label:
   coffee.roaster_country: United States
   coffee.origin_country: Colombia
   coffee.origin_region: Huila
-  coffee.process_method: null
+  coffee.process_method:
+  - Washed Co-Fermentation with Pineapple
   coffee.variety:
   - Purple Caturra
-  coffee.producer_or_farm: null
+  coffee.producer_or_farm: Rodrigo Sanchez; Finca Monteblanco
   coffee.altitude: 1730 MASL
   coffee.roast_level: null
   coffee.harvest_period: null
@@ -29,7 +30,8 @@ draft_label:
   coffee.is_coferment_or_infused: true
   coffee.sensory_text: 'Tastes Like: Pineapple, Pine Ame, Passionfruit'
   coffee.display_tasting_notes: Pineapple, Pine Ame, Passionfruit
-  coffee.producer_text: null
+  coffee.producer_text: 'Origin: Finca Monteblanco, Huila, Colombia; Variety: Purple Caturra; Producer:
+    Rodrigo Sanchez; Elevation: 1730 MASL; Process: Washed Co-Fermentation with Pineapple'
   price.listed_price: 25.0
   price.listed_currency: USD
   price.bag_size_value: 8.0
@@ -122,3 +124,8 @@ models:
   a: gpt-4o-mini
   b: gpt-5.5
   prompt_id: dab81a86fe
+resolution_notes:
+  coffee.process_method: verbatim compound kept as one term (Brandywine precedent); curator cold split
+    it - flag for review
+  coffee.producer_or_farm: R13 semicolon format of curator cold
+  coffee.producer_text: R14 spec lines (this was a flagged ~ cold form)

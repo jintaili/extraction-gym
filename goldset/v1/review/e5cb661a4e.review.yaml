@@ -10,17 +10,17 @@ instructions: 'Fill every null in draft_label by adjudicating disagreements agai
 draft_label:
   page_type: coffee_product
   is_specialty_coffee: true
-  coffee.coffee_name: null
+  coffee.coffee_name: 2026 Danche, White Honey - Ethiopia
   coffee.roaster: SEY
-  coffee.roaster_location: null
-  coffee.roaster_country: null
+  coffee.roaster_location: Brooklyn, NY
+  coffee.roaster_country: United States
   coffee.origin_country: Ethiopia
   coffee.origin_region: Gedeb, Gedeo
   coffee.process_method:
   - White Honey
   coffee.variety:
   - Ethiopian Landrace
-  coffee.producer_or_farm: null
+  coffee.producer_or_farm: Neguesse Debela; Danche
   coffee.altitude: 2,200 masl
   coffee.roast_level: null
   coffee.harvest_period: December 2025
@@ -28,9 +28,21 @@ draft_label:
   coffee.is_espresso: false
   coffee.is_decaf: false
   coffee.is_coferment_or_infused: false
-  coffee.sensory_text: null
+  coffee.sensory_text: In the cup we find peach tea, watermelon, and Key lime.
   coffee.display_tasting_notes: peach tea, watermelon, Key lime
-  coffee.producer_text: null
+  coffee.producer_text: 'This year, we worked with the Danche site and the SNAP quality control team to
+    try to build even higher-quality lot selections. The results of these new protocols have been exceptional.;
+    VARIETAL: Ethiopian Landrace; REGION: Gedeb, Gedeo; ALTITUDE: 2,200 masl; HARVEST: December 2025;
+    PROCESSING: Hand-picked exclusively at bright red ripeness. Floated to remove defects. De-pulped as
+    quickly as possible, intentionally leaving on a small amount of mucilage. Dried on shaded beds with
+    mucilage intact for three days until moisture content reaches ~10%.; ABOUT DANCHE: Neguesse Debela
+    began operating his first site in Worka Chelbessa in 2017, later expanding with the purchase of a
+    second washing station in the nearby sub-region of Danche in 2019. Both sites produce exceptional
+    washed and natural coffees and have increasingly focused on experimental processing and quality refinement.
+    This year, in collaboration with the SNAP quality control team and Tim Hill, a new selection process
+    was developed—drawing from the top Grade 1 lots produced at Danche and subjecting them to an intensive
+    cupping and separation process to identify the finest coffees of the harvest. The results have been
+    remarkable.; FOB (USD; GREEN): $17.61/KG; DDP: $21.46/KG'
   price.listed_price: 27.5
   price.listed_currency: USD
   price.bag_size_value: 250.0
@@ -38,7 +50,7 @@ draft_label:
   price.package_grams: 250.0
   price.bags_count: null
   price.price_type: one_time
-  price.availability: null
+  price.availability: sold_out
 disagreements:
   coffee.coffee_name:
     a: 2026 Danche, White Honey - Ethiopia
@@ -144,3 +156,8 @@ models:
   a: gpt-4o-mini
   b: gpt-5.5
   prompt_id: dab81a86fe
+resolution_notes:
+  coffee.coffee_name: curator cold + embedded variant name
+  coffee.producer_or_farm: R13 format of curator cold value
+  coffee.producer_text: 'Sey pattern: intro + spec + processing + ABOUT DANCHE + transparency lines; ABOUT
+    ETHIOPIAN LANDRACE excluded as generic'

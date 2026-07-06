@@ -20,7 +20,7 @@ draft_label:
   - Profile fermented
   coffee.variety:
   - Gesha
-  coffee.producer_or_farm: null
+  coffee.producer_or_farm: Finca Las Flores
   coffee.altitude: 1750 masl
   coffee.roast_level: Whole bean coffee roasted for filter
   coffee.harvest_period: null
@@ -30,8 +30,14 @@ draft_label:
   coffee.is_coferment_or_infused: false
   coffee.sensory_text: Complex, refreshing and aromatic. Notes of rosehip, jasmine, and lemongrass.
   coffee.display_tasting_notes: rosehip, jasmine, lemongrass
-  coffee.producer_text: null
-  price.listed_price: null
+  coffee.producer_text: 'Origin: Huila, Colombia; Process: Profile fermented; Varieties: Gesha; Altitude:
+    1750 masl; Roast: Whole bean coffee roasted for filter; 33,07 USD/KG; The amount we''ve chosen to
+    pay based on the quality of the coffee; Finca Las Flores; Produced together with; Las Flores; Las
+    Flores is behind this outstanding community project, where a strong focus on fermentation expertise
+    helps bring out next-level flavour nuances in the coffees. After the success of Finca Las Flores,
+    the Vergara brothers expanded their work to support neighbouring farmers through a project called
+    Peñas Blancas.'
+  price.listed_price: 151.2
   price.listed_currency: DKK
   price.bag_size_value: 200.0
   price.bag_size_unit: g
@@ -110,3 +116,9 @@ models:
   a: gpt-4o-mini
   b: gpt-5.5
   prompt_id: dab81a86fe
+resolution_notes:
+  coffee.producer_or_farm: single stated entity, bare per R13
+  price.listed_price: embedded variant 151.20 vs rounded display 151 (Nueva Alianza precedent)
+  _stratum_alert: 'IMPORTANT: this /da/ URL rendered in ENGLISH (production fetches with Accept-Language
+    en-US) - the Danish-language slot is NOT actually Danish. Informative in itself: production sees EN
+    renderings of localized sites. Stratum D needs a page that stays native-language, or accept this finding.'

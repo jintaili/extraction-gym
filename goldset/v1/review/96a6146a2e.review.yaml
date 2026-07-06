@@ -20,7 +20,7 @@ draft_label:
   - Washed
   coffee.variety:
   - Gesha
-  coffee.producer_or_farm: null
+  coffee.producer_or_farm: Dwight Aguilar; Nueva Allianza
   coffee.altitude: 1820 masl
   coffee.roast_level: Whole bean coffee roasted for filter
   coffee.harvest_period: null
@@ -31,8 +31,11 @@ draft_label:
   coffee.sensory_text: Balanced and aromatic. Floral aromas alongside notes of peach, citrus and muscovado
     sugar.
   coffee.display_tasting_notes: Floral, peach, citrus, muscovado sugar
-  coffee.producer_text: null
-  price.listed_price: null
+  coffee.producer_text: 'Origin: Cusco, Peru; Process: Washed; Varieties: Gesha; Altitude: 1820 masl;
+    Roast: Whole bean coffee roasted for filter; Dwight Aguilar; Produced together with; 22,05 USD/KG;
+    The price we''ve chosen to pay for the coffee based on quality; Dwight Aguilar grew up on his farm,
+    Nueva Allianza, and has farmed it since a young age.'
+  price.listed_price: 159.2
   price.listed_currency: DKK
   price.bag_size_value: 250.0
   price.bag_size_unit: g
@@ -151,3 +154,7 @@ models:
   a: gpt-4o-mini
   b: gpt-5.5
   prompt_id: dab81a86fe
+resolution_notes:
+  coffee.producer_or_farm: R13; page spells the farm 'Nueva Allianza' (double l) in prose - kept verbatim
+  price.listed_price: display rounds to 159 DKK but embedded variant (also referee input) says 159.20
+    - actual variant price wins; decision-log worthy

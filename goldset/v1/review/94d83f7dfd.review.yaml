@@ -37,7 +37,7 @@ draft_label:
   price.bag_size_unit: null
   price.package_grams: null
   price.bags_count: null
-  price.price_type: null
+  price.price_type: unknown
   price.availability: unknown
 disagreements:
   price.listed_price:
@@ -78,3 +78,6 @@ models:
   a: gpt-4o-mini
   b: gpt-5.5
   prompt_id: dab81a86fe
+resolution_notes:
+  price.listed_price: 'coffee_equipment page: all price fields null by contract even though ''From $6,600''
+    is visible'

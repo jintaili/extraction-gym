@@ -13,7 +13,7 @@ draft_label:
   coffee.coffee_name: Colombia Los Eucaliptos
   coffee.roaster: Leaves Coffee Roasters
   coffee.roaster_location: null
-  coffee.roaster_country: null
+  coffee.roaster_country: Japan
   coffee.origin_country: Colombia
   coffee.origin_region: San Lorenzo, Narino
   coffee.process_method:
@@ -30,7 +30,8 @@ draft_label:
   coffee.is_coferment_or_infused: false
   coffee.sensory_text: Floral, Yellow Peach, Red Currant, Cane Sugar, Clean
   coffee.display_tasting_notes: Floral, Yellow Peach, Red Currant, Cane Sugar, Clean
-  coffee.producer_text: null
+  coffee.producer_text: 'Process: Washed; Region: San Lorenzo, Narino; Producer: Henry Oliver Ceron; Location:
+    1800m; Variety: Geisha'
   price.listed_price: null
   price.listed_currency: null
   price.bag_size_value: 100.0
@@ -38,7 +39,7 @@ draft_label:
   price.package_grams: 100.0
   price.bags_count: null
   price.price_type: unknown
-  price.availability: null
+  price.availability: sold_out
 disagreements:
   coffee.roaster_country:
     a: unknown
@@ -124,3 +125,6 @@ models:
   a: gpt-4o-mini
   b: gpt-5.5
   prompt_id: dab81a86fe
+resolution_notes:
+  coffee.roaster_country: Japanese-language page, .jp domain, JPY prices on sibling products
+  price.availability: お取り扱いなし (not available)

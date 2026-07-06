@@ -82,6 +82,18 @@ producer. Proposed rule: when both appear, record "producer, farm" joined with "
 (e.g. "Lamastus Family, El Burro"); scorer credits either component. Alternative: producer
 wins. Decide before assisted review.
 
+## R14. Structured spec blocks in verbatim text fields (PROPOSED, from cold forms)
+
+Many pages carry lot details as spec lines (Producer: X / Elevation: Y / Process: Z) and
+tasting notes as a labeled line (Tasting Notes: A, B, C) rather than prose. Proposed rule,
+matching observed production extractor behavior: these lines COUNT. producer_text joins the
+relevant spec lines and lot prose in page order with "; ". sensory_text includes labeled
+tasting-note lines (e.g. "Tastes Like: Pineapple, Pine Ame, Passionfruit"). Generic
+country/process explainer paragraphs not specific to the lot are EXCLUDED. Absent means
+empty string "". Affected cold forms to revisit once decided: 672c1b9795, b115e3916e,
+ee70a8fc3c (52915c5c1a producer_text is genuinely absent: the "Produced together with"
+widget loses its name in the html-to-text pipeline).
+
 ## Decision log
 
 | date | page id | field | decision | rule affected |

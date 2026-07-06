@@ -85,3 +85,24 @@ class GoldsetStore:
             if text_sha256(text) != meta["sha256"]:
                 corrupted.append(page_id)
         return corrupted
+
+    def verify_manifest(self) -> list[str]:
+        """After freeze: page set and checksums must match MANIFEST.json exactly."""
+        manifest_path = self.root / "MANIFEST.json"
+        if not manifest_path.exists():
+            return []
+        manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+        problems = []
+        manifest_ids = set()
+        for page in manifest["pages"]:
+            page_id = page["page_id"]
+            manifest_ids.add(page_id)
+            text_path = self.pages_dir / f"{page_id}.txt"
+            if not text_path.exists():
+                problems.append(f"missing page {page_id}")
+            elif text_sha256(text_path.read_text(encoding="utf-8")) != page["sha256"]:
+                problems.append(f"checksum mismatch {page_id}")
+        on_disk = {p.name.removesuffix(".txt") for p in self.pages_dir.glob("*.txt")}
+        for extra in sorted(on_disk - manifest_ids):
+            problems.append(f"page not in manifest: {extra}")
+        return problems

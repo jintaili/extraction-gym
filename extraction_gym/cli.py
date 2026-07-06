@@ -35,6 +35,16 @@ def main() -> None:
     check = sub.add_parser("checkforms", help="Validate filled cold-label forms")
     check.add_argument("--goldset", default="goldset/v1")
 
+    lab = sub.add_parser("labelize", help="Convert VERIFIED review files into gold labels")
+    lab.add_argument("--goldset", default="goldset/v1")
+
+    cdiff = sub.add_parser("colddiff", help="Residual-error audit: cold labels vs final labels")
+    cdiff.add_argument("--goldset", default="goldset/v1")
+
+    frz = sub.add_parser("freeze", help="Freeze the gold set: write immutable MANIFEST.json")
+    frz.add_argument("--goldset", default="goldset/v1")
+    frz.add_argument("--version", default="v1")
+
     args = parser.parse_args()
     if args.command == "snapshot":
         _cmd_snapshot(args)
@@ -46,6 +56,12 @@ def main() -> None:
         _cmd_coldforms(args)
     elif args.command == "checkforms":
         _cmd_checkforms(args)
+    elif args.command == "labelize":
+        _cmd_labelize(args)
+    elif args.command == "colddiff":
+        _cmd_colddiff(args)
+    elif args.command == "freeze":
+        _cmd_freeze(args)
 
 
 def _cmd_snapshot(args: argparse.Namespace) -> None:
@@ -105,10 +121,54 @@ def _cmd_checkforms(args: argparse.Namespace) -> None:
         sys.exit(1)
 
 
+def _cmd_labelize(args: argparse.Namespace) -> None:
+    from extraction_gym.core.labelize import labelize
+
+    summary = labelize(Path(args.goldset))
+    for warning in summary["warnings"]:
+        print(f"WARN {warning}")
+    print(f"labels written: {len(summary['written'])}, not yet VERIFIED: {len(summary['skipped_not_verified'])}")
+
+
+def _cmd_colddiff(args: argparse.Namespace) -> None:
+    from extraction_gym.core.labelize import colddiff
+
+    audit = colddiff(Path(args.goldset))
+    if audit["pending"]:
+        print(f"pending (no DONE cold form or no final label yet): {' '.join(audit['pending'])}")
+    for page_id, fields in audit["per_page"].items():
+        print(f"{page_id}: {', '.join(fields)}")
+    rate = audit["residual_error_rate"]
+    print(
+        f"audit pages: {audit['audit_pages']}, fields compared: {audit['fields_compared']}, "
+        f"changed: {audit['fields_changed']}, residual error rate: "
+        + (f"{rate:.3f}" if rate is not None else "n/a")
+    )
+
+
+def _cmd_freeze(args: argparse.Namespace) -> None:
+    from extraction_gym.core.freeze import FreezeError, freeze
+
+    try:
+        manifest = freeze(Path(args.goldset), version=args.version)
+    except FreezeError as exc:
+        print(f"REFUSED: {exc}")
+        sys.exit(1)
+    print(
+        f"frozen {manifest['version']}: {manifest['page_count']} pages, "
+        f"residual error {manifest['residual_label_error']['rate']:.3f}"
+    )
+
+
 def _cmd_verify(args: argparse.Namespace) -> None:
-    corrupted = GoldsetStore(Path(args.goldset)).verify_checksums()
+    store = GoldsetStore(Path(args.goldset))
+    corrupted = store.verify_checksums()
+    manifest_problems = store.verify_manifest()
     if corrupted:
         print(f"CORRUPTED: {', '.join(corrupted)}")
+    for problem in manifest_problems:
+        print(f"MANIFEST: {problem}")
+    if corrupted or manifest_problems:
         sys.exit(1)
     print("all checksums OK")
 

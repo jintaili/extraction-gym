@@ -42,6 +42,7 @@ label:
   coffee.is_coferment_or_infused: null  # true | false; additives during processing only
   # Long verbatim fields use YAML block style (|-) so colons and quotes in prose are safe.
   # Replace ~ with your text on the indented lines; keep the |- marker.
+  # If the page has NO such text, replace the whole entry with:  coffee.sensory_text: ""
   coffee.sensory_text: |-
     ~
   coffee.display_tasting_notes: null    # concise comma-separated note names (R8)

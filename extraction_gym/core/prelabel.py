@@ -51,6 +51,24 @@ def label_fields(extraction: dict) -> dict:
     return flat
 
 
+# Schema convention: these string fields use "unknown", never null/empty.
+UNKNOWN_STRING_FIELDS = {"coffee.roaster_country", "coffee.origin_country", "coffee.origin_region"}
+
+
+def canonicalize_label(label: dict) -> dict:
+    """Normalize human/model label conventions so comparisons measure content, not style."""
+    out = {}
+    for field, value in label.items():
+        if isinstance(value, str):
+            value = value.strip()
+        if field in UNKNOWN_STRING_FIELDS and (value is None or value == ""):
+            value = "unknown"
+        if field == "price.bags_count" and value == 1:
+            value = None
+        out[field] = value
+    return out
+
+
 def values_agree(a, b) -> bool:
     def norm(v):
         if isinstance(v, str):

@@ -9,8 +9,8 @@ instructions: 'Fill every null in draft_label by adjudicating disagreements agai
   VERIFIED when done.'
 draft_label:
   page_type: coffee_product
-  is_specialty_coffee: null
-  coffee.coffee_name: null
+  is_specialty_coffee: false
+  coffee.coffee_name: Coffee Planet Breakfast Specialty Coffee Ground
   coffee.roaster: Coffee Planet
   coffee.roaster_location: null
   coffee.roaster_country: United Arab Emirates
@@ -18,7 +18,8 @@ draft_label:
   coffee.origin_region: unknown
   coffee.process_method:
   - unknown
-  coffee.variety: null
+  coffee.variety:
+  - unknown
   coffee.producer_or_farm: null
   coffee.altitude: null
   coffee.roast_level: Medium Roast
@@ -27,9 +28,10 @@ draft_label:
   coffee.is_espresso: false
   coffee.is_decaf: false
   coffee.is_coferment_or_infused: false
-  coffee.sensory_text: null
+  coffee.sensory_text: A medium roast with a taste of almonds, caramel and dark chocolate.
   coffee.display_tasting_notes: Almonds, caramel, dark chocolate
-  coffee.producer_text: null
+  coffee.producer_text: 'Ingredients: 100% Arabica Specialty Ground Coffee; Country of Origin: United
+    Arab Emirates'
   price.listed_price: 32.75
   price.listed_currency: AED
   price.bag_size_value: 250.0
@@ -119,3 +121,9 @@ models:
   a: gpt-4o-mini
   b: gpt-5.5
   prompt_id: dab81a86fe
+resolution_notes:
+  is_specialty_coffee: 'R11: ''Specialty'' in brand name but no farm origin/process/variety stated ->
+    false'
+  coffee.variety: a's 'Breakfast Specialty Coffee' is a product name, not a variety
+  coffee.producer_text: spec lines grep-verified; note Country of Origin here means place of roasting
+    (UAE)

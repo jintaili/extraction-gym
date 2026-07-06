@@ -11,7 +11,7 @@ draft_label:
   page_type: coffee_product
   is_specialty_coffee: true
   coffee.coffee_name: Los Sueños - Decaf
-  coffee.roaster: null
+  coffee.roaster: Passenger
   coffee.roaster_location: null
   coffee.roaster_country: unknown
   coffee.origin_country: Colombia
@@ -109,8 +109,8 @@ models:
   b: gpt-5.5
   prompt_id: dab81a86fe
 resolution_notes:
-  coffee.roaster: page text never names the roaster; null (unknown-string convention is only for country/region
-    fields)
+  coffee.roaster: 'AMENDED for cross-page consistency: domain evidence, same as the two other Passenger
+    pages'
   coffee.roaster_location: '''Lancaster'' is a storage facility mention, not stated as roaster location'
   coffee.origin_region: 'page: community lots in Divino Niño (Colombia)'
   coffee.sensory_text: 'R12: notes line + cup description joined'

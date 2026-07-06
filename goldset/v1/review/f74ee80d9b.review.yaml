@@ -11,24 +11,26 @@ draft_label:
   page_type: coffee_product
   is_specialty_coffee: true
   coffee.coffee_name: Fausto Romo Sidra - Honey Process - 2025
-  coffee.roaster: null
+  coffee.roaster: Passenger
   coffee.roaster_location: null
   coffee.roaster_country: unknown
   coffee.origin_country: Ecuador
-  coffee.origin_region: null
+  coffee.origin_region: Pichincha
   coffee.process_method:
   - Honey Process
   coffee.variety:
   - Sidra
-  coffee.producer_or_farm: null
+  coffee.producer_or_farm: Fausto Romo; La Carolina
   coffee.altitude: null
   coffee.roast_level: null
-  coffee.harvest_period: null
+  coffee.harvest_period: 2025 harvest
   coffee.is_blend: false
   coffee.is_espresso: false
   coffee.is_decaf: false
   coffee.is_coferment_or_infused: false
-  coffee.sensory_text: null
+  coffee.sensory_text: Notes of Lychee, Green Apple, Caramel; Featuring a notably fruitier flavor profile
+    compared to its washed-process counterpart, we taste fresh raspberry and lychee in the cup as well
+    as tangy green apple, caramel, and subtle watermelon in the finish.
   coffee.display_tasting_notes: Lychee, Green Apple, Caramel
   coffee.producer_text: Released alongside a washed process lot from the 2025 harvest at La Carolina in
     Pichincha, Ecuador, this honey processed sidra variety separation from producer Fausto Romo exemplifies
@@ -115,3 +117,7 @@ models:
   a: gpt-4o-mini
   b: gpt-5.5
   prompt_id: dab81a86fe
+resolution_notes:
+  coffee.roaster: domain drinkpassenger.com (consistency with Ivan Gutierrez page)
+  coffee.origin_region: La Carolina is the farm, Pichincha the region
+  coffee.producer_or_farm: 'R13: producer; farm'

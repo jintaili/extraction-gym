@@ -68,31 +68,40 @@ least one of: process method, variety, or roast date. Mass-market pages (Dunkin'
 blends with no origin story) are false. Null unless `page_type` is `coffee_product`.
 Report-only in gates until this rule survives a full labeling pass.
 
-## R12. Multiple tasting-note blocks (PROPOSED, from cold form 2f273f134c)
+## R12. Multiple tasting-note blocks (RECOMMENDED 2026-07-05, pending curator veto)
 
-Pages often split sensory prose across non-adjacent blocks (a marketing intro plus an
-"In the cup" section). Curator's cold label stitched both. Proposed amendment to R7:
-sensory_text may join ALL tasting-note blocks in page order, separated by "; ". Confirm
-or restrict to adjacent blocks only.
+sensory_text may stitch ALL lot-specific tasting/cup description blocks in page order,
+joined with "; ". Generic marketing prose and boilerplate (brew guides, country explainers)
+are excluded. Rationale: pages routinely split sensory content (headline notes plus an
+"In the cup" section); both prelabel models and the curator's cold labels stitch, and the
+token-F1 scorer degrades gracefully on span-boundary differences either way.
 
-## R13. Producer vs farm when both are stated (PROPOSED, from cold form 2f273f134c)
+## R13. Producer vs farm when both are stated (RECOMMENDED 2026-07-05, pending curator veto)
 
-September page states Producer: Lamastus Family AND Farm: El Burro. Curator labeled the
-producer. Proposed rule: when both appear, record "producer, farm" joined with ", "
-(e.g. "Lamastus Family, El Burro"); scorer credits either component. Alternative: producer
-wins. Decide before assisted review.
+Record ALL stated producer/farm entities, producer first, joined with ", "
+(e.g. "Lamastus Family, El Burro"; blends: "cooperative in Ayarza, smallholder farm in
+Huila"). The token-F1 scorer credits partial matches, so an extractor naming only the
+producer still scores well. Curator's 3e2868c5c0 adjudication already follows this form.
 
-## R14. Structured spec blocks in verbatim text fields (PROPOSED, from cold forms)
+## R14. Field classes: verbatim evidence vs canonical display (RECOMMENDED 2026-07-05,
+pending curator veto; canonical-format principle set by curator)
 
-Many pages carry lot details as spec lines (Producer: X / Elevation: Y / Process: Z) and
-tasting notes as a labeled line (Tasting Notes: A, B, C) rather than prose. Proposed rule,
-matching observed production extractor behavior: these lines COUNT. producer_text joins the
-relevant spec lines and lot prose in page order with "; ". sensory_text includes labeled
-tasting-note lines (e.g. "Tastes Like: Pineapple, Pine Ame, Passionfruit"). Generic
-country/process explainer paragraphs not specific to the lot are EXCLUDED. Absent means
-empty string "". Affected cold forms to revisit once decided: 672c1b9795, b115e3916e,
-ee70a8fc3c (52915c5c1a producer_text is genuinely absent: the "Produced together with"
-widget loses its name in the html-to-text pipeline).
+Two classes of text fields with different rules:
+
+1. Verbatim evidence fields (sensory_text, producer_text): capture what the page says.
+   Structured spec lines (Producer: X / Elevation: Y / Tasting Notes: A, B, C) COUNT as
+   page text; join relevant lines and lot prose in page order with "; ". Lot-specific
+   content only; generic country or process explainer paragraphs are excluded. Absent
+   means empty string "".
+2. Canonical display fields (display_tasting_notes): normalized format, not verbatim.
+   Lowercase noun phrases, comma-separated, no "and", no trailing period, page order,
+   flavor notes only (no body/acidity/finish descriptors: "syrupy body" and "medium
+   acidity" stay in sensory_text but not here). Example: "black cherry, chocolate bar,
+   honey". Scored as a normalized set match, so ordering differences do not penalize.
+
+Cold forms to revisit under R14: 672c1b9795, b115e3916e, ee70a8fc3c (spec-line spans
+count). 52915c5c1a producer_text stays "": the "Produced together with" widget loses its
+name in the html-to-text pipeline, so the text genuinely absent from the referee's input.
 
 ## Decision log
 

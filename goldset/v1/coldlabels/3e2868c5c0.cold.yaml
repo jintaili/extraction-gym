@@ -30,7 +30,7 @@ label:
   # Replace ~ with your text on the indented lines; keep the |- marker.
   coffee.sensory_text: |-
     Black cherry, chocolate bar, honey. Medium acidity, syrupy body.
-  coffee.display_tasting_notes: Black cherry, chocolate bar, honey. Medium acidity, syrupy body    # concise comma-separated note names (R8)
+  coffee.display_tasting_notes: Black cherry, chocolate bar, honey    # concise comma-separated note names (R8)
   coffee.producer_text: |-
     The Crowd Pleaser Espresso is a blend of two component coffees: a natural Guatemala from a cooperative in Ayarza and a washed Colombia from a smallholder farm in Huila. We have cultivated ongoing relationships with both of these producers since 2020 and have grown together to earn the title “relationship coffee.” Over the years, the farm in Colombia has grown from 4 families to 12; long-term support like ours allows for greater sales stability and therefore opportunities to invest in resources, education, quality, and new initiatives. Our continued business contributes to uplifting entire communities with coffee.
   price.listed_price: null       # as displayed for the default/pinned variant (R1, R5, R6)

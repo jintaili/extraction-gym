@@ -76,12 +76,14 @@ are excluded. Rationale: pages routinely split sensory content (headline notes p
 "In the cup" section); both prelabel models and the curator's cold labels stitch, and the
 token-F1 scorer degrades gracefully on span-boundary differences either way.
 
-## R13. Producer vs farm when both are stated (RECOMMENDED 2026-07-05, pending curator veto)
+## R13. Producer vs farm when both are stated (CONFIRMED 2026-07-05, curator-amended)
 
-Record ALL stated producer/farm entities, producer first, joined with ", "
-(e.g. "Lamastus Family, El Burro"; blends: "cooperative in Ayarza, smallholder farm in
-Huila"). The token-F1 scorer credits partial matches, so an extractor naming only the
-producer still scores well. Curator's 3e2868c5c0 adjudication already follows this form.
+Format: "producer; farm" with "; " as the slot delimiter, producer slot first
+(e.g. "Lamastus Family; El Burro"). Multiple entities within one slot are comma-separated
+(blend example: "cooperative in Ayarza, smallholder farm in Huila" is a single source
+slot). Missing-part convention: when only one entity is stated, record it bare with no
+semicolon (the schema field is producer_or_farm, so slot ambiguity for a lone entity is
+acceptable and the token-F1 scorer is delimiter-insensitive). Neither stated: null.
 
 ## R14. Field classes: verbatim evidence vs canonical display (RECOMMENDED 2026-07-05,
 pending curator veto; canonical-format principle set by curator)

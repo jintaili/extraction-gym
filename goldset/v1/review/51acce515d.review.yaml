@@ -14,8 +14,8 @@ draft_label:
   coffee.roaster: null
   coffee.roaster_location: null
   coffee.roaster_country: unknown
-  coffee.origin_country: null
-  coffee.origin_region: null
+  coffee.origin_country: unknown
+  coffee.origin_region: unknown
   coffee.process_method:
   - unknown
   coffee.variety:
@@ -28,9 +28,9 @@ draft_label:
   coffee.is_espresso: false
   coffee.is_decaf: false
   coffee.is_coferment_or_infused: false
-  coffee.sensory_text: null
-  coffee.display_tasting_notes: null
-  coffee.producer_text: null
+  coffee.sensory_text: ''
+  coffee.display_tasting_notes: ''
+  coffee.producer_text: ''
   price.listed_price: null
   price.listed_currency: null
   price.bag_size_value: null
@@ -78,3 +78,6 @@ models:
   a: gpt-4o-mini
   b: gpt-5.5
   prompt_id: dab81a86fe
+resolution_notes:
+  coffee.origin_country: 'not_a_product_page contract: coffee fields null/unknown/empty; model a emitted
+    junk ''>unknown'' tokens'

@@ -14,14 +14,15 @@ draft_label:
   coffee.roaster: Sightglass Coffee
   coffee.roaster_location: null
   coffee.roaster_country: unknown
-  coffee.origin_country: null
-  coffee.origin_region: null
+  coffee.origin_country: blend_multi_origin
+  coffee.origin_region: multi_origin
   coffee.process_method:
   - Washed
-  coffee.variety: null
+  coffee.variety:
+  - unknown
   coffee.producer_or_farm: null
   coffee.altitude: Varying meters above sea level
-  coffee.roast_level: null
+  coffee.roast_level: Medium-Dark Roast
   coffee.harvest_period: null
   coffee.is_blend: true
   coffee.is_espresso: false
@@ -29,7 +30,9 @@ draft_label:
   coffee.is_coferment_or_infused: false
   coffee.sensory_text: Apricot, Cacao Nib, Caramel
   coffee.display_tasting_notes: Apricot, Cacao Nib, Caramel
-  coffee.producer_text: null
+  coffee.producer_text: 'Organic, Toketee is an elevated take on the classic drip blend, showcasing carefully
+    curated, seasonally rotating coffees from Central and South America.; Origin: Central & South America,
+    Pacific; Variety / Processing: Blended / Washed; Growing Altitude: Varying meters above sea level'
   price.listed_price: 21.0
   price.listed_currency: USD
   price.bag_size_value: 12.0
@@ -37,7 +40,7 @@ draft_label:
   price.package_grams: 340.194
   price.bags_count: null
   price.price_type: one_time
-  price.availability: null
+  price.availability: sold_out
 disagreements:
   coffee.origin_country:
     a: Central & South America
@@ -137,3 +140,12 @@ models:
   a: gpt-4o-mini
   b: gpt-5.5
   prompt_id: dab81a86fe
+resolution_notes:
+  coffee.origin_country: page states multi-country blend (Central and South America) -> blend_multi_origin
+    per R9; both models wrong
+  coffee.origin_region: multi_origin convention for multi-country blends
+  coffee.variety: page's 'Blended' is a none-placeholder, not a variety name -> unknown
+  coffee.roast_level: verbatim badge 'Medium-Dark Roast'
+  coffee.producer_text: 'R14: description + Coffee Details spec pairs joined ''; '''
+  price.availability: default 12oz variant shows 'Sold Out - Notify Me'; $21.00 consensus price matches
+    embedded 12oz

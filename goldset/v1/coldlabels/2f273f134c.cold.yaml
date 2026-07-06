@@ -18,7 +18,7 @@ label:
   coffee.origin_region: Potrerillos, Chiriquì Province
   coffee.process_method: ['Natural']      # verbatim terms, e.g. ["white honey"]; ["unknown"] if absent
   coffee.variety: ['Geisha']             # verbatim names, e.g. ["SL-9", "Geisha"]; ["unknown"] if absent
-  coffee.producer_or_farm: Lamastus Family
+  coffee.producer_or_farm: Lamastus Family; El Burro  # R13 retroactive format (page states Farm - El Burro)
   coffee.altitude: 1800 MASL          # as written, with units
   coffee.roast_level: Light       # verbatim, e.g. "Ultralight", "Agtron 58"
   coffee.harvest_period: "2025"    # verbatim crop year / harvest window

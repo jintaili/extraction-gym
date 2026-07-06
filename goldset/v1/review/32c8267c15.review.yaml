@@ -15,7 +15,7 @@ draft_label:
   coffee.roaster_location: null
   coffee.roaster_country: unknown
   coffee.origin_country: Peru
-  coffee.origin_region: null
+  coffee.origin_region: Barro Negro, Cajamarca
   coffee.process_method:
   - fermented in cherry for 12 hours
   - pulped and floated
@@ -24,7 +24,7 @@ draft_label:
   - dried on raised beds under shade for 20-25 days
   coffee.variety:
   - Gesha
-  coffee.producer_or_farm: null
+  coffee.producer_or_farm: Maria Nieves Tantalean Fernandez; El Chin Chin
   coffee.altitude: 1850 masl
   coffee.roast_level: Light
   coffee.harvest_period: September 2025
@@ -32,9 +32,15 @@ draft_label:
   coffee.is_espresso: false
   coffee.is_decaf: false
   coffee.is_coferment_or_infused: false
-  coffee.sensory_text: null
+  coffee.sensory_text: 'a complex, mouth-filling, bright, vibrant coffee with notes of bergamot, rosehip,
+    passionfruit, raspberry and tangerine; TASTING NOTES: Bright raspberry, bergamot, passionfruit, tangerine
+    and jasmine; ACIDITY: Bright and articulate citrus acidity; FUNK: Very little; some slight jammy blackberry/blueberry
+    but presents as bright and ripe'
   coffee.display_tasting_notes: raspberry, bergamot, passionfruit, tangerine, jasmine
-  coffee.producer_text: null
+  coffee.producer_text: Gesha grown at 1850 masl using organic methods by Maria Nieves at El Chin Chin
+    in Barro Negro, Cajamarca, Peru; selectively hand-picked and sorted in September 2025; fermented in
+    cherry for 12 hours; pulped and floated; fermented in tile tanks under water for 24 hours; washed;
+    dried on raised beds under shade for 20-25 days; exported through ASPROCAFE; imported by Yellow Rooster
   price.listed_price: 42.0
   price.listed_currency: USD
   price.bag_size_value: 200.0
@@ -123,3 +129,9 @@ models:
   a: gpt-4o-mini
   b: gpt-5.5
   prompt_id: dab81a86fe
+resolution_notes:
+  coffee.origin_region: 'page: El Chin Chin in Barro Negro, Cajamarca'
+  coffee.producer_or_farm: 'R13: producer; farm(plot El Chin Chin); Asprocafe coop omitted from slot,
+    present in producer_text'
+  coffee.sensory_text: 'R12: cup quote + ROAST AND CUP PROFILE lines joined'
+  coffee.producer_text: 'b: full process chain is on-page; a truncated it'

@@ -15,7 +15,7 @@ draft_label:
   coffee.roaster_location: null
   coffee.roaster_country: unknown
   coffee.origin_country: Colombia
-  coffee.origin_region: null
+  coffee.origin_region: Divino Niño
   coffee.process_method:
   - Ethyl Acetate Decaffeination
   coffee.variety:
@@ -28,7 +28,8 @@ draft_label:
   coffee.is_espresso: false
   coffee.is_decaf: true
   coffee.is_coferment_or_infused: false
-  coffee.sensory_text: null
+  coffee.sensory_text: Notes of Cherry, Black Tea, Caramel; Caramel and toasted nuts on the nose introduce
+    a rich cup with flavors of cocoa, black tea, and a hint of ripe cherry.
   coffee.display_tasting_notes: Cherry, Black Tea, Caramel
   coffee.producer_text: Our Los Sueños Decaf is comprised of community lots from our producer partners
     in Divino Niño. These lots are Ethyl Acetate decaffeinated in Colombia before heading directly to
@@ -107,3 +108,9 @@ models:
   a: gpt-4o-mini
   b: gpt-5.5
   prompt_id: dab81a86fe
+resolution_notes:
+  coffee.roaster: page text never names the roaster; null (unknown-string convention is only for country/region
+    fields)
+  coffee.roaster_location: '''Lancaster'' is a storage facility mention, not stated as roaster location'
+  coffee.origin_region: 'page: community lots in Divino Niño (Colombia)'
+  coffee.sensory_text: 'R12: notes line + cup description joined'

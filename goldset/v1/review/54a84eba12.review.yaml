@@ -20,17 +20,36 @@ draft_label:
   - Washed
   coffee.variety:
   - Gesha
-  coffee.producer_or_farm: Jose Ignacio Gomez Lopez // Finca Los Angeles
-  coffee.altitude: null
+  coffee.producer_or_farm: Jose Ignacio Gomez Lopez; Finca Los Angeles
+  coffee.altitude: over 2,000masl
   coffee.roast_level: null
   coffee.harvest_period: null
   coffee.is_blend: false
   coffee.is_espresso: false
   coffee.is_decaf: false
-  coffee.is_coferment_or_infused: null
-  coffee.sensory_text: null
-  coffee.display_tasting_notes: null
-  coffee.producer_text: null
+  coffee.is_coferment_or_infused: false
+  coffee.sensory_text: 'Tasting notes: honeycrisp apple, blood orange, honeysuckle; In the cup, we experienced
+    an insane transformation from hot to cold here, starting off with loud notes of honeycrisp apple,
+    blood orange, and honeysuckle before cooling into a predominantly floral and clean cup that consisted
+    of apricot, orange blossom, and jasmine, much like some washed Ethiopians we''ve had.'
+  coffee.display_tasting_notes: honeycrisp apple, blood orange, honeysuckle
+  coffee.producer_text: 'Region: Narino, Colombia; Producer: Jose Ignacio Gomez Lopez // Finca Los Angeles;
+    Varietal: Gesha; Process: Washed; José Ignacio Gómez López began planting specialty coffee in the
+    90s, one of the first in the surrounding area of Buesaco to do so. Finca Los Angeles sits at over
+    2,000masl and covers roughly 9 hectares, where José also plants various fruit trees and plantains
+    for shade, allowing the coffee cherries to ripen more slowly and promote nitrogen fixing in the soil.
+    Finca Los Angeles is home to several coffee varieties including gesha, pink bourbon, and papayo. Processing
+    for this washed gesha lot was extremely tightly controlled and documented, and includes an unusual
+    step that we have begun to see a bit more of this year. Coffees are first floated and sorted for defects
+    before undergoing a 24hr anaerobic held in cherry step, then after the mucilage is removed and the
+    beans are fully washed, they are left dry, without water in sealed tanks for 72 hours as a "bulk"
+    or "spontaneous" fermentation. Both Alo''s moonshadow washed process and Durley Sanchez''s pink bourbon
+    also utilized this step, and we''ve found across all 3 coffees this creates an intensely unique and
+    punchy floral sweetness, as well as deepened complexity compared to standard washed processes. Last
+    year we sourced Finca Los Angeles''s washed gesha for an exclusive collab with Airworks Coffee and
+    were absolutely blown away by the clarity and complexity the green had to offer. This year''s harvest
+    is no different, and of the 3 Narino geshas we''ve had recently this one is hitting the hardest on
+    the QC bench for us.; Source: PROCAAL'
   price.listed_price: 25.0
   price.listed_currency: USD
   price.bag_size_value: 125.0
@@ -151,3 +170,12 @@ models:
   a: gpt-4o-mini
   b: gpt-5.5
   prompt_id: dab81a86fe
+resolution_notes:
+  coffee.altitude: verbatim page form with comma
+  coffee.harvest_period: '''This year''s harvest'' is not a stated crop year -> null'
+  coffee.is_coferment_or_infused: anaerobic/spontaneous fermentation are techniques, no additives
+  coffee.producer_or_farm: R13 format applied to agreed value (page uses '//' between producer and farm)
+  coffee.display_tasting_notes: headline 'Tasting notes:' line is authoritative; cooled-cup extras stay
+    in sensory_text
+  coffee.producer_text: 'R14: spec lines + producer paragraphs, in-cup sentence excluded (sensory), Source
+    line kept'

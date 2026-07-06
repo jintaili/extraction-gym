@@ -20,7 +20,7 @@ draft_label:
   - Washed
   coffee.variety:
   - Gesha
-  coffee.producer_or_farm: null
+  coffee.producer_or_farm: Emerson Felipe Narvaez; Finca El Turpial
   coffee.altitude: 2,780 masl
   coffee.roast_level: null
   coffee.harvest_period: null
@@ -30,7 +30,8 @@ draft_label:
   coffee.is_coferment_or_infused: false
   coffee.sensory_text: 'Tastes Like: Hibiscus, Lime, Nectarine'
   coffee.display_tasting_notes: Hibiscus, Lime, Nectarine
-  coffee.producer_text: null
+  coffee.producer_text: 'Origin: Finca El Turpial, Nariño, Colombia; Variety: Gesha; Producer: Emerson
+    Felipe Narvaez; Elevation: 2,780 masl; Process: Washed'
   price.listed_price: 35.0
   price.listed_currency: USD
   price.bag_size_value: 8.0
@@ -113,3 +114,7 @@ models:
   a: gpt-4o-mini
   b: gpt-5.5
   prompt_id: dab81a86fe
+resolution_notes:
+  coffee.producer_or_farm: 'R13: producer; farm (b had farm first)'
+  coffee.producer_text: 'R14: all spec lines page order, ''; '' joined (b missed nothing, a missed Variety
+    line)'

@@ -13,25 +13,32 @@ draft_label:
   is_specialty_coffee: true
   coffee.coffee_name: Colombia El Jardin Gesha
   coffee.roaster: Onyx Coffee Lab
-  coffee.roaster_location: null
+  coffee.roaster_location: Arkansas
   coffee.roaster_country: United States
   coffee.origin_country: Colombia
-  coffee.origin_region: null
+  coffee.origin_region: Santa Bárbara, Antioquia
   coffee.process_method:
   - Anaerobic Washed
   coffee.variety:
   - Gesha
-  coffee.producer_or_farm: null
+  coffee.producer_or_farm: Leonardo Henao; Finca El Jardín
   coffee.altitude: 1800 MASL
   coffee.roast_level: Light
   coffee.harvest_period: June
   coffee.is_blend: false
-  coffee.is_espresso: null
+  coffee.is_espresso: false
   coffee.is_decaf: false
   coffee.is_coferment_or_infused: false
-  coffee.sensory_text: null
+  coffee.sensory_text: Nectarine, White Flower, Blackberry, Honey
   coffee.display_tasting_notes: Nectarine, White Flower, Blackberry, Honey
-  coffee.producer_text: null
+  coffee.producer_text: This washed lot comes from Leonardo Henao, a dedicated coffee producer from Santa
+    Bárbara, Antioquia. From an early age, Leonardo developed a deep connection to coffee, refining his
+    craft and focusing on quality. His dedication was recognized in 2020 when he was awarded Champion
+    of the Cup of Excellence. In 2022, challenges in the region led him to sell his farm, but his passion
+    for coffee remained steadfast. In 2024, he acquired Finca El Jardín, a 15-hectare estate where he
+    continues to apply his expertise in cultivation and processing.; This washed process coffee is fermented
+    in the fruit, undergoing 36 hours of limited oxygen fermentation, followed by depulp and a quick channel
+    washing. The parchment coffee is then dried for approximately twenty days on raised beds and patios.
   price.listed_price: 32.0
   price.listed_currency: USD
   price.bag_size_value: 10.0
@@ -39,7 +46,7 @@ draft_label:
   price.package_grams: 283.495
   price.bags_count: null
   price.price_type: one_time
-  price.availability: null
+  price.availability: in_stock
 disagreements:
   coffee.roaster_location:
     a: Santa Bárbara
@@ -125,3 +132,11 @@ models:
   a: gpt-4o-mini
   b: gpt-5.5
   prompt_id: dab81a86fe
+resolution_notes:
+  coffee.roaster_location: '''Arkansas'' appears in page text (grep-verified), not outside knowledge'
+  coffee.origin_region: 'page: producer from Santa Bárbara, Antioquia'
+  coffee.producer_or_farm: R13 format producer; farm
+  coffee.is_espresso: 'page: ''Filter & Espresso'' preferred extraction -> not espresso-specific'
+  coffee.sensory_text: notes displayed as list; comma-join
+  coffee.producer_text: 'R12/R14: lot bio + process paragraphs joined ''; '''
+  price.availability: Add to Cart present, 132 LBS inventory

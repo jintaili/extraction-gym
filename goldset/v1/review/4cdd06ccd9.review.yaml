@@ -13,7 +13,7 @@ draft_label:
   coffee.coffee_name: Ají Las Flores
   coffee.roaster: NOMAD COFFEE
   coffee.roaster_location: null
-  coffee.roaster_country: null
+  coffee.roaster_country: Spain
   coffee.origin_country: Colombia
   coffee.origin_region: Acevedo, Huila
   coffee.process_method:
@@ -27,18 +27,36 @@ draft_label:
   coffee.is_blend: false
   coffee.is_espresso: false
   coffee.is_decaf: false
-  coffee.is_coferment_or_infused: null
-  coffee.sensory_text: null
-  coffee.display_tasting_notes: null
-  coffee.producer_text: null
-  price.listed_price: null
+  coffee.is_coferment_or_infused: false
+  coffee.sensory_text: 'Notas: Uva Moscatel, Manteca de cacao, Hierbaluisa; Este Bourbon Ají ofrece una
+    taza intensa donde destacan notas de uva moscatel, manteca de cacao y hierbaluisa. La acidez es brillante,
+    acompañada por un cuerpo sedoso que envuelve el paladar. A medida que evoluciona, surgen matices de
+    melocotón, caramelo, piruleta de fresa y piel de lima, aportando una complejidad vibrante y un equilibrio
+    elegante.; El resultado es un café de alta intensidad sensorial, con estructura dulce y acidez nítida,
+    donde el proceso resalta las notas florales, frutales y cítricas típicas del terroir de Acevedo.'
+  coffee.display_tasting_notes: uva moscatel, manteca de cacao, hierbaluisa, melocotón, caramelo, piruleta
+    de fresa, piel de lima
+  coffee.producer_text: 'Categoría: Competición; Variedad: Bourbon Ají; Altitud: 1750 MSNM; Proceso: Lavado;
+    Cosecha: 2025; Finca Las Flores nació en 1990 gracias a Edilberto Vergara y Nubia Ayure, quienes comenzaron
+    con tan solo dos hectáreas de café. Con el tiempo, la finca creció hasta convertirse en uno de los
+    referentes de Acevedo, Huila. En 2019, su hijo Jhoan Vergara alcanzó el reconocimiento internacional
+    al ganar el concurso Master of Coffee con su Pink Bourbon, consolidando la reputación familiar.; Hoy,
+    Jhoan lidera la innovación en procesos y la introducción de variedades exóticas como Sidra, Java y
+    Bourbon Ají. Este último, cultivado a 1.750 metros, refleja la curiosidad y la precisión que caracterizan
+    su enfoque. Cada lote se procesa bajo control técnico riguroso, combinando fermentaciones controladas
+    con bacterias cultivadas y choques térmicos que realzan la expresión aromática del grano.; Las cerezas
+    de Bourbon Ají se someten a 12 horas de oxidación antes del despulpado, seguidas de un thermal shock
+    a 50 °C que fija los compuestos aromáticos. Posteriormente, el café fermenta durante 80 horas en tanques
+    plásticos controlados con bacterias inoculadas, y finalmente se seca en máquinas deshumidificadoras
+    durante 60 horas hasta alcanzar un 10 % de humedad.'
+  price.listed_price: 32.5
   price.listed_currency: EUR
-  price.bag_size_value: null
-  price.bag_size_unit: null
-  price.package_grams: null
+  price.bag_size_value: 250.0
+  price.bag_size_unit: g
+  price.package_grams: 250.0
   price.bags_count: null
   price.price_type: one_time
-  price.availability: null
+  price.availability: in_stock
 disagreements:
   coffee.roaster_country:
     a: unknown
@@ -174,3 +192,16 @@ models:
   a: gpt-4o-mini
   b: gpt-5.5
   prompt_id: dab81a86fe
+resolution_notes:
+  coffee.roaster_country: 'no page statement; .es ccTLD in the URL input to the extractor; FLAG: weak
+    evidence, curator may prefer unknown'
+  coffee.is_coferment_or_infused: inoculated bacteria + thermal shock = fermentation technique, no additives
+    -> false per prompt definition
+  coffee.sensory_text: 'R10 source language kept + R12 stitch; PROMPT CONFLICT FLAGGED: production prompt
+    says translate to English, see R15 note in policy'
+  coffee.display_tasting_notes: R14 canonical lowercase, Spanish per R8/R10; same prompt conflict
+  coffee.producer_text: R14 spec lines + farm/process paragraphs, Spanish
+  price.listed_price: 'R1: page-load default is 250gr Café en Grano at 32,50 EUR; embedded default_for_inference
+    points at 1kg only because 250gr variants lack gram metadata - known pipeline artifact worth an adversary
+    category'
+  price.availability: Agregar al carrito / Comprar present

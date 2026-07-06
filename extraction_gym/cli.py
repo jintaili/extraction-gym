@@ -72,6 +72,15 @@ def main() -> None:
     cmp_.add_argument("candidate_results")
     cmp_.add_argument("--noise", required=True, help="runs/noise-<id>-<model>.json")
 
+    adv = sub.add_parser("adversary", help="Run one adversary round against an incumbent artifact")
+    adv.add_argument("--count", type=int, default=15)
+    adv.add_argument("--target", required=True, help="incumbent artifact id")
+    adv.add_argument("--registry", default="registry")
+    adv.add_argument("--suite", default="suites/adversarial")
+    adv.add_argument("--generator-model", default="gpt-5.5")
+    adv.add_argument("--judge-model", default="gpt-5.4")
+    adv.add_argument("--max-usd", type=float, default=15.0)
+
     args = parser.parse_args()
     if args.command == "snapshot":
         _cmd_snapshot(args)
@@ -99,6 +108,8 @@ def main() -> None:
         _cmd_noise(args)
     elif args.command == "compare":
         _cmd_compare(args)
+    elif args.command == "adversary":
+        _cmd_adversary(args)
 
 
 def _cmd_snapshot(args: argparse.Namespace) -> None:
@@ -316,6 +327,44 @@ def _cmd_compare(args: argparse.Namespace) -> None:
     result = compare(report_a, report_b, band)
     print(json.dumps(result, ensure_ascii=False, indent=2))
     print(f"VERDICT: {result['verdict']}")
+
+
+def _cmd_adversary(args: argparse.Namespace) -> None:
+    import json
+
+    from coffee_value_app.config import load_settings
+
+    from extraction_gym.adapters.coffee.extractor import CoffeeExtractor
+    from extraction_gym.adversary.generator import AdversaryGenerator
+    from extraction_gym.adversary.judges import Judges
+    from extraction_gym.adversary.round import run_round
+    from extraction_gym.adversary.suite import SuiteStore
+    from extraction_gym.core.budget import BudgetTracker
+    from extraction_gym.core.cache import ExtractionCache
+    from extraction_gym.core.registry import PromptRegistry
+
+    if args.generator_model == args.judge_model:
+        print("REFUSED: judge model must differ from generator model (control rule)")
+        sys.exit(1)
+    registry = PromptRegistry(Path(args.registry))
+    target = registry.get(args.target)
+    extractor = CoffeeExtractor()
+    report = asyncio.run(
+        run_round(
+            count=args.count,
+            target=target,
+            generator=AdversaryGenerator(client=extractor.client, model=args.generator_model),
+            judges=Judges(client=extractor.client, model=args.judge_model),
+            incumbent_extract_fn=extractor.extract,
+            incumbent_model=load_settings().extraction_model,
+            suite=SuiteStore(Path(args.suite)),
+            cache=ExtractionCache(Path(".cache") / "extractions"),
+            budget=BudgetTracker(args.max_usd),
+        )
+    )
+    registry.append_ledger({"event": "adversary_round", "target": target.artifact_id, **report["stats"],
+                            "spend_usd": report["spend_usd"]})
+    print(json.dumps(report, ensure_ascii=False, indent=2))
 
 
 def _cmd_verify(args: argparse.Namespace) -> None:

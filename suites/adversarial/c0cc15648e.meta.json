@@ -1,0 +1,134 @@
+{
+  "page_id": "c0cc15648e",
+  "category": "Brew recipe dose mistaken for package size",
+  "invented_category": true,
+  "target_artifact_id": "ce68bd4c4e",
+  "generator_model": "gpt-5.5",
+  "judge_model": "gpt-5.4",
+  "judges": {
+    "consistency": {
+      "unsupported_fields": [],
+      "notes": "All non-null, non-empty, non-'unknown' labels are supported by the page text. 'coffee.roaster_country' is not stated verbatim, but follows from 'Duluth, Minnesota' in the footer, which entails United States."
+    },
+    "realism": {
+      "score": 5,
+      "reasons": "This reads very plausibly like an html-to-text extraction of a real specialty coffee roaster product page. The structure is highly believable: top nav, breadcrumb, product title, country, price, purchase options, quantity/cart, tasting notes, roast/use recommendations, availability, a details section, origin story, brew recipe, shipping note, variant block, and footer. The voice matches contemporary specialty coffee ecommerce copy—clean, lightly descriptive, and origin-forward without sounding exaggerated or generic.\n\nThe coffee details are coherent and realistic together: Colombia / Huila / Acevedo / Pink Bourbon / washed / 1,850–1,950 masl is a very plausible combination, and the tasting notes align with that profile. The process description is specific in a way that feels authentic rather than randomly assembled. Harvest timing also makes sense for Colombia. Pricing is believable for a Pink Bourbon microlot, and the 1kg price reflects a realistic bulk discount.\n\nThe variant data block is especially convincing: variant titles, names, SKUs, package gram weights, and availability flags look like normal extracted ecommerce metadata. Having both whole bean and ground options is realistic, and the visible product summary showing the default 250g whole bean while the embedded data lists additional variants is exactly what real scraped pages often look like.\n\nOnly tiny tells keep it from being literally indistinguishable from a live extraction—for example, the phrase \"default_for_inference\" is not something a normal storefront would expose verbatim, and the line about each retail bag containing 250g sits slightly awkwardly next to the existence of a 1kg variant. But those are minor and could easily come from a synthetic annotation layer rather than the page itself."
+    }
+  },
+  "label": {
+    "page_type": "coffee_product",
+    "is_specialty_coffee": true,
+    "coffee.coffee_name": "Las Brisas Pink Bourbon",
+    "coffee.roaster": "Northbound Coffee Roasters",
+    "coffee.roaster_location": "Duluth, Minnesota",
+    "coffee.roaster_country": "United States",
+    "coffee.origin_country": "Colombia",
+    "coffee.origin_region": "Acevedo, Huila",
+    "coffee.process_method": [
+      "washed"
+    ],
+    "coffee.variety": [
+      "Pink Bourbon"
+    ],
+    "coffee.producer_or_farm": "Marta Rojas, Finca Las Brisas",
+    "coffee.altitude": "1,850–1,950 masl",
+    "coffee.roast_level": "Light",
+    "coffee.harvest_period": "September 2024",
+    "coffee.is_blend": false,
+    "coffee.is_espresso": false,
+    "coffee.is_decaf": false,
+    "coffee.is_coferment_or_infused": false,
+    "coffee.sensory_text": "Tasting notes: white peach, lemon curd, cane sugar, jasmine\nIn the cup we find a bright, structured sweetness: white peach up front, lemon curd acidity through the middle, and a cane-sugar finish with a light jasmine aroma as the coffee cools.",
+    "coffee.display_tasting_notes": "white peach, lemon curd, cane sugar, jasmine",
+    "coffee.producer_text": "Our current Colombian single origin comes from Marta Rojas and her family at Finca Las Brisas, a small hillside farm outside Acevedo in southern Huila. The Pink Bourbon trees are picked at deep red ripeness, floated, depulped, fermented in tile tanks for 36 hours, washed clean, and dried slowly on raised beds under shade cloth.",
+    "price.listed_price": 22.0,
+    "price.listed_currency": "USD",
+    "price.bag_size_value": 250.0,
+    "price.bag_size_unit": "g",
+    "price.package_grams": 250.0,
+    "price.bags_count": null,
+    "price.price_type": "one_time",
+    "price.availability": "in_stock"
+  },
+  "incumbent": {
+    "model": "gpt-4o-mini",
+    "hit_fields": [],
+    "extraction": {
+      "page_type": "coffee_product",
+      "is_specialty_coffee": true,
+      "coffee": {
+        "coffee_name": "Las Brisas Pink Bourbon",
+        "roaster": "Northbound Coffee Roasters",
+        "roaster_location": "Duluth, Minnesota",
+        "roaster_country": "unknown",
+        "origin_country": "Colombia",
+        "origin_region": "Acevedo, Huila",
+        "process_method": [
+          "washed"
+        ],
+        "variety": [
+          "Pink Bourbon"
+        ],
+        "producer_or_farm": "Marta Rojas, Finca Las Brisas",
+        "altitude": "1,850–1,950 masl",
+        "roast_level": "Light",
+        "harvest_period": "September 2024",
+        "is_blend": false,
+        "is_espresso": false,
+        "is_decaf": false,
+        "is_coferment_or_infused": false,
+        "sensory_text": "In the cup we find a bright, structured sweetness: white peach up front, lemon curd acidity through the middle, and a cane-sugar finish with a light jasmine aroma as the coffee cools.",
+        "display_tasting_notes": "white peach, lemon curd, cane sugar, jasmine",
+        "producer_text": "Our current Colombian single origin comes from Marta Rojas and her family at Finca Las Brisas, a small hillside farm outside Acevedo in southern Huila. The Pink Bourbon trees are picked at deep red ripeness, floated, depulped, fermented in tile tanks for 36 hours, washed clean, and dried slowly on raised beds under shade cloth.",
+        "source_snippets": [
+          {
+            "field": "name",
+            "snippet": "Las Brisas Pink Bourbon"
+          },
+          {
+            "field": "origin",
+            "snippet": "Colombia"
+          },
+          {
+            "field": "process",
+            "snippet": "washed"
+          },
+          {
+            "field": "variety",
+            "snippet": "Pink Bourbon"
+          },
+          {
+            "field": "price",
+            "snippet": "$22.00"
+          },
+          {
+            "field": "bag_size",
+            "snippet": "250g bag"
+          }
+        ]
+      },
+      "price": {
+        "listed_price": 22.0,
+        "listed_currency": "USD",
+        "original_listed_price": null,
+        "original_listed_currency": null,
+        "bag_size_value": 250.0,
+        "bag_size_unit": "g",
+        "package_grams": 250.0,
+        "bags_count": null,
+        "price_100g_usd": 8.8,
+        "price_type": "one_time",
+        "availability": "in_stock",
+        "assumptions": [
+          "currency assumed USD from $",
+          "default variant selected"
+        ]
+      },
+      "quality": {
+        "extraction_quality": "good",
+        "missing_fields": [],
+        "warnings": []
+      }
+    }
+  }
+}

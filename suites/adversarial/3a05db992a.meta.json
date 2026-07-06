@@ -1,0 +1,151 @@
+{
+  "page_id": "3a05db992a",
+  "category": "Cross-sell recommendation block contains another coffee's specs",
+  "invented_category": true,
+  "target_artifact_id": "ce68bd4c4e",
+  "generator_model": "gpt-5.5",
+  "judge_model": "gpt-5.4",
+  "judges": {
+    "consistency": {
+      "unsupported_fields": [],
+      "notes": "All non-null, non-empty ground-truth labels are supported by the page text or embedded variant data. The roaster country 'United Kingdom' is supported by the footer address 'United Kingdom' and 'Manchester, UK'."
+    },
+    "realism": {
+      "score": 5,
+      "reasons": "This is highly plausible as an html-to-text rendering of a real specialty coffee roaster product page. The structure is very typical: header/navigation, product title, price, size selector, stock/roast cadence, sensory notes, origin details, descriptive copy, brew recommendations, cross-sell product, shipping note, embedded variant block, and footer. The coffee details are coherent and specific in the way real roasters write them: Kenya/Nyeri, Gichathaini Factory under Gikanda FCS, common Kenyan varieties (SL28, SL34, Ruiru 11, Batian), washed process, AB screen size, and a Jan–Feb harvest window all fit together. The tasting-note language and roast description also sound authentic rather than exaggerated or generic. The variant data block reads like a realistic extraction from Shopify-style product metadata, with sensible IDs, SKUs, availability flags, and pricing spread between 250g and 1kg. Minor tiny tells only: 'dry fermented' plus 'washed in clean river water' is a bit more editorialized than some pages, and 'package_grams=250.000g' looks slightly normalized for machine output rather than exactly how most storefronts expose grams. But those are very small issues; overall this is close to indistinguishable from a real page."
+    }
+  },
+  "label": {
+    "page_type": "coffee_product",
+    "is_specialty_coffee": true,
+    "coffee.coffee_name": "Kenya Gichathaini AB",
+    "coffee.roaster": "Northline Coffee Roasters",
+    "coffee.roaster_location": "Manchester, UK",
+    "coffee.roaster_country": "United Kingdom",
+    "coffee.origin_country": "Kenya",
+    "coffee.origin_region": "Nyeri",
+    "coffee.process_method": [
+      "Washed"
+    ],
+    "coffee.variety": [
+      "SL28",
+      "SL34",
+      "Ruiru 11",
+      "Batian"
+    ],
+    "coffee.producer_or_farm": "Gichathaini Factory, Gikanda Farmers Cooperative Society",
+    "coffee.altitude": "1,600–1,900 masl",
+    "coffee.roast_level": "Filter",
+    "coffee.harvest_period": "January–February 2025",
+    "coffee.is_blend": false,
+    "coffee.is_espresso": false,
+    "coffee.is_decaf": false,
+    "coffee.is_coferment_or_infused": false,
+    "coffee.sensory_text": "Tasting notes: blackcurrant, pink grapefruit, cane sugar\n\nIn the cup we find classic Nyeri intensity: vivid blackcurrant up front, a bright pink-grapefruit snap through the middle, and a clear cane-sugar finish.",
+    "coffee.display_tasting_notes": "blackcurrant, pink grapefruit, cane sugar",
+    "coffee.producer_text": "Gichathaini sits on the southern slopes of Mount Kenya, where smallholder members deliver ripe cherry to the factory on the same day it is picked. This AB lot was dry fermented, washed in clean river water and slowly dried on raised tables until stable.",
+    "price.listed_price": 16.5,
+    "price.listed_currency": "GBP",
+    "price.bag_size_value": 250.0,
+    "price.bag_size_unit": "g",
+    "price.package_grams": 250.0,
+    "price.bags_count": null,
+    "price.price_type": "one_time",
+    "price.availability": "in_stock"
+  },
+  "incumbent": {
+    "model": "gpt-4o-mini",
+    "hit_fields": [],
+    "extraction": {
+      "page_type": "coffee_product",
+      "is_specialty_coffee": true,
+      "coffee": {
+        "coffee_name": "Kenya Gichathaini AB",
+        "roaster": "Northline Coffee Roasters",
+        "roaster_location": "Manchester, UK",
+        "roaster_country": "UK",
+        "origin_country": "Kenya",
+        "origin_region": "Nyeri",
+        "process_method": [
+          "Washed"
+        ],
+        "variety": [
+          "SL28",
+          "SL34",
+          "Ruiru 11",
+          "Batian"
+        ],
+        "producer_or_farm": "Gichathaini Factory, Gikanda Farmers Cooperative Society",
+        "altitude": "1,600–1,900 masl",
+        "roast_level": "Filter",
+        "harvest_period": "January–February 2025",
+        "is_blend": false,
+        "is_espresso": false,
+        "is_decaf": false,
+        "is_coferment_or_infused": false,
+        "sensory_text": "In the cup we find classic Nyeri intensity: vivid blackcurrant up front, a bright pink-grapefruit snap through the middle, and a clear cane-sugar finish.",
+        "display_tasting_notes": "blackcurrant, pink grapefruit, cane sugar",
+        "producer_text": "Gichathaini sits on the southern slopes of Mount Kenya, where smallholder members deliver ripe cherry to the factory on the same day it is picked. This AB lot was dry fermented, washed in clean river water and slowly dried on raised tables until stable.",
+        "source_snippets": [
+          {
+            "field": "origin",
+            "snippet": "Origin: Kenya"
+          },
+          {
+            "field": "process",
+            "snippet": "Process: Washed"
+          },
+          {
+            "field": "variety",
+            "snippet": "Variety: SL28, SL34, Ruiru 11, Batian"
+          },
+          {
+            "field": "price",
+            "snippet": "£16.50"
+          },
+          {
+            "field": "bag_size",
+            "snippet": "Size 250g"
+          },
+          {
+            "field": "tasting_notes",
+            "snippet": "Tasting notes: blackcurrant, pink grapefruit, cane sugar"
+          },
+          {
+            "field": "producer",
+            "snippet": "Producer: Gichathaini Factory, Gikanda Farmers Cooperative Society"
+          },
+          {
+            "field": "altitude",
+            "snippet": "Altitude: 1,600–1,900 masl"
+          },
+          {
+            "field": "harvest",
+            "snippet": "Harvest: January–February 2025"
+          }
+        ]
+      },
+      "price": {
+        "listed_price": 16.5,
+        "listed_currency": "GBP",
+        "original_listed_price": null,
+        "original_listed_currency": null,
+        "bag_size_value": 250.0,
+        "bag_size_unit": "g",
+        "package_grams": 250.0,
+        "bags_count": null,
+        "price_100g_usd": null,
+        "price_type": "one_time",
+        "availability": "in_stock",
+        "assumptions": [
+          "currency assumed GBP from £"
+        ]
+      },
+      "quality": {
+        "extraction_quality": "good",
+        "missing_fields": [],
+        "warnings": []
+      }
+    }
+  }
+}

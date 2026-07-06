@@ -1,0 +1,180 @@
+{
+  "page_id": "ad0ccb3a96",
+  "category": "blend presented like a single origin",
+  "invented_category": false,
+  "target_artifact_id": "ce68bd4c4e",
+  "generator_model": "gpt-5.5",
+  "judge_model": "gpt-5.4",
+  "judges": {
+    "consistency": {
+      "unsupported_fields": [],
+      "notes": "All non-null, non-empty, non-'unknown' labels are supported by the page text. 'United States' follows from 'Free US shipping' and 'Roasted in Milwaukee, Wisconsin' together indicating the roaster country. 'is_specialty_coffee' is supported by the specialty-coffee roaster/product context and detailed coffee provenance. 'is_espresso': false is supported by 'Recommended for: Filter'."
+    },
+    "realism": {
+      "score": 5,
+      "reasons": "This reads very plausibly like a real specialty coffee product page. The voice is on-brand for third-wave roasting—concise, sensory, and slightly educational without sounding generic. Structure is highly realistic: navigation, product title, price, size selector, shipping note, roast/use guidance, core spec block, story section, blend composition, brew recipe, and related products all match common Shopify-style coffee pages.\n\nThe coffee details are coherent and credible. Colombia as origin with Huila and Nariño is believable; the altitude range, varieties (Caturra, Castillo, Colombia), and harvest window all fit. A single-country seasonal blend presented under a simple origin label is also common practice. The explanation of combining washed Huila and natural Nariño components to maintain a consistent seasonal profile is especially convincing. Tasting notes and roast recommendation are plausible and not overdone.\n\nThe variant data block also looks realistic: two size variants, sensible SKU formatting, proportional pricing, and package weights. Even the slight machine-like field naming is what you might expect from embedded ecommerce data. Nothing stands out as contradictory or nonsensical. If there is any minor tell, it’s that the page is unusually tidy and fully specified for a small roaster, but that is not enough to reduce plausibility."
+    }
+  },
+  "label": {
+    "page_type": "coffee_product",
+    "is_specialty_coffee": true,
+    "coffee.coffee_name": "Colombia La Cordillera",
+    "coffee.roaster": "North Pier Coffee Roasters",
+    "coffee.roaster_location": "Milwaukee, Wisconsin",
+    "coffee.roaster_country": "United States",
+    "coffee.origin_country": "Colombia",
+    "coffee.origin_region": "Huila & Nariño",
+    "coffee.process_method": [
+      "Washed & Natural"
+    ],
+    "coffee.variety": [
+      "Caturra",
+      "Castillo",
+      "Colombia"
+    ],
+    "coffee.producer_or_farm": "La Cordillera Smallholder Blend",
+    "coffee.altitude": "1,650–2,050 masl",
+    "coffee.roast_level": "Light",
+    "coffee.harvest_period": "September–December 2024",
+    "coffee.is_blend": true,
+    "coffee.is_espresso": false,
+    "coffee.is_decaf": false,
+    "coffee.is_coferment_or_infused": false,
+    "coffee.sensory_text": "red apple, panela, orange blossom, milk chocolate",
+    "coffee.display_tasting_notes": "red apple, panela, orange blossom, milk chocolate",
+    "coffee.producer_text": "La Cordillera is named for the mountain spine that links the two lots in this release. On the cup table it drinks with the poise of a clean single origin: crisp apple acidity, panela sweetness and a soft florality that makes it an easy everyday filter coffee.\n\nAlthough the front label keeps the origin simple, La Cordillera is a single-country seasonal blend assembled from two Colombian components: washed Caturra and Colombia from smallholders around San Agustín, Huila, and a naturally processed Castillo lot from La Unión, Nariño. We built the blend to keep the cup lively as fresh arrivals rotate through the season.\n\nBlend composition:\n- 65% Huila, San Agustín smallholders — washed — Caturra, Colombia — 1,750–2,050 masl\n- 35% Nariño, La Unión smallholders — natural — Castillo — 1,650–1,900 masl",
+    "price.listed_price": 21.0,
+    "price.listed_currency": "USD",
+    "price.bag_size_value": 250.0,
+    "price.bag_size_unit": "g",
+    "price.package_grams": 250.0,
+    "price.bags_count": null,
+    "price.price_type": "one_time",
+    "price.availability": "in_stock"
+  },
+  "incumbent": {
+    "model": "gpt-4o-mini",
+    "hit_fields": [
+      "coffee.process_method",
+      "coffee.sensory_text"
+    ],
+    "extraction": {
+      "page_type": "coffee_product",
+      "is_specialty_coffee": true,
+      "coffee": {
+        "coffee_name": "Colombia La Cordillera",
+        "roaster": "North Pier Coffee Roasters",
+        "roaster_location": "Milwaukee, Wisconsin",
+        "roaster_country": "USA",
+        "origin_country": "Colombia",
+        "origin_region": "Huila & Nariño",
+        "process_method": [
+          "Washed",
+          "Natural"
+        ],
+        "variety": [
+          "Caturra",
+          "Castillo",
+          "Colombia"
+        ],
+        "producer_or_farm": "La Cordillera Smallholder Blend",
+        "altitude": "1,650–2,050 masl",
+        "roast_level": "Light",
+        "harvest_period": "September–December 2024",
+        "is_blend": true,
+        "is_espresso": false,
+        "is_decaf": false,
+        "is_coferment_or_infused": false,
+        "sensory_text": "A bright, sugar-sweet Colombian coffee with the clarity we love from high-grown lots.",
+        "display_tasting_notes": "red apple, panela, orange blossom, milk chocolate",
+        "producer_text": "La Cordillera is named for the mountain spine that links the two lots in this release. On the cup table it drinks with the poise of a clean single origin: crisp apple acidity, panela sweetness and a soft florality that makes it an easy everyday filter coffee. Although the front label keeps the origin simple, La Cordillera is a single-country seasonal blend assembled from two Colombian components: washed Caturra and Colombia from smallholders around San Agustín, Huila, and a naturally processed Castillo lot from La Unión, Nariño. We built the blend to keep the cup lively as fresh arrivals rotate through the season.",
+        "source_snippets": [
+          {
+            "field": "coffee_name",
+            "snippet": "Colombia La Cordillera"
+          },
+          {
+            "field": "roaster",
+            "snippet": "North Pier Coffee Roasters"
+          },
+          {
+            "field": "roaster_country",
+            "snippet": "USA"
+          },
+          {
+            "field": "origin_country",
+            "snippet": "Colombia"
+          },
+          {
+            "field": "origin_region",
+            "snippet": "Huila & Nariño"
+          },
+          {
+            "field": "process_method",
+            "snippet": "Washed & Natural"
+          },
+          {
+            "field": "variety",
+            "snippet": "Caturra, Castillo, Colombia"
+          },
+          {
+            "field": "producer_or_farm",
+            "snippet": "La Cordillera Smallholder Blend"
+          },
+          {
+            "field": "altitude",
+            "snippet": "1,650–2,050 masl"
+          },
+          {
+            "field": "roast_level",
+            "snippet": "Light"
+          },
+          {
+            "field": "harvest_period",
+            "snippet": "September–December 2024"
+          },
+          {
+            "field": "is_blend",
+            "snippet": "true"
+          },
+          {
+            "field": "sensory_text",
+            "snippet": "A bright, sugar-sweet Colombian coffee with the clarity we love from high-grown lots."
+          },
+          {
+            "field": "display_tasting_notes",
+            "snippet": "red apple, panela, orange blossom, milk chocolate"
+          },
+          {
+            "field": "producer_text",
+            "snippet": "La Cordillera is named for the mountain spine that links the two lots in this release. On the cup table it drinks with the poise of a clean single origin: crisp apple acidity, panela sweetness and a soft florality that makes it an easy everyday filter coffee. Although the front label keeps the origin simple, La Cordillera is a single-country seasonal blend assembled from two Colombian components: washed Caturra and Colombia from smallholders around San Agustín, Huila, and a naturally processed Castillo lot from La Unión, Nariño. We built the blend to keep the cup lively as fresh arrivals rotate through the season."
+          }
+        ]
+      },
+      "price": {
+        "listed_price": 21.0,
+        "listed_currency": "USD",
+        "original_listed_price": null,
+        "original_listed_currency": null,
+        "bag_size_value": 250.0,
+        "bag_size_unit": "g",
+        "package_grams": 250.0,
+        "bags_count": null,
+        "price_100g_usd": 8.4,
+        "price_type": "one_time",
+        "availability": "in_stock",
+        "assumptions": [
+          "currency assumed USD from $21.00",
+          "default variant selected"
+        ]
+      },
+      "quality": {
+        "extraction_quality": "good",
+        "missing_fields": [
+          "none"
+        ],
+        "warnings": []
+      }
+    }
+  }
+}

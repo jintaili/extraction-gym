@@ -1,0 +1,151 @@
+{
+  "page_id": "725651ceb9",
+  "category": "non-English page (Japanese, Danish, Italian, or Korean) with structured spec lines",
+  "invented_category": false,
+  "target_artifact_id": "ce68bd4c4e",
+  "generator_model": "gpt-5.5",
+  "judge_model": "gpt-5.4",
+  "judges": {
+    "consistency": {
+      "unsupported_fields": [],
+      "notes": "All non-null/non-empty ground-truth labels are supported by the page text or embedded variant data. Price, currency, and 250g package size are supported by the selected/default variant and visible page price/format. Availability 'in_stock' is supported by 'Disponibilità: disponibile'. Enum inferences are supported: specialty coffee from 'Caffè specialty'; is_blend=false from 'Non è un blend'; is_decaf=false from 'non contiene caffè decaffeinato'; is_espresso=false supported by 'Tostatura: filtro / tostatura chiara' and brew guidance for V60, Kalita, batch brew."
+    },
+    "realism": {
+      "score": 5,
+      "reasons": "Very plausible as an html-to-text rendering of a real specialty roaster product page. The structure is exactly what you’d expect: header/navigation, product title, price, size, availability, roast style, coffee facts, tasting notes, descriptive sourcing paragraph, brewing advice, related products, variant block, and footer. The voice is natural for an Italian specialty roaster—concise, marketing-light, and focused on origin and cup profile. Origin details are coherent: Guji/Uraga/Dambi Uddo, washed process, Ethiopian varieties like Kurume and Wolisho, high elevation, current harvest year, and tasting notes that fit a washed Guji profile. The roasting and extraction guidance also reads credibly. The variant data block is internally consistent, with believable IDs, SKUs, names, and pricing; the 1kg price scaling is commercially plausible. Minor tiny tell: 'default_for_inference' is not a customer-facing label and looks injected for analysis, but aside from that this is close to indistinguishable from a real page."
+    }
+  },
+  "label": {
+    "page_type": "coffee_product",
+    "is_specialty_coffee": true,
+    "coffee.coffee_name": "Etiopia Guji Uraga - lavato",
+    "coffee.roaster": "Torrefazione Naviglio",
+    "coffee.roaster_location": "Milano, Italia",
+    "coffee.roaster_country": "Italy",
+    "coffee.origin_country": "Etiopia",
+    "coffee.origin_region": "Guji, Oromia",
+    "coffee.process_method": [
+      "lavato"
+    ],
+    "coffee.variety": [
+      "Kurume",
+      "Wolisho"
+    ],
+    "coffee.producer_or_farm": "Dambi Uddo Washing Station",
+    "coffee.altitude": "2.050-2.200 m s.l.m.",
+    "coffee.roast_level": "filtro / tostatura chiara",
+    "coffee.harvest_period": "2024",
+    "coffee.is_blend": false,
+    "coffee.is_espresso": false,
+    "coffee.is_decaf": false,
+    "coffee.is_coferment_or_infused": false,
+    "coffee.sensory_text": "Note in tazza: gelsomino, pesca bianca, bergamotto, miele d'acacia. una tazza floreale, pulita e dolce, con acidità agrumata e finale setoso.",
+    "coffee.display_tasting_notes": "gelsomino, pesca bianca, bergamotto, miele d'acacia",
+    "coffee.producer_text": "Questo lotto arriva dalla stazione di lavaggio Dambi Uddo, nel distretto di Uraga, una delle aree più alte e fresche della zona di Guji. Le ciliegie mature sono selezionate a mano dai piccoli coltivatori della zona, depolpate lo stesso giorno e fermentate in acqua prima dell'asciugatura su letti africani.",
+    "price.listed_price": 18.5,
+    "price.listed_currency": "EUR",
+    "price.bag_size_value": 250.0,
+    "price.bag_size_unit": "g",
+    "price.package_grams": 250.0,
+    "price.bags_count": null,
+    "price.price_type": "one_time",
+    "price.availability": "in_stock"
+  },
+  "incumbent": {
+    "model": "gpt-4o-mini",
+    "hit_fields": [
+      "coffee.origin_country",
+      "coffee.sensory_text"
+    ],
+    "extraction": {
+      "page_type": "coffee_product",
+      "is_specialty_coffee": true,
+      "coffee": {
+        "coffee_name": "Etiopia Guji Uraga - lavato",
+        "roaster": "Torrefazione Naviglio",
+        "roaster_location": "Milano",
+        "roaster_country": "Italy",
+        "origin_country": "Ethiopia",
+        "origin_region": "Guji, Oromia",
+        "process_method": [
+          "lavato"
+        ],
+        "variety": [
+          "Kurume",
+          "Wolisho"
+        ],
+        "producer_or_farm": "Dambi Uddo Washing Station",
+        "altitude": "2.050-2.200 m s.l.m.",
+        "roast_level": "tostatura chiara",
+        "harvest_period": "2024",
+        "is_blend": false,
+        "is_espresso": false,
+        "is_decaf": false,
+        "is_coferment_or_infused": false,
+        "sensory_text": "gelsomino, pesca bianca, bergamotto, miele d'acacia.",
+        "display_tasting_notes": "gelsomino, pesca bianca, bergamotto, miele d'acacia",
+        "producer_text": "Questo lotto arriva dalla stazione di lavaggio Dambi Uddo, nel distretto di Uraga, una delle aree più alte e fresche della zona di Guji. Le ciliegie mature sono selezionate a mano dai piccoli coltivatori della zona, depolpate lo stesso giorno e fermentate in acqua prima dell'asciugatura su letti africani.",
+        "source_snippets": [
+          {
+            "field": "name",
+            "snippet": "Etiopia Guji Uraga - lavato"
+          },
+          {
+            "field": "origin",
+            "snippet": "Origine: Etiopia"
+          },
+          {
+            "field": "process",
+            "snippet": "Processo: lavato"
+          },
+          {
+            "field": "variety",
+            "snippet": "Varietà: Kurume, Wolisho"
+          },
+          {
+            "field": "price",
+            "snippet": "€18,50"
+          },
+          {
+            "field": "bag_size",
+            "snippet": "Formato: 250g"
+          },
+          {
+            "field": "tasting_notes",
+            "snippet": "Note in tazza: gelsomino, pesca bianca, bergamotto, miele d'acacia."
+          },
+          {
+            "field": "producer",
+            "snippet": "Produttore: Dambi Uddo Washing Station"
+          },
+          {
+            "field": "altitude",
+            "snippet": "Altitudine: 2.050-2.200 m s.l.m."
+          }
+        ]
+      },
+      "price": {
+        "listed_price": 18.5,
+        "listed_currency": "EUR",
+        "original_listed_price": null,
+        "original_listed_currency": null,
+        "bag_size_value": 250.0,
+        "bag_size_unit": "g",
+        "package_grams": 250.0,
+        "bags_count": null,
+        "price_100g_usd": null,
+        "price_type": "one_time",
+        "availability": "in_stock",
+        "assumptions": [
+          "currency assumed EUR from €",
+          "default variant selected"
+        ]
+      },
+      "quality": {
+        "extraction_quality": "good",
+        "missing_fields": [],
+        "warnings": []
+      }
+    }
+  }
+}

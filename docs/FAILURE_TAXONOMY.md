@@ -40,4 +40,14 @@ discovered modes here with evidence.
     together with <name>" widget loses the name on some pages; the correct label is
     absent even though the browser shows it.
 
+## Adversary-invented categories (generator, 2026-07-06 validation round)
+
+18. Cross-sell recommendation block contains another coffee's specs (suite 3a05db992a;
+    no incumbent hit yet)
+19. Brew recipe dose mistaken for package size (suite c0cc15648e; no incumbent hit yet)
+
+First confirmed incumbent hits (validation round, K=6, root ce68bd4c4e):
+category 3 (non-English page) broke coffee.origin_country; category 5 (blend as single
+origin) broke coffee.process_method.
+
 Per-category before/after accuracy is added by the loop (Phase 6).

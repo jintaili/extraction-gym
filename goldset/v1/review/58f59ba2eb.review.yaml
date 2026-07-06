@@ -38,9 +38,23 @@ draft_label:
     Country: Kenya; Region: Nyeri; Harvest date: December 2025; Process: Washed; This coffee is produced
     by several hundred farmers, most of them growing the famous Kenyan SL28 and SL34 cultivars. While
     some have planted newer hybrids like Ruiru 11 and Batian you can clearly taste the clean and fruity
-    flavours in this coffee that are so common for the SL cultivars.; I have visited the Gachatha wet
-    mill several times and even though it looks like most wet mills do in Nyeri, it has proven to be one
-    of the best producers of high quality coffees in the area over many years.'
+    flavours in this coffee that are so common for the SL cultivars.; The coffee cherries are typically
+    hand picked by the farmers and their family members. After delivering the coffee cherries to the wet
+    mill the good coffee cherries are separated from the inferior ones by hand sorting and they are delivered
+    in separate cherry hoppers.; The cherries are depulped and graded by using an old Aagard disc de-pulper
+    that uses water and gravity to sort dense beans from less dense beans. Coffee of different grades
+    are moved to separate fermentation tanks where the parchment coffee, with it’s mucilage still on,
+    is dry fermented for about 12-16 hours over night. After fermentation the coffee is washed in clean
+    water and graded once again by gravity. The more dense beans are dried separately from the beans with
+    lower density and inferior quality.; The coffees are dried on elevated drying tables, where defect
+    parchment coffee gets sorted out by hand. Drying the coffee takes about 10 – 14 days. During daytime
+    the coffees are raked to ensure even drying. The drying tables are covered during the hottest times
+    of the day to avoid over heating and also at night time to prevent condensation. The drying process
+    is finished when the moisture content in the coffee beans is between 10-12%. After drying, the coffees
+    are stored in conditioning bins before delivery to the dry mill. The coffees we buy from Kenya are
+    always vacuum packed before it is shipped to Norway.; I have visited the Gachatha wet mill several
+    times and even though it looks like most wet mills do in Nyeri, it has proven to be one of the best
+    producers of high quality coffees in the area over many years.'
   price.listed_price: 19.0
   price.listed_currency: USD
   price.bag_size_value: 250.0
@@ -124,5 +138,5 @@ models:
 resolution_notes:
   coffee.producer_or_farm: 'R13: producer slot first, wet mill in farm slot'
   coffee.sensory_text: 'R12: description + Flavour notes spec line'
-  coffee.producer_text: 'R14: spec lines + cultivar para + first Tim''s-notes para; templated brew/shipping/process
-    boilerplate excluded as generic'
+  coffee.producer_text: 'AMENDED for cross-page consistency with Echemo: wet-mill process paragraphs are
+    coffee-specific on TW pages, now included'

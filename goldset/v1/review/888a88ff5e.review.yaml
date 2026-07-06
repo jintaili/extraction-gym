@@ -12,24 +12,36 @@ draft_label:
   is_specialty_coffee: true
   coffee.coffee_name: Decaf Ethiopia Suke Quto
   coffee.roaster: Onyx Coffee Lab
-  coffee.roaster_location: null
+  coffee.roaster_location: Arkansas
   coffee.roaster_country: United States
   coffee.origin_country: Ethiopia
-  coffee.origin_region: null
-  coffee.process_method: null
+  coffee.origin_region: Guji
+  coffee.process_method:
+  - Swiss Water
+  - Natural
   coffee.variety:
   - Landrace
-  coffee.producer_or_farm: null
+  coffee.producer_or_farm: Tesfaye Bekele; Suke Quto Farm
   coffee.altitude: 2000 MASL
-  coffee.roast_level: null
+  coffee.roast_level: 'Moderate; Agtron #120.5'
   coffee.harvest_period: November
   coffee.is_blend: false
   coffee.is_espresso: false
   coffee.is_decaf: true
   coffee.is_coferment_or_infused: false
-  coffee.sensory_text: null
-  coffee.display_tasting_notes: null
-  coffee.producer_text: null
+  coffee.sensory_text: Apple, Baker's Chocolate, Orange, Silky; Defined by its silky tactile feel, this
+    Swiss Water–processed decaf Ethiopia is refined and sweet throughout, a testament to Suke Quto’s standing
+    as one of the premier sources of exceptional coffee in the country.
+  coffee.display_tasting_notes: apple, baker's chocolate, orange
+  coffee.producer_text: Born into coffee cultivation but trained in environmental conservation, Tesfaye
+    Bekele returned to his native Guji to lead reforestation efforts after devastating wildfire, ultimately
+    founding Suke Quto Farm and its renowned washing station. Rooted in the highlands of Ethiopia’s Guji
+    zone, Tesfaye Bekele's journey traces a profound arc, from environmental stewardship to the renaissance
+    of specialty coffee in the region. When adoption remained slow, Bekele committed fully to his vision.
+    He resigned from public service and established Suke Quto Farm, eventually followed by the creation
+    of Suke Quto Washing Station. His leadership cultivated trust, drawing in 171 outgrowers who now contribute
+    to the station’s renowned output. Today, Suke Quto stands as a beacon of quality and environmental
+    integrity, producing coffees grown exclusively under organic and Rainforest Alliance standards.
   price.listed_price: 26.0
   price.listed_currency: USD
   price.bag_size_value: 10.0
@@ -151,3 +163,10 @@ models:
   a: gpt-4o-mini
   b: gpt-5.5
   prompt_id: dab81a86fe
+resolution_notes:
+  coffee.roaster_location: Arkansas in page text (grep x2)
+  coffee.origin_region: zone name is Guji; 'zone' is an administrative suffix
+  coffee.process_method: 'both verbatim: Swiss Water decaffeination + Natural process'
+  coffee.roast_level: 'both stated under ROAST LEVEL: Moderate and Agtron #120.5'
+  coffee.display_tasting_notes: 'R14: Silky is texture, stays in sensory_text only'
+  coffee.producer_text: b's bio verified page-supported (171 outgrowers, Rainforest Alliance grep-confirmed)

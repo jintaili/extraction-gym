@@ -13,13 +13,14 @@ draft_label:
   coffee.coffee_name: Echemo – Certified Organic
   coffee.roaster: Tim Wendelboe Coffee
   coffee.roaster_location: null
-  coffee.roaster_country: null
+  coffee.roaster_country: Norway
   coffee.origin_country: Ethiopia
   coffee.origin_region: Goma, Jimma
   coffee.process_method:
   - Washed
-  coffee.variety: null
-  coffee.producer_or_farm: null
+  coffee.variety:
+  - Ethiopian heirloom from Coche forest
+  coffee.producer_or_farm: Khalid Shifa; Echemo
   coffee.altitude: null
   coffee.roast_level: null
   coffee.harvest_period: December 2025
@@ -27,9 +28,30 @@ draft_label:
   coffee.is_espresso: false
   coffee.is_decaf: false
   coffee.is_coferment_or_infused: false
-  coffee.sensory_text: null
-  coffee.display_tasting_notes: null
-  coffee.producer_text: null
+  coffee.sensory_text: 'A sweet and intense coffee with lingering intense stone fruit flavours and aromatic
+    floral notes.; Flavour notes: Floral, white tea & stone fruits; The washed coffees from Echemo are
+    normally very delicate and soft. I find it is like drinking a white tea with some nice notes of peach
+    and florals. It is very different to the typical Yirgacheffe or Guji coffees from the south of Ethiopia,
+    most likely because it is grown in a different area and is from different cultivars. Having said that,
+    the coffees from the 2025/26 harvest is by far the most intense coffees we have bought from Echemo.
+    The aromas and flavours are much more pronounced. Expect lingering intense stone fruit flavours and
+    aromatic floral notes.'
+  coffee.display_tasting_notes: floral, white tea, stone fruits
+  coffee.producer_text: 'Cultivar: Ethiopian heirloom from Coche forest; Producer: Khalid Shifa; Country:
+    Ethiopia; Region: Goma, Jimma; Process: Washed; Harvest date: December 2025; Khalid is mainly growing
+    old cultivars that was planted by his grandfather many years ago. When establishing the farm, Khalid’s
+    grandfather selected seeds from wild coffee trees from the the nearby Coche forest and the trees he
+    planted are still producing well today.; The coffee cherries are selectively hand picked by hired
+    workers from the local community and sorted before they rest over night in the cherry receiving tank.;
+    The cherries are de-pulped in the next morning. Once de-pulped, the parchment coffee, with it’s mucilage
+    still on, is wet fermented in clean water for about 24 hours. After fermentation the coffee is graded
+    and washed in a washing channel in order to remove the remaining mucilage and grade out the light
+    coffee beans.; The coffees are dried on elevated drying tables covered with shade nets where defect
+    parchment coffee gets sorted out by hand. Drying the coffee takes about 12 - 14 days. During daytime
+    the coffees are raked to ensure even drying. The drying process is finished when the moisture content
+    in the coffee beans is between 9- 11,5%.; Khalid Shifa is the owner of Echemo. He is 3rd generation
+    coffee farmer and inherited the 35 hectare farm from his father. Echemo is situated near the town
+    of Agaro, in Goma in the south west part of Ethiopia.'
   price.listed_price: 20.0
   price.listed_currency: USD
   price.bag_size_value: 250.0
@@ -132,3 +154,11 @@ models:
   a: gpt-4o-mini
   b: gpt-5.5
   prompt_id: dab81a86fe
+resolution_notes:
+  coffee.roaster_country: 'page: ''For our Norwegian customers''; matches curator cold'
+  coffee.producer_or_farm: 'R13: Echemo is the stated farm name'
+  coffee.sensory_text: 'R12: description + Flavour notes + Tim''s lot-specific cup paragraph (curator
+    cold chose the Tim paragraph; superset kept)'
+  coffee.producer_text: 'R14: spec + cultivar + farm-specific process paragraphs + farm bio; Tim''s sourcing-story
+    paragraphs excluded (quality narrative, not production spec); curator cold chose the sourcing story
+    - flag for review'

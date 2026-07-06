@@ -15,25 +15,41 @@ draft_label:
   coffee.roaster_location: null
   coffee.roaster_country: unknown
   coffee.origin_country: Colombia
-  coffee.origin_region: null
-  coffee.process_method: null
-  coffee.variety: null
-  coffee.producer_or_farm: null
-  coffee.altitude: null
+  coffee.origin_region: Quindío; Andes, Antioquia
+  coffee.process_method:
+  - Black Honey / Co-Fermented
+  - Washed
+  coffee.variety:
+  - Caturra
+  - Castillo
+  - Colombia
+  coffee.producer_or_farm: Sebastian Ramirez; Fincas El Placer
+  coffee.altitude: 1744 masl; 1800-2000 masl
   coffee.roast_level: null
   coffee.harvest_period: null
-  coffee.is_blend: null
+  coffee.is_blend: true
   coffee.is_espresso: false
   coffee.is_decaf: false
   coffee.is_coferment_or_infused: true
-  coffee.sensory_text: null
+  coffee.sensory_text: 'We Taste: Peaches, Brown Sugar, Peach Sweet Tea; Every cup delivers a joyful burst
+    of peachy sweetness with surprising complexity and .'
   coffee.display_tasting_notes: Peaches, Brown Sugar, Peach Sweet Tea
-  coffee.producer_text: null
+  coffee.producer_text: 'Stellar Collisions The Next Generation is made up of the following coffees: PEACH
+    — Sebastian Ramirez; Farm Name: Fincas El Placer; Location: Quindío, Colombia; Elevation: 1744 masl;
+    Variety: Caturra; Process: Black Honey / Co-Fermented; RECRUITMENT LOT — Community Lot Recruitment;
+    Andes, Antioquia, Colombia; 1800-2000 masl; Castillo, Caturra & Colombia; Washed; Currently taking
+    place in Andes, Antioquia, The program aims to identify and attract young coffee producers interested
+    in turning their farms into successful businesses in the specialty coffee market. The program establishes
+    quality parameters and taste profiles, holds joint cuppings, and collaborates with Cabresto to reach
+    more people in the region. By evaluating the quality and taste of each coffee lot, the team hopes
+    to identify potential candidates for the program and provide support through the Young Producer Association
+    (YPA) in town. This lot is the result of that identification process, and we''re delighted to share
+    it with you.'
   price.listed_price: 28.0
   price.listed_currency: USD
   price.bag_size_value: 12.0
   price.bag_size_unit: oz
-  price.package_grams: null
+  price.package_grams: 340.1942772
   price.bags_count: null
   price.price_type: one_time
   price.availability: in_stock
@@ -145,3 +161,12 @@ models:
   a: gpt-4o-mini
   b: gpt-5.5
   prompt_id: dab81a86fe
+resolution_notes:
+  coffee.origin_region: two Colombian components; both regions verbatim, semicolon-joined (single-country
+    blend, so not multi_origin)
+  coffee.process_method: verbatim compound 'Black Honey / Co-Fermented' kept as one term per R14
+  coffee.producer_or_farm: R13 named producer/farm of PEACH component; recruitment-lot program detailed
+    in producer_text
+  coffee.sensory_text: page's broken 'complexity and .' kept verbatim (curator cold did the same)
+  price.package_grams: 12oz = 340.194g; embedded 425g is Shopify SHIPPING weight, not content - pipeline
+    gotcha worth an adversary category

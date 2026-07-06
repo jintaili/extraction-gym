@@ -45,6 +45,20 @@ def main() -> None:
     frz.add_argument("--goldset", default="goldset/v1")
     frz.add_argument("--version", default="v1")
 
+    reg = sub.add_parser("register-root", help="Register the production prompt as the root artifact")
+    reg.add_argument("--registry", default="registry")
+
+    lin = sub.add_parser("lineage", help="Print an artifact's ancestry chain")
+    lin.add_argument("artifact_id")
+    lin.add_argument("--registry", default="registry")
+
+    ev = sub.add_parser("eval", help="Evaluate a prompt artifact on the gold set")
+    ev.add_argument("artifact_id")
+    ev.add_argument("--goldset", default="goldset/v1")
+    ev.add_argument("--registry", default="registry")
+    ev.add_argument("--model", default=None, help="Default: production extraction model")
+    ev.add_argument("--concurrency", type=int, default=4)
+
     args = parser.parse_args()
     if args.command == "snapshot":
         _cmd_snapshot(args)
@@ -62,6 +76,12 @@ def main() -> None:
         _cmd_colddiff(args)
     elif args.command == "freeze":
         _cmd_freeze(args)
+    elif args.command == "register-root":
+        _cmd_register_root(args)
+    elif args.command == "lineage":
+        _cmd_lineage(args)
+    elif args.command == "eval":
+        _cmd_eval(args)
 
 
 def _cmd_snapshot(args: argparse.Namespace) -> None:
@@ -158,6 +178,70 @@ def _cmd_freeze(args: argparse.Namespace) -> None:
         f"frozen {manifest['version']}: {manifest['page_count']} pages, "
         f"residual error {manifest['residual_label_error']['rate']:.3f}"
     )
+
+
+def _cmd_register_root(args: argparse.Namespace) -> None:
+    from coffee_value_app.extractor import EXTRACTION_SYSTEM_PROMPT
+
+    from extraction_gym.core.registry import PromptRegistry
+
+    artifact = PromptRegistry(Path(args.registry)).register(
+        text=EXTRACTION_SYSTEM_PROMPT,
+        parent_id=None,
+        mutation_note="production prompt: schema v2 + source-language fix (R15)",
+        source="human",
+    )
+    print(f"root artifact: {artifact.artifact_id}")
+
+
+def _cmd_lineage(args: argparse.Namespace) -> None:
+    from extraction_gym.core.registry import PromptRegistry
+
+    for artifact in PromptRegistry(Path(args.registry)).lineage(args.artifact_id):
+        print(f"{artifact.artifact_id}  parent={artifact.parent_id or '-'}  [{artifact.source}]  {artifact.mutation_note}")
+
+
+def _cmd_eval(args: argparse.Namespace) -> None:
+    from coffee_value_app.config import load_settings
+
+    from extraction_gym.adapters.coffee.extractor import CoffeeExtractor
+    from extraction_gym.core.cache import ExtractionCache
+    from extraction_gym.core.registry import PromptRegistry
+    from extraction_gym.eval.runner import evaluate_artifact, report_markdown
+
+    registry = PromptRegistry(Path(args.registry))
+    artifact = registry.get(args.artifact_id)
+    model = args.model or load_settings().extraction_model
+    extractor = CoffeeExtractor()
+    report = asyncio.run(
+        evaluate_artifact(
+            Path(args.goldset),
+            artifact,
+            model=model,
+            extract_fn=extractor.extract,
+            cache=ExtractionCache(Path(".cache") / "extractions"),
+            concurrency=args.concurrency,
+        )
+    )
+    runs_dir = Path("runs") / f"eval-{artifact.artifact_id}-{model}"
+    runs_dir.mkdir(parents=True, exist_ok=True)
+    (runs_dir / "results.json").write_text(
+        __import__("json").dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+    )
+    (runs_dir / "report.md").write_text(report_markdown(report), encoding="utf-8")
+    registry.append_ledger(
+        {
+            "event": "eval",
+            "artifact_id": artifact.artifact_id,
+            "model": model,
+            "goldset": str(args.goldset),
+            "pages": report["pages"],
+            "composite_mean": report["composite_mean"],
+            "usage": report["usage"],
+        }
+    )
+    print(report_markdown(report))
+    print(f"written: {runs_dir}/report.md")
 
 
 def _cmd_verify(args: argparse.Namespace) -> None:

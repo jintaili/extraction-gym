@@ -40,12 +40,15 @@ class CoffeeExtractor:
         self.settings = load_settings()
         self.client = client or AsyncOpenAI(api_key=self.settings.openai_api_key)
 
-    async def extract(self, *, model: str, url: str, page_text: str) -> ExtractionResult:
+    async def extract(
+        self, *, model: str, url: str, page_text: str, system_prompt: str | None = None
+    ) -> ExtractionResult:
+        prompt = system_prompt if system_prompt is not None else EXTRACTION_SYSTEM_PROMPT
         trimmed = trim_page_text(page_text, self.settings.max_page_text_chars)
         response = await self.client.responses.parse(
             model=model,
             input=[
-                {"role": "system", "content": EXTRACTION_SYSTEM_PROMPT},
+                {"role": "system", "content": prompt},
                 {"role": "user", "content": build_extraction_user_prompt(url=url, page_text=trimmed)},
             ],
             text_format=PageExtraction,
@@ -55,7 +58,7 @@ class CoffeeExtractor:
         return ExtractionResult(
             extraction=parsed.model_dump(mode="json"),
             model=model,
-            prompt_id=production_prompt_id(),
+            prompt_id=hashlib.sha256(prompt.encode("utf-8")).hexdigest()[:10],
             input_tokens=getattr(usage, "input_tokens", 0) or 0,
             output_tokens=getattr(usage, "output_tokens", 0) or 0,
         )

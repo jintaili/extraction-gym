@@ -59,6 +59,19 @@ def main() -> None:
     ev.add_argument("--model", default=None, help="Default: production extraction model")
     ev.add_argument("--concurrency", type=int, default=4)
 
+    noise = sub.add_parser("noise", help="Measure the noise band: N cache-disabled runs of one artifact")
+    noise.add_argument("artifact_id")
+    noise.add_argument("--goldset", default="goldset/v1")
+    noise.add_argument("--registry", default="registry")
+    noise.add_argument("--model", default=None)
+    noise.add_argument("--n", type=int, default=3)
+    noise.add_argument("--concurrency", type=int, default=4)
+
+    cmp_ = sub.add_parser("compare", help="Gate verdict: candidate vs incumbent eval results")
+    cmp_.add_argument("incumbent_results", help="runs/eval-<id>-<model>/results.json")
+    cmp_.add_argument("candidate_results")
+    cmp_.add_argument("--noise", required=True, help="runs/noise-<id>-<model>.json")
+
     args = parser.parse_args()
     if args.command == "snapshot":
         _cmd_snapshot(args)
@@ -82,6 +95,10 @@ def main() -> None:
         _cmd_lineage(args)
     elif args.command == "eval":
         _cmd_eval(args)
+    elif args.command == "noise":
+        _cmd_noise(args)
+    elif args.command == "compare":
+        _cmd_compare(args)
 
 
 def _cmd_snapshot(args: argparse.Namespace) -> None:
@@ -242,6 +259,63 @@ def _cmd_eval(args: argparse.Namespace) -> None:
     )
     print(report_markdown(report))
     print(f"written: {runs_dir}/report.md")
+
+
+def _cmd_noise(args: argparse.Namespace) -> None:
+    import json
+
+    from coffee_value_app.config import load_settings
+
+    from extraction_gym.adapters.coffee.extractor import CoffeeExtractor
+    from extraction_gym.core.cache import ExtractionCache
+    from extraction_gym.core.registry import PromptRegistry
+    from extraction_gym.eval.runner import evaluate_artifact
+    from extraction_gym.eval.stats import noise_band
+
+    registry = PromptRegistry(Path(args.registry))
+    artifact = registry.get(args.artifact_id)
+    model = args.model or load_settings().extraction_model
+    extractor = CoffeeExtractor()
+    cache = ExtractionCache(Path(".cache") / "extractions")
+    reports = []
+    for i in range(args.n):
+        report = asyncio.run(
+            evaluate_artifact(
+                Path(args.goldset),
+                artifact,
+                model=model,
+                extract_fn=extractor.extract,
+                cache=cache,
+                concurrency=args.concurrency,
+                cache_disabled=True,
+                run_tag=f"noise-{i}",
+            )
+        )
+        reports.append(report)
+        print(f"run {i + 1}/{args.n}: composite {report['composite_mean']:.4f}")
+    band = noise_band(reports)
+    out = Path("runs") / f"noise-{artifact.artifact_id}-{model}.json"
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(json.dumps(band, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    registry.append_ledger(
+        {"event": "noise", "artifact_id": artifact.artifact_id, "model": model,
+         "composite_std": band["composite_std"], "runs": args.n}
+    )
+    print(f"composite std: {band['composite_std']:.5f} (gate threshold 2x = {2 * band['composite_std']:.5f})")
+    print(f"written: {out}")
+
+
+def _cmd_compare(args: argparse.Namespace) -> None:
+    import json
+
+    from extraction_gym.eval.stats import compare
+
+    report_a = json.loads(Path(args.incumbent_results).read_text(encoding="utf-8"))
+    report_b = json.loads(Path(args.candidate_results).read_text(encoding="utf-8"))
+    band = json.loads(Path(args.noise).read_text(encoding="utf-8"))
+    result = compare(report_a, report_b, band)
+    print(json.dumps(result, ensure_ascii=False, indent=2))
+    print(f"VERDICT: {result['verdict']}")
 
 
 def _cmd_verify(args: argparse.Namespace) -> None:

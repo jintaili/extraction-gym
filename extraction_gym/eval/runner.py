@@ -86,6 +86,7 @@ async def evaluate_artifact(
         "pages": len(results),
         "composite_mean": sum(composites.values()) / len(composites),
         "composite_by_page": composites,
+        "scores_by_page": results,
         "field_means": {
             f: (sum(v) / len(v) if v else None) for f, v in per_field.items()
         },

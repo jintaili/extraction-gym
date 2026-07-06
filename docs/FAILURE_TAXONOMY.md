@@ -1,0 +1,43 @@
+# Failure Taxonomy
+
+Failure modes the extractor is known or suspected to exhibit. The adversary samples
+from this taxonomy (and invents new categories with probability 0.3); the loop appends
+discovered modes here with evidence.
+
+## Seed categories (from the plan)
+
+1. multi-variant page where the default variant is a small sampler
+2. subscription-only pricing (per-shipment price mistaken for purchase price)
+3. non-English page (Japanese, Danish, Italian, Korean)
+4. co-ferment or infused coffee described in marketing prose
+5. blend presented like a single origin
+6. price shown per subscription shipment rather than per bag
+7. sold-out product with stale price
+8. wholesale page with tiered pricing
+9. region-ambiguous origin
+10. decaf mentioned only in a variant name
+
+## Discovered in real gold-set data (2026-07-05, during labeling)
+
+11. **Embedded weight is shipping weight, not content weight.** Brandywine: Shopify
+    variant weight 425g for a 12oz (340g) bag. An extractor trusting embedded
+    package_grams over the stated size silently inflates bag size by 25%.
+12. **Displayed price rounds down from true variant price.** Coffee Collective shows
+    "159 DKK" while the embedded variant price is 159.20. Two page-internal sources
+    disagree; policy: embedded variant price wins.
+13. **Localized sites render English to the production fetcher.** The /da/ Danish page
+    returned English (Accept-Language: en-US). Extractors and evals must not assume URL
+    locale implies page language.
+14. **default_for_inference marker points at the wrong variant when gram metadata is
+    missing.** Nomad: eight 250g variants lack grams, so the marker lands on the 1kg
+    variant (130 EUR) while the page-load default is 250g at 32.50 EUR.
+15. **Stale metadata vs current body.** Black Fox meta description names last season's
+    component lot (El Meridiano/Herrera); the body names the current one (El Nevado del
+    Huila). Extractors reading only the description extract superseded facts.
+16. **Junk enum echo under pressure.** On a non-product listing page, the production
+    model emitted ">unknown" (with angle bracket) for string fields.
+17. **Producer name lost by the html-to-text pipeline.** Coffee Collective's "Produced
+    together with <name>" widget loses the name on some pages; the correct label is
+    absent even though the browser shows it.
+
+Per-category before/after accuracy is added by the loop (Phase 6).

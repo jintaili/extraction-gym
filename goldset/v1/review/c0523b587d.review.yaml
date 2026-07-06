@@ -10,10 +10,10 @@ instructions: 'Fill every null in draft_label by adjudicating disagreements agai
 draft_label:
   page_type: coffee_product
   is_specialty_coffee: true
-  coffee.coffee_name: null
+  coffee.coffee_name: Bombona
   coffee.roaster: Coffee Collective
   coffee.roaster_location: null
-  coffee.roaster_country: null
+  coffee.roaster_country: Denmark
   coffee.origin_country: Colombia
   coffee.origin_region: Huila
   coffee.process_method:
@@ -22,7 +22,7 @@ draft_label:
   - Colombia
   coffee.producer_or_farm: Jhonathan Gasca
   coffee.altitude: 1850 masl
-  coffee.roast_level: null
+  coffee.roast_level: Whole bean coffee roasted for filter
   coffee.harvest_period: null
   coffee.is_blend: false
   coffee.is_espresso: false
@@ -30,7 +30,11 @@ draft_label:
   coffee.is_coferment_or_infused: false
   coffee.sensory_text: Bright and silky. Notes of caramel, blackberries and chocolate.
   coffee.display_tasting_notes: caramel, blackberries, chocolate
-  coffee.producer_text: null
+  coffee.producer_text: 'Origin: Huila, Colombia; Process: Washed; Varieties: Colombia; Altitude: 1850
+    masl; Roast: Whole bean coffee roasted for filter; Jhonathan Gasca; Produced together with; 9,9 USD/KG;
+    The price we''ve chosen to pay for the coffee based on quality; A fruity, silky Colombia lot by Jhonathan
+    Gasca. The Gasca family are fourth-generation coffee farmers. They have focused on quality coffees
+    during their time in charge of the farm.'
   price.listed_price: 120.8
   price.listed_currency: DKK
   price.bag_size_value: 250.0
@@ -131,3 +135,7 @@ models:
   a: gpt-4o-mini
   b: gpt-5.5
   prompt_id: dab81a86fe
+resolution_notes:
+  coffee.coffee_name: displayed product name; 250g is a size suffix
+  coffee.roast_level: verbatim Roast spec value (CC pattern)
+  coffee.producer_text: 'R14 CC pattern: spec + transparency + producer bio'

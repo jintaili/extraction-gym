@@ -11,18 +11,18 @@ draft_label:
   page_type: coffee_product
   is_specialty_coffee: true
   coffee.coffee_name: Pastor Ordoñez SL-28 Colombia
-  coffee.roaster: null
+  coffee.roaster: The Brick Coffee
   coffee.roaster_location: null
-  coffee.roaster_country: null
+  coffee.roaster_country: Estonia
   coffee.origin_country: Colombia
   coffee.origin_region: Las Chinas, San Agustin, Huila
   coffee.process_method:
   - washed
   coffee.variety:
   - SL-28
-  coffee.producer_or_farm: null
+  coffee.producer_or_farm: Pastor Ordoñez; Finca El Placer
   coffee.altitude: 1800masl
-  coffee.roast_level: null
+  coffee.roast_level: Filter
   coffee.harvest_period: december - february
   coffee.is_blend: false
   coffee.is_espresso: false
@@ -30,7 +30,18 @@ draft_label:
   coffee.is_coferment_or_infused: false
   coffee.sensory_text: rhubarb, black currants, pear, yellow plum
   coffee.display_tasting_notes: rhubarb, black currants, pear, yellow plum
-  coffee.producer_text: null
+  coffee.producer_text: 'farm: Finca El Placer; varietal: SL-28; processing: washed; altitude: 1800masl;
+    region: Las Chinas, San Agustin, Huila; harvest: december - february; farm size: 4 ha; We were first
+    introduced to Don Pastor and the Monkaaba Project through Semilla Coffee in 2025, when we sourced
+    his Pink Bourbon. Despite the region''s strong reputation, many smallholder farmers still lack access
+    to stable, sustainable markets. Monkaaba was created in response, built on a shared vision of fairer
+    trade, transparency, and dignity for producers.; Planting around 500 SL-28 trees as a small trial
+    to see how the variety performs on his farm is part of a broader move away from Caturra due to leaf
+    rust pressure. Over the past 15 years, he has gradually introduced varieties such as Gesha, Papayo
+    and Pink Bourbon.; Cherries are first rested for 8 hours in sealed bags, then held in the depulper
+    hopper for 12 hours before depulping. The parchment dry-ferments for 36 hours, after which the coffee
+    is washed 3-5 times and transferred to raised beds.Drying takes 18-30 days depending on sun intensity,
+    with a sliding roof used to control shade and slow the process when needed.'
   price.listed_price: 21.5
   price.listed_currency: EUR
   price.bag_size_value: 250.0
@@ -38,7 +49,7 @@ draft_label:
   price.package_grams: 250.0
   price.bags_count: null
   price.price_type: one_time
-  price.availability: null
+  price.availability: in_stock
 disagreements:
   coffee.roaster:
     a: unknown
@@ -147,3 +158,8 @@ models:
   a: gpt-4o-mini
   b: gpt-5.5
   prompt_id: dab81a86fe
+resolution_notes:
+  coffee.roaster: domain thebrickcoffee.ee; no roaster name in page text
+  coffee.roaster_country: .ee ccTLD + Estonian UI strings
+  coffee.producer_or_farm: R13; producer name from page title
+  coffee.roast_level: 'Röst option: Filter'

@@ -11,9 +11,9 @@ draft_label:
   page_type: coffee_product
   is_specialty_coffee: true
   coffee.coffee_name: All Day
-  coffee.roaster: null
-  coffee.roaster_location: null
-  coffee.roaster_country: null
+  coffee.roaster: Black Fox Coffee Co.
+  coffee.roaster_location: NYC
+  coffee.roaster_country: United States
   coffee.origin_country: Colombia
   coffee.origin_region: Huila
   coffee.process_method:
@@ -27,12 +27,21 @@ draft_label:
   coffee.roast_level: null
   coffee.harvest_period: null
   coffee.is_blend: true
-  coffee.is_espresso: null
+  coffee.is_espresso: false
   coffee.is_decaf: false
   coffee.is_coferment_or_infused: false
-  coffee.sensory_text: null
-  coffee.display_tasting_notes: null
-  coffee.producer_text: null
+  coffee.sensory_text: A buttery Colombian lot to enjoy all day with notes of honey, red apple and lingering
+    toffee.; This coffee gives us juicy, bright acidity with a lingering Panela sugar sweetness.; It's
+    great black, and with the addition of milk you will experience sweet chocolate and nougat flavors.
+  coffee.display_tasting_notes: honey, red apple, toffee
+  coffee.producer_text: 'All Day is a community coffee.; It was grown in Huila, Colombia by neighboring
+    local producers and blended using color sorters, density separation and experienced quality assurance
+    professionals.; Right now 100% of All Day is made up of a coffee named ''El Nevado del Huila'' named
+    after Colombia''s highest volcano and sourced by the team at The Coffee Quest.; Producers that contribute
+    to this community coffee grow mostly Castillo, Caturra and Colombia - El Nevado del Huila is a blend
+    of their washed processed lots.; Lot Name → El Nevado del Huila; Producers → Small-scale producers
+    from Huila; Location → Huila, Colombia; Altitude: 1,600 - 1,900 masl; Varieties: Castillo, Caturra,
+    Colombia; Process: Washed'
   price.listed_price: 22.0
   price.listed_currency: USD
   price.bag_size_value: 250.0
@@ -151,3 +160,10 @@ models:
   a: gpt-4o-mini
   b: gpt-5.5
   prompt_id: dab81a86fe
+resolution_notes:
+  coffee.roaster: title verbatim 'Black Fox Coffee Co.'; location NYC from title
+  coffee.is_espresso: '''espresso in our shops but drip at home'' + grind options -> not espresso-specific'
+  coffee.display_tasting_notes: headline-line-authoritative precedent; chocolate/nougat are with-milk
+    flavors, stay in sensory_text
+  coffee.producer_text: body is current (El Nevado del Huila); meta description is STALE (El Meridiano/Herrera)
+    - page self-inconsistency worth noting; sustainability paragraphs excluded as roaster-generic

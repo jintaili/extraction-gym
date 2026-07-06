@@ -14,8 +14,8 @@ draft_label:
   coffee.roaster: Variety Coffee
   coffee.roaster_location: null
   coffee.roaster_country: unknown
-  coffee.origin_country: null
-  coffee.origin_region: null
+  coffee.origin_country: blend_multi_origin
+  coffee.origin_region: multi_origin
   coffee.process_method:
   - Washed
   coffee.variety:
@@ -33,7 +33,10 @@ draft_label:
   coffee.is_coferment_or_infused: false
   coffee.sensory_text: Dutch Cocoa, Molasses, Fig Jam
   coffee.display_tasting_notes: Dutch Cocoa, Molasses, Fig Jam
-  coffee.producer_text: null
+  coffee.producer_text: 'This is our primary espresso blend. This coffee is comprised of 50% Colombian,
+    and 50% Ethiopian coffees. The composition of the blend will vary based on harvest seasons.; Origin:
+    Ethiopia & Colombia; Varieties: Castillo, Caturra, Catuai, Ethiopia Landraces; Elevation: 1600-2100
+    masl; Process: Washed'
   price.listed_price: 19.25
   price.listed_currency: USD
   price.bag_size_value: 300.0
@@ -41,7 +44,7 @@ draft_label:
   price.package_grams: 300.0
   price.bags_count: null
   price.price_type: one_time
-  price.availability: null
+  price.availability: in_stock
 disagreements:
   coffee.origin_country:
     a: Colombia & Ethiopia
@@ -139,3 +142,7 @@ models:
   a: gpt-4o-mini
   b: gpt-5.5
   prompt_id: dab81a86fe
+resolution_notes:
+  coffee.origin_country: matches curator cold; 50/50 Colombia+Ethiopia blend
+  coffee.producer_text: 'R14: intro + Overview spec lines (curator cold was a flagged R14 placeholder)'
+  price.availability: Add to bag present; matches curator cold

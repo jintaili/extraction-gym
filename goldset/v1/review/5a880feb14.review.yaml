@@ -29,9 +29,11 @@ draft_label:
   coffee.is_espresso: false
   coffee.is_decaf: true
   coffee.is_coferment_or_infused: false
-  coffee.sensory_text: null
-  coffee.display_tasting_notes: null
-  coffee.producer_text: null
+  coffee.sensory_text: Graham Cracker & Cashew; Look for a balanced cup with smooth notes of vanilla,
+    toffee, chocolate, and none of the catawampus of those edgy caff coffees.
+  coffee.display_tasting_notes: graham cracker, cashew
+  coffee.producer_text: 'ORIGIN: Huila; ELEVATION: 1600 MASL; VARIETY: Castillo, Caturra; PROCESS: EA
+    Sugarcane; ROAST COLOR: 60.8 Agtron; BEST RESTED: 5-7 Days'
   price.listed_price: 23.0
   price.listed_currency: USD
   price.bag_size_value: 13.0
@@ -122,3 +124,10 @@ models:
   a: gpt-4o-mini
   b: gpt-5.5
   prompt_id: dab81a86fe
+resolution_notes:
+  coffee.roast_level: 'CONSENSUS OVERRIDE: page states ROAST COLOR 60.8 Agtron; models agreed on something
+    else or null - the exact Agtron case R14/G4 anticipated'
+  coffee.sensory_text: 'R12: headline note pair + description sentence'
+  coffee.display_tasting_notes: headline badge authoritative (Shoebox precedent); prose vanilla/toffee/chocolate
+    stay in sensory_text
+  coffee.producer_text: R14 spec lines

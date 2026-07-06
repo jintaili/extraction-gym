@@ -10,26 +10,32 @@ instructions: 'Fill every null in draft_label by adjudicating disagreements agai
 draft_label:
   page_type: coffee_product
   is_specialty_coffee: true
-  coffee.coffee_name: null
+  coffee.coffee_name: Gesha - Salma Bermudez - Finca El Paraiso
   coffee.roaster: Hydrangea Coffee Roasters
   coffee.roaster_location: null
   coffee.roaster_country: United States
   coffee.origin_country: Colombia
-  coffee.origin_region: null
-  coffee.process_method: null
+  coffee.origin_region: El Paraiso, Cauca
+  coffee.process_method:
+  - Special Fermentation Washed
+  - 72-hour submerged anaerobic fermentation with yeast
   coffee.variety:
   - Gesha
-  coffee.producer_or_farm: Samuel Diego Bermudez
+  coffee.producer_or_farm: Samuel Diego Bermudez; Finca El Paraiso
   coffee.altitude: 1930 masl
   coffee.roast_level: null
   coffee.harvest_period: null
   coffee.is_blend: false
   coffee.is_espresso: false
   coffee.is_decaf: false
-  coffee.is_coferment_or_infused: null
-  coffee.sensory_text: null
+  coffee.is_coferment_or_infused: false
+  coffee.sensory_text: 'Tastes Like: Mango, Dulce de Leches, Elderflower; In the cup, look for mango,
+    dulce de leches, and elderflower, with a silky body and citric acidity.'
   coffee.display_tasting_notes: Mango, dulce de leches, elderflower
-  coffee.producer_text: null
+  coffee.producer_text: 'Origin: El Paraiso, Cauca, Colombia; Variety: Gesha; Producer: Samuel Diego Bermudez;
+    Elevation: 1930 masl; Process: Special Fermentation Washed; Salma is a Gesha profile that begins with
+    the harvest of overripe cherries, followed by a 72-hour submerged anaerobic fermentation with yeast.
+    The coffee is dried using a dehumidifier to preserve softness and aromatic clarity.'
   price.listed_price: 46.0
   price.listed_currency: USD
   price.bag_size_value: 8.0
@@ -137,3 +143,8 @@ models:
   a: gpt-4o-mini
   b: gpt-5.5
   prompt_id: dab81a86fe
+resolution_notes:
+  coffee.coffee_name: displayed product name incl. variety and farm
+  coffee.is_coferment_or_infused: yeast fermentation without added flavoring = technique -> false
+  coffee.producer_or_farm: R13 applied proactively (agreed value lacked farm slot)
+  coffee.sensory_text: 'R12: Tastes Like line + in-cup sentence'

@@ -14,13 +14,18 @@ draft_label:
   coffee.coffee_name: The African Trio
   coffee.roaster: Leaves Coffee Roasters
   coffee.roaster_location: null
-  coffee.roaster_country: null
-  coffee.origin_country: null
-  coffee.origin_region: null
+  coffee.roaster_country: Japan
+  coffee.origin_country: blend_multi_origin
+  coffee.origin_region: multi_origin
   coffee.process_method:
   - Natural
   - Washed
-  coffee.variety: null
+  coffee.variety:
+  - '74110'
+  - Heirloom
+  - Ruiru11
+  - SL28
+  - Batian
   coffee.producer_or_farm: null
   coffee.altitude: null
   coffee.roast_level: null
@@ -29,17 +34,18 @@ draft_label:
   coffee.is_espresso: false
   coffee.is_decaf: false
   coffee.is_coferment_or_infused: false
-  coffee.sensory_text: null
-  coffee.display_tasting_notes: Fruity
-  coffee.producer_text: null
+  coffee.sensory_text: ''
+  coffee.display_tasting_notes: ''
+  coffee.producer_text: 人気の定番アフリカ3種を一挙にお届けするセットです。; Ethiopia Uraga 74110 Natural; Ethiopia Worka Sakaro
+    Heirloom Washed; Kenya Gathaithi AA Ruiru11, SL28, Batian Washed; 内容量 各100g
   price.listed_price: 32.0
   price.listed_currency: USD
-  price.bag_size_value: null
+  price.bag_size_value: 100.0
   price.bag_size_unit: g
   price.package_grams: 300.0
-  price.bags_count: null
+  price.bags_count: 3
   price.price_type: one_time
-  price.availability: null
+  price.availability: in_stock
 disagreements:
   coffee.roaster_country:
     a: unknown
@@ -139,3 +145,10 @@ models:
   a: gpt-4o-mini
   b: gpt-5.5
   prompt_id: dab81a86fe
+resolution_notes:
+  coffee.origin_country: 3-coffee set spans Ethiopia+Kenya; schema's only multi-origin token used; is_blend
+    stays false per R4 (set, not blend)
+  coffee.variety: '''Gathaithi AA'' is a washing station + grade, not a variety'
+  coffee.sensory_text: no lot tasting notes on page; the fruity line is audience-suitability marketing
+  coffee.producer_text: R10 source language + component list + 各100g contents line
+  price.bags_count: 'R4: 3 x 100g, package_grams=300 total (consensus 300 correct)'

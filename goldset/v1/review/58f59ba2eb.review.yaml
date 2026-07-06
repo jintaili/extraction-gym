@@ -23,7 +23,7 @@ draft_label:
   - SL34
   - Ruiru 11
   - Batian
-  coffee.producer_or_farm: null
+  coffee.producer_or_farm: Several smallholders farmers; Gachatha wet mill
   coffee.altitude: null
   coffee.roast_level: null
   coffee.harvest_period: December 2025
@@ -31,9 +31,16 @@ draft_label:
   coffee.is_espresso: false
   coffee.is_decaf: false
   coffee.is_coferment_or_infused: false
-  coffee.sensory_text: null
+  coffee.sensory_text: 'This Kenyan coffee from the Gachatha wet mill has intense fruity flavours of blackcurrants,
+    blackberries and raisins.; Flavour notes: Blackcurrants, blackberries & raisins'
   coffee.display_tasting_notes: Blackcurrants, blackberries, raisins
-  coffee.producer_text: null
+  coffee.producer_text: 'Cultivar: SL28, SL34, Ruiru 11, Batian; Producer: Several smallholders farmers;
+    Country: Kenya; Region: Nyeri; Harvest date: December 2025; Process: Washed; This coffee is produced
+    by several hundred farmers, most of them growing the famous Kenyan SL28 and SL34 cultivars. While
+    some have planted newer hybrids like Ruiru 11 and Batian you can clearly taste the clean and fruity
+    flavours in this coffee that are so common for the SL cultivars.; I have visited the Gachatha wet
+    mill several times and even though it looks like most wet mills do in Nyeri, it has proven to be one
+    of the best producers of high quality coffees in the area over many years.'
   price.listed_price: 19.0
   price.listed_currency: USD
   price.bag_size_value: 250.0
@@ -114,3 +121,8 @@ models:
   a: gpt-4o-mini
   b: gpt-5.5
   prompt_id: dab81a86fe
+resolution_notes:
+  coffee.producer_or_farm: 'R13: producer slot first, wet mill in farm slot'
+  coffee.sensory_text: 'R12: description + Flavour notes spec line'
+  coffee.producer_text: 'R14: spec lines + cultivar para + first Tim''s-notes para; templated brew/shipping/process
+    boilerplate excluded as generic'

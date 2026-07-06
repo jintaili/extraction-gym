@@ -13,14 +13,14 @@ draft_label:
   coffee.coffee_name: Familia Ccapa
   coffee.roaster: Coffee Collective
   coffee.roaster_location: null
-  coffee.roaster_country: null
+  coffee.roaster_country: Denmark
   coffee.origin_country: Peru
   coffee.origin_region: Cusco
   coffee.process_method:
   - Washed
   coffee.variety:
   - Typica
-  coffee.producer_or_farm: null
+  coffee.producer_or_farm: Familia Ccapa
   coffee.altitude: null
   coffee.roast_level: Whole bean coffee roasted for filter
   coffee.harvest_period: null
@@ -30,7 +30,9 @@ draft_label:
   coffee.is_coferment_or_infused: false
   coffee.sensory_text: Elegant and smooth. Notes of milk chocolate, marzipan, and blueberries.
   coffee.display_tasting_notes: milk chocolate, marzipan, blueberries
-  coffee.producer_text: null
+  coffee.producer_text: 'Origin: Cusco, Peru; Process: Washed; Varieties: Typica; Roast: Whole bean coffee
+    roasted for filter; Produced together with; 11,5 USD/KG; The price we''ve chosen to pay for the coffee
+    based on quality'
   price.listed_price: 124.0
   price.listed_currency: DKK
   price.bag_size_value: 250.0
@@ -126,3 +128,9 @@ models:
   a: gpt-4o-mini
   b: gpt-5.5
   prompt_id: dab81a86fe
+resolution_notes:
+  coffee.roaster_country: .dk ccTLD in URL input, consistent with Nomad .es ruling; curator veto point
+    noted in R15 area
+  coffee.producer_or_farm: product name is the producing family; matches curator cold label
+  coffee.producer_text: R14 spec lines incl. broken 'Produced together with' widget (name lost in pipeline);
+    cold form said absent, revisit under R14

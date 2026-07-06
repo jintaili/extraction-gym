@@ -11,7 +11,7 @@ draft_label:
   page_type: coffee_product
   is_specialty_coffee: true
   coffee.coffee_name: Ivan Gutierrez SL28 - 2025
-  coffee.roaster: null
+  coffee.roaster: Passenger
   coffee.roaster_location: null
   coffee.roaster_country: unknown
   coffee.origin_country: Costa Rica
@@ -20,7 +20,7 @@ draft_label:
   - Washed Process
   coffee.variety:
   - SL28
-  coffee.producer_or_farm: null
+  coffee.producer_or_farm: Ivan Gutierrez; La Esmeralda
   coffee.altitude: null
   coffee.roast_level: null
   coffee.harvest_period: '2025'
@@ -28,9 +28,14 @@ draft_label:
   coffee.is_espresso: false
   coffee.is_decaf: false
   coffee.is_coferment_or_infused: false
-  coffee.sensory_text: null
+  coffee.sensory_text: Notes of Toffee, Cranberry, Citrus; As we’ve come to expect, the plant genetics
+    of this classic Kenyan SL28 variety shine through in this coffee with flavors of tart cranberry, toffee,
+    and citrus peel alongside subtle spices and botanicals in the finish.
   coffee.display_tasting_notes: Toffee, Cranberry, Citrus
-  coffee.producer_text: null
+  coffee.producer_text: This is our fifth consecutive year presenting SL28 and gesha separations from
+    award-winning producer Ivan Gutierrez. We had the opportunity to visit Ivan last fall and stay on
+    his farm, La Esmeralda, where we learned a bit more about how both weather challenges and beneficial
+    farm investments have impacted the flavor profile of his coffees over the years.
   price.listed_price: 48.5
   price.listed_currency: USD
   price.bag_size_value: 250.0
@@ -112,3 +117,9 @@ models:
   a: gpt-4o-mini
   b: gpt-5.5
   prompt_id: dab81a86fe
+resolution_notes:
+  coffee.roaster: domain drinkpassenger.com; matches curator cold label 'Passenger'; a's 'Passenger Coffee'
+    adds a word not in evidence
+  coffee.producer_or_farm: R13 semicolon format of curator's cold value
+  coffee.sensory_text: 'R12: notes line + genetics sentence (curator cold had sentence only)'
+  coffee.producer_text: full two-sentence lot span, matches curator cold

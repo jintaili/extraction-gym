@@ -105,6 +105,17 @@ Cold forms to revisit under R14: 672c1b9795, b115e3916e, ee70a8fc3c (spec-line s
 count). 52915c5c1a producer_text stays "": the "Produced together with" widget loses its
 name in the html-to-text pipeline, so the text genuinely absent from the referee's input.
 
+## R15. Language of verbatim fields vs production prompt (FLAGGED 2026-07-05)
+
+Conflict found while adjudicating the Spanish Nomad page: R8/R10 keep verbatim fields in
+source language, but the production prompt instructs "Translate to English" for
+sensory_text, producer_text, and display note names. Gold labels follow R8/R10 (source
+language: translation is nondeterministic and destroys verbatim gradability). Resolution:
+amend those prompt lines to keep original language BEFORE the prompt is registered as the
+gym's root artifact (one-line change on the schema-v2-extraction branch, pending with the
+open PR). Curator veto point: if the app product wants English display notes, translation
+belongs in a deterministic post-step or the UI layer, not in the graded extraction.
+
 ## Decision log
 
 | date | page id | field | decision | rule affected |

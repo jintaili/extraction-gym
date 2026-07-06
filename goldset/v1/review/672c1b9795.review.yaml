@@ -13,9 +13,9 @@ draft_label:
   coffee.coffee_name: Yessica Parra - Natural Gesha - Pitalito, Colombia *Roasted 6/16/26*
   coffee.roaster: Loveless Coffees
   coffee.roaster_location: null
-  coffee.roaster_country: null
+  coffee.roaster_country: unknown
   coffee.origin_country: Colombia
-  coffee.origin_region: null
+  coffee.origin_region: Pitalito, Huila
   coffee.process_method:
   - Natural
   coffee.variety:
@@ -28,9 +28,12 @@ draft_label:
   coffee.is_espresso: false
   coffee.is_decaf: false
   coffee.is_coferment_or_infused: false
-  coffee.sensory_text: null
-  coffee.display_tasting_notes: null
-  coffee.producer_text: null
+  coffee.sensory_text: The final product is very sweet, and presents distinctive winey flavors and red
+    fruit acidity.
+  coffee.display_tasting_notes: ''
+  coffee.producer_text: 'Category: Rare; Producer: Yessica & Diego Parra; Location: Pitalito, Huila, Colombia;
+    Variety: Gesha; Process: Natural; Harvest: Winter 2025-2026; Farm Altitude: 1750m; Importer: Unblended
+    Coffee; Contract Price: $16.40 per pound'
   price.listed_price: 25.0
   price.listed_currency: USD
   price.bag_size_value: 4.0
@@ -38,7 +41,7 @@ draft_label:
   price.package_grams: 113.398
   price.bags_count: null
   price.price_type: one_time
-  price.availability: null
+  price.availability: in_stock
 disagreements:
   coffee.roaster_location:
     a: Pitalito, Huila
@@ -156,3 +159,13 @@ models:
   a: gpt-4o-mini
   b: gpt-5.5
   prompt_id: dab81a86fe
+resolution_notes:
+  coffee.roaster_country: no page or domain evidence for roaster country (a's Colombia confused origin
+    with roaster)
+  coffee.sensory_text: 'curator cold-label choice kept; NOTE tension: sentence comes from the generic
+    natural-process explainer, R12 strictly would say empty - curator authority wins'
+  coffee.display_tasting_notes: no headline notes on page; empty per schema default
+  coffee.producer_text: R14 spec lines only; Colombia and natural-process explainer paragraphs excluded
+    as generic
+  price.availability: 'curator cold: pinned 4oz variant has Add to cart; ''Variant sold out'' applies
+    to 8oz'

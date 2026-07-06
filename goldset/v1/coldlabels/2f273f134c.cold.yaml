@@ -12,7 +12,7 @@ label:
   is_specialty_coffee: true  # true | false | null (null unless coffee_product; see R11)
   coffee.coffee_name: El Burro Lot E - Panama Natural Geisha
   coffee.roaster: September Coffee Roastery
-  coffee.roaster_location: Ottawa, Canada
+  coffee.roaster_location: Stittsville, ON
   coffee.roaster_country: Canada   # "unknown" if page gives no evidence
   coffee.origin_country: Panama    # "blend_multi_origin" for multi-country blends (R9)
   coffee.origin_region: Potrerillos, Chiriquì Province

@@ -6,39 +6,39 @@
 page_id: 5ada5bba08
 url: https://drinkpassenger.com/products/ivan-gutierrez-sl28-washed-process-2025?Size=250+g
 page_text: goldset/v1/pages/5ada5bba08.txt
-status: PENDING  # set to DONE when complete
+status: DONE  # set to DONE when complete
 label:
-  page_type: null            # coffee_product | coffee_equipment | other_product | not_a_product_page
-  is_specialty_coffee: null  # true | false | null (null unless coffee_product; see R11)
-  coffee.coffee_name: null
-  coffee.roaster: null
+  page_type: coffee_product            # coffee_product | coffee_equipment | other_product | not_a_product_page
+  is_specialty_coffee: true  # true | false | null (null unless coffee_product; see R11)
+  coffee.coffee_name: Ivan Gutierrez SL28 - 2025
+  coffee.roaster: Passenger
   coffee.roaster_location: null
   coffee.roaster_country: null   # "unknown" if page gives no evidence
-  coffee.origin_country: null    # "blend_multi_origin" for multi-country blends (R9)
+  coffee.origin_country: Costa Rica    # "blend_multi_origin" for multi-country blends (R9)
   coffee.origin_region: null
-  coffee.process_method: []      # verbatim terms, e.g. ["white honey"]; ["unknown"] if absent
-  coffee.variety: []             # verbatim names, e.g. ["SL-9", "Geisha"]; ["unknown"] if absent
-  coffee.producer_or_farm: null
+  coffee.process_method: ['Washed']      # verbatim terms, e.g. ["white honey"]; ["unknown"] if absent
+  coffee.variety: ['SL28']             # verbatim names, e.g. ["SL-9", "Geisha"]; ["unknown"] if absent
+  coffee.producer_or_farm: Ivan Gutierrez, La Esmeralda
   coffee.altitude: null          # as written, with units
   coffee.roast_level: null       # verbatim, e.g. "Ultralight", "Agtron 58"
-  coffee.harvest_period: null    # verbatim crop year / harvest window, quoted: "2025"
-  coffee.is_blend: null          # true | false
-  coffee.is_espresso: null       # true | false
-  coffee.is_decaf: null          # true | false
-  coffee.is_coferment_or_infused: null  # true | false; additives during processing only
+  coffee.harvest_period: '2025'    # verbatim crop year / harvest window, quoted: "2025"
+  coffee.is_blend: false          # true | false
+  coffee.is_espresso: false       # true | false
+  coffee.is_decaf: false          # true | false
+  coffee.is_coferment_or_infused: false  # true | false; additives during processing only
   # Long verbatim fields use YAML block style (|-) so colons and quotes in prose are safe.
   # Replace ~ with your text on the indented lines; keep the |- marker.
   coffee.sensory_text: |-
-    ~
-  coffee.display_tasting_notes: null    # concise comma-separated note names (R8)
+    As we’ve come to expect, the plant genetics of this classic Kenyan SL28 variety shine through in this coffee with flavors of tart cranberry, toffee, and citrus peel alongside subtle spices and botanicals in the finish.
+  coffee.display_tasting_notes: Toffee, Cranberry, Citrus    # concise comma-separated note names (R8)
   coffee.producer_text: |-
-    ~
-  price.listed_price: null       # as displayed for the default/pinned variant (R1, R5, R6)
-  price.listed_currency: null    # ISO-like code as rendered in the snapshot
-  price.bag_size_value: null
-  price.bag_size_unit: null      # g | kg | oz | lb
-  price.package_grams: null      # total grams; for samplers, sum across bags (R4)
-  price.bags_count: null         # integer; null for a single standard bag
-  price.price_type: null         # one_time | subscription | membership | unknown (R2)
-  price.availability: null       # in_stock | sold_out | preorder | unknown (R3)
+    This is our fifth consecutive year presenting SL28 and gesha separations from award-winning producer Ivan Gutierrez. We had the opportunity to visit Ivan last fall and stay on his farm, La Esmeralda, where we learned a bit more about how both weather challenges and beneficial farm investments have impacted the flavor profile of his coffees over the years. 
+  price.listed_price: 48.50       # as displayed for the default/pinned variant (R1, R5, R6)
+  price.listed_currency: USD    # ISO-like code as rendered in the snapshot
+  price.bag_size_value: 250
+  price.bag_size_unit: g      # g | kg | oz | lb
+  price.package_grams: 250      # total grams; for samplers, sum across bags (R4)
+  price.bags_count: 1         # integer; null for a single standard bag
+  price.price_type: one_time         # one_time | subscription | membership | unknown (R2)
+  price.availability: sold_out       # in_stock | sold_out | preorder | unknown (R3)
 notes: ""  # anything ambiguous; candidate policy rules for the decision log

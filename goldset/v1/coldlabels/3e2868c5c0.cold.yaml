@@ -6,33 +6,33 @@
 page_id: 3e2868c5c0
 url: https://coffeeprojectnyshop.square.site/product/-crowd-pleaser-house-espresso/52?cs=true&cst=custom
 page_text: goldset/v1/pages/3e2868c5c0.txt
-status: PENDING  # set to DONE when complete
+status: DONE  # set to DONE when complete
 label:
-  page_type: null            # coffee_product | coffee_equipment | other_product | not_a_product_page
-  is_specialty_coffee: null  # true | false | null (null unless coffee_product; see R11)
-  coffee.coffee_name: null
-  coffee.roaster: null
-  coffee.roaster_location: null
-  coffee.roaster_country: null   # "unknown" if page gives no evidence
-  coffee.origin_country: null    # "blend_multi_origin" for multi-country blends (R9)
+  page_type: coffee_product            # coffee_product | coffee_equipment | other_product | not_a_product_page
+  is_specialty_coffee: true  # true | false | null (null unless coffee_product; see R11)
+  coffee.coffee_name: '"Crowd Pleaser" House Espresso'
+  coffee.roaster: Coffee Project
+  coffee.roaster_location: New York
+  coffee.roaster_country: United States   # "unknown" if page gives no evidence
+  coffee.origin_country: blend_multi_origin    # "blend_multi_origin" for multi-country blends (R9)
   coffee.origin_region: null
-  coffee.process_method: []      # verbatim terms, e.g. ["white honey"]; ["unknown"] if absent
-  coffee.variety: []             # verbatim names, e.g. ["SL-9", "Geisha"]; ["unknown"] if absent
+  coffee.process_method: ['washed', 'natural']      # verbatim terms, e.g. ["white honey"]; ["unknown"] if absent
+  coffee.variety: ['unknown']             # verbatim names, e.g. ["SL-9", "Geisha"]; ["unknown"] if absent
   coffee.producer_or_farm: null
   coffee.altitude: null          # as written, with units
   coffee.roast_level: null       # verbatim, e.g. "Ultralight", "Agtron 58"
   coffee.harvest_period: null    # verbatim crop year / harvest window, quoted: "2025"
-  coffee.is_blend: null          # true | false
-  coffee.is_espresso: null       # true | false
-  coffee.is_decaf: null          # true | false
-  coffee.is_coferment_or_infused: null  # true | false; additives during processing only
+  coffee.is_blend: true          # true | false
+  coffee.is_espresso: true       # true | false
+  coffee.is_decaf: false          # true | false
+  coffee.is_coferment_or_infused: false  # true | false; additives during processing only
   # Long verbatim fields use YAML block style (|-) so colons and quotes in prose are safe.
   # Replace ~ with your text on the indented lines; keep the |- marker.
   coffee.sensory_text: |-
-    ~
-  coffee.display_tasting_notes: null    # concise comma-separated note names (R8)
+    Black cherry, chocolate bar, honey. Medium acidity, syrupy body.
+  coffee.display_tasting_notes: Black cherry, chocolate bar, honey. Medium acidity, syrupy body    # concise comma-separated note names (R8)
   coffee.producer_text: |-
-    ~
+    The Crowd Pleaser Espresso is a blend of two component coffees: a natural Guatemala from a cooperative in Ayarza and a washed Colombia from a smallholder farm in Huila. We have cultivated ongoing relationships with both of these producers since 2020 and have grown together to earn the title “relationship coffee.” Over the years, the farm in Colombia has grown from 4 families to 12; long-term support like ours allows for greater sales stability and therefore opportunities to invest in resources, education, quality, and new initiatives. Our continued business contributes to uplifting entire communities with coffee.
   price.listed_price: null       # as displayed for the default/pinned variant (R1, R5, R6)
   price.listed_currency: null    # ISO-like code as rendered in the snapshot
   price.bag_size_value: null

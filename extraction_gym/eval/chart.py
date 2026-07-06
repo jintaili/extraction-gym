@@ -34,6 +34,9 @@ def render_chart(state_history: list[dict], gold_band: dict | None, out_path: Pa
         ax.axvline(gen, alpha=0.2, color="green")
         ax.annotate(artifact_id[:6], (gen, ax.get_ylim()[1]), fontsize=7, ha="center", va="top")
 
+    from matplotlib.ticker import MaxNLocator
+
+    ax.xaxis.set_major_locator(MaxNLocator(integer=True))
     ax.set_xlabel("loop generation")
     ax.set_ylabel("weighted composite score")
     ax.set_title("Extraction accuracy over optimizer generations")

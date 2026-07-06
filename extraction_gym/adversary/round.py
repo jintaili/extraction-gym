@@ -9,7 +9,6 @@ discards are counted per gate for the report. Spend is budget-capped.
 from __future__ import annotations
 
 import random
-from pathlib import Path
 
 from extraction_gym.adapters.coffee.scoring import FIELD_SPECS, score_page
 from extraction_gym.adversary.generator import AdversaryGenerator, deterministic_sanity

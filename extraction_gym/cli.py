@@ -102,6 +102,22 @@ def main() -> None:
     cht.add_argument("--runs", default="runs")
     cht.add_argument("--noise", default=None, help="noise band json for the shaded band")
 
+    lp = sub.add_parser("loop", help="Run the autonomous generation loop (adversary + optimizer + gates)")
+    lp.add_argument("--run-id", required=True)
+    lp.add_argument("--target", help="incumbent artifact id (required unless --resume)")
+    lp.add_argument("--resume", action="store_true")
+    lp.add_argument("--goldset", default="goldset/v1")
+    lp.add_argument("--registry", default="registry")
+    lp.add_argument("--suite", default="suites/adversarial")
+    lp.add_argument("--noise", required=True, help="noise band json")
+    lp.add_argument("--generations", type=int, default=8)
+    lp.add_argument("--candidates", type=int, default=4)
+    lp.add_argument("--k", type=int, default=10, help="adversary pages per generation")
+    lp.add_argument("--max-usd", type=float, default=20.0)
+    lp.add_argument("--generator-model", default="gpt-5.5")
+    lp.add_argument("--judge-model", default="gpt-5.4")
+    lp.add_argument("--optimizer-model", default="gpt-5.5")
+
     args = parser.parse_args()
     if args.command == "snapshot":
         _cmd_snapshot(args)
@@ -139,6 +155,8 @@ def main() -> None:
         _cmd_mutate(args)
     elif args.command == "chart":
         _cmd_chart(args)
+    elif args.command == "loop":
+        _cmd_loop(args)
 
 
 def _cmd_snapshot(args: argparse.Namespace) -> None:
@@ -490,6 +508,103 @@ def _cmd_checkreviews(args: argparse.Namespace) -> None:
     print(f"reviews: {total}, VERIFIED: {verified}, with blocking problems: {bad}")
     if bad:
         sys.exit(1)
+
+
+def _cmd_loop(args: argparse.Namespace) -> None:
+    import json
+
+    from coffee_value_app.config import load_settings
+
+    from extraction_gym.adapters.coffee.extractor import CoffeeExtractor
+    from extraction_gym.adversary.generator import AdversaryGenerator
+    from extraction_gym.adversary.judges import Judges
+    from extraction_gym.adversary.round import run_round
+    from extraction_gym.adversary.suite import SuiteStore
+    from extraction_gym.core.budget import BudgetTracker
+    from extraction_gym.core.cache import ExtractionCache
+    from extraction_gym.core.registry import PromptRegistry
+    from extraction_gym.eval.runner import evaluate_artifact
+    from extraction_gym.eval.suite_eval import evaluate_on_suite
+    from extraction_gym.optimizer.loop import LoopDeps, run_loop
+    from extraction_gym.optimizer.mutate import MutationProposer, failure_exemplars_from_suite
+    from extraction_gym.optimizer.state import LoopState
+
+    registry = PromptRegistry(Path(args.registry))
+    runs_dir = Path("runs")
+    if args.resume:
+        state = LoopState.load(runs_dir, args.run_id)
+    else:
+        state = LoopState(run_id=args.run_id, incumbent_id=args.target)
+    extractor = CoffeeExtractor()
+    model_under_test = load_settings().extraction_model
+    suite_root = Path(args.suite)
+    suite = SuiteStore(suite_root)
+    cache = ExtractionCache(Path(".cache") / "extractions")
+    budget = BudgetTracker(args.max_usd)
+    budget.spent_usd = state.spend_usd
+    generator = AdversaryGenerator(client=extractor.client, model=args.generator_model)
+    judges = Judges(client=extractor.client, model=args.judge_model)
+    proposer = MutationProposer(client=extractor.client, model=args.optimizer_model)
+    gold_band = json.loads(Path(args.noise).read_text(encoding="utf-8"))
+
+    async def adversary_round_fn(incumbent):
+        return await run_round(
+            count=args.k, target=incumbent, generator=generator, judges=judges,
+            incumbent_extract_fn=extractor.extract, incumbent_model=model_under_test,
+            suite=suite, cache=cache, budget=budget, seed=20260707 + state.generation,
+        )
+
+    async def suite_eval_fn(artifact):
+        return await evaluate_on_suite(
+            suite_root, artifact, model=model_under_test, extract_fn=extractor.extract,
+            cache=cache, budget=budget,
+        )
+
+    async def gold_eval_fn(artifact):
+        report = await evaluate_artifact(
+            Path(args.goldset), artifact, model=model_under_test,
+            extract_fn=extractor.extract, cache=cache,
+        )
+        budget.add(model_under_test, report["usage"]["input_tokens"], report["usage"]["output_tokens"])
+        return report
+
+    async def propose_fn(*, incumbent_text, exemplars, history_summary):
+        proposal = await proposer.propose(
+            incumbent_text=incumbent_text, exemplars=exemplars, history_summary=history_summary
+        )
+        budget.add(args.optimizer_model, proposal.input_tokens, proposal.output_tokens)
+        return proposal
+
+    def exemplars_fn():
+        metas = []
+        for meta_path in sorted(suite_root.glob("*.meta.json")):
+            meta = json.loads(meta_path.read_text(encoding="utf-8"))
+            meta["page_text"] = (suite_root / f"{meta['page_id']}.txt").read_text(encoding="utf-8")
+            metas.append(meta)
+        return failure_exemplars_from_suite(metas, limit=4)
+
+    deps = LoopDeps(
+        registry=registry, runs_dir=runs_dir, adversary_round_fn=adversary_round_fn,
+        suite_eval_fn=suite_eval_fn, gold_eval_fn=gold_eval_fn, propose_fn=propose_fn,
+        exemplars_fn=exemplars_fn, gold_band=gold_band, suite_band=0.01,
+    )
+
+    def _sync_spend(st):
+        st.spend_usd = budget.spent_usd
+
+    state = asyncio.run(run_loop(state, deps, max_generations=args.generations,
+                                 candidates_per_gen=args.candidates))
+    _sync_spend(state)
+    state.save(runs_dir)
+    registry.append_ledger({"event": "loop_finished", "run_id": state.run_id,
+                            "generations": state.generation, "incumbent": state.incumbent_id,
+                            "spend_usd": round(budget.spent_usd, 4)})
+    for record in state.history:
+        accepted = record.get("accepted") or "-"
+        print(f"gen {record.get('generation')}: incumbent {record.get('incumbent_id', '?')} "
+              f"suite {record.get('suite_incumbent', 0):.4f} gold {record.get('gold_incumbent') or 0:.4f} "
+              f"accepted {accepted}")
+    print(f"final incumbent: {state.incumbent_id}  spend: ${budget.spent_usd:.2f}")
 
 
 def _cmd_verify(args: argparse.Namespace) -> None:

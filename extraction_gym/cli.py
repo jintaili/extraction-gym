@@ -35,6 +35,9 @@ def main() -> None:
     check = sub.add_parser("checkforms", help="Validate filled cold-label forms")
     check.add_argument("--goldset", default="goldset/v1")
 
+    chr_ = sub.add_parser("checkreviews", help="Validate edited review files before labelize")
+    chr_.add_argument("--goldset", default="goldset/v1")
+
     lab = sub.add_parser("labelize", help="Convert VERIFIED review files into gold labels")
     lab.add_argument("--goldset", default="goldset/v1")
 
@@ -110,6 +113,8 @@ def main() -> None:
         _cmd_coldforms(args)
     elif args.command == "checkforms":
         _cmd_checkforms(args)
+    elif args.command == "checkreviews":
+        _cmd_checkreviews(args)
     elif args.command == "labelize":
         _cmd_labelize(args)
     elif args.command == "colddiff":
@@ -459,6 +464,32 @@ def _cmd_chart(args: argparse.Namespace) -> None:
     band = json.loads(Path(args.noise).read_text(encoding="utf-8")) if args.noise else None
     out = render_chart(state.history, band, Path(args.runs) / args.run_id / "chart.png")
     print(f"written: {out}")
+
+
+def _cmd_checkreviews(args: argparse.Namespace) -> None:
+    from extraction_gym.core.checkforms import check_review
+
+    review_dir = Path(args.goldset) / "review"
+    bad = verified = 0
+    for path in sorted(review_dir.glob("*.review.yaml")):
+        problems = check_review(path)
+        blocking = [p for p in problems if not p.startswith("note")]
+        import yaml as _yaml
+
+        try:
+            if _yaml.safe_load(path.read_text(encoding="utf-8")).get("review_status") == "VERIFIED":
+                verified += 1
+        except Exception:
+            pass
+        if problems:
+            print(f"{path.name}:")
+            for p in problems:
+                print(f"  - {p}")
+        bad += bool(blocking)
+    total = len(list(review_dir.glob("*.review.yaml")))
+    print(f"reviews: {total}, VERIFIED: {verified}, with blocking problems: {bad}")
+    if bad:
+        sys.exit(1)
 
 
 def _cmd_verify(args: argparse.Namespace) -> None:

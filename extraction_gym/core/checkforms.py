@@ -58,7 +58,35 @@ def check_form(path: Path) -> list[str]:
         problems.append(f"missing fields: {', '.join(sorted(missing))}")
     if status != "DONE":
         return problems
+    return problems + validate_label(label)
 
+
+def check_review(path: Path) -> list[str]:
+    """Validate an edited review file: parses, legal enums/types, disagreement nulls noted."""
+    try:
+        doc = yaml.safe_load(path.read_text(encoding="utf-8"))
+    except yaml.YAMLError as exc:
+        mark = getattr(exc, "problem_mark", None)
+        where = f" (line {mark.line + 1})" if mark else ""
+        return [f"YAML parse error{where}: values containing ': ' need quoting or |- block style"]
+    problems = []
+    status = doc.get("review_status")
+    if status not in {"PENDING", "VERIFIED"}:
+        problems.append(f"review_status must be PENDING or VERIFIED, got {status!r}")
+    if status != "VERIFIED":
+        return problems
+    draft = doc.get("draft_label") or {}
+    problems += validate_label(draft)
+    null_disagreements = [f for f in doc.get("disagreements", {}) if draft.get(f) is None]
+    if null_disagreements:
+        problems.append(
+            f"note (not blocking): null on former disagreements: {', '.join(sorted(null_disagreements))}"
+        )
+    return problems
+
+
+def validate_label(label: dict) -> list[str]:
+    problems: list[str] = []
     for field, allowed in ENUMS.items():
         v = label.get(field)
         if v is not None and v not in allowed:

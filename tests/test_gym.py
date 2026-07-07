@@ -94,6 +94,21 @@ def test_colddiff_counts_changes(tmp_path):
     assert audit["per_field"] == {"f2": 1}
 
 
+def test_release_attestation_roundtrip(tmp_path):
+    from extraction_gym.core.release import check_attestation, write_attestation
+
+    manifest = {"frozen_at": "t", "page_count": 42}
+    att = write_attestation(
+        out_path=tmp_path / "att.json", artifact_id="ce68bd4c4e", prompt_text="the prompt",
+        gold_version="v1", gold_manifest=manifest, verdict="NOOP_ROOT",
+        evidence={"composite": 0.892},
+    )
+    assert check_attestation(att, "the prompt") == []
+    assert check_attestation(att, "tampered prompt") != []
+    att_bad = dict(att, verdict="FAIL")
+    assert any("not releasable" in p for p in check_attestation(att_bad, "the prompt"))
+
+
 def test_freeze_requires_labels_and_audit_then_is_immutable(tmp_path):
     store = GoldsetStore(tmp_path)
     page = make_page(store)

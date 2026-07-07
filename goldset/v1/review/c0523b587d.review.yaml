@@ -3,7 +3,7 @@ url: https://coffeecollective.dk/products/bombona-250-g
 final_url: https://coffeecollective.dk/products/bombona-250-g
 strata:
 - A
-review_status: PENDING
+review_status: VERIFIED
 instructions: 'Fill every null in draft_label by adjudicating disagreements against the snapshot text
   (pages/{id}.txt), spot-check agreed values, and always hand-check the hand_check fields. Set review_status:
   VERIFIED when done.'
@@ -22,7 +22,7 @@ draft_label:
   - Colombia
   coffee.producer_or_farm: Jhonathan Gasca
   coffee.altitude: 1850 masl
-  coffee.roast_level: Whole bean coffee roasted for filter
+  coffee.roast_level: null # filter is not a roast level
   coffee.harvest_period: null
   coffee.is_blend: false
   coffee.is_espresso: false

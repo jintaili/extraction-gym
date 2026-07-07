@@ -3,7 +3,7 @@ url: https://drinkpassenger.com/products/fausto-romo-sidra-honey-honey-process-2
 final_url: https://drinkpassenger.com/products/fausto-romo-sidra-honey-honey-process-2025?Size=250+g
 strata:
 - E
-review_status: PENDING
+review_status: VERIFIED
 instructions: 'Fill every null in draft_label by adjudicating disagreements against the snapshot text
   (pages/{id}.txt), spot-check agreed values, and always hand-check the hand_check fields. Set review_status:
   VERIFIED when done.'

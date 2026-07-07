@@ -3,7 +3,7 @@ url: https://onyxcoffeelab.com/products/peru-la-margarita-gesha-26?variant=42842
 final_url: https://onyxcoffeelab.com/products/peru-la-margarita-gesha-26?variant=42842298646626
 strata:
 - A
-review_status: PENDING
+review_status: VERIFIED
 instructions: 'Fill every null in draft_label by adjudicating disagreements against the snapshot text
   (pages/{id}.txt), spot-check agreed values, and always hand-check the hand_check fields. Set review_status:
   VERIFIED when done.'

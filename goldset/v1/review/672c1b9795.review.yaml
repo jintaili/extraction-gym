@@ -3,7 +3,7 @@ url: https://lovelesscoffees.coffee/products/yessica-parra-natural-gesha-pitalit
 final_url: https://lovelesscoffees.coffee/products/yessica-parra-natural-gesha-pitalito-colombia?variant=48665088589979
 strata:
 - E
-review_status: PENDING
+review_status: VERIFIED
 instructions: 'Fill every null in draft_label by adjudicating disagreements against the snapshot text
   (pages/{id}.txt), spot-check agreed values, and always hand-check the hand_check fields. Set review_status:
   VERIFIED when done.'

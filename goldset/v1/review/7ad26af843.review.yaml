@@ -3,7 +3,7 @@ url: https://www.brandywinecoffeeroasters.com/collections/all-coffee-1/products/
 final_url: https://www.brandywinecoffeeroasters.com/collections/all-coffee-1/products/stellar-collisions-next-generation
 strata:
 - A
-review_status: PENDING
+review_status: VERIFIED
 instructions: 'Fill every null in draft_label by adjudicating disagreements against the snapshot text
   (pages/{id}.txt), spot-check agreed values, and always hand-check the hand_check fields. Set review_status:
   VERIFIED when done.'

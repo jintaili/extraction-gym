@@ -3,12 +3,12 @@ url: https://shop.leavescoffee.jp/products/subscription
 final_url: https://shop.leavescoffee.jp/products/subscription
 strata:
 - F
-review_status: PENDING
+review_status: VERIFIED
 instructions: 'Fill every null in draft_label by adjudicating disagreements against the snapshot text
   (pages/{id}.txt), spot-check agreed values, and always hand-check the hand_check fields. Set review_status:
   VERIFIED when done.'
 draft_label:
-  page_type: coffee_product
+  page_type: coffee_product   # if there is no subscription option, then coffee product makes sense
   is_specialty_coffee: null
   coffee.coffee_name: Subscription
   coffee.roaster: Leaves Coffee Roasters

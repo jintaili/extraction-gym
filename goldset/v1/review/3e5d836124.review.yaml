@@ -3,7 +3,7 @@ url: https://drinkpassenger.com/products/los-suenos-decaf
 final_url: https://drinkpassenger.com/products/los-suenos-decaf?Size=250+g
 strata:
 - C
-review_status: PENDING
+review_status: VERIFIED
 instructions: 'Fill every null in draft_label by adjudicating disagreements against the snapshot text
   (pages/{id}.txt), spot-check agreed values, and always hand-check the hand_check fields. Set review_status:
   VERIFIED when done.'
@@ -12,8 +12,8 @@ draft_label:
   is_specialty_coffee: true
   coffee.coffee_name: Los Sueños - Decaf
   coffee.roaster: Passenger
-  coffee.roaster_location: null
-  coffee.roaster_country: unknown
+  coffee.roaster_location: Lancaster, PA
+  coffee.roaster_country: United States
   coffee.origin_country: Colombia
   coffee.origin_region: Divino Niño
   coffee.process_method:

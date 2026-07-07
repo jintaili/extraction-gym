@@ -3,7 +3,7 @@ url: https://nomadcoffee.es/products/aji-las-flores
 final_url: https://nomadcoffee.es/products/aji-las-flores
 strata:
 - D
-review_status: PENDING
+review_status: VERIFIED
 instructions: 'Fill every null in draft_label by adjudicating disagreements against the snapshot text
   (pages/{id}.txt), spot-check agreed values, and always hand-check the hand_check fields. Set review_status:
   VERIFIED when done.'
@@ -34,8 +34,7 @@ draft_label:
     melocotón, caramelo, piruleta de fresa y piel de lima, aportando una complejidad vibrante y un equilibrio
     elegante.; El resultado es un café de alta intensidad sensorial, con estructura dulce y acidez nítida,
     donde el proceso resalta las notas florales, frutales y cítricas típicas del terroir de Acevedo.'
-  coffee.display_tasting_notes: uva moscatel, manteca de cacao, hierbaluisa, melocotón, caramelo, piruleta
-    de fresa, piel de lima
+  coffee.display_tasting_notes: uva moscatel, manteca de cacao, hierbaluisa
   coffee.producer_text: 'Categoría: Competición; Variedad: Bourbon Ají; Altitud: 1750 MSNM; Proceso: Lavado;
     Cosecha: 2025; Finca Las Flores nació en 1990 gracias a Edilberto Vergara y Nubia Ayure, quienes comenzaron
     con tan solo dos hectáreas de café. Con el tiempo, la finca creció hasta convertirse en uno de los

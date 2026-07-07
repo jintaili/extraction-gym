@@ -3,7 +3,7 @@ url: https://www.thebrickcoffee.ee/en/shop/tooted/el-salvador-las-nubes-1-1
 final_url: https://www.thebrickcoffee.ee/en/shop/tooted/el-salvador-las-nubes-1-1
 strata:
 - D
-review_status: PENDING
+review_status: VERIFIED
 instructions: 'Fill every null in draft_label by adjudicating disagreements against the snapshot text
   (pages/{id}.txt), spot-check agreed values, and always hand-check the hand_check fields. Set review_status:
   VERIFIED when done.'
@@ -22,7 +22,7 @@ draft_label:
   - SL-28
   coffee.producer_or_farm: Pastor Ordoñez; Finca El Placer
   coffee.altitude: 1800masl
-  coffee.roast_level: Filter
+  coffee.roast_level: null  # filter/espresso is not a roast level
   coffee.harvest_period: december - february
   coffee.is_blend: false
   coffee.is_espresso: false

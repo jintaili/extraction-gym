@@ -3,7 +3,7 @@ url: https://www.target.com/p/dunkin-39-original-blend-whole-bean-medium-roast-c
 final_url: https://www.target.com/p/dunkin-39-original-blend-whole-bean-medium-roast-coffee-18oz/-/A-91290408
 strata:
 - G
-review_status: PENDING
+review_status: VERIFIED
 instructions: 'Fill every null in draft_label by adjudicating disagreements against the snapshot text
   (pages/{id}.txt), spot-check agreed values, and always hand-check the hand_check fields. Set review_status:
   VERIFIED when done.'

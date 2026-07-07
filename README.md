@@ -81,10 +81,14 @@ is task-agnostic.
 
 ## Status
 
-Gold set v1: 42 real pages snapshotted and prelabeled; curator adjudication in progress,
-freeze pending. Referee, registry, adversary, and optimizer machinery: built and tested
-(25 tests). Baseline report, noise band, and the first gated loop run land once the gold
-set freezes.
+Gold set v1 FROZEN: 42 real pages, human-verified labels, residual label error 0.159
+stated in the manifest. Baseline: the production prompt scores 0.8920 composite
+(reports/baseline-root-ce68bd4c4e-gold-v1.md); noise band std 0.0040. First autonomous
+loop run (run1): 3 generations, 12 candidates, all REJECTED by the gate — every candidate
+improved the adversarial suite while regressing critical gold fields (variety,
+listed_price). A documented NOOP: the harness's value in run1 is the silent regression
+it refused to ship. DSPy/GEPA baseline under the same referee: reports/BENCHMARK.md.
+27 tests.
 
 ## Honest limitations
 

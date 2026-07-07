@@ -1,0 +1,45 @@
+{
+  "page_id": "d408028853",
+  "url": "https://timwendelboe.no/products/finca-tamana-bourbon",
+  "strata": [
+    "A"
+  ],
+  "label": {
+    "page_type": "coffee_product",
+    "is_specialty_coffee": true,
+    "coffee.coffee_name": "Finca Tamana Bourbon",
+    "coffee.roaster": "Tim Wendelboe Coffee",
+    "coffee.roaster_location": null,
+    "coffee.roaster_country": "Norway",
+    "coffee.origin_country": "Colombia",
+    "coffee.origin_region": "El Pital, Huila",
+    "coffee.process_method": [
+      "Washed"
+    ],
+    "coffee.variety": [
+      "Bourbon",
+      "Pink Bourbon (Ethiopian)"
+    ],
+    "coffee.producer_or_farm": "Elias Roa & Bellanid Sanchez; Finca Tamana",
+    "coffee.altitude": null,
+    "coffee.roast_level": null,
+    "coffee.harvest_period": "May - June 2025",
+    "coffee.is_blend": false,
+    "coffee.is_espresso": false,
+    "coffee.is_decaf": false,
+    "coffee.is_coferment_or_infused": false,
+    "coffee.sensory_text": "A sweet and winey coffee with notes of flowers and red fruits.; Flavour notes: Winey, red fruits & floral",
+    "coffee.display_tasting_notes": "Winey, red fruits, floral",
+    "coffee.producer_text": "Cultivar: Bourbon, Pink Bourbon (Ethiopian); Producer: Elias Roa & Bellanid Sanchez; Country: Colombia; Region: El Pital, Huila; Process: Washed; Harvest date: May - June 2025; The coffee is selectively hand picked by hired pickers under supervision of Elias. Cherries are hand-sorted before they are processed to make sure only ripe cherries are processed together.; The coffee cherries are stored in the cherry hopper in open air over night before the coffee is de-pulped in the morning. After de-pulping, the parchment coffee with the mucilage on is fermented for 24 hours in clean stainless steel tanks. The fermentation is stopped when the mucilage is easy to clean off and before the coffee flavour is influenced by negative fermentation flavours. The coffee is then washed in clean water by using an eco-mill which is a mechanical mucilage remover. The eco-mill reduces water waste from the average 50-100 litres of water per kilo of coffee with traditional washing methods to only 0,5 – 1 litre per kilo. After washing the coffees are soaked for 24 hours in clean water in tiled cement tanks. All ﬂoaters (beans with low density) are removed during the washing and soaking process.; After the soaking stage the clean parchment coffee is dried in parabolic dryers and drying beds covered with shade nets to prevent the beans from over heating. The coffees are raked throughout the day to ensure even drying. Drying normally takes from 20 to 30 days and once the moisture content is below 11% it gets packed and stored in air tight grain pro bags. All our coffees from Finca Tamana are vacuum packed before it is shipped to Norway.; Finca Tamana is a 57 hectare coffee plantation located in the mountains between El Pital and La Plata in Huila Colombia. It was acquired by Elias Roa in 2011 after being abandoned for a while and today the farm is managed by Elias and his family.",
+    "price.listed_price": 21.0,
+    "price.listed_currency": "USD",
+    "price.bag_size_value": 250.0,
+    "price.bag_size_unit": "g",
+    "price.package_grams": 250.0,
+    "price.bags_count": null,
+    "price.price_type": "one_time",
+    "price.availability": "in_stock"
+  },
+  "source": "assisted_review",
+  "verified_at": "2026-07-07T16:35:19+00:00"
+}

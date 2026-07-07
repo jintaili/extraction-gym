@@ -1,0 +1,44 @@
+{
+  "page_id": "4cdd06ccd9",
+  "url": "https://nomadcoffee.es/products/aji-las-flores",
+  "strata": [
+    "D"
+  ],
+  "label": {
+    "page_type": "coffee_product",
+    "is_specialty_coffee": true,
+    "coffee.coffee_name": "Ají Las Flores",
+    "coffee.roaster": "NOMAD COFFEE",
+    "coffee.roaster_location": null,
+    "coffee.roaster_country": "Spain",
+    "coffee.origin_country": "Colombia",
+    "coffee.origin_region": "Acevedo, Huila",
+    "coffee.process_method": [
+      "Lavado"
+    ],
+    "coffee.variety": [
+      "Bourbon Ají"
+    ],
+    "coffee.producer_or_farm": "Finca Las Flores",
+    "coffee.altitude": "1750 MSNM",
+    "coffee.roast_level": null,
+    "coffee.harvest_period": "2025",
+    "coffee.is_blend": false,
+    "coffee.is_espresso": false,
+    "coffee.is_decaf": false,
+    "coffee.is_coferment_or_infused": false,
+    "coffee.sensory_text": "Notas: Uva Moscatel, Manteca de cacao, Hierbaluisa; Este Bourbon Ají ofrece una taza intensa donde destacan notas de uva moscatel, manteca de cacao y hierbaluisa. La acidez es brillante, acompañada por un cuerpo sedoso que envuelve el paladar. A medida que evoluciona, surgen matices de melocotón, caramelo, piruleta de fresa y piel de lima, aportando una complejidad vibrante y un equilibrio elegante.; El resultado es un café de alta intensidad sensorial, con estructura dulce y acidez nítida, donde el proceso resalta las notas florales, frutales y cítricas típicas del terroir de Acevedo.",
+    "coffee.display_tasting_notes": "uva moscatel, manteca de cacao, hierbaluisa",
+    "coffee.producer_text": "Categoría: Competición; Variedad: Bourbon Ají; Altitud: 1750 MSNM; Proceso: Lavado; Cosecha: 2025; Finca Las Flores nació en 1990 gracias a Edilberto Vergara y Nubia Ayure, quienes comenzaron con tan solo dos hectáreas de café. Con el tiempo, la finca creció hasta convertirse en uno de los referentes de Acevedo, Huila. En 2019, su hijo Jhoan Vergara alcanzó el reconocimiento internacional al ganar el concurso Master of Coffee con su Pink Bourbon, consolidando la reputación familiar.; Hoy, Jhoan lidera la innovación en procesos y la introducción de variedades exóticas como Sidra, Java y Bourbon Ají. Este último, cultivado a 1.750 metros, refleja la curiosidad y la precisión que caracterizan su enfoque. Cada lote se procesa bajo control técnico riguroso, combinando fermentaciones controladas con bacterias cultivadas y choques térmicos que realzan la expresión aromática del grano.; Las cerezas de Bourbon Ají se someten a 12 horas de oxidación antes del despulpado, seguidas de un thermal shock a 50 °C que fija los compuestos aromáticos. Posteriormente, el café fermenta durante 80 horas en tanques plásticos controlados con bacterias inoculadas, y finalmente se seca en máquinas deshumidificadoras durante 60 horas hasta alcanzar un 10 % de humedad.",
+    "price.listed_price": 32.5,
+    "price.listed_currency": "EUR",
+    "price.bag_size_value": 250.0,
+    "price.bag_size_unit": "g",
+    "price.package_grams": 250.0,
+    "price.bags_count": null,
+    "price.price_type": "one_time",
+    "price.availability": "in_stock"
+  },
+  "source": "assisted_review",
+  "verified_at": "2026-07-07T16:35:19+00:00"
+}

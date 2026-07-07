@@ -1,0 +1,44 @@
+{
+  "page_id": "f19616f060",
+  "url": "https://www.amazon.ae/Coffee-Planet-Breakfast-Specialty-Ground/dp/B07MV2WHXG",
+  "strata": [
+    "G"
+  ],
+  "label": {
+    "page_type": "coffee_product",
+    "is_specialty_coffee": false,
+    "coffee.coffee_name": "Coffee Planet Breakfast Specialty Coffee Ground",
+    "coffee.roaster": "Coffee Planet",
+    "coffee.roaster_location": null,
+    "coffee.roaster_country": "United Arab Emirates",
+    "coffee.origin_country": "unknown",
+    "coffee.origin_region": "unknown",
+    "coffee.process_method": [
+      "unknown"
+    ],
+    "coffee.variety": [
+      "unknown"
+    ],
+    "coffee.producer_or_farm": null,
+    "coffee.altitude": null,
+    "coffee.roast_level": "Medium Roast",
+    "coffee.harvest_period": null,
+    "coffee.is_blend": false,
+    "coffee.is_espresso": false,
+    "coffee.is_decaf": false,
+    "coffee.is_coferment_or_infused": false,
+    "coffee.sensory_text": "A medium roast with a taste of almonds, caramel and dark chocolate.",
+    "coffee.display_tasting_notes": "Almonds, caramel, dark chocolate",
+    "coffee.producer_text": "Ingredients: 100% Arabica Specialty Ground Coffee; Country of Origin: United Arab Emirates",
+    "price.listed_price": 32.75,
+    "price.listed_currency": "AED",
+    "price.bag_size_value": 250.0,
+    "price.bag_size_unit": "g",
+    "price.package_grams": 250.0,
+    "price.bags_count": null,
+    "price.price_type": "one_time",
+    "price.availability": "in_stock"
+  },
+  "source": "assisted_review",
+  "verified_at": "2026-07-07T16:35:19+00:00"
+}

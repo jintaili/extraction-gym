@@ -1,0 +1,44 @@
+{
+  "page_id": "3e5d836124",
+  "url": "https://drinkpassenger.com/products/los-suenos-decaf",
+  "strata": [
+    "C"
+  ],
+  "label": {
+    "page_type": "coffee_product",
+    "is_specialty_coffee": true,
+    "coffee.coffee_name": "Los Sueños - Decaf",
+    "coffee.roaster": "Passenger",
+    "coffee.roaster_location": "Lancaster, PA",
+    "coffee.roaster_country": "United States",
+    "coffee.origin_country": "Colombia",
+    "coffee.origin_region": "Divino Niño",
+    "coffee.process_method": [
+      "Ethyl Acetate Decaffeination"
+    ],
+    "coffee.variety": [
+      "unknown"
+    ],
+    "coffee.producer_or_farm": "Divino Niño",
+    "coffee.altitude": null,
+    "coffee.roast_level": null,
+    "coffee.harvest_period": null,
+    "coffee.is_blend": false,
+    "coffee.is_espresso": false,
+    "coffee.is_decaf": true,
+    "coffee.is_coferment_or_infused": false,
+    "coffee.sensory_text": "Notes of Cherry, Black Tea, Caramel; Caramel and toasted nuts on the nose introduce a rich cup with flavors of cocoa, black tea, and a hint of ripe cherry.",
+    "coffee.display_tasting_notes": "Cherry, Black Tea, Caramel",
+    "coffee.producer_text": "Our Los Sueños Decaf is comprised of community lots from our producer partners in Divino Niño. These lots are Ethyl Acetate decaffeinated in Colombia before heading directly to our freezer storage facility in Lancaster.",
+    "price.listed_price": 21.5,
+    "price.listed_currency": "USD",
+    "price.bag_size_value": 250.0,
+    "price.bag_size_unit": "g",
+    "price.package_grams": 250.0,
+    "price.bags_count": null,
+    "price.price_type": "one_time",
+    "price.availability": "in_stock"
+  },
+  "source": "assisted_review",
+  "verified_at": "2026-07-07T16:35:19+00:00"
+}

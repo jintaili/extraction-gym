@@ -1,0 +1,44 @@
+{
+  "page_id": "b20a9afa27",
+  "url": "https://onyxcoffeelab.com/products/southern-weather?variant=31862699917410",
+  "strata": [
+    "B"
+  ],
+  "label": {
+    "page_type": "coffee_product",
+    "is_specialty_coffee": true,
+    "coffee.coffee_name": "Southern Weather",
+    "coffee.roaster": "Onyx Coffee Lab",
+    "coffee.roaster_location": null,
+    "coffee.roaster_country": "United States",
+    "coffee.origin_country": "blend_multi_origin",
+    "coffee.origin_region": "multi_origin",
+    "coffee.process_method": [
+      "Washed"
+    ],
+    "coffee.variety": [
+      "Mixed"
+    ],
+    "coffee.producer_or_farm": null,
+    "coffee.altitude": "1850 MASL",
+    "coffee.roast_level": "Moderate; Agtron #123",
+    "coffee.harvest_period": "Rotating Microlots",
+    "coffee.is_blend": true,
+    "coffee.is_espresso": false,
+    "coffee.is_decaf": false,
+    "coffee.is_coferment_or_infused": false,
+    "coffee.sensory_text": "Milk Chocolate, Plum, Candied Walnuts, Juicy & Citrus Finish; Sweet caramelized sugars, round full body, and a bright, citrusy finish that leaves a clean, refreshing aftertaste. For us, Southern Weather embodies the excellent relationships between citric acidity, balance, and wonderful, full-bodied chocolates.",
+    "coffee.display_tasting_notes": "milk chocolate, plum, candied walnuts",
+    "coffee.producer_text": "Southern Weather embodies everything we love about specialty coffee and has evolved into a foundational blend. We brew this in our own cafes as a “House” filter option and love how it balances the relationship between modern citric acidity flavors with full bodied chocolates. This comfortable, yet surprisingly complex and sophisticated coffee is approachable to all. It performs well on its own for the purist or with fats such as dairy or plant based beverages, making it a true answer for all coffee needs.; ORIGIN: Honduras, Colombia, Ethiopia; VARIETY: Mixed; HARVEST SEASON: Rotating Microlots; PROCESS METHOD: Washed; 1850 MASL; Raised-Bed Dried; Southern Weather was the first blend we ever created. Our approach to creating blends is a bit different at Onyx. Instead of choosing coffees from specific countries or regions that will, in theory, intertwine well to develop complex & cohesive flavors like most, we start from the end and work our way back. This perspective means we choose to create a particular flavor profile first - deciding which acidities, sugars, and fats we want to accentuate for the coffee. Once a flavor profile has been set, in this case, a very approachable citrus zest, milk chocolate, and candied nuts for Southern Weather, we then start cupping blind through a lot of coffees to find these specific attributes. The purpose is that once a flavor profile is created, we update the coffees that make up Southern Weather every 2-3 months. This allows us to have a year-round blend with a flavor profile of high quality while retaining our commitment to seasonal coffees.",
+    "price.listed_price": 21.5,
+    "price.listed_currency": "USD",
+    "price.bag_size_value": 10.0,
+    "price.bag_size_unit": "oz",
+    "price.package_grams": 283.495,
+    "price.bags_count": null,
+    "price.price_type": "one_time",
+    "price.availability": "in_stock"
+  },
+  "source": "assisted_review",
+  "verified_at": "2026-07-07T16:35:19+00:00"
+}

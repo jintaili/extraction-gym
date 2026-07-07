@@ -1,0 +1,44 @@
+{
+  "page_id": "c456cd448f",
+  "url": "https://www.drinktrade.com/products/pump-house?variant=45942406873407",
+  "strata": [
+    "B"
+  ],
+  "label": {
+    "page_type": "coffee_product",
+    "is_specialty_coffee": true,
+    "coffee.coffee_name": "The Optimist Blend",
+    "coffee.roaster": "Bird Rock",
+    "coffee.roaster_location": "San Diego, CA",
+    "coffee.roaster_country": "United States",
+    "coffee.origin_country": "blend_multi_origin",
+    "coffee.origin_region": "multi_origin",
+    "coffee.process_method": [
+      "Washed"
+    ],
+    "coffee.variety": [
+      "unknown"
+    ],
+    "coffee.producer_or_farm": null,
+    "coffee.altitude": null,
+    "coffee.roast_level": "Medium",
+    "coffee.harvest_period": null,
+    "coffee.is_blend": true,
+    "coffee.is_espresso": false,
+    "coffee.is_decaf": false,
+    "coffee.is_coferment_or_infused": false,
+    "coffee.sensory_text": "Syrupy & Smooth; Big caramel sweetness and just a hint of fruity acidity make this coffee perfect for any brew method (formerly known as Pump House).; Tasting Notes: Chocolate, Caramel, Cherry",
+    "coffee.display_tasting_notes": "Chocolate, Caramel, Cherry",
+    "coffee.producer_text": "Origin & Sourcing; Country Of Origin: Colombia, Brazil, Sulawesi; Process: Washed; Since 2006, this San Diego roaster has sourced exclusively from top-tier growers and fostered supportive long-term relationships with its partners.",
+    "price.listed_price": 21.99,
+    "price.listed_currency": "USD",
+    "price.bag_size_value": 10.0,
+    "price.bag_size_unit": "oz",
+    "price.package_grams": 283.495231,
+    "price.bags_count": null,
+    "price.price_type": "one_time",
+    "price.availability": "in_stock"
+  },
+  "source": "assisted_review",
+  "verified_at": "2026-07-07T16:35:19+00:00"
+}

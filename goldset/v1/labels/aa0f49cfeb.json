@@ -1,0 +1,44 @@
+{
+  "page_id": "aa0f49cfeb",
+  "url": "https://leavescoffee.jp/products/colombia-los-eucaliptos",
+  "strata": [
+    "D"
+  ],
+  "label": {
+    "page_type": "coffee_product",
+    "is_specialty_coffee": true,
+    "coffee.coffee_name": "Colombia Los Eucaliptos",
+    "coffee.roaster": "Leaves Coffee Roasters",
+    "coffee.roaster_location": null,
+    "coffee.roaster_country": "Japan",
+    "coffee.origin_country": "Colombia",
+    "coffee.origin_region": "San Lorenzo, Narino",
+    "coffee.process_method": [
+      "Washed"
+    ],
+    "coffee.variety": [
+      "Geisha"
+    ],
+    "coffee.producer_or_farm": "Henry Oliver Ceron",
+    "coffee.altitude": "1800m",
+    "coffee.roast_level": null,
+    "coffee.harvest_period": null,
+    "coffee.is_blend": false,
+    "coffee.is_espresso": false,
+    "coffee.is_decaf": false,
+    "coffee.is_coferment_or_infused": false,
+    "coffee.sensory_text": "Floral, Yellow Peach, Red Currant, Cane Sugar, Clean",
+    "coffee.display_tasting_notes": "Floral, Yellow Peach, Red Currant, Cane Sugar, Clean",
+    "coffee.producer_text": "Process: Washed; Region: San Lorenzo, Narino; Producer: Henry Oliver Ceron; Location: 1800m; Variety: Geisha",
+    "price.listed_price": null,
+    "price.listed_currency": null,
+    "price.bag_size_value": 100.0,
+    "price.bag_size_unit": "g",
+    "price.package_grams": 100.0,
+    "price.bags_count": null,
+    "price.price_type": "unknown",
+    "price.availability": "sold_out"
+  },
+  "source": "assisted_review",
+  "verified_at": "2026-07-07T16:35:19+00:00"
+}

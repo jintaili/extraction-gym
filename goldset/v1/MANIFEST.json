@@ -1,0 +1,420 @@
+{
+  "version": "v1",
+  "frozen_at": "2026-07-07T16:35:52+00:00",
+  "page_count": 42,
+  "strata_counts": {
+    "A": 19,
+    "B": 7,
+    "C": 3,
+    "D": 5,
+    "E": 4,
+    "F": 2,
+    "G": 4
+  },
+  "residual_label_error": {
+    "audit_pages": 10,
+    "fields_compared": 290,
+    "fields_changed": 46,
+    "rate": 0.15862068965517243,
+    "per_field": {
+      "coffee.producer_text": 8,
+      "coffee.producer_or_farm": 6,
+      "coffee.sensory_text": 5,
+      "coffee.origin_region": 4,
+      "price.package_grams": 4,
+      "coffee.roaster_country": 3,
+      "coffee.process_method": 3,
+      "coffee.altitude": 3,
+      "price.bag_size_value": 2,
+      "coffee.coffee_name": 2,
+      "coffee.roaster": 1,
+      "price.bag_size_unit": 1,
+      "price.price_type": 1,
+      "price.availability": 1,
+      "coffee.display_tasting_notes": 1,
+      "is_specialty_coffee": 1
+    }
+  },
+  "pages": [
+    {
+      "page_id": "0eab50b4b0",
+      "url": "https://sightglasscoffee.com/collections/coffee/products/toketee-organic-blend",
+      "strata": [
+        "B"
+      ],
+      "sha256": "de3fbea397c7d7e6142729c8e0f7375596af307c8d694e15ab76fc8ee2286a24",
+      "chars": 15200
+    },
+    {
+      "page_id": "10188bcbdc",
+      "url": "https://onyxcoffeelab.com/products/colombia-el-jardin-gesha",
+      "strata": [
+        "A",
+        "E"
+      ],
+      "sha256": "d456f87dc8e68cd63f9f4c335a4710d3aea5ff22467734992d4053c77cf6924a",
+      "chars": 59146
+    },
+    {
+      "page_id": "2b6d3461b6",
+      "url": "https://hydrangea.coffee/products/gesha-washed-finca-el-turpial",
+      "strata": [
+        "A"
+      ],
+      "sha256": "b137517b60c513040a449571c3715559614e93d321ed356fdc14e9bd256ebdec",
+      "chars": 2179
+    },
+    {
+      "page_id": "2bae03395d",
+      "url": "https://moonwakecoffeeroasters.com/products/gilber-huayllas-llaqta-pata-anaerobic-washed-sl-9-peru",
+      "strata": [
+        "A"
+      ],
+      "sha256": "d59ce6b1e2a9a78ecca879adc83b105b1fc647efac55abf9efb57ffce75bc52d",
+      "chars": 4569
+    },
+    {
+      "page_id": "2f273f134c",
+      "url": "https://september.coffee/en-us/products/el-burro-lot-e-panama-natural-geisha",
+      "strata": [
+        "A"
+      ],
+      "sha256": "2d177a67e84a9b30031541c416ebc1d989cb803cde68c838443eda47fedaaedf",
+      "chars": 4095
+    },
+    {
+      "page_id": "32c8267c15",
+      "url": "https://aviary.coffee/collections/2026-season-coffees/products/025-maria-nieves",
+      "strata": [
+        "A"
+      ],
+      "sha256": "d7e94843884cfb7fd7b49feeea817fd6e6d525d27f8e09a5338f1336dd068f01",
+      "chars": 10015
+    },
+    {
+      "page_id": "35e4e14f97",
+      "url": "https://philzcoffee.com/products/philtered-soul",
+      "strata": [
+        "B"
+      ],
+      "sha256": "863091ebeba4427dbbf6f33dc9db01f769024ada7d52f08dd6e845229d9c3d6d",
+      "chars": 1123
+    },
+    {
+      "page_id": "3e2868c5c0",
+      "url": "https://coffeeprojectnyshop.square.site/product/-crowd-pleaser-house-espresso/52?cs=true&cst=custom",
+      "strata": [
+        "B"
+      ],
+      "sha256": "90d18d7db0eacdc91df10750a1a63c6a18014d140da3870260f0f58e62cb7493",
+      "chars": 1284
+    },
+    {
+      "page_id": "3e5d836124",
+      "url": "https://drinkpassenger.com/products/los-suenos-decaf",
+      "strata": [
+        "C"
+      ],
+      "sha256": "6be8da961c989c2de7a9e494a5a7c1895bbd46009cf9068effdb6a1c8cb32725",
+      "chars": 1130
+    },
+    {
+      "page_id": "4cdd06ccd9",
+      "url": "https://nomadcoffee.es/products/aji-las-flores",
+      "strata": [
+        "D"
+      ],
+      "sha256": "89d39e5f7e41fdb435a2ca01c33cd9e79433c07577d56d650ec912cf3e586246",
+      "chars": 5105
+    },
+    {
+      "page_id": "51acce515d",
+      "url": "https://www.drinktrade.com/collections",
+      "strata": [
+        "G"
+      ],
+      "sha256": "9b3d4e4d137839daf4bd32eacb9250a8ca2e3efb71bfc4f13bedbd02efdd8aea",
+      "chars": 2936
+    },
+    {
+      "page_id": "52915c5c1a",
+      "url": "https://coffeecollective.dk/products/familia-ccapa-250g",
+      "strata": [
+        "A"
+      ],
+      "sha256": "9bd10a40216e5b5330a9cb8e8a641c5fcd9672bfa7d7510320e43527a6618d82",
+      "chars": 912
+    },
+    {
+      "page_id": "54a84eba12",
+      "url": "https://shoebox.coffee/products/colombia-finca-los-angeles-gesha-washed",
+      "strata": [
+        "A"
+      ],
+      "sha256": "7f0b203654346ef7b581fabd87e39b7cd3658e10356309ba7ac7ee3893d0dae7",
+      "chars": 3196
+    },
+    {
+      "page_id": "58f59ba2eb",
+      "url": "https://timwendelboe.no/products/gachatha",
+      "strata": [
+        "A"
+      ],
+      "sha256": "42482f121f76aaa24f509390a570e7d9ae888b41f6daba63935aea942819a3ee",
+      "chars": 5274
+    },
+    {
+      "page_id": "5a880feb14",
+      "url": "https://perccoffee.com/products/decaf?variant=44057029869882",
+      "strata": [
+        "C"
+      ],
+      "sha256": "a1bbf2703f919f39782b5b994ad75f965bddb2fd11a868c08170d131471f32bb",
+      "chars": 3712
+    },
+    {
+      "page_id": "5ada5bba08",
+      "url": "https://drinkpassenger.com/products/ivan-gutierrez-sl28-washed-process-2025",
+      "strata": [
+        "E"
+      ],
+      "sha256": "07bacc986c8c1f640dfe40f8d69919321b16d5cf378bc34397b840a15f78ecb4",
+      "chars": 1383
+    },
+    {
+      "page_id": "5ddfe19468",
+      "url": "https://shop.leavescoffee.jp/products/the-african-trio",
+      "strata": [
+        "D",
+        "F"
+      ],
+      "sha256": "f0d21cf4c25b2fc45fed822aca3955fe4209e653046cbf12447f6d9991833cea",
+      "chars": 1492
+    },
+    {
+      "page_id": "672c1b9795",
+      "url": "https://lovelesscoffees.coffee/products/yessica-parra-natural-gesha-pitalito-colombia?variant=48665088589979",
+      "strata": [
+        "E"
+      ],
+      "sha256": "b492ca5c24506c89c424892addc9ba70f36c316de68bd303dc6c8c1e4e0324c7",
+      "chars": 3077
+    },
+    {
+      "page_id": "67d873e710",
+      "url": "https://hydrangea.coffee/products/salma-bermudez",
+      "strata": [
+        "A"
+      ],
+      "sha256": "708d4f4f09567f5293eeacbbc0727a995633d30b0f157132763c1b0464227752",
+      "chars": 2823
+    },
+    {
+      "page_id": "6d81fa2397",
+      "url": "https://lacabra.com/products/hermanos-burbano",
+      "strata": [
+        "A"
+      ],
+      "sha256": "9529d2d03f5dcf6ed425ba05641c8bf1ed79797161c862dd84468305736a055a",
+      "chars": 6846
+    },
+    {
+      "page_id": "712b607f21",
+      "url": "https://timwendelboe.no/products/echemo-certified-organic",
+      "strata": [
+        "A"
+      ],
+      "sha256": "1af3041562f4333944d24991421c994b35a554cfee082aed5b950a372c0e4c28",
+      "chars": 7337
+    },
+    {
+      "page_id": "7ad26af843",
+      "url": "https://www.brandywinecoffeeroasters.com/collections/all-coffee-1/products/stellar-collisions-next-generation",
+      "strata": [
+        "A"
+      ],
+      "sha256": "2e60c79ed0dc5823d051ad3c0cd5ce8c72f8cb6caf453fb6a383bfc4a815057d",
+      "chars": 6600
+    },
+    {
+      "page_id": "888a88ff5e",
+      "url": "https://onyxcoffeelab.com/products/decaf-ethiopia-suke-quto-26",
+      "strata": [
+        "C"
+      ],
+      "sha256": "d842a68a6b710db1c134224269fc0572ef9499050bdf92f6c9b82b4fd5160fc2",
+      "chars": 59567
+    },
+    {
+      "page_id": "94d83f7dfd",
+      "url": "https://home.lamarzoccousa.com/espresso-machines/linea-mini/",
+      "strata": [
+        "G"
+      ],
+      "sha256": "c4921210dc90eee353928e6454820ba471a5255e601e1a42e318d49661dce55c",
+      "chars": 3052
+    },
+    {
+      "page_id": "96a6146a2e",
+      "url": "https://coffeecollective.dk/products/nueva-alianza-gesha-250-g",
+      "strata": [
+        "A"
+      ],
+      "sha256": "8b8c3ff5d7b3d61f007319b4f5866eb56f555ff15be6f44d445755bb54a1979e",
+      "chars": 1278
+    },
+    {
+      "page_id": "aa0f49cfeb",
+      "url": "https://leavescoffee.jp/products/colombia-los-eucaliptos",
+      "strata": [
+        "D"
+      ],
+      "sha256": "af1a9b73ea2e8aa4b969fb38cdfc7f08c5f3ea325cf2a9f6e1a6fc4b57ff127c",
+      "chars": 473
+    },
+    {
+      "page_id": "ad445ae44a",
+      "url": "https://www.seycoffee.com/collections/coffee/products/2026-jose-pena-los-naranjos-colombia",
+      "strata": [
+        "A"
+      ],
+      "sha256": "9907d578bcde98782879dd675b5ea2ac3a35cb10cbead2700e10e27ff9e06c30",
+      "chars": 3540
+    },
+    {
+      "page_id": "b110ec3ad1",
+      "url": "https://www.thebrickcoffee.ee/en/shop/tooted/el-salvador-las-nubes-1-1",
+      "strata": [
+        "D"
+      ],
+      "sha256": "1aae5afa9a4af3b1e5574b59dc46372a22a86de3254302c3c9ccc012adef3039",
+      "chars": 2885
+    },
+    {
+      "page_id": "b115e3916e",
+      "url": "https://varietycoffeeroasters.com/products/lucky-shot-espresso?variant=32078925824100",
+      "strata": [
+        "B"
+      ],
+      "sha256": "37274750cfc1094122a80d1429238c3a6b175f8f11f0af7e9173f2f22b34c007",
+      "chars": 1756
+    },
+    {
+      "page_id": "b18e69cc17",
+      "url": "https://blackfoxcoffee.com/collections/all-products/products/all-day-blend",
+      "strata": [
+        "B"
+      ],
+      "sha256": "7f4ff38e064010cbec2654b778a3d32906146cac15035afc79728a9868a2bfd6",
+      "chars": 5628
+    },
+    {
+      "page_id": "b20a9afa27",
+      "url": "https://onyxcoffeelab.com/products/southern-weather?variant=31862699917410",
+      "strata": [
+        "B"
+      ],
+      "sha256": "bf57673ab4cac349a248466a7395602ce2033253ae0b4fa31808a899a19c77c6",
+      "chars": 63764
+    },
+    {
+      "page_id": "c0523b587d",
+      "url": "https://coffeecollective.dk/products/bombona-250-g",
+      "strata": [
+        "A"
+      ],
+      "sha256": "617b2a008a86dea87501b84ad0f97de949d12375e63427ce998c55de95213e03",
+      "chars": 1258
+    },
+    {
+      "page_id": "c0984e4abd",
+      "url": "https://www.target.com/p/dunkin-39-original-blend-whole-bean-medium-roast-coffee-18oz/-/A-91290408",
+      "strata": [
+        "G"
+      ],
+      "sha256": "f9b95327aad32a3ae6f401af537e047e82327f0580737e2ef5f38fc288d6c058",
+      "chars": 858
+    },
+    {
+      "page_id": "c456cd448f",
+      "url": "https://www.drinktrade.com/products/pump-house?variant=45942406873407",
+      "strata": [
+        "B"
+      ],
+      "sha256": "3e4a9617a0e539e249a6d6bc9edb72d95482b230751fc952ef51fa5fd0a01982",
+      "chars": 5207
+    },
+    {
+      "page_id": "cc79f136ae",
+      "url": "https://shop.leavescoffee.jp/products/subscription",
+      "strata": [
+        "F"
+      ],
+      "sha256": "a3d8ca0e9ba6804d491d3ec5d9d293c5fa6f04e81ceaad117f27698d745d038b",
+      "chars": 2439
+    },
+    {
+      "page_id": "d408028853",
+      "url": "https://timwendelboe.no/products/finca-tamana-bourbon",
+      "strata": [
+        "A"
+      ],
+      "sha256": "4fb544783c3fda6a872c73588ef72b665dae3dcc44e310d6d17a5a319400df1d",
+      "chars": 6505
+    },
+    {
+      "page_id": "d7fd290746",
+      "url": "https://coffeecollective.dk/da/products/penas-blancas-gesha-200g",
+      "strata": [
+        "D"
+      ],
+      "sha256": "9737cddd1bd2c9f92c4a5c533a78b364c65732ce99a6edbb0a523a213f3be566",
+      "chars": 1491
+    },
+    {
+      "page_id": "e5cb661a4e",
+      "url": "https://www.seycoffee.com/collections/coffee/products/2026-danche-white-honey-ethiopia",
+      "strata": [
+        "A"
+      ],
+      "sha256": "bec7290ba512bcea81d51602bd0f79f06104c7336ebfa1db21c2f528e049457c",
+      "chars": 3440
+    },
+    {
+      "page_id": "ee70a8fc3c",
+      "url": "https://hydrangea.coffee/products/purple-caturra-pineapple-washed-finca-monteblanco",
+      "strata": [
+        "A"
+      ],
+      "sha256": "6274c607cb261cd8650e3ac4803609fafb0b0cb2d3f920b804bcce41eae49e5d",
+      "chars": 2366
+    },
+    {
+      "page_id": "f0c6985e72",
+      "url": "https://onyxcoffeelab.com/products/peru-la-margarita-gesha-26?variant=42842298646626",
+      "strata": [
+        "A"
+      ],
+      "sha256": "7225ee357b56d2d0056e6cd358592b93f73e1ed5f8b61715e496fd151660b15c",
+      "chars": 59692
+    },
+    {
+      "page_id": "f19616f060",
+      "url": "https://www.amazon.ae/Coffee-Planet-Breakfast-Specialty-Ground/dp/B07MV2WHXG",
+      "strata": [
+        "G"
+      ],
+      "sha256": "6f90b510288c6f036130d1f33310de18094ac1f9f0c8f5356050c7b89f872a71",
+      "chars": 15685
+    },
+    {
+      "page_id": "f74ee80d9b",
+      "url": "https://drinkpassenger.com/products/fausto-romo-sidra-honey-honey-process-2025",
+      "strata": [
+        "E"
+      ],
+      "sha256": "375106c732682c07a62757dbdfe59f4e696e524a5ddafbfb475d4283f14fa4ac",
+      "chars": 1468
+    }
+  ]
+}

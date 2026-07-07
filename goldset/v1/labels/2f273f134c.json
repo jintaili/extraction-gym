@@ -1,0 +1,44 @@
+{
+  "page_id": "2f273f134c",
+  "url": "https://september.coffee/en-us/products/el-burro-lot-e-panama-natural-geisha",
+  "strata": [
+    "A"
+  ],
+  "label": {
+    "page_type": "coffee_product",
+    "is_specialty_coffee": true,
+    "coffee.coffee_name": "El Burro Lot E - Panama Natural Geisha",
+    "coffee.roaster": "September Coffee Roastery",
+    "coffee.roaster_location": "Stittsville, ON",
+    "coffee.roaster_country": "Canada",
+    "coffee.origin_country": "Panama",
+    "coffee.origin_region": "Potrerillos, Chiriquì Province",
+    "coffee.process_method": [
+      "Natural"
+    ],
+    "coffee.variety": [
+      "Geisha"
+    ],
+    "coffee.producer_or_farm": "Lamastus Family; El Burro",
+    "coffee.altitude": "1800 MASL",
+    "coffee.roast_level": "Light",
+    "coffee.harvest_period": "2025",
+    "coffee.is_blend": false,
+    "coffee.is_espresso": false,
+    "coffee.is_decaf": false,
+    "coffee.is_coferment_or_infused": false,
+    "coffee.sensory_text": "This Geisha is very expressive, showing lovely notes of fresh raspberries, delicate jasmine, and tangerine. We taste fresh raspberries, delicate white florals, and sparkling tangerine. This coffee has a light body and a long citric finish.",
+    "coffee.display_tasting_notes": "raspberries, jasmine, tangerine",
+    "coffee.producer_text": "Variety: Geisha; Country: Panama; Region: Potrerillos, Chiriquì Province; Process: Natural; Altitude: 1800 MASL; Harvest: 2025; Producer: Lamastus Family; Farm: El Burro; Roast Level: Light; The Lamastus Family has been producing coffee for four generations since 1918. Their three estates—Elida, El Burro, and Luito Geisha—are located at a very high elevation in a microclimate with very low temperatures. The coffee trees are surrounded by the Volcan Baru National Park. The family tradition continues on strong, as they still produce, process, and export their own rare estate coffees.; This Geisha is produced under unique conditions for several reasons: the farm is located at a very high elevation, it is grown in rich young volcanic soils, and the temperatures are quite low. This results in a tree taking from 4 1/2 to 5 1/2 years to start producing (2 or 3 years longer to produce than average), which extends the overall ripening time and development of the cherries.; The growing conditions for this Geisha lot are very specialized. The trees are shade-grown and surrounded by a private forest reserve. The El Burro Estate is home to many exotic native species of plants, birds, and mammals. This particular lot is natural. All of the natural mucilage surrounding the seed of the coffee cherry is left on the seed prior to drying. These lots are dried utilizing sunlight through bastidor/screens and Guardiola rotating driers. It takes approximately 10-12 days to finish drying.",
+    "price.listed_price": 37.0,
+    "price.listed_currency": "USD",
+    "price.bag_size_value": 100.0,
+    "price.bag_size_unit": "g",
+    "price.package_grams": 100.0,
+    "price.bags_count": null,
+    "price.price_type": "one_time",
+    "price.availability": "sold_out"
+  },
+  "source": "assisted_review",
+  "verified_at": "2026-07-07T16:35:19+00:00"
+}

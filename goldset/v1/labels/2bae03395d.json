@@ -1,0 +1,44 @@
+{
+  "page_id": "2bae03395d",
+  "url": "https://moonwakecoffeeroasters.com/products/gilber-huayllas-llaqta-pata-anaerobic-washed-sl-9-peru",
+  "strata": [
+    "A"
+  ],
+  "label": {
+    "page_type": "coffee_product",
+    "is_specialty_coffee": true,
+    "coffee.coffee_name": "Gilber Huayllas Llaqta Pata - Anaerobic Washed SL9 - Peru",
+    "coffee.roaster": "Moonwake Coffee Roasters",
+    "coffee.roaster_location": null,
+    "coffee.roaster_country": "unknown",
+    "coffee.origin_country": "Peru",
+    "coffee.origin_region": "Inkawasi, Cusco",
+    "coffee.process_method": [
+      "Anaerobic Washed"
+    ],
+    "coffee.variety": [
+      "SL9"
+    ],
+    "coffee.producer_or_farm": "Gilber Huayllas, Llaqta Pata",
+    "coffee.altitude": "2380masl",
+    "coffee.roast_level": "Light",
+    "coffee.harvest_period": null,
+    "coffee.is_blend": false,
+    "coffee.is_espresso": false,
+    "coffee.is_decaf": false,
+    "coffee.is_coferment_or_infused": false,
+    "coffee.sensory_text": "Tasting Notes: mandarin orange, earl grey, peach, hachiya persimmon; In the cup, it opens with a profile that immediately reminded us of an elegant gesha—sweet mandarin orange layered with delicate Earl Grey-like florals. As the coffee cools, a dense peach sweetness begins to take over, evoking the vibrant stonefruit character we love in top Kenyan coffees.; The body is equally captivating: silky, weighty, and uniquely custard-like, reminding us of ripe hachiya persimmon.",
+    "coffee.display_tasting_notes": "mandarin orange, earl grey, peach, hachiya persimmon",
+    "coffee.producer_text": "Origin Details; Region: Inkawasi, Cusco, Peru; Elevation: 2380masl; Producer: Gilber Huayllas, Llaqta Pata; Process: Anaerobic Washed; Variety: SL9; We acquired this lot from Llaqta Pata due to a very unique situation. Originally, we were supposed to receive the #3 Cup of Excellence lot from Llaqta Pata. Unfortunately, FedEx lost that lot in transit and deemed it unrecoverable. Thankfully, through some work with our partners, they generously replaced it with a later harvest from the same CoE plot in Llaqta Pata that used the exact same processing method.; This specific lot we have received from Llaqta Pata is anaerobically washed and showcases the florality and malic acidity that SL9 is known for. The cherries are first fermented for 12 hours at low temperature in grainpro bags and then de-pulped. Next, the coffee is fermented for another 12 hours in water. Finally, the coffee is dried for 20 days on raised beds.",
+    "price.listed_price": 49.0,
+    "price.listed_currency": "USD",
+    "price.bag_size_value": 227.0,
+    "price.bag_size_unit": "g",
+    "price.package_grams": 227.0,
+    "price.bags_count": null,
+    "price.price_type": "one_time",
+    "price.availability": "sold_out"
+  },
+  "source": "assisted_review",
+  "verified_at": "2026-07-07T16:35:19+00:00"
+}

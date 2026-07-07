@@ -1,0 +1,44 @@
+{
+  "page_id": "ad445ae44a",
+  "url": "https://www.seycoffee.com/collections/coffee/products/2026-jose-pena-los-naranjos-colombia",
+  "strata": [
+    "A"
+  ],
+  "label": {
+    "page_type": "coffee_product",
+    "is_specialty_coffee": true,
+    "coffee.coffee_name": "2026 José Peña; Los Naranjos - Colombia",
+    "coffee.roaster": "SEY",
+    "coffee.roaster_location": "Brooklyn, NY",
+    "coffee.roaster_country": "United States",
+    "coffee.origin_country": "Colombia",
+    "coffee.origin_region": "Urrao, Antioquia",
+    "coffee.process_method": [
+      "Washed"
+    ],
+    "coffee.variety": [
+      "Chiroso"
+    ],
+    "coffee.producer_or_farm": "José Peña; Los Naranjos",
+    "coffee.altitude": "2,000 masl",
+    "coffee.roast_level": null,
+    "coffee.harvest_period": "February 2026",
+    "coffee.is_blend": false,
+    "coffee.is_espresso": false,
+    "coffee.is_decaf": false,
+    "coffee.is_coferment_or_infused": false,
+    "coffee.sensory_text": "In the cup we find yellow tropical fruit, candied strawberry, and hops.",
+    "coffee.display_tasting_notes": "yellow tropical fruit, candied strawberry, hops",
+    "coffee.producer_text": "Our first coffee from José Peña continues our exploration of Urrao and the Chiroso variety. This region and variety continue to shift the conversation around quality and the diversity of flavor profiles within Colombian coffee, and we are excited to continue this exploration.; VARIETAL: Chiroso; REGION: Urrao, Antioquia; ALTITUDE: 2,000 masl; HARVEST: February 2026; PROCESSING: Hand-picked at peak ripeness. Floated to further remove defects. Held in-cherry overnight. De-pulped. Dry-fermented for 36 hours. Washed. Dried on raised beds until moisture content reaches 10.5%.; ABOUT JOSÉ PEÑA: We have been working on a project in Urrao for several years now. Each year, the cupping table brings coffees from producers new to the project—an ongoing reminder of how much potential this region holds and how deeply this program motivates the producers who are a part of it. This is the first year we have tasted coffee from José Peña's farm, and the quality is exceptional. The future of this project continues to inspire.; Farm Gate (Local; PARCHMENT): 4MM COP/Cargo; Farm Gate (USD; Green): ~$10.28/KG; FOB: $14.55/KG; DDP: $18.45/KG",
+    "price.listed_price": 26.0,
+    "price.listed_currency": "USD",
+    "price.bag_size_value": 250.0,
+    "price.bag_size_unit": "g",
+    "price.package_grams": 250.0,
+    "price.bags_count": null,
+    "price.price_type": "one_time",
+    "price.availability": "sold_out"
+  },
+  "source": "assisted_review",
+  "verified_at": "2026-07-07T16:35:19+00:00"
+}

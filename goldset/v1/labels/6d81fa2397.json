@@ -1,0 +1,44 @@
+{
+  "page_id": "6d81fa2397",
+  "url": "https://lacabra.com/products/hermanos-burbano",
+  "strata": [
+    "A"
+  ],
+  "label": {
+    "page_type": "coffee_product",
+    "is_specialty_coffee": true,
+    "coffee.coffee_name": "Hermanos Burbano",
+    "coffee.roaster": "La Cabra",
+    "coffee.roaster_location": null,
+    "coffee.roaster_country": "Denmark",
+    "coffee.origin_country": "Colombia",
+    "coffee.origin_region": "San Agustin, Huila",
+    "coffee.process_method": [
+      "Washed"
+    ],
+    "coffee.variety": [
+      "Geisha"
+    ],
+    "coffee.producer_or_farm": "Jose, Miguel and Jesus Burbano",
+    "coffee.altitude": "2000 masl",
+    "coffee.roast_level": null,
+    "coffee.harvest_period": "August 2025",
+    "coffee.is_blend": false,
+    "coffee.is_espresso": false,
+    "coffee.is_decaf": false,
+    "coffee.is_coferment_or_infused": false,
+    "coffee.sensory_text": "Jasmine, peach, oolong; This is a perfumed washed Geisha, the first export from the farm; we find aromas of jasmine, followed by soft, ripe peach and a round oolong finish.",
+    "coffee.display_tasting_notes": "Jasmine, peach, oolong",
+    "coffee.producer_text": "Produced by three brothers; Jose, Miguel and Jesus Burbano, each members of the Monkaaba project in San Agustin, Huila.; Region: Huila; Altitude: 2000 masl; Varietal: Geisha; Process: Washed; Harvest: August 2025; The Burbano brothers have all been members of Monkaaba for many years. Jose, Miguel and Jesus grew up in a coffee family, and have always had the interests of coffee communities at heart. Especially Jose is fully committed to the project; his daughter Karen has started working in the Monkaaba office in San Agustin, and completed her first harvest on her own plot at just 18. The relationships that Jose, Miguel and Jesus have grown through their work with Monkaaba have led to a greater focus on quality; they are able to reap the rewards for their hard work more directly, and communicate their top quality offering to the right clients. This led to the purchase of a new shared plot, at nearly 2000 masl in the mountains above San Agustin.; Together, the brothers have aimed for top end quality, planting Geisha, Chiroso, Laurina and Pacamara. 2025 saw the first exportable harvest from this 3.5 hectare plot, and we have purchased the production of washed Geisha.",
+    "price.listed_price": 179.0,
+    "price.listed_currency": "DKK",
+    "price.bag_size_value": 200.0,
+    "price.bag_size_unit": "g",
+    "price.package_grams": 200.0,
+    "price.bags_count": null,
+    "price.price_type": "one_time",
+    "price.availability": "sold_out"
+  },
+  "source": "assisted_review",
+  "verified_at": "2026-07-07T16:35:19+00:00"
+}

@@ -1,0 +1,44 @@
+{
+  "page_id": "f0c6985e72",
+  "url": "https://onyxcoffeelab.com/products/peru-la-margarita-gesha-26?variant=42842298646626",
+  "strata": [
+    "A"
+  ],
+  "label": {
+    "page_type": "coffee_product",
+    "is_specialty_coffee": true,
+    "coffee.coffee_name": "Peru La Margarita Gesha",
+    "coffee.roaster": "Onyx Coffee Lab",
+    "coffee.roaster_location": "Arkansas",
+    "coffee.roaster_country": "United States",
+    "coffee.origin_country": "Peru",
+    "coffee.origin_region": "Valle de Ocobamba & Yanatile, Cusco",
+    "coffee.process_method": [
+      "Dry Washed"
+    ],
+    "coffee.variety": [
+      "Gesha"
+    ],
+    "coffee.producer_or_farm": "Solorzano Family; La Margarita Coffee Reserve",
+    "coffee.altitude": "1900 MASL",
+    "coffee.roast_level": "Light",
+    "coffee.harvest_period": "October",
+    "coffee.is_blend": false,
+    "coffee.is_espresso": false,
+    "coffee.is_decaf": false,
+    "coffee.is_coferment_or_infused": false,
+    "coffee.sensory_text": "Jasmine, White Grape, Black Tea, Refined",
+    "coffee.display_tasting_notes": "Jasmine, White Grape, Black Tea",
+    "coffee.producer_text": "This delicate and sweet Gesha variety is produced in Southern Peru by the Solorzano Family. Cusco is a fascinating growing region with soaring heights and unique microclimates, yielding coffees like this, bursting with acidity and complex sweetness. This coffee performs exceedingly well as a filter offering.; ORIGIN: Peru; VARIETY: Gesha; HARVEST SEASON: October; PROCESS METHOD: Dry Washed; 1900 MASL; Raised-Bed Dried; This washed coffee is depulped and fermented dry for twenty-four hours, followed by channel washing. The parchment coffee is then dried for approximately fifteen days on raised beds.; La Margarita Coffee Reserve Company, established by the Solorzano family in the district of Valle de Ocobamba & Yanatile, within the department of Cusco, Peru, is a pioneer in promoting the cultivation, processing, and commercialization of coffee since 2017.",
+    "price.listed_price": 70.0,
+    "price.listed_currency": "USD",
+    "price.bag_size_value": 10.0,
+    "price.bag_size_unit": "oz",
+    "price.package_grams": 283.495,
+    "price.bags_count": null,
+    "price.price_type": "one_time",
+    "price.availability": "in_stock"
+  },
+  "source": "assisted_review",
+  "verified_at": "2026-07-07T16:35:19+00:00"
+}

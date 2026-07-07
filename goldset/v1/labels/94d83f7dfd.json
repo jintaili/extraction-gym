@@ -1,0 +1,44 @@
+{
+  "page_id": "94d83f7dfd",
+  "url": "https://home.lamarzoccousa.com/espresso-machines/linea-mini/",
+  "strata": [
+    "G"
+  ],
+  "label": {
+    "page_type": "coffee_equipment",
+    "is_specialty_coffee": null,
+    "coffee.coffee_name": null,
+    "coffee.roaster": null,
+    "coffee.roaster_location": null,
+    "coffee.roaster_country": "unknown",
+    "coffee.origin_country": "unknown",
+    "coffee.origin_region": "unknown",
+    "coffee.process_method": [
+      "unknown"
+    ],
+    "coffee.variety": [
+      "unknown"
+    ],
+    "coffee.producer_or_farm": null,
+    "coffee.altitude": null,
+    "coffee.roast_level": null,
+    "coffee.harvest_period": null,
+    "coffee.is_blend": false,
+    "coffee.is_espresso": false,
+    "coffee.is_decaf": false,
+    "coffee.is_coferment_or_infused": false,
+    "coffee.sensory_text": "",
+    "coffee.display_tasting_notes": "",
+    "coffee.producer_text": "",
+    "price.listed_price": null,
+    "price.listed_currency": null,
+    "price.bag_size_value": null,
+    "price.bag_size_unit": null,
+    "price.package_grams": null,
+    "price.bags_count": null,
+    "price.price_type": "unknown",
+    "price.availability": "unknown"
+  },
+  "source": "assisted_review",
+  "verified_at": "2026-07-07T16:35:19+00:00"
+}

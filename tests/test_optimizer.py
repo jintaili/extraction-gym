@@ -21,6 +21,17 @@ def test_gate_requires_gold():
     assert not ok and any("gold gate unavailable" in r for r in reasons)
 
 
+def test_gate_blocks_prompt_bloat():
+    ok, reasons = gate_candidate(suite_inc=0.5, suite_cand=0.9, gold_inc=_gold(0.85),
+                                 gold_cand=_gold(0.85), gold_band=BAND, suite_band=0.01,
+                                 candidate_len=1600, root_len=1000)
+    assert not ok and "prompt length" in reasons[0]
+    ok, _ = gate_candidate(suite_inc=0.5, suite_cand=0.9, gold_inc=_gold(0.85),
+                           gold_cand=_gold(0.85), gold_band=BAND, suite_band=0.01,
+                           candidate_len=1400, root_len=1000)
+    assert ok
+
+
 def test_gate_paths():
     ok, _ = gate_candidate(suite_inc=0.5, suite_cand=0.9, gold_inc=_gold(0.85), gold_cand=_gold(0.85),
                            gold_band=BAND, suite_band=0.01)

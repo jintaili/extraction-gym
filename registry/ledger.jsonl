@@ -4,3 +4,5 @@
 {"logged_at": "2026-07-06T13:56:32+00:00", "event": "evalsuite", "artifact_id": "ce68bd4c4e", "pages": 10, "composite_mean": 0.9371881486618578}
 {"logged_at": "2026-07-06T13:57:54+00:00", "event": "evalsuite", "artifact_id": "2f29e944a7", "pages": 10, "composite_mean": 0.9572479928415272}
 {"logged_at": "2026-07-07T16:38:11+00:00", "event": "eval", "artifact_id": "ce68bd4c4e", "model": "gpt-4o-mini", "goldset": "goldset/v1", "pages": 42, "composite_mean": 0.8920001273656579, "usage": {"input_tokens": 190245, "output_tokens": 17920, "api_calls": 42}}
+{"logged_at": "2026-07-07T16:42:02+00:00", "event": "noise", "artifact_id": "ce68bd4c4e", "model": "gpt-4o-mini", "composite_std": 0.004012136130649151, "runs": 3}
+{"logged_at": "2026-07-07T16:44:00+00:00", "event": "eval", "artifact_id": "2f29e944a7", "model": "gpt-4o-mini", "goldset": "goldset/v1", "pages": 42, "composite_mean": 0.9018392928925242, "usage": {"input_tokens": 198519, "output_tokens": 18805, "api_calls": 42}}

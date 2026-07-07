@@ -37,8 +37,15 @@ class LoopDeps:
 def gate_candidate(
     *, suite_inc: float, suite_cand: float, gold_inc: dict | None, gold_cand: dict | None,
     gold_band: dict, suite_band: float,
+    candidate_len: int | None = None, root_len: int | None = None, max_len_ratio: float = 1.5,
 ) -> tuple[bool, list[str]]:
     reasons = []
+    if candidate_len is not None and root_len:
+        ratio = candidate_len / root_len
+        if ratio > max_len_ratio:
+            reasons.append(
+                f"prompt length {candidate_len} chars is {ratio:.2f}x root ({root_len}); cap {max_len_ratio}x"
+            )
     if suite_cand <= suite_inc + suite_band:
         reasons.append(
             f"pressure-suite improvement {suite_cand - suite_inc:+.4f} does not exceed band {suite_band}"
@@ -93,9 +100,11 @@ async def run_generation(state: LoopState, deps: LoopDeps, *, candidates_per_gen
         )
         suite_cand = (await deps.suite_eval_fn(candidate))["composite_mean"]
         gold_cand = await deps.gold_eval_fn(candidate) if deps.gold_eval_fn else None
+        root_text = deps.registry.lineage(incumbent.artifact_id)[0].text
         accepted, reasons = gate_candidate(
             suite_inc=suite_inc, suite_cand=suite_cand, gold_inc=gold_inc, gold_cand=gold_cand,
             gold_band=deps.gold_band, suite_band=deps.suite_band,
+            candidate_len=len(candidate.text), root_len=len(root_text),
         )
         entry = {
             "artifact_id": candidate.artifact_id, "mutation_note": proposal.mutation_note,

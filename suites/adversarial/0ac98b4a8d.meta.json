@@ -1,0 +1,154 @@
+{
+  "page_id": "0ac98b4a8d",
+  "category": "related-product spec bleed",
+  "invented_category": true,
+  "target_artifact_id": "ce68bd4c4e",
+  "generator_model": "gpt-5.5",
+  "judge_model": "gpt-5.4",
+  "judges": {
+    "consistency": {
+      "unsupported_fields": [],
+      "notes": "All non-null, non-empty ground-truth labels are supported by the page text. Key evidence includes product title 'Gachatha AA', roaster in title/footer 'North Star Coffee Roasters' and 'Leeds, UK', origin/process/variety/producer/altitude/harvest fields listed explicitly, tasting notes shown verbatim, 250g default variant at £16.50 GBP, and 'Add to cart' indicating in stock. Boolean labels are also supported: not a blend (single-origin Kenya with one producer context), not espresso ('Roast: Filter' and filter brewing guidance), not decaf (no decaf indication), and not co-ferment/infused (standard washed process description only)."
+    },
+    "realism": {
+      "score": 5,
+      "reasons": "This reads very plausibly as an html-to-text rendering of a real specialty coffee roaster product page. The structure is highly realistic: top-nav boilerplate, product title/origin, price, size/grind selectors, tasting notes, production metadata, descriptive copy, brew recipe, recommendation rail, and footer all match common Shopify-style coffee roaster pages. The voice is credible and restrained—specialty-coffee fluent without sounding overgenerated. Origin details are coherent: Gachatha Factory/Gachatha FCS in Nyeri County, Tetu, washed process, common Kenyan varieties (SL28, SL34, Ruiru 11, Batian), altitude and harvest window all fit a Kenya AA offering. The sensory profile and process description are also standard and believable for a Kenyan washed lot. The variant block looks realistic too: separate 250g and 1kg IDs/SKUs, sensible naming conventions, and plausible pricing progression. If there is any minor tell, it is that the page is a bit unusually tidy and complete in plain text, and 'default_for_inference' is more like an extraction artifact than visible page content—but as an embedded data block in a rendering/extraction context, it still feels believable overall."
+    }
+  },
+  "label": {
+    "page_type": "coffee_product",
+    "is_specialty_coffee": true,
+    "coffee.coffee_name": "Gachatha AA",
+    "coffee.roaster": "North Star Coffee Roasters",
+    "coffee.roaster_location": "Leeds",
+    "coffee.roaster_country": "United Kingdom",
+    "coffee.origin_country": "Kenya",
+    "coffee.origin_region": "Nyeri County, Tetu",
+    "coffee.process_method": [
+      "Washed"
+    ],
+    "coffee.variety": [
+      "SL28",
+      "SL34",
+      "Ruiru 11",
+      "Batian"
+    ],
+    "coffee.producer_or_farm": "Gachatha Farmers Cooperative Society",
+    "coffee.altitude": "1,700 - 1,900 masl",
+    "coffee.roast_level": "Filter",
+    "coffee.harvest_period": "December 2024 - January 2025",
+    "coffee.is_blend": false,
+    "coffee.is_espresso": false,
+    "coffee.is_decaf": false,
+    "coffee.is_coferment_or_infused": false,
+    "coffee.sensory_text": "Blackcurrant, blood orange, brown sugar\n\nRoast: Filter\nProducer: Gachatha Farmers Cooperative Society\nWashing Station: Gachatha Factory\nCountry: Kenya\nRegion: Nyeri County, Tetu\nProcess: Washed\nVariety: SL28, SL34, Ruiru 11, Batian\nAltitude: 1,700 - 1,900 masl\nHarvest: December 2024 - January 2025\n\nThis lot comes from Gachatha Factory in Tetu, Nyeri, one of the classic growing areas on the slopes of the Aberdare range. Smallholder members deliver ripe cherry to the station, where it is carefully sorted before pulping, dry fermentation, washing in clean channels and slow drying on raised beds.\n\nIn the cup we find everything we love about a fresh Kenya AA: vivid blackcurrant acidity, a blood-orange brightness and a soft brown-sugar finish. We roast this coffee for filter brewing to keep the fruit clear and the sweetness balanced.",
+    "coffee.display_tasting_notes": "Blackcurrant, blood orange, brown sugar",
+    "coffee.producer_text": "This lot comes from Gachatha Factory in Tetu, Nyeri, one of the classic growing areas on the slopes of the Aberdare range. Smallholder members deliver ripe cherry to the station, where it is carefully sorted before pulping, dry fermentation, washing in clean channels and slow drying on raised beds.",
+    "price.listed_price": 16.5,
+    "price.listed_currency": "GBP",
+    "price.bag_size_value": 250.0,
+    "price.bag_size_unit": "g",
+    "price.package_grams": 250.0,
+    "price.bags_count": null,
+    "price.price_type": "one_time",
+    "price.availability": "in_stock"
+  },
+  "incumbent": {
+    "model": "gpt-4o-mini",
+    "hit_fields": [
+      "coffee.sensory_text"
+    ],
+    "extraction": {
+      "page_type": "coffee_product",
+      "is_specialty_coffee": true,
+      "coffee": {
+        "coffee_name": "Gachatha AA",
+        "roaster": "North Star Coffee Roasters",
+        "roaster_location": "Leeds",
+        "roaster_country": "UK",
+        "origin_country": "Kenya",
+        "origin_region": "Nyeri County, Tetu",
+        "process_method": [
+          "Washed"
+        ],
+        "variety": [
+          "SL28",
+          "SL34",
+          "Ruiru 11",
+          "Batian"
+        ],
+        "producer_or_farm": "Gachatha Farmers Cooperative Society",
+        "altitude": "1,700 - 1,900 masl",
+        "roast_level": "Filter",
+        "harvest_period": "December 2024 - January 2025",
+        "is_blend": false,
+        "is_espresso": false,
+        "is_decaf": false,
+        "is_coferment_or_infused": false,
+        "sensory_text": "vivid blackcurrant acidity, a blood-orange brightness and a soft brown-sugar finish",
+        "display_tasting_notes": "Blackcurrant, blood orange, brown sugar",
+        "producer_text": "This lot comes from Gachatha Factory in Tetu, Nyeri, one of the classic growing areas on the slopes of the Aberdare range. Smallholder members deliver ripe cherry to the station, where it is carefully sorted before pulping, dry fermentation, washing in clean channels and slow drying on raised beds.",
+        "source_snippets": [
+          {
+            "field": "name",
+            "snippet": "Gachatha AA"
+          },
+          {
+            "field": "origin",
+            "snippet": "Kenya"
+          },
+          {
+            "field": "process",
+            "snippet": "Washed"
+          },
+          {
+            "field": "variety",
+            "snippet": "SL28, SL34, Ruiru 11, Batian"
+          },
+          {
+            "field": "price",
+            "snippet": "£16.50"
+          },
+          {
+            "field": "bag_size",
+            "snippet": "250g"
+          },
+          {
+            "field": "tasting_notes",
+            "snippet": "Blackcurrant, blood orange, brown sugar"
+          },
+          {
+            "field": "producer",
+            "snippet": "Gachatha Farmers Cooperative Society"
+          },
+          {
+            "field": "altitude",
+            "snippet": "1,700 - 1,900 masl"
+          }
+        ]
+      },
+      "price": {
+        "listed_price": 16.5,
+        "listed_currency": "GBP",
+        "original_listed_price": null,
+        "original_listed_currency": null,
+        "bag_size_value": 250.0,
+        "bag_size_unit": "g",
+        "package_grams": 250.0,
+        "bags_count": null,
+        "price_100g_usd": null,
+        "price_type": "one_time",
+        "availability": "in_stock",
+        "assumptions": [
+          "currency assumed GBP from £",
+          "default variant selected"
+        ]
+      },
+      "quality": {
+        "extraction_quality": "good",
+        "missing_fields": [],
+        "warnings": []
+      }
+    }
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "page_id": "fba9d38e49",
+  "category": "stale meta description contradicting current page body",
+  "invented_category": false,
+  "target_artifact_id": "ce68bd4c4e",
+  "generator_model": "gpt-5.5",
+  "judge_model": "gpt-5.4",
+  "judges": {
+    "consistency": {
+      "unsupported_fields": [],
+      "notes": "All non-null/non-empty ground-truth fields are supported by the page text or embedded variant data. 'coffee.roaster_country' is supported indirectly by 'Portland, Oregon' plus free US shipping context, and 'is_specialty_coffee' is supported by the specialty roaster/product context."
+    },
+    "realism": {
+      "score": 4,
+      "reasons": "Plausible overall as a real roaster product page: the structure is very standard Shopify-style coffee PDP text extraction, with nav, breadcrumbs, price, size/grind selectors, stock note, tasting notes, farm/process details, brewing recommendation, shipping note, related products, variant block, and footer. The coffee details are coherent and current-feeling: Colombia / Huila / Bruselas / El Diviso / Nestor Lasso / Ombligon / natural anaerobic is a believable specialty setup, and the flavor language fits that profile. The variant data also looks realistic in format and pricing, with sensible SKUs and a credible 250g-to-1kg price step.\n\nMain tell lowering it from a 5: the meta description is for a completely different coffee ('Kenya Gichathaini AA') and does not match the page title or body. That kind of mismatch can happen on real sites, but it reads like a synthetic artifact here. A smaller tell is the slightly polished, generic marketing copy ('desired moisture and water activity were reached'), which is believable but a touch templated. Also, only one visible size is shown in the UI while the embedded variant block includes 1kg; not impossible in html-to-text extraction, but mildly awkward. Still, aside from those inconsistencies, this is quite close to a real specialty roaster page."
+    }
+  },
+  "label": {
+    "page_type": "coffee_product",
+    "is_specialty_coffee": true,
+    "coffee.coffee_name": "Colombia El Diviso Ombligon Natural",
+    "coffee.roaster": "Harbor & Pine Coffee Roasters",
+    "coffee.roaster_location": "Portland, Oregon",
+    "coffee.roaster_country": "United States",
+    "coffee.origin_country": "Colombia",
+    "coffee.origin_region": "Huila, Bruselas",
+    "coffee.process_method": [
+      "Natural anaerobic"
+    ],
+    "coffee.variety": [
+      "Ombligon"
+    ],
+    "coffee.producer_or_farm": "Nestor Lasso, El Diviso",
+    "coffee.altitude": "1,750 masl",
+    "coffee.roast_level": "Filter",
+    "coffee.harvest_period": "November 2024",
+    "coffee.is_blend": false,
+    "coffee.is_espresso": false,
+    "coffee.is_decaf": false,
+    "coffee.is_coferment_or_infused": false,
+    "coffee.sensory_text": "Tasting notes: raspberry jam, pink grapefruit, cacao nib, rose\n\nThis release from El Diviso is all about saturated fruit and a polished, perfumed finish. The cup opens with raspberry jam and pink grapefruit before settling into cacao nib and a gentle rose-like florality as it cools.",
+    "coffee.display_tasting_notes": "raspberry jam, pink grapefruit, cacao nib, rose",
+    "coffee.producer_text": "Nestor Lasso and the team at El Diviso have become known for careful, repeatable fermentation work in Huila. For this Ombligon selection, ripe cherries were hand sorted, held in a sealed fermentation environment, and then dried slowly as a natural lot until the desired moisture and water activity were reached.",
+    "price.listed_price": 24.0,
+    "price.listed_currency": "USD",
+    "price.bag_size_value": 250.0,
+    "price.bag_size_unit": "g",
+    "price.package_grams": 250.0,
+    "price.bags_count": null,
+    "price.price_type": "one_time",
+    "price.availability": "in_stock"
+  },
+  "incumbent": {
+    "model": "gpt-4o-mini",
+    "hit_fields": [
+      "coffee.sensory_text"
+    ],
+    "extraction": {
+      "page_type": "coffee_product",
+      "is_specialty_coffee": true,
+      "coffee": {
+        "coffee_name": "Colombia El Diviso Ombligon Natural",
+        "roaster": "Harbor & Pine Coffee Roasters",
+        "roaster_location": "Portland, Oregon",
+        "roaster_country": "unknown",
+        "origin_country": "Colombia",
+        "origin_region": "Huila, Bruselas",
+        "process_method": [
+          "Natural anaerobic"
+        ],
+        "variety": [
+          "Ombligon"
+        ],
+        "producer_or_farm": "Nestor Lasso, El Diviso",
+        "altitude": "1,750 masl",
+        "roast_level": "Filter",
+        "harvest_period": "November 2024",
+        "is_blend": false,
+        "is_espresso": false,
+        "is_decaf": false,
+        "is_coferment_or_infused": false,
+        "sensory_text": "raspberry jam, pink grapefruit, cacao nib, rose",
+        "display_tasting_notes": "raspberry jam, pink grapefruit, cacao nib, rose",
+        "producer_text": "Nestor Lasso and the team at El Diviso have become known for careful, repeatable fermentation work in Huila. For this Ombligon selection, ripe cherries were hand sorted, held in a sealed fermentation environment, and then dried slowly as a natural lot until the desired moisture and water activity were reached.",
+        "source_snippets": [
+          {
+            "field": "origin",
+            "snippet": "Origin: Colombia"
+          },
+          {
+            "field": "process",
+            "snippet": "Process: Natural anaerobic"
+          },
+          {
+            "field": "variety",
+            "snippet": "Variety: Ombligon"
+          },
+          {
+            "field": "tasting_notes",
+            "snippet": "Tasting notes: raspberry jam, pink grapefruit, cacao nib, rose"
+          },
+          {
+            "field": "producer",
+            "snippet": "Producer: Nestor Lasso, El Diviso"
+          },
+          {
+            "field": "altitude",
+            "snippet": "Altitude: 1,750 masl"
+          }
+        ]
+      },
+      "price": {
+        "listed_price": 24.0,
+        "listed_currency": "USD",
+        "original_listed_price": null,
+        "original_listed_currency": null,
+        "bag_size_value": 250.0,
+        "bag_size_unit": "g",
+        "package_grams": 250.0,
+        "bags_count": null,
+        "price_100g_usd": 9.6,
+        "price_type": "one_time",
+        "availability": "in_stock",
+        "assumptions": [
+          "currency assumed USD from $",
+          "default variant selected"
+        ]
+      },
+      "quality": {
+        "extraction_quality": "good",
+        "missing_fields": [],
+        "warnings": []
+      }
+    }
+  }
+}

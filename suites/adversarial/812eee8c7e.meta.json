@@ -1,0 +1,148 @@
+{
+  "page_id": "812eee8c7e",
+  "category": "Decaf navigation and related-product text mistaken for current coffee attribute",
+  "invented_category": true,
+  "target_artifact_id": "ce68bd4c4e",
+  "generator_model": "gpt-5.5",
+  "judge_model": "gpt-5.4",
+  "judges": {
+    "consistency": {
+      "unsupported_fields": [],
+      "notes": "All non-null/non-empty ground-truth labels are supported by the page text or embedded variant data. 'coffee.roaster_country' is supported indirectly by 'Portland, Maine' implying United States. Boolean labels are consistent with the page: single-origin non-decaf filter coffee, not espresso, not a blend, and no evidence of co-ferment/infusion."
+    },
+    "realism": {
+      "score": 4,
+      "reasons": "Very plausible as a real specialty coffee product page. The structure is spot-on for a Shopify-style html-to-text render: breadcrumb, title/vendor, price, size selector, add-to-cart, shipping note, specs block, descriptive copy, recommended brew methods, related products, footer, and an embedded variant data section. The voice is credible for modern specialty coffee—clean, slightly marketing-forward, with typical sensory language like 'high-definition,' 'floral acidity,' and 'layered fruit character.' Origin details are coherent: El Diviso / Nestor Lasso / Bruselas, Huila / Pink Bourbon / washed / 1,750–1,900 masl is a believable combination, and harvest timing also reads plausibly. Variant data is mostly realistic too, with sensible SKUs, matching names, and a plausible 250g-to-1kg price step. Minor tells keep it from a 5: the page visibly offers only '250g' in the main selector while the embedded variants include a 1kg option, which could happen in real exports but feels slightly inconsistent; 'careful washed fermentation' is a bit awkwardly phrased; and the product copy is a touch too neatly archetypal, as if assembled from specialty coffee page conventions. Overall, though, it is highly believable."
+    }
+  },
+  "label": {
+    "page_type": "coffee_product",
+    "is_specialty_coffee": true,
+    "coffee.coffee_name": "Colombia El Diviso Pink Bourbon",
+    "coffee.roaster": "Harbor Light Coffee",
+    "coffee.roaster_location": "Portland, Maine",
+    "coffee.roaster_country": "United States",
+    "coffee.origin_country": "Colombia",
+    "coffee.origin_region": "Bruselas, Huila",
+    "coffee.process_method": [
+      "Washed"
+    ],
+    "coffee.variety": [
+      "Pink Bourbon"
+    ],
+    "coffee.producer_or_farm": "El Diviso, Nestor Lasso & family",
+    "coffee.altitude": "1,750–1,900 masl",
+    "coffee.roast_level": "Filter roast",
+    "coffee.harvest_period": "June–August 2024",
+    "coffee.is_blend": false,
+    "coffee.is_espresso": false,
+    "coffee.is_decaf": false,
+    "coffee.is_coferment_or_infused": false,
+    "coffee.sensory_text": "Tasting Notes: Strawberry jam, Meyer lemon, raw sugar\n\nThis Pink Bourbon lot from El Diviso is the kind of clean, high-definition Colombian coffee we wait all season for. In the cup we find a saturated strawberry sweetness, bright Meyer lemon, and a soft raw-sugar finish that keeps the profile elegant rather than heavy.",
+    "coffee.display_tasting_notes": "Strawberry jam, Meyer lemon, raw sugar",
+    "coffee.producer_text": "Nestor Lasso and his family cultivate small hillside parcels near Bruselas in Huila, picking selectively for ripe cherries before a careful washed fermentation and slow drying on raised beds.",
+    "price.listed_price": 22.5,
+    "price.listed_currency": "USD",
+    "price.bag_size_value": 250.0,
+    "price.bag_size_unit": "g",
+    "price.package_grams": 250.0,
+    "price.bags_count": null,
+    "price.price_type": "one_time",
+    "price.availability": "in_stock"
+  },
+  "incumbent": {
+    "model": "gpt-4o-mini",
+    "hit_fields": [
+      "coffee.sensory_text"
+    ],
+    "extraction": {
+      "page_type": "coffee_product",
+      "is_specialty_coffee": true,
+      "coffee": {
+        "coffee_name": "Colombia El Diviso Pink Bourbon",
+        "roaster": "Harbor Light Coffee",
+        "roaster_location": "Portland, Maine",
+        "roaster_country": "unknown",
+        "origin_country": "Colombia",
+        "origin_region": "Bruselas, Huila",
+        "process_method": [
+          "Washed"
+        ],
+        "variety": [
+          "Pink Bourbon"
+        ],
+        "producer_or_farm": "El Diviso, Nestor Lasso & family",
+        "altitude": "1,750–1,900 masl",
+        "roast_level": "Filter roast",
+        "harvest_period": "June–August 2024",
+        "is_blend": false,
+        "is_espresso": false,
+        "is_decaf": false,
+        "is_coferment_or_infused": false,
+        "sensory_text": "Tasting Notes: Strawberry jam, Meyer lemon, raw sugar",
+        "display_tasting_notes": "Strawberry jam, Meyer lemon, raw sugar",
+        "producer_text": "Nestor Lasso and his family cultivate small hillside parcels near Bruselas in Huila, picking selectively for ripe cherries before a careful washed fermentation and slow drying on raised beds.",
+        "source_snippets": [
+          {
+            "field": "name",
+            "snippet": "Colombia El Diviso Pink Bourbon"
+          },
+          {
+            "field": "origin",
+            "snippet": "Country: Colombia"
+          },
+          {
+            "field": "process",
+            "snippet": "Process: Washed"
+          },
+          {
+            "field": "variety",
+            "snippet": "Variety: Pink Bourbon"
+          },
+          {
+            "field": "price",
+            "snippet": "$22.50"
+          },
+          {
+            "field": "bag_size",
+            "snippet": "Size 250g"
+          },
+          {
+            "field": "tasting_notes",
+            "snippet": "Tasting Notes: Strawberry jam, Meyer lemon, raw sugar"
+          },
+          {
+            "field": "producer",
+            "snippet": "Producer: El Diviso, Nestor Lasso & family"
+          },
+          {
+            "field": "altitude",
+            "snippet": "Altitude: 1,750–1,900 masl"
+          }
+        ]
+      },
+      "price": {
+        "listed_price": 22.5,
+        "listed_currency": "USD",
+        "original_listed_price": null,
+        "original_listed_currency": null,
+        "bag_size_value": 250.0,
+        "bag_size_unit": "g",
+        "package_grams": 250.0,
+        "bags_count": null,
+        "price_100g_usd": 9.0,
+        "price_type": "one_time",
+        "availability": "in_stock",
+        "assumptions": [
+          "currency assumed USD from $",
+          "default variant selected"
+        ]
+      },
+      "quality": {
+        "extraction_quality": "good",
+        "missing_fields": [],
+        "warnings": []
+      }
+    }
+  }
+}

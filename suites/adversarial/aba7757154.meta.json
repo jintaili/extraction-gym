@@ -1,0 +1,148 @@
+{
+  "page_id": "aba7757154",
+  "category": "Footer navigation keywords mistaken for product attributes",
+  "invented_category": true,
+  "target_artifact_id": "ce68bd4c4e",
+  "generator_model": "gpt-5.5",
+  "judge_model": "gpt-5.4",
+  "judges": {
+    "consistency": {
+      "unsupported_fields": [],
+      "notes": "All non-null, non-empty label values are supported by the page text. 'coffee.roaster_country' is supported indirectly via 'Portland, Oregon' implying United States. Enum-style fields are also supported: page_type matches a coffee product page; is_specialty_coffee is supported by the detailed single-origin specialty-style listing; is_blend=false follows from single origin/producer/variety presentation; is_espresso=false and is_decaf=false are explicitly stated; availability 'in_stock' is explicit."
+    },
+    "realism": {
+      "score": 4,
+      "reasons": "This reads very plausibly like a real roaster product page. The structure is strong: title, country, price, size selector, stock/roast schedule, tasting notes, producer/origin details, process/variety/altitude/harvest, descriptive copy, brew recommendation, and footer/shop chrome all match common specialty coffee ecommerce layouts. The voice is believable for a modern specialty roaster: concise, origin-forward, with light technical language like 'day lot,' 'clean fermentation,' 'development for sweetness and clarity,' and a practical brew ratio. The origin data is coherent: Huila/Palestina, Pink Bourbon, washed process, high elevation, and flavor notes like white peach, panela, and orange blossom fit the profile.\n\nThe variant block is also fairly realistic. IDs, SKUs, variant titles, per-size names, and pricing structure are all sensible. 250g at $21 and 2 lb at $70 is within a believable specialty pricing range, and 2 lb rendered as 907.185g is exactly the kind of machine-derived precision that can appear in backend exports.\n\nMinor tells keep it from a 5. 'Harvest: July–September 2025' is slightly suspicious depending on current sales timing, since many real pages either omit the year, use crop year more explicitly, or avoid future-looking harvest windows unless pre-release context is given. The explanatory sentence about espresso/decaf footer links feels a bit too self-conscious and tailored to the prompt rather than naturally commercial copy. 'Default_for_inference' in the variant data is not something a customer-facing html-to-text rendering would usually expose. Still, aside from those small synthetic hints, it is highly plausible."
+    }
+  },
+  "label": {
+    "page_type": "coffee_product",
+    "is_specialty_coffee": true,
+    "coffee.coffee_name": "El Mirador Pink Bourbon",
+    "coffee.roaster": "Northline Coffee Roasters",
+    "coffee.roaster_location": "Portland, Oregon",
+    "coffee.roaster_country": "United States",
+    "coffee.origin_country": "Colombia",
+    "coffee.origin_region": "Huila, Palestina",
+    "coffee.process_method": [
+      "Washed"
+    ],
+    "coffee.variety": [
+      "Pink Bourbon"
+    ],
+    "coffee.producer_or_farm": "Ana Maria Gomez, Finca El Mirador",
+    "coffee.altitude": "1,850–1,950 masl",
+    "coffee.roast_level": "Filter",
+    "coffee.harvest_period": "July–September 2025",
+    "coffee.is_blend": false,
+    "coffee.is_espresso": false,
+    "coffee.is_decaf": false,
+    "coffee.is_coferment_or_infused": false,
+    "coffee.sensory_text": "Tasting notes: white peach, panela, orange blossom\n\nThe result is a structured, high-sweetness cup with peach-like acidity and a panela finish.",
+    "coffee.display_tasting_notes": "white peach, panela, orange blossom",
+    "coffee.producer_text": "This lot comes from Finca El Mirador, a small hillside farm outside Palestina in Huila. Ana Maria Gomez separates her Pink Bourbon cherries by day lot before a long, clean fermentation and full washing in cool mountain water.",
+    "price.listed_price": 21.0,
+    "price.listed_currency": "USD",
+    "price.bag_size_value": 250.0,
+    "price.bag_size_unit": "g",
+    "price.package_grams": 250.0,
+    "price.bags_count": null,
+    "price.price_type": "one_time",
+    "price.availability": "in_stock"
+  },
+  "incumbent": {
+    "model": "gpt-4o-mini",
+    "hit_fields": [
+      "coffee.sensory_text"
+    ],
+    "extraction": {
+      "page_type": "coffee_product",
+      "is_specialty_coffee": true,
+      "coffee": {
+        "coffee_name": "El Mirador Pink Bourbon",
+        "roaster": "Northline Coffee Roasters",
+        "roaster_location": "Portland, Oregon",
+        "roaster_country": "unknown",
+        "origin_country": "Colombia",
+        "origin_region": "Huila, Palestina",
+        "process_method": [
+          "Washed"
+        ],
+        "variety": [
+          "Pink Bourbon"
+        ],
+        "producer_or_farm": "Ana Maria Gomez, Finca El Mirador",
+        "altitude": "1,850–1,950 masl",
+        "roast_level": "Filter",
+        "harvest_period": "July–September 2025",
+        "is_blend": false,
+        "is_espresso": false,
+        "is_decaf": false,
+        "is_coferment_or_infused": false,
+        "sensory_text": "tasting notes: white peach, panela, orange blossom",
+        "display_tasting_notes": "white peach, panela, orange blossom",
+        "producer_text": "This lot comes from Finca El Mirador, a small hillside farm outside Palestina in Huila. Ana Maria Gomez separates her Pink Bourbon cherries by day lot before a long, clean fermentation and full washing in cool mountain water. The result is a structured, high-sweetness cup with peach-like acidity and a panela finish.",
+        "source_snippets": [
+          {
+            "field": "name",
+            "snippet": "El Mirador Pink Bourbon"
+          },
+          {
+            "field": "origin",
+            "snippet": "Colombia"
+          },
+          {
+            "field": "process",
+            "snippet": "Washed"
+          },
+          {
+            "field": "variety",
+            "snippet": "Pink Bourbon"
+          },
+          {
+            "field": "price",
+            "snippet": "$21.00"
+          },
+          {
+            "field": "bag_size",
+            "snippet": "250g"
+          },
+          {
+            "field": "tasting_notes",
+            "snippet": "white peach, panela, orange blossom"
+          },
+          {
+            "field": "producer",
+            "snippet": "Ana Maria Gomez, Finca El Mirador"
+          },
+          {
+            "field": "altitude",
+            "snippet": "1,850–1,950 masl"
+          }
+        ]
+      },
+      "price": {
+        "listed_price": 21.0,
+        "listed_currency": "USD",
+        "original_listed_price": null,
+        "original_listed_currency": null,
+        "bag_size_value": 250.0,
+        "bag_size_unit": "g",
+        "package_grams": 250.0,
+        "bags_count": null,
+        "price_100g_usd": 8.4,
+        "price_type": "one_time",
+        "availability": "in_stock",
+        "assumptions": [
+          "currency assumed USD from $",
+          "default variant selected"
+        ]
+      },
+      "quality": {
+        "extraction_quality": "good",
+        "missing_fields": [],
+        "warnings": []
+      }
+    }
+  }
+}

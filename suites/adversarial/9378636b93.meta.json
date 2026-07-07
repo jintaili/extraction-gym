@@ -1,0 +1,150 @@
+{
+  "page_id": "9378636b93",
+  "category": "multi-variant page where the default variant is a small sampler",
+  "invented_category": false,
+  "target_artifact_id": "ce68bd4c4e",
+  "generator_model": "gpt-5.5",
+  "judge_model": "gpt-5.4",
+  "judges": {
+    "consistency": {
+      "unsupported_fields": [],
+      "notes": "All non-null, non-empty labels are supported by the page text or embedded variant data. The selected/default variant supports the 50g size, $5.50 price, USD currency, 50.0 package grams, and in-stock availability. 'United States' follows from 'Portland, Oregon'."
+    },
+    "realism": {
+      "score": 5,
+      "reasons": "This reads very plausibly like an html-to-text extraction of a real specialty coffee product page. The structure is strongly e-commerce-authentic: header nav, breadcrumb, product title, price, size selector, quantity/add-to-cart, shipping note, related products, footer, and a variant data block that feels like extracted Shopify-style metadata. The coffee copy is believable in voice and specificity without overdoing it. Origin details are coherent: Bombe Washing Station in Bensa, Sidama; natural process; smallholder farmers; altitude 1,920–2,050 masl; varieties 74158 and Kurume; and harvest 2024/2025 all fit known Ethiopian coffee page conventions. Tasting notes and roast guidance also sound realistic for a light-roasted natural Sidama. The explanatory note about the 50g sampler being pre-selected is a slightly unusual but credible UX detail, and the pricing ladder ($5.50 / $24 / $82) is plausible for specialty roasted coffee. The variant block is internally consistent across IDs, SKUs, grams, prices, and availability. Minor tell: ‘Choose 250g or 1kg from the drop-down’ is a bit generic given the rendered options are shown inline, but that is exactly the kind of text that survives from a real storefront theme. Overall, it is highly convincing and close to indistinguishable from a real product page."
+    }
+  },
+  "label": {
+    "page_type": "coffee_product",
+    "is_specialty_coffee": true,
+    "coffee.coffee_name": "Ethiopia Bombe Natural",
+    "coffee.roaster": "Northbank Coffee Roasters",
+    "coffee.roaster_location": "Portland, Oregon",
+    "coffee.roaster_country": "United States",
+    "coffee.origin_country": "Ethiopia",
+    "coffee.origin_region": "Bensa, Sidama",
+    "coffee.process_method": [
+      "Natural"
+    ],
+    "coffee.variety": [
+      "74158",
+      "Kurume"
+    ],
+    "coffee.producer_or_farm": "Smallholder farmers delivering to Bombe Washing Station",
+    "coffee.altitude": "1,920–2,050 masl",
+    "coffee.roast_level": "Light",
+    "coffee.harvest_period": "2024/2025",
+    "coffee.is_blend": false,
+    "coffee.is_espresso": false,
+    "coffee.is_decaf": false,
+    "coffee.is_coferment_or_infused": false,
+    "coffee.sensory_text": "Strawberry jam, jasmine, cacao nib",
+    "coffee.display_tasting_notes": "Strawberry jam, jasmine, cacao nib",
+    "coffee.producer_text": "This lot comes from smallholder gardens around Bombe in the Bensa district of Sidama. Ripe cherries are delivered daily to Bombe Washing Station, where the team sorts by hand before a slow natural drying on raised beds.",
+    "price.listed_price": 5.5,
+    "price.listed_currency": "USD",
+    "price.bag_size_value": 50.0,
+    "price.bag_size_unit": "g",
+    "price.package_grams": 50.0,
+    "price.bags_count": null,
+    "price.price_type": "one_time",
+    "price.availability": "in_stock"
+  },
+  "incumbent": {
+    "model": "gpt-4o-mini",
+    "hit_fields": [
+      "coffee.sensory_text"
+    ],
+    "extraction": {
+      "page_type": "coffee_product",
+      "is_specialty_coffee": true,
+      "coffee": {
+        "coffee_name": "Ethiopia Bombe Natural",
+        "roaster": "Northbank Coffee Roasters",
+        "roaster_location": null,
+        "roaster_country": "unknown",
+        "origin_country": "Ethiopia",
+        "origin_region": "Bensa, Sidama",
+        "process_method": [
+          "Natural"
+        ],
+        "variety": [
+          "74158",
+          "Kurume"
+        ],
+        "producer_or_farm": "Smallholder farmers delivering to Bombe Washing Station",
+        "altitude": "1,920–2,050 masl",
+        "roast_level": "Light",
+        "harvest_period": "2024/2025",
+        "is_blend": false,
+        "is_espresso": false,
+        "is_decaf": false,
+        "is_coferment_or_infused": false,
+        "sensory_text": "We taste a syrupy cup with big red-fruit sweetness, a floral lift, and a clean cocoa finish.",
+        "display_tasting_notes": "Strawberry jam, jasmine, cacao nib",
+        "producer_text": "This lot comes from smallholder gardens around Bombe in the Bensa district of Sidama. Ripe cherries are delivered daily to Bombe Washing Station, where the team sorts by hand before a slow natural drying on raised beds.",
+        "source_snippets": [
+          {
+            "field": "name",
+            "snippet": "Ethiopia Bombe Natural"
+          },
+          {
+            "field": "origin",
+            "snippet": "Ethiopia"
+          },
+          {
+            "field": "process",
+            "snippet": "Natural"
+          },
+          {
+            "field": "variety",
+            "snippet": "74158, Kurume"
+          },
+          {
+            "field": "price",
+            "snippet": "$5.50"
+          },
+          {
+            "field": "bag_size",
+            "snippet": "50g Sampler"
+          },
+          {
+            "field": "tasting_notes",
+            "snippet": "Strawberry jam, jasmine, cacao nib"
+          },
+          {
+            "field": "producer",
+            "snippet": "Smallholder farmers delivering to Bombe Washing Station"
+          },
+          {
+            "field": "altitude",
+            "snippet": "1,920–2,050 masl"
+          }
+        ]
+      },
+      "price": {
+        "listed_price": 5.5,
+        "listed_currency": "USD",
+        "original_listed_price": null,
+        "original_listed_currency": null,
+        "bag_size_value": 50.0,
+        "bag_size_unit": "g",
+        "package_grams": 50.0,
+        "bags_count": null,
+        "price_100g_usd": 11.0,
+        "price_type": "one_time",
+        "availability": "in_stock",
+        "assumptions": [
+          "currency assumed USD from $5.50",
+          "default variant selected"
+        ]
+      },
+      "quality": {
+        "extraction_quality": "good",
+        "missing_fields": [],
+        "warnings": []
+      }
+    }
+  }
+}

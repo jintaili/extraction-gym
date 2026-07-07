@@ -1,0 +1,143 @@
+{
+  "page_id": "576de058fb",
+  "category": "region-ambiguous origin (place name that exists in two producing countries)",
+  "invented_category": false,
+  "target_artifact_id": "ce68bd4c4e",
+  "generator_model": "gpt-5.5",
+  "judge_model": "gpt-5.4",
+  "judges": {
+    "consistency": {
+      "unsupported_fields": [],
+      "notes": "All non-null, non-empty label values are supported by the page text. Verbatim text fields match the page content, numeric values match the displayed/default 250g variant, and enum/boolean fields are entailed by the listing (e.g., Washed, Light / Filter, in stock, not decaf/blend/espresso/coferment)."
+    },
+    "realism": {
+      "score": 5,
+      "reasons": "This reads very plausibly like an html-to-text extraction of a real specialty coffee product page. Structure is highly credible: navigation/header, breadcrumb, product title, price, size selector, roast/tasting notes/origin metadata, descriptive farm copy, shipping note, variant block, availability, related products, footer. Voice matches specialty coffee ecommerce well—specific but not overblown, with standard cupping language and roast intent. Origin details are coherent: Honduras / San Marcos, Ocotepeque / producer name / washed / Pacas & Catuai / 1,550–1,700 masl / Jan–Mar harvest all fit together naturally, and the clarification about not confusing it with San Marcos, Guatemala is the sort of practical note a real roaster might include. Process description is believable and appropriately generic for washed coffee. Pricing is realistic: $22 for 250g and $78 for 1kg is within normal specialty ranges and the kilo discount is sensible. The variant data block also looks convincing, with internally consistent IDs, SKUs, names, and gram weights. Only tiny tells keep it from being absolutely indistinguishable—for example, the variant block is a bit more explicit/clean than many consumer-facing html-to-text scrapes, and '[default_for_inference]' feels machine-added rather than storefront-native—but overall it is very realistic."
+    }
+  },
+  "label": {
+    "page_type": "coffee_product",
+    "is_specialty_coffee": true,
+    "coffee.coffee_name": "Finca La Esperanza",
+    "coffee.roaster": "North Pier Coffee",
+    "coffee.roaster_location": "Portland, Oregon",
+    "coffee.roaster_country": "USA",
+    "coffee.origin_country": "Honduras",
+    "coffee.origin_region": "San Marcos, Ocotepeque",
+    "coffee.process_method": [
+      "Washed"
+    ],
+    "coffee.variety": [
+      "Pacas",
+      "Catuai"
+    ],
+    "coffee.producer_or_farm": "Marta Elena Ramirez, Finca La Esperanza",
+    "coffee.altitude": "1,550–1,700 masl",
+    "coffee.roast_level": "Light / Filter",
+    "coffee.harvest_period": "January–March 2025",
+    "coffee.is_blend": false,
+    "coffee.is_espresso": false,
+    "coffee.is_decaf": false,
+    "coffee.is_coferment_or_infused": false,
+    "coffee.sensory_text": "Tasting Notes: mandarin, brown sugar, red apple, clean cocoa finish\n\nOn the cupping table we find a bright mandarin acidity up front, a soft brown-sugar sweetness through the middle, and a red-apple clarity as the cup cools. The finish is tidy and cocoa-like, making this an easy morning filter coffee with enough structure for longer extractions.",
+    "coffee.display_tasting_notes": "mandarin, brown sugar, red apple, clean cocoa finish",
+    "coffee.producer_text": "This lot comes to us from Marta Elena Ramirez's Finca La Esperanza outside San Marcos in the department of Ocotepeque, western Honduras. Please note: this is the Honduran San Marcos area, not San Marcos, Guatemala; the farm sits near the Salvadoran border on cool, pine-covered slopes.\n\nMarta picks the Pacas and Catuai cherries selectively, depulps them the same afternoon, ferments the parchment for 18–24 hours, and washes in clean spring water before slow drying on raised beds. We roast this one light to preserve the citrus and apple character while keeping the body rounded.",
+    "price.listed_price": 22.0,
+    "price.listed_currency": "USD",
+    "price.bag_size_value": 250.0,
+    "price.bag_size_unit": "g",
+    "price.package_grams": 250.0,
+    "price.bags_count": null,
+    "price.price_type": "one_time",
+    "price.availability": "in_stock"
+  },
+  "incumbent": {
+    "model": "gpt-4o-mini",
+    "hit_fields": [],
+    "extraction": {
+      "page_type": "coffee_product",
+      "is_specialty_coffee": true,
+      "coffee": {
+        "coffee_name": "Finca La Esperanza Washed Pacas & Catuai",
+        "roaster": "North Pier Coffee",
+        "roaster_location": "Portland, Oregon",
+        "roaster_country": "unknown",
+        "origin_country": "Honduras",
+        "origin_region": "San Marcos, Ocotepeque",
+        "process_method": [
+          "Washed"
+        ],
+        "variety": [
+          "Pacas",
+          "Catuai"
+        ],
+        "producer_or_farm": "Marta Elena Ramirez, Finca La Esperanza",
+        "altitude": "1,550–1,700 masl",
+        "roast_level": "Light",
+        "harvest_period": "January–March 2025",
+        "is_blend": false,
+        "is_espresso": false,
+        "is_decaf": false,
+        "is_coferment_or_infused": false,
+        "sensory_text": "bright mandarin acidity up front, a soft brown-sugar sweetness through the middle, and a red-apple clarity as the cup cools. The finish is tidy and cocoa-like, making this an easy morning filter coffee with enough structure for longer extractions.",
+        "display_tasting_notes": "mandarin, brown sugar, red apple, clean cocoa finish",
+        "producer_text": "This lot comes to us from Marta Elena Ramirez's Finca La Esperanza outside San Marcos in the department of Ocotepeque, western Honduras. Marta picks the Pacas and Catuai cherries selectively, depulps them the same afternoon, ferments the parchment for 18–24 hours, and washes in clean spring water before slow drying on raised beds. We roast this one light to preserve the citrus and apple character while keeping the body rounded.",
+        "source_snippets": [
+          {
+            "field": "origin",
+            "snippet": "Origin: Honduras"
+          },
+          {
+            "field": "process",
+            "snippet": "Process: Washed"
+          },
+          {
+            "field": "variety",
+            "snippet": "Variety: Pacas, Catuai"
+          },
+          {
+            "field": "price",
+            "snippet": "$22.00"
+          },
+          {
+            "field": "bag_size",
+            "snippet": "Size: 250g"
+          },
+          {
+            "field": "tasting_notes",
+            "snippet": "Tasting Notes: mandarin, brown sugar, red apple, clean cocoa finish"
+          },
+          {
+            "field": "producer",
+            "snippet": "Producer: Marta Elena Ramirez, Finca La Esperanza"
+          },
+          {
+            "field": "altitude",
+            "snippet": "Altitude: 1,550–1,700 masl"
+          }
+        ]
+      },
+      "price": {
+        "listed_price": 22.0,
+        "listed_currency": "USD",
+        "original_listed_price": null,
+        "original_listed_currency": null,
+        "bag_size_value": 250.0,
+        "bag_size_unit": "g",
+        "package_grams": 250.0,
+        "bags_count": null,
+        "price_100g_usd": 8.8,
+        "price_type": "one_time",
+        "availability": "in_stock",
+        "assumptions": [
+          "default variant selected"
+        ]
+      },
+      "quality": {
+        "extraction_quality": "good",
+        "missing_fields": [],
+        "warnings": []
+      }
+    }
+  }
+}

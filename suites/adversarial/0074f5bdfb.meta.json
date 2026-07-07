@@ -1,0 +1,149 @@
+{
+  "page_id": "0074f5bdfb",
+  "category": "multi-variant page where the default variant is a small sampler",
+  "invented_category": false,
+  "target_artifact_id": "ce68bd4c4e",
+  "generator_model": "gpt-5.5",
+  "judge_model": "gpt-5.4",
+  "judges": {
+    "consistency": {
+      "unsupported_fields": [],
+      "notes": "All non-null, non-empty ground-truth labels are supported by the page text. The default selected variant supports the listed price and bag size of 50g at $6.50 USD, and the footer/location text supports roaster country as United States."
+    },
+    "realism": {
+      "score": 5,
+      "reasons": "This reads very plausibly as an html-to-text rendering of a real specialty coffee product page. The structure is highly typical: header nav, breadcrumb, product title, roaster/location, price, size selector, quantity/add-to-cart, concise marketing copy, spec block, longer origin/process narrative, brew guidance, related products, and footer. The voice fits contemporary specialty coffee well—specific but not overblown, with normal phrases like 'florality-first side of Pink Bourbon,' 'panela sweetness,' and practical brew advice. The coffee details are coherent and internally consistent: Huila/Palestina, Pink Bourbon, washed process, 1,850–1,950 masl, and a harvest window all make sense together for a Colombian microlot. The process description is believable and appropriately detailed without sounding random. Pricing also feels realistic for a premium Pink Bourbon, especially with a 50g sampler, 250g retail bag, and discounted 1kg option. The variant block is one of the strongest realism signals: IDs, titles, names, SKUs, availability flags, and gram weights all look like genuine extracted storefront metadata, and the pricing ladder is sensible. Minor tells keep it from feeling literally scraped from a live page: the line '[default_for_inference]' is artificial, the email domain 'northloop.example' is obviously placeholder text, and the wording is slightly more polished and comprehensive than many real product pages. But overall it is very close to indistinguishable from a real roaster product page."
+    }
+  },
+  "label": {
+    "page_type": "coffee_product",
+    "is_specialty_coffee": true,
+    "coffee.coffee_name": "Colombia El Mirador Pink Bourbon",
+    "coffee.roaster": "North Loop Coffee",
+    "coffee.roaster_location": "Portland, OR",
+    "coffee.roaster_country": "United States",
+    "coffee.origin_country": "Colombia",
+    "coffee.origin_region": "Huila, Palestina",
+    "coffee.process_method": [
+      "washed"
+    ],
+    "coffee.variety": [
+      "Pink Bourbon"
+    ],
+    "coffee.producer_or_farm": "Finca El Mirador — Ana Lucia Trujillo",
+    "coffee.altitude": "1,850–1,950 masl",
+    "coffee.roast_level": "Filter roast",
+    "coffee.harvest_period": "June–August 2025",
+    "coffee.is_blend": false,
+    "coffee.is_espresso": false,
+    "coffee.is_decaf": false,
+    "coffee.is_coferment_or_infused": false,
+    "coffee.sensory_text": "Tasting notes: Rainier cherry, orange blossom, panela\nThis fresh lot from Ana Lucia Trujillo at Finca El Mirador is the clean, florality-first side of Pink Bourbon that we chase every year. Expect ripe red cherry and a lifted orange-blossom aroma, rounded out by panela sweetness as the cup cools.",
+    "coffee.display_tasting_notes": "Rainier cherry, orange blossom, panela",
+    "coffee.producer_text": "Ana Lucia's family farm sits above Palestina in southern Huila, where cool nights help stretch maturation. Cherries were hand sorted, depulped the same day, fermented in tiled tanks for 28 hours, washed with spring water, and dried slowly on raised beds under shade cloth.",
+    "price.listed_price": 6.5,
+    "price.listed_currency": "USD",
+    "price.bag_size_value": 50.0,
+    "price.bag_size_unit": "g",
+    "price.package_grams": 50.0,
+    "price.bags_count": null,
+    "price.price_type": "one_time",
+    "price.availability": "in_stock"
+  },
+  "incumbent": {
+    "model": "gpt-4o-mini",
+    "hit_fields": [
+      "coffee.sensory_text",
+      "coffee.producer_text"
+    ],
+    "extraction": {
+      "page_type": "coffee_product",
+      "is_specialty_coffee": true,
+      "coffee": {
+        "coffee_name": "Colombia El Mirador Pink Bourbon",
+        "roaster": "North Loop Coffee",
+        "roaster_location": "Portland, OR",
+        "roaster_country": "United States",
+        "origin_country": "Colombia",
+        "origin_region": "Huila, Palestina",
+        "process_method": [
+          "washed"
+        ],
+        "variety": [
+          "Pink Bourbon"
+        ],
+        "producer_or_farm": "Finca El Mirador — Ana Lucia Trujillo",
+        "altitude": "1,850–1,950 masl",
+        "roast_level": "Filter roast",
+        "harvest_period": "June–August 2025",
+        "is_blend": false,
+        "is_espresso": false,
+        "is_decaf": false,
+        "is_coferment_or_infused": false,
+        "sensory_text": "Expect ripe red cherry and a lifted orange-blossom aroma, rounded out by panela sweetness as the cup cools.",
+        "display_tasting_notes": "Rainier cherry, orange blossom, panela",
+        "producer_text": "This fresh lot from Ana Lucia Trujillo at Finca El Mirador is the clean, florality-first side of Pink Bourbon that we chase every year. Cherries were hand sorted, depulped the same day, fermented in tiled tanks for 28 hours, washed with spring water, and dried slowly on raised beds under shade cloth.",
+        "source_snippets": [
+          {
+            "field": "name",
+            "snippet": "Colombia El Mirador Pink Bourbon"
+          },
+          {
+            "field": "origin",
+            "snippet": "Colombia"
+          },
+          {
+            "field": "process",
+            "snippet": "washed"
+          },
+          {
+            "field": "variety",
+            "snippet": "Pink Bourbon"
+          },
+          {
+            "field": "price",
+            "snippet": "$6.50"
+          },
+          {
+            "field": "bag_size",
+            "snippet": "50g sampler"
+          },
+          {
+            "field": "tasting_notes",
+            "snippet": "Rainier cherry, orange blossom, panela"
+          },
+          {
+            "field": "producer",
+            "snippet": "Finca El Mirador — Ana Lucia Trujillo"
+          },
+          {
+            "field": "altitude",
+            "snippet": "1,850–1,950 masl"
+          }
+        ]
+      },
+      "price": {
+        "listed_price": 6.5,
+        "listed_currency": "USD",
+        "original_listed_price": null,
+        "original_listed_currency": null,
+        "bag_size_value": 50.0,
+        "bag_size_unit": "g",
+        "package_grams": 50.0,
+        "bags_count": null,
+        "price_100g_usd": null,
+        "price_type": "one_time",
+        "availability": "in_stock",
+        "assumptions": [
+          "currency assumed USD from $",
+          "default variant selected"
+        ]
+      },
+      "quality": {
+        "extraction_quality": "good",
+        "missing_fields": [],
+        "warnings": []
+      }
+    }
+  }
+}

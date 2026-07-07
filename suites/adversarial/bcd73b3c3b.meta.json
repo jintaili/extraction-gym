@@ -1,0 +1,142 @@
+{
+  "page_id": "bcd73b3c3b",
+  "category": "stale meta description contradicting current page body",
+  "invented_category": false,
+  "target_artifact_id": "ce68bd4c4e",
+  "generator_model": "gpt-5.5",
+  "judge_model": "gpt-5.4",
+  "judges": {
+    "consistency": {
+      "unsupported_fields": [],
+      "notes": "All non-null, non-empty ground-truth labels are supported by the page text. 'coffee.roaster_country' is not stated verbatim but is entailed by 'Portland, Oregon' in the footer, which implies United States."
+    },
+    "realism": {
+      "score": 4,
+      "reasons": "This reads very plausibly as a real specialty roaster product page. The structure is highly believable: header/nav, breadcrumb, product title, price, bag size, offering style, tasting notes, producer/region/process/variety/altitude/harvest fields, marketing copy, shipping note, related products, variant block, and footer all match common Shopify-style coffee pages. The coffee details are coherent: Pink Bourbon from Palestina, Huila at 1,850–1,930 masl with washed processing and floral/red-fruit notes is realistic, and the producer/farm naming feels natural. The roast language ('roasted for filter', 'light for clarity and sweetness') is on-brand for modern specialty coffee.\n\nThe variant data is also plausible. 250g at $23 and 1kg at $82 is within the normal range for a high-end Colombia Pink Bourbon, and the SKU formatting looks believable. The note that the visible page says '250g whole bean' while the embedded variant data includes 1kg is exactly the kind of thing often present in real rendered product text.\n\nMain tells keeping it from a 5: the meta description and og:description are clearly from an Ethiopia Guji product, which is a strong copy/paste or template error. Real sites do have metadata mistakes, so this does not make it fake, but it is the biggest inconsistency. Also, the explicit sentence 'This is not an espresso blend and it is not decaffeinated' feels a bit awkward and slightly synthetic, since most roasters would simply rely on categorization rather than state that outright unless there was a UX reason. Overall, though, this is very close to a real page and only has minor tells."
+    }
+  },
+  "label": {
+    "page_type": "coffee_product",
+    "is_specialty_coffee": true,
+    "coffee.coffee_name": "Colombia La Esperanza Pink Bourbon",
+    "coffee.roaster": "Northline Coffee Roasters",
+    "coffee.roaster_location": "Portland, Oregon",
+    "coffee.roaster_country": "United States",
+    "coffee.origin_country": "Colombia",
+    "coffee.origin_region": "Palestina, Huila",
+    "coffee.process_method": [
+      "washed"
+    ],
+    "coffee.variety": [
+      "Pink Bourbon"
+    ],
+    "coffee.producer_or_farm": "Ana Maria Ramirez, Finca La Esperanza",
+    "coffee.altitude": "1,850–1,930 masl",
+    "coffee.roast_level": "Light",
+    "coffee.harvest_period": "May–June 2025",
+    "coffee.is_blend": false,
+    "coffee.is_espresso": false,
+    "coffee.is_decaf": false,
+    "coffee.is_coferment_or_infused": false,
+    "coffee.sensory_text": "Tasting Notes: red currant, orange blossom, panela\n\nIn the cup we find red currant acidity, orange blossom aromatics, and a panela-like sweetness that carries through a silky finish.",
+    "coffee.display_tasting_notes": "red currant, orange blossom, panela",
+    "coffee.producer_text": "A clean, luminous Pink Bourbon from Finca La Esperanza in southern Huila. Ana Maria Ramirez picks ripe cherry in small passes, ferments the depulped coffee for 28 hours, then washes it in fresh spring water before slow drying on raised beds under shade cloth.",
+    "price.listed_price": 23.0,
+    "price.listed_currency": "USD",
+    "price.bag_size_value": 250.0,
+    "price.bag_size_unit": "g",
+    "price.package_grams": 250.0,
+    "price.bags_count": null,
+    "price.price_type": "one_time",
+    "price.availability": "in_stock"
+  },
+  "incumbent": {
+    "model": "gpt-4o-mini",
+    "hit_fields": [],
+    "extraction": {
+      "page_type": "coffee_product",
+      "is_specialty_coffee": true,
+      "coffee": {
+        "coffee_name": "Colombia La Esperanza Pink Bourbon",
+        "roaster": "Northline Coffee Roasters",
+        "roaster_location": "Portland, Oregon",
+        "roaster_country": "unknown",
+        "origin_country": "Colombia",
+        "origin_region": "Palestina, Huila",
+        "process_method": [
+          "washed"
+        ],
+        "variety": [
+          "Pink Bourbon"
+        ],
+        "producer_or_farm": "Ana Maria Ramirez, Finca La Esperanza",
+        "altitude": "1,850–1,930 masl",
+        "roast_level": "Light",
+        "harvest_period": "May–June 2025",
+        "is_blend": false,
+        "is_espresso": false,
+        "is_decaf": false,
+        "is_coferment_or_infused": false,
+        "sensory_text": "In the cup we find red currant acidity, orange blossom aromatics, and a panela-like sweetness that carries through a silky finish.",
+        "display_tasting_notes": "red currant, orange blossom, panela",
+        "producer_text": "A clean, luminous Pink Bourbon from Finca La Esperanza in southern Huila. Ana Maria Ramirez picks ripe cherry in small passes, ferments the depulped coffee for 28 hours, then washes it in fresh spring water before slow drying on raised beds under shade cloth.",
+        "source_snippets": [
+          {
+            "field": "origin",
+            "snippet": "Country: Colombia"
+          },
+          {
+            "field": "process",
+            "snippet": "Process: washed"
+          },
+          {
+            "field": "variety",
+            "snippet": "Variety: Pink Bourbon"
+          },
+          {
+            "field": "price",
+            "snippet": "$23.00"
+          },
+          {
+            "field": "bag_size",
+            "snippet": "250g whole bean"
+          },
+          {
+            "field": "tasting_notes",
+            "snippet": "Tasting Notes: red currant, orange blossom, panela"
+          },
+          {
+            "field": "producer",
+            "snippet": "Producer: Ana Maria Ramirez, Finca La Esperanza"
+          },
+          {
+            "field": "altitude",
+            "snippet": "Altitude: 1,850–1,930 masl"
+          }
+        ]
+      },
+      "price": {
+        "listed_price": 23.0,
+        "listed_currency": "USD",
+        "original_listed_price": null,
+        "original_listed_currency": null,
+        "bag_size_value": 250.0,
+        "bag_size_unit": "g",
+        "package_grams": 250.0,
+        "bags_count": null,
+        "price_100g_usd": 9.2,
+        "price_type": "one_time",
+        "availability": "in_stock",
+        "assumptions": [
+          "currency assumed USD from $",
+          "default variant selected"
+        ]
+      },
+      "quality": {
+        "extraction_quality": "good",
+        "missing_fields": [],
+        "warnings": []
+      }
+    }
+  }
+}

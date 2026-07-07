@@ -1,0 +1,150 @@
+{
+  "page_id": "8c1dc3dcdc",
+  "category": "sold-out product with a stale price still displayed",
+  "invented_category": false,
+  "target_artifact_id": "ce68bd4c4e",
+  "generator_model": "gpt-5.5",
+  "judge_model": "gpt-5.4",
+  "judges": {
+    "consistency": {
+      "unsupported_fields": [],
+      "notes": "All non-null, non-empty ground-truth labels are supported by the page text. \"coffee.roaster_country\": \"United States\" is supported indirectly by the footer location \"Minneapolis, MN\". \"coffee.is_specialty_coffee\" is consistent with the page being a single-origin roaster product page, though not stated verbatim. Price and bag-size labels are supported by the displayed regular price for the default 250g variant and the embedded variant data."
+    },
+    "realism": {
+      "score": 5,
+      "reasons": "This reads very plausibly as an html-to-text rendering of a real specialty coffee roaster product page. The structure is highly typical: breadcrumb, sold-out state, product title/vendor, regular price, size variants, notify-me messaging, sensory notes, origin/process details, short marketing copy, brew recommendation, share/related items, variant block, and footer. The coffee details are coherent and credible for a washed Yirgacheffe-area Ethiopia: Gedeb/Gedeo/Yirgacheffe, Worka Chelbesa washing station, varieties 74110/74112 plus local Dega, altitude 1,950–2,200 masl, and a washed-process description involving depulping, fermentation, washing, and raised-bed drying. Flavor notes like jasmine, bergamot, citrus, and stone fruit fit the profile well. Pricing is believable for a US roaster: $23 for 250g and $78 for 1kg. The sold-out note about last listed price remaining visible is also realistic ecommerce language. The variant data block is especially convincing, with ids, SKUs, availability flags, and gram amounts that look like extracted Shopify-style metadata. Only very minor tells exist: ‘Harvest: 2024/2025 harvest’ is slightly awkward/ambiguous, and ‘Yirgacheffe’ as part of the region hierarchy can be a little inconsistently presented by roasters, but neither is enough to dent realism much."
+    }
+  },
+  "label": {
+    "page_type": "coffee_product",
+    "is_specialty_coffee": true,
+    "coffee.coffee_name": "Ethiopia Worka Chelbesa Washed",
+    "coffee.roaster": "North Loop Coffee",
+    "coffee.roaster_location": "Minneapolis, MN",
+    "coffee.roaster_country": "United States",
+    "coffee.origin_country": "Ethiopia",
+    "coffee.origin_region": "Gedeb, Gedeo, Yirgacheffe",
+    "coffee.process_method": [
+      "Washed"
+    ],
+    "coffee.variety": [
+      "74110",
+      "74112",
+      "Dega"
+    ],
+    "coffee.producer_or_farm": "Worka Chelbesa Washing Station",
+    "coffee.altitude": "1,950–2,200 masl",
+    "coffee.roast_level": "Light",
+    "coffee.harvest_period": "2024/2025 harvest",
+    "coffee.is_blend": false,
+    "coffee.is_espresso": false,
+    "coffee.is_decaf": false,
+    "coffee.is_coferment_or_infused": false,
+    "coffee.sensory_text": "Tasting Notes: jasmine, white peach, lemon curd, bergamot. A clean washed Ethiopia from the Worka Chelbesa area, built around sparkling citrus and soft florals. In the cup we find jasmine aromatics, white peach sweetness, and a lemon-curd finish that cools toward bergamot tea.",
+    "coffee.display_tasting_notes": "jasmine, white peach, lemon curd, bergamot",
+    "coffee.producer_text": "Worka Chelbesa Washing Station receives ripe cherry from smallholder farmers around Gedeb. Coffee is depulped, fermented in water, washed, and dried slowly on raised beds to preserve clarity and sweetness.",
+    "price.listed_price": 23.0,
+    "price.listed_currency": "USD",
+    "price.bag_size_value": 250.0,
+    "price.bag_size_unit": "g",
+    "price.package_grams": 250.0,
+    "price.bags_count": null,
+    "price.price_type": "one_time",
+    "price.availability": "sold_out"
+  },
+  "incumbent": {
+    "model": "gpt-4o-mini",
+    "hit_fields": [],
+    "extraction": {
+      "page_type": "coffee_product",
+      "is_specialty_coffee": true,
+      "coffee": {
+        "coffee_name": "Ethiopia Worka Chelbesa Washed",
+        "roaster": "North Loop Coffee",
+        "roaster_location": "Minneapolis, MN",
+        "roaster_country": "unknown",
+        "origin_country": "Ethiopia",
+        "origin_region": "Gedeb, Gedeo, Yirgacheffe",
+        "process_method": [
+          "Washed"
+        ],
+        "variety": [
+          "74110",
+          "74112",
+          "Dega"
+        ],
+        "producer_or_farm": "Worka Chelbesa Washing Station",
+        "altitude": "1,950–2,200 masl",
+        "roast_level": "Light",
+        "harvest_period": "2024/2025 harvest",
+        "is_blend": false,
+        "is_espresso": false,
+        "is_decaf": false,
+        "is_coferment_or_infused": false,
+        "sensory_text": "A clean washed Ethiopia from the Worka Chelbesa area, built around sparkling citrus and soft florals. In the cup we find jasmine aromatics, white peach sweetness, and a lemon-curd finish that cools toward bergamot tea.",
+        "display_tasting_notes": "jasmine, white peach, lemon curd, bergamot",
+        "producer_text": "Worka Chelbesa Washing Station receives ripe cherry from smallholder farmers around Gedeb. Coffee is depulped, fermented in water, washed, and dried slowly on raised beds to preserve clarity and sweetness.",
+        "source_snippets": [
+          {
+            "field": "name",
+            "snippet": "Ethiopia Worka Chelbesa Washed"
+          },
+          {
+            "field": "origin",
+            "snippet": "Ethiopia"
+          },
+          {
+            "field": "process",
+            "snippet": "Washed"
+          },
+          {
+            "field": "variety",
+            "snippet": "74110, 74112, Dega"
+          },
+          {
+            "field": "price",
+            "snippet": "$23.00"
+          },
+          {
+            "field": "bag_size",
+            "snippet": "250g"
+          },
+          {
+            "field": "tasting_notes",
+            "snippet": "jasmine, white peach, lemon curd, bergamot"
+          },
+          {
+            "field": "producer",
+            "snippet": "Worka Chelbesa Washing Station"
+          },
+          {
+            "field": "altitude",
+            "snippet": "1,950–2,200 masl"
+          }
+        ]
+      },
+      "price": {
+        "listed_price": 23.0,
+        "listed_currency": "USD",
+        "original_listed_price": null,
+        "original_listed_currency": null,
+        "bag_size_value": 250.0,
+        "bag_size_unit": "g",
+        "package_grams": 250.0,
+        "bags_count": null,
+        "price_100g_usd": 9.2,
+        "price_type": "one_time",
+        "availability": "sold_out",
+        "assumptions": [
+          "currency assumed USD from $",
+          "default variant selected"
+        ]
+      },
+      "quality": {
+        "extraction_quality": "good",
+        "missing_fields": [],
+        "warnings": []
+      }
+    }
+  }
+}

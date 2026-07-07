@@ -1,0 +1,151 @@
+{
+  "page_id": "a213410898",
+  "category": "region-ambiguous origin (place name that exists in two producing countries)",
+  "invented_category": false,
+  "target_artifact_id": "ce68bd4c4e",
+  "generator_model": "gpt-5.5",
+  "judge_model": "gpt-5.4",
+  "judges": {
+    "consistency": {
+      "unsupported_fields": [],
+      "notes": "All non-null, non-empty ground-truth labels are supported by the page text or embedded variant data. The 250g default variant supports listed_price 22.0 USD, bag size/package grams 250.0, and availability in stock. Boolean labels are supported by absence/presence cues on the page: single-origin farm coffee implies not a blend; no espresso, decaf, or coferment/infused indication is present."
+    },
+    "realism": {
+      "score": 4,
+      "reasons": "This is quite plausible as an html-to-text rendering of a real roaster product page. The structure is very familiar: breadcrumb, title, country, price, size selector, stock/roast cadence, tasting notes, coffee details, descriptive copy, brew recommendations, related products, variant block, and footer. The voice is credible and matches specialty coffee ecommerce copy—specific but not overblown, with standard descriptors like panela, jasmine, and lime, plus process details such as depulping, tiled-tank fermentation, and shade-bed drying.\n\nMost origin/process details cohere internally: Cajamarca is in Tolima, washed Caturra/Castillo at 1,850 masl is believable, and the harvest window fits Colombia reasonably well. The pricing is also plausible for a US specialty roaster: $22 for 250g and $76 for 1kg is in a normal range, and the 1kg discount structure feels realistic.\n\nThe main tell is a noticeable inconsistency between the title and origin line: the product is titled “Los Cedros, Cajamarca,” which strongly suggests Peru to many coffee buyers because Cajamarca is a major Peruvian coffee origin, but the page clearly states Colombia and then narrows it to Cajamarca, Tolima. There is indeed a town/municipality called Cajamarca in Tolima, so this is not impossible, but it may read as slightly confusing on first pass. A second minor tell is that the title line directly under the product name just says “Colombia,” which is common, but paired with “Cajamarca” it creates a small ambiguity that a polished real page might avoid by saying “Cajamarca, Tolima, Colombia.”\n\nThe variant data block looks realistic in format and content: IDs, titles, names, SKUs, prices, gram weights, and availability all make sense. The only slightly synthetic touch is the annotation “[default_for_inference],” which sounds like metadata added for analysis rather than something from a raw storefront export. Without that marker, the variant block would feel very authentic.\n\nOverall: highly believable with a couple of minor synthetic or confusing signals."
+    }
+  },
+  "label": {
+    "page_type": "coffee_product",
+    "is_specialty_coffee": true,
+    "coffee.coffee_name": "Los Cedros, Cajamarca",
+    "coffee.roaster": "Harbor & Pine Coffee Roasters",
+    "coffee.roaster_location": "Portland, Oregon, USA",
+    "coffee.roaster_country": "United States",
+    "coffee.origin_country": "Colombia",
+    "coffee.origin_region": "Cajamarca, Tolima",
+    "coffee.process_method": [
+      "Washed"
+    ],
+    "coffee.variety": [
+      "Caturra",
+      "Castillo"
+    ],
+    "coffee.producer_or_farm": "Ana Lucía Rojas, Finca Los Cedros",
+    "coffee.altitude": "1,850 masl",
+    "coffee.roast_level": "Light",
+    "coffee.harvest_period": "April–June 2024",
+    "coffee.is_blend": false,
+    "coffee.is_espresso": false,
+    "coffee.is_decaf": false,
+    "coffee.is_coferment_or_infused": false,
+    "coffee.sensory_text": "Yellow peach / panela / jasmine / lime. We roast this as a light filter profile to highlight yellow peach up front, panela sweetness in the middle, and a floral jasmine finish with a lime-like sparkle.",
+    "coffee.display_tasting_notes": "Yellow peach / panela / jasmine / lime",
+    "coffee.producer_text": "This lot comes from Finca Los Cedros, a small farm above the town of Cajamarca in the department of Tolima, Colombia. Ana Lucía Rojas grows Caturra and Castillo on steep volcanic soils, picking ripe cherry in multiple passes during the main harvest.",
+    "price.listed_price": 22.0,
+    "price.listed_currency": "USD",
+    "price.bag_size_value": 250.0,
+    "price.bag_size_unit": "g",
+    "price.package_grams": 250.0,
+    "price.bags_count": null,
+    "price.price_type": "one_time",
+    "price.availability": "in_stock"
+  },
+  "incumbent": {
+    "model": "gpt-4o-mini",
+    "hit_fields": [
+      "coffee.sensory_text",
+      "coffee.producer_text"
+    ],
+    "extraction": {
+      "page_type": "coffee_product",
+      "is_specialty_coffee": true,
+      "coffee": {
+        "coffee_name": "Los Cedros, Cajamarca",
+        "roaster": "Harbor & Pine Coffee Roasters",
+        "roaster_location": "Portland, Oregon, USA",
+        "roaster_country": "USA",
+        "origin_country": "Colombia",
+        "origin_region": "Cajamarca, Tolima",
+        "process_method": [
+          "Washed"
+        ],
+        "variety": [
+          "Caturra",
+          "Castillo"
+        ],
+        "producer_or_farm": "Ana Lucía Rojas, Finca Los Cedros",
+        "altitude": "1,850 masl",
+        "roast_level": "Light",
+        "harvest_period": "April–June 2024",
+        "is_blend": false,
+        "is_espresso": false,
+        "is_decaf": false,
+        "is_coferment_or_infused": false,
+        "sensory_text": "Yellow peach / panela / jasmine / lime",
+        "display_tasting_notes": "Yellow peach, panela, jasmine, lime",
+        "producer_text": "This lot comes from Finca Los Cedros, a small farm above the town of Cajamarca in the department of Tolima, Colombia. Ana Lucía Rojas grows Caturra and Castillo on steep volcanic soils, picking ripe cherry in multiple passes during the main harvest. After sorting, the coffee is depulped the same day, fermented in tiled tanks for 28 hours, washed with clean spring water, and dried slowly on raised beds under shade cloth.",
+        "source_snippets": [
+          {
+            "field": "name",
+            "snippet": "Los Cedros, Cajamarca"
+          },
+          {
+            "field": "origin",
+            "snippet": "Colombia"
+          },
+          {
+            "field": "process",
+            "snippet": "Washed"
+          },
+          {
+            "field": "variety",
+            "snippet": "Caturra, Castillo"
+          },
+          {
+            "field": "price",
+            "snippet": "$22.00"
+          },
+          {
+            "field": "bag_size",
+            "snippet": "250g"
+          },
+          {
+            "field": "tasting_notes",
+            "snippet": "Yellow peach / panela / jasmine / lime"
+          },
+          {
+            "field": "producer",
+            "snippet": "Ana Lucía Rojas, Finca Los Cedros"
+          },
+          {
+            "field": "altitude",
+            "snippet": "1,850 masl"
+          }
+        ]
+      },
+      "price": {
+        "listed_price": 22.0,
+        "listed_currency": "USD",
+        "original_listed_price": null,
+        "original_listed_currency": null,
+        "bag_size_value": 250.0,
+        "bag_size_unit": "g",
+        "package_grams": 250.0,
+        "bags_count": null,
+        "price_100g_usd": 8.8,
+        "price_type": "one_time",
+        "availability": "in_stock",
+        "assumptions": [
+          "currency assumed USD from $",
+          "default variant selected"
+        ]
+      },
+      "quality": {
+        "extraction_quality": "good",
+        "missing_fields": [],
+        "warnings": []
+      }
+    }
+  }
+}

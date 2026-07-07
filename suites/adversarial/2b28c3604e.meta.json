@@ -1,0 +1,149 @@
+{
+  "page_id": "2b28c3604e",
+  "category": "Related-product spec bleed-through",
+  "invented_category": true,
+  "target_artifact_id": "ce68bd4c4e",
+  "generator_model": "gpt-5.5",
+  "judge_model": "gpt-5.4",
+  "judges": {
+    "consistency": {
+      "unsupported_fields": [],
+      "notes": "All non-null, non-empty ground-truth labels are supported by the page text. The page explicitly shows the product name, roaster, roaster location, origin, region, process, varieties, producer, altitude, roast, harvest, tasting notes, producer description, price, currency, bag size, package grams, availability, and one-time purchase context. Boolean inferences such as not being a blend, espresso, decaf, or co-ferment/infused are consistent with the page content."
+    },
+    "realism": {
+      "score": 5,
+      "reasons": "This is highly plausible as an html-to-text rendering of a real specialty coffee roaster product page. The structure is exactly what you'd expect: header/navigation, product title, price, size selector, quantity/add-to-cart, sensory notes, roast/use guidance, green coffee details, descriptive copy, variant block, shipping note, related product, and footer. The voice is restrained and on-brand for specialty coffee—specific but not overblown. Origin details are coherent: Konga/Wete washing station in Yirgacheffe, Gedeo Zone; Ethiopian landrace varieties listed as Kurume, Dega, Wolisho; washed process; altitude and harvest window all fit industry norms. The tasting notes and brew recommendations also read naturally. The variant data block looks realistic for extracted ecommerce metadata, with sensible IDs, SKUs, names, prices, and gram weights; the 250g/$22 and 1kg/$78 relationship is commercially believable. Minor possible tell: 'Konga Wete' slightly blends two familiar Ethiopia naming patterns and 'Northline Coffee Roasters' feels generic, but neither is enough to make it seem synthetic."
+    }
+  },
+  "label": {
+    "page_type": "coffee_product",
+    "is_specialty_coffee": true,
+    "coffee.coffee_name": "Konga Wete, Ethiopia",
+    "coffee.roaster": "Northline Coffee Roasters",
+    "coffee.roaster_location": "Portland, OR, USA",
+    "coffee.roaster_country": "United States",
+    "coffee.origin_country": "Ethiopia",
+    "coffee.origin_region": "Yirgacheffe, Gedeo Zone",
+    "coffee.process_method": [
+      "Washed"
+    ],
+    "coffee.variety": [
+      "Kurume",
+      "Dega",
+      "Wolisho"
+    ],
+    "coffee.producer_or_farm": "Konga Wete Washing Station",
+    "coffee.altitude": "1,900–2,100 masl",
+    "coffee.roast_level": "Filter roast",
+    "coffee.harvest_period": "November 2024–January 2025",
+    "coffee.is_blend": false,
+    "coffee.is_espresso": false,
+    "coffee.is_decaf": false,
+    "coffee.is_coferment_or_infused": false,
+    "coffee.sensory_text": "Tasting Notes: jasmine, lemon curd, white peach, honeyed black tea\n\nIn the cup we find a delicate floral opening, lemon curd acidity, white peach, and a honeyed black tea finish.",
+    "coffee.display_tasting_notes": "jasmine, lemon curd, white peach, honeyed black tea",
+    "coffee.producer_text": "This lot comes from smallholder farmers delivering ripe cherry to Konga Wete washing station near Yirgacheffe. After sorting, the coffee is depulped, fermented in water, washed clean, and dried slowly on raised beds. We roast it for clarity and sweetness, keeping the cup bright but not sharp.",
+    "price.listed_price": 22.0,
+    "price.listed_currency": "USD",
+    "price.bag_size_value": 250.0,
+    "price.bag_size_unit": "g",
+    "price.package_grams": 250.0,
+    "price.bags_count": null,
+    "price.price_type": "one_time",
+    "price.availability": "in_stock"
+  },
+  "incumbent": {
+    "model": "gpt-4o-mini",
+    "hit_fields": [],
+    "extraction": {
+      "page_type": "coffee_product",
+      "is_specialty_coffee": true,
+      "coffee": {
+        "coffee_name": "Konga Wete, Ethiopia",
+        "roaster": "Northline Coffee Roasters",
+        "roaster_location": "Portland, OR, USA",
+        "roaster_country": "USA",
+        "origin_country": "Ethiopia",
+        "origin_region": "Yirgacheffe, Gedeo Zone",
+        "process_method": [
+          "Washed"
+        ],
+        "variety": [
+          "Kurume",
+          "Dega",
+          "Wolisho"
+        ],
+        "producer_or_farm": "Konga Wete Washing Station",
+        "altitude": "1,900–2,100 masl",
+        "roast_level": "Filter roast",
+        "harvest_period": "November 2024–January 2025",
+        "is_blend": false,
+        "is_espresso": false,
+        "is_decaf": false,
+        "is_coferment_or_infused": false,
+        "sensory_text": "In the cup we find a delicate floral opening, lemon curd acidity, white peach, and a honeyed black tea finish.",
+        "display_tasting_notes": "jasmine, lemon curd, white peach, honeyed black tea",
+        "producer_text": "This lot comes from smallholder farmers delivering ripe cherry to Konga Wete washing station near Yirgacheffe. After sorting, the coffee is depulped, fermented in water, washed clean, and dried slowly on raised beds. We roast it for clarity and sweetness, keeping the cup bright but not sharp.",
+        "source_snippets": [
+          {
+            "field": "origin_country",
+            "snippet": "Country: Ethiopia"
+          },
+          {
+            "field": "origin_region",
+            "snippet": "Region: Yirgacheffe, Gedeo Zone"
+          },
+          {
+            "field": "process",
+            "snippet": "Process: Washed"
+          },
+          {
+            "field": "variety",
+            "snippet": "Variety: Kurume, Dega, Wolisho"
+          },
+          {
+            "field": "price",
+            "snippet": "$22.00"
+          },
+          {
+            "field": "bag_size",
+            "snippet": "Size: 250g"
+          },
+          {
+            "field": "tasting_notes",
+            "snippet": "Tasting Notes: jasmine, lemon curd, white peach, honeyed black tea"
+          },
+          {
+            "field": "producer",
+            "snippet": "Producer: Konga Wete Washing Station"
+          },
+          {
+            "field": "altitude",
+            "snippet": "Altitude: 1,900–2,100 masl"
+          }
+        ]
+      },
+      "price": {
+        "listed_price": 22.0,
+        "listed_currency": "USD",
+        "original_listed_price": null,
+        "original_listed_currency": null,
+        "bag_size_value": 250.0,
+        "bag_size_unit": "g",
+        "package_grams": 250.0,
+        "bags_count": null,
+        "price_100g_usd": 8.8,
+        "price_type": "one_time",
+        "availability": "in_stock",
+        "assumptions": [
+          "currency assumed USD from $"
+        ]
+      },
+      "quality": {
+        "extraction_quality": "good",
+        "missing_fields": [],
+        "warnings": []
+      }
+    }
+  }
+}

@@ -50,4 +50,23 @@ First confirmed incumbent hits (validation round, K=6, root ce68bd4c4e):
 category 3 (non-English page) broke coffee.origin_country; category 5 (blend as single
 origin) broke coffee.process_method.
 
+## Suite after run1 (2026-07-07): 25 pages, 16 categories, 8 generator-invented
+
+Highest incumbent hit rates against root ce68bd4c4e (hits/accepted):
+
+- 3/5 multi-variant page where default is a small sampler
+- 2/3 region-ambiguous origin
+- 2/3 stale meta description contradicting body
+- 2/2 blend presented like a single origin
+- 1/1 each: related-product spec bleed (invented), decaf-navigation contamination
+  (invented), footer-keyword contamination (invented), non-English spec page,
+  co-ferment in prose, wholesale tiered pricing
+
+Generator convergence note: five independently invented categories are variants of one
+theme, "other products' text contaminating the main product's extraction" (cross-sell
+specs, related-variant data, recommended-product blocks, decaf navigation, footer
+keywords). The generator keeps rediscovering the extractor's real weakest surface:
+distinguishing the page's subject from its surroundings. This clusters with taxonomy 15
+(stale metadata) and both scored hits where tried.
+
 Per-category before/after accuracy is added by the loop (Phase 6).

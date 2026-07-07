@@ -118,6 +118,14 @@ def main() -> None:
     lp.add_argument("--judge-model", default="gpt-5.4")
     lp.add_argument("--optimizer-model", default="gpt-5.5")
 
+    gp = sub.add_parser("gepa", help="Run the DSPy/GEPA baseline under harness rules")
+    gp.add_argument("--registry", default="registry")
+    gp.add_argument("--root", required=True, help="root artifact id (starting prompt)")
+    gp.add_argument("--goldset", default="goldset/v1")
+    gp.add_argument("--suite", default="suites/adversarial")
+    gp.add_argument("--auto", default="light", choices=["light", "medium", "heavy"])
+    gp.add_argument("--out", default="reports/gepa-baseline.json")
+
     args = parser.parse_args()
     if args.command == "snapshot":
         _cmd_snapshot(args)
@@ -157,6 +165,8 @@ def main() -> None:
         _cmd_chart(args)
     elif args.command == "loop":
         _cmd_loop(args)
+    elif args.command == "gepa":
+        _cmd_gepa(args)
 
 
 def _cmd_snapshot(args: argparse.Namespace) -> None:
@@ -605,6 +615,29 @@ def _cmd_loop(args: argparse.Namespace) -> None:
               f"suite {record.get('suite_incumbent', 0):.4f} gold {record.get('gold_incumbent') or 0:.4f} "
               f"accepted {accepted}")
     print(f"final incumbent: {state.incumbent_id}  spend: ${budget.spent_usd:.2f}")
+
+
+def _cmd_gepa(args: argparse.Namespace) -> None:
+    import json
+
+    from coffee_value_app.config import load_settings
+
+    from extraction_gym.baselines.dspy_gepa import run_gepa
+    from extraction_gym.core.registry import PromptRegistry
+
+    root = PromptRegistry(Path(args.registry)).get(args.root)
+    result = run_gepa(
+        root_prompt=root.text, suite_root=Path(args.suite), goldset=Path(args.goldset),
+        api_key=load_settings().openai_api_key, auto=args.auto,
+    )
+    out = Path(args.out)
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print(f"dspy-runtime root on gold: {result['dspy_runtime_root_on_gold']['composite_mean']:.4f} "
+          f"(parse failures {result['dspy_runtime_root_on_gold']['parse_failures']})")
+    print(f"GEPA-optimized on gold:    {result['gepa_optimized_on_gold']['composite_mean']:.4f} "
+          f"(parse failures {result['gepa_optimized_on_gold']['parse_failures']})")
+    print(f"written: {out}")
 
 
 def _cmd_verify(args: argparse.Namespace) -> None:

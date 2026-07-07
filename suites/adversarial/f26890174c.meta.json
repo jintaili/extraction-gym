@@ -1,0 +1,146 @@
+{
+  "page_id": "f26890174c",
+  "category": "wholesale page with tiered pricing",
+  "invented_category": false,
+  "target_artifact_id": "ce68bd4c4e",
+  "generator_model": "gpt-5.5",
+  "judge_model": "gpt-5.4",
+  "judges": {
+    "consistency": {
+      "unsupported_fields": [],
+      "notes": "All non-null, non-'unknown', non-empty labels are supported by the page text. Title, roaster, origin, region, process, varieties, producer, altitude, roast level, harvest, tasting notes, producer text, price, currency, bag size, package grams, one-time purchase context, and in-stock availability are all explicitly stated or directly entailed by the page. Boolean labels are also supported: single-origin and named origin support not a blend; roast level 'Filter roast / light' and product context support not espresso; no decaf/co-ferment/infused indications are present; specialty positioning is supported by the detailed single-origin coffee listing."
+    },
+    "realism": {
+      "score": 5,
+      "reasons": "This is highly plausible as an html-to-text rendering of a real specialty coffee roaster wholesale product page. The structure is very believable: navigation header, breadcrumb-like category line, product title, price, option selectors, quantity/add-to-cart, wholesale-account disclaimer, tier pricing, sensory notes, roast level, origin details, descriptive copy, and footer links all match common Shopify-style coffee pages. The voice is consistent with real specialty coffee copy—specific but not overblown—and the origin/process details cohere well: Chelbesa in Gedeo/Yirgacheffe, washed process, JARC 74110/74112, and altitude/harvest timing are all the kind of precise details real roasters list. The tasting notes and brewing/roast framing also feel natural for an Ethiopian washed coffee.\n\nThe wholesale pricing logic is especially convincing: 1–4, 5–9, and 10+ bag breaks align exactly with the listed bundle prices ($31.50, $29.25, $27.00 per bag), and the note that discounts apply automatically in cart is realistic. The variant data block is also coherent: IDs look like plausible platform product variant IDs, SKUs are structured sensibly, and package weights correctly convert 2 lb to 907.185 g and scale properly for 5 and 10 bags. Naming like '2 lb bag x 5' and separate pack SKUs is believable for back-end variant/export text.\n\nIf there is any tell at all, it is minor: some real stores would not expose both automatic cart discounts and explicit multi-pack variants on the same product, since those can be redundant operationally. But that is still plausible in a wholesale portal or in a text extraction that merges visible pricing with embedded variant metadata. Overall this reads as essentially indistinguishable from a real specialty coffee roaster product page."
+    }
+  },
+  "label": {
+    "page_type": "coffee_product",
+    "is_specialty_coffee": true,
+    "coffee.coffee_name": "Ethiopia Chelbesa — Wholesale 2 lb Bags",
+    "coffee.roaster": "North Pier Coffee Roasters",
+    "coffee.roaster_location": null,
+    "coffee.roaster_country": "unknown",
+    "coffee.origin_country": "Ethiopia",
+    "coffee.origin_region": "Chelbesa, Gedeo Zone, Yirgacheffe",
+    "coffee.process_method": [
+      "washed"
+    ],
+    "coffee.variety": [
+      "JARC 74110",
+      "JARC 74112"
+    ],
+    "coffee.producer_or_farm": "Chelbesa Washing Station",
+    "coffee.altitude": "1,950–2,200 masl",
+    "coffee.roast_level": "Filter roast / light",
+    "coffee.harvest_period": "November 2024–January 2025",
+    "coffee.is_blend": false,
+    "coffee.is_espresso": false,
+    "coffee.is_decaf": false,
+    "coffee.is_coferment_or_infused": false,
+    "coffee.sensory_text": "jasmine, white peach, Meyer lemon, black tea",
+    "coffee.display_tasting_notes": "jasmine, white peach, Meyer lemon, black tea",
+    "coffee.producer_text": "This washed lot comes to us from the Chelbesa Washing Station in the Gedeo Zone, where smallholder farmers deliver ripe cherries from garden plots surrounding the village. The station sorts cherries by density, depulps the same day, and ferments the parchment before washing and drying it slowly on raised beds.",
+    "price.listed_price": 31.5,
+    "price.listed_currency": "USD",
+    "price.bag_size_value": 2.0,
+    "price.bag_size_unit": "lb",
+    "price.package_grams": 907.185,
+    "price.bags_count": null,
+    "price.price_type": "one_time",
+    "price.availability": "in_stock"
+  },
+  "incumbent": {
+    "model": "gpt-4o-mini",
+    "hit_fields": [
+      "coffee.sensory_text"
+    ],
+    "extraction": {
+      "page_type": "coffee_product",
+      "is_specialty_coffee": true,
+      "coffee": {
+        "coffee_name": "Ethiopia Chelbesa — Wholesale 2 lb Bags",
+        "roaster": "North Pier Coffee Roasters",
+        "roaster_location": null,
+        "roaster_country": "unknown",
+        "origin_country": "Ethiopia",
+        "origin_region": "Chelbesa, Gedeo Zone, Yirgacheffe",
+        "process_method": [
+          "washed"
+        ],
+        "variety": [
+          "JARC 74110",
+          "JARC 74112"
+        ],
+        "producer_or_farm": "Chelbesa Washing Station",
+        "altitude": "1,950–2,200 masl",
+        "roast_level": "Filter roast / light",
+        "harvest_period": "November 2024–January 2025",
+        "is_blend": false,
+        "is_espresso": false,
+        "is_decaf": false,
+        "is_coferment_or_infused": false,
+        "sensory_text": "intensely floral profile with jasmine aromatics, a white peach sweetness, Meyer lemon acidity, and a clean black tea finish",
+        "display_tasting_notes": "jasmine, white peach, Meyer lemon, black tea",
+        "producer_text": "This washed lot comes to us from the Chelbesa Washing Station in the Gedeo Zone, where smallholder farmers deliver ripe cherries from garden plots surrounding the village. The station sorts cherries by density, depulps the same day, and ferments the parchment before washing and drying it slowly on raised beds.",
+        "source_snippets": [
+          {
+            "field": "origin",
+            "snippet": "Ethiopia"
+          },
+          {
+            "field": "process",
+            "snippet": "washed"
+          },
+          {
+            "field": "variety",
+            "snippet": "JARC 74110, JARC 74112"
+          },
+          {
+            "field": "price",
+            "snippet": "$31.50"
+          },
+          {
+            "field": "bag_size",
+            "snippet": "2 lb bag"
+          },
+          {
+            "field": "tasting_notes",
+            "snippet": "jasmine, white peach, Meyer lemon, black tea"
+          },
+          {
+            "field": "producer",
+            "snippet": "Chelbesa Washing Station"
+          },
+          {
+            "field": "altitude",
+            "snippet": "1,950–2,200 masl"
+          }
+        ]
+      },
+      "price": {
+        "listed_price": 31.5,
+        "listed_currency": "USD",
+        "original_listed_price": null,
+        "original_listed_currency": null,
+        "bag_size_value": 2.0,
+        "bag_size_unit": "lb",
+        "package_grams": 907.185,
+        "bags_count": null,
+        "price_100g_usd": 3.47,
+        "price_type": "one_time",
+        "availability": "in_stock",
+        "assumptions": [
+          "currency assumed USD from $",
+          "default variant selected"
+        ]
+      },
+      "quality": {
+        "extraction_quality": "good",
+        "missing_fields": [],
+        "warnings": []
+      }
+    }
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "page_id": "e3e6b23a66",
+  "category": "stale meta description contradicting current page body",
+  "invented_category": false,
+  "target_artifact_id": "ce68bd4c4e",
+  "generator_model": "gpt-5.5",
+  "judge_model": "gpt-5.4",
+  "judges": {
+    "consistency": {
+      "unsupported_fields": [],
+      "notes": "All non-null, non-empty ground-truth labels are supported by the page text. Roaster country is entailed by the footer location 'Portland, Oregon'."
+    },
+    "realism": {
+      "score": 4,
+      "reasons": "Strongly plausible overall: the page has a believable coffee-roaster structure, sensible specialty-coffee voice, and coherent origin details (Pink Bourbon, Santander, natural process, altitude, harvest window, producer/farm naming). Tasting notes and brewing guidance read like real retail copy, and the variant block is internally consistent with normal ecommerce data.\n\nMain tells preventing a 5:\n- The meta description is for a completely different coffee (Kenya Gikirima AA), which is a realistic CMS mistake but still a noticeable inconsistency.\n- Header says '250g whole bean' while the footer copy says whole bean unless grind is chosen at checkout, but no grind variant/options are shown in the text rendering.\n- 'North Star Coffee Roasters' is associated by many with the UK, while the footer says Portland, Oregon; not impossible, but mildly suspicious if judged against known real-world branding.\n- 'Pink Bourbon separation' is understandable industry language, but slightly awkward phrasing.\n- The variant data is a bit sparse versus many real Shopify dumps, though still plausible.\n\nSo this reads very much like a real product page with a few synthetic or mismatched details rather than obviously fake content."
+    }
+  },
+  "label": {
+    "page_type": "coffee_product",
+    "is_specialty_coffee": true,
+    "coffee.coffee_name": "Colombia La Pradera Pink Bourbon Natural",
+    "coffee.roaster": "North Star Coffee Roasters",
+    "coffee.roaster_location": "Portland, Oregon",
+    "coffee.roaster_country": "United States",
+    "coffee.origin_country": "Colombia",
+    "coffee.origin_region": "Aratoca, Santander",
+    "coffee.process_method": [
+      "natural"
+    ],
+    "coffee.variety": [
+      "Pink Bourbon"
+    ],
+    "coffee.producer_or_farm": "Hacienda La Pradera - Daza Family",
+    "coffee.altitude": "1,700 - 1,950 masl",
+    "coffee.roast_level": "Filter",
+    "coffee.harvest_period": "January - March 2025",
+    "coffee.is_blend": false,
+    "coffee.is_espresso": false,
+    "coffee.is_decaf": false,
+    "coffee.is_coferment_or_infused": false,
+    "coffee.sensory_text": "Tasting Notes: strawberry jam, cacao nib, pink grapefruit\n\nThis is the new season selection from Hacienda La Pradera in the mountains above Aratoca, Santander. The Daza family have spent years refining their picking and drying protocols, and this Pink Bourbon separation is one of the most aromatic lots we cupped from Colombia this season.\n\nCherries were hand sorted, floated, and then dried as a natural process lot on raised beds under shade. The slow drying keeps the cup clean while building a jammy red-fruit sweetness. Expect strawberry jam up front, a round cacao nib sweetness through the middle, and a pink grapefruit lift as the coffee cools.",
+    "coffee.display_tasting_notes": "strawberry jam, cacao nib, pink grapefruit",
+    "coffee.producer_text": "About the farm\nHacienda La Pradera is operated by the Daza family near Aratoca in Santander, Colombia. The farm focuses on separated varieties and careful post-harvest handling, with shaded drying beds and meticulous moisture control for small lots like this Pink Bourbon.",
+    "price.listed_price": 21.0,
+    "price.listed_currency": "USD",
+    "price.bag_size_value": 250.0,
+    "price.bag_size_unit": "g",
+    "price.package_grams": 250.0,
+    "price.bags_count": null,
+    "price.price_type": "one_time",
+    "price.availability": "in_stock"
+  },
+  "incumbent": {
+    "model": "gpt-4o-mini",
+    "hit_fields": [
+      "coffee.sensory_text"
+    ],
+    "extraction": {
+      "page_type": "coffee_product",
+      "is_specialty_coffee": true,
+      "coffee": {
+        "coffee_name": "Colombia La Pradera Pink Bourbon Natural",
+        "roaster": "North Star Coffee Roasters",
+        "roaster_location": "Portland, Oregon",
+        "roaster_country": "USA",
+        "origin_country": "Colombia",
+        "origin_region": "Aratoca, Santander",
+        "process_method": [
+          "natural"
+        ],
+        "variety": [
+          "Pink Bourbon"
+        ],
+        "producer_or_farm": "Hacienda La Pradera - Daza Family",
+        "altitude": "1,700 - 1,950 masl",
+        "roast_level": "Filter",
+        "harvest_period": "January - March 2025",
+        "is_blend": false,
+        "is_espresso": false,
+        "is_decaf": false,
+        "is_coferment_or_infused": false,
+        "sensory_text": "strawberry jam, cacao nib, pink grapefruit",
+        "display_tasting_notes": "strawberry jam, cacao nib, pink grapefruit",
+        "producer_text": "Hacienda La Pradera is operated by the Daza family near Aratoca in Santander, Colombia. The farm focuses on separated varieties and careful post-harvest handling, with shaded drying beds and meticulous moisture control for small lots like this Pink Bourbon.",
+        "source_snippets": [
+          {
+            "field": "name",
+            "snippet": "Colombia La Pradera Pink Bourbon Natural"
+          },
+          {
+            "field": "origin",
+            "snippet": "Colombia"
+          },
+          {
+            "field": "process",
+            "snippet": "natural"
+          },
+          {
+            "field": "variety",
+            "snippet": "Pink Bourbon"
+          },
+          {
+            "field": "price",
+            "snippet": "$21.00"
+          },
+          {
+            "field": "bag_size",
+            "snippet": "250g"
+          }
+        ]
+      },
+      "price": {
+        "listed_price": 21.0,
+        "listed_currency": "USD",
+        "original_listed_price": null,
+        "original_listed_currency": null,
+        "bag_size_value": 250.0,
+        "bag_size_unit": "g",
+        "package_grams": 250.0,
+        "bags_count": null,
+        "price_100g_usd": 8.4,
+        "price_type": "one_time",
+        "availability": "in_stock",
+        "assumptions": [
+          "currency assumed USD from $",
+          "default variant selected"
+        ]
+      },
+      "quality": {
+        "extraction_quality": "good",
+        "missing_fields": [],
+        "warnings": []
+      }
+    }
+  }
+}

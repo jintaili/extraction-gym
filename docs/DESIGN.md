@@ -32,6 +32,7 @@ config with weights and critical fields. This boundary is what makes the harness
 | Re-running unchanged evals costs zero API calls | content-hash extraction cache keyed on actual prompt hash | test_evaluate_artifact_scores_and_caches |
 | Every artifact immutable, one mutation, lineage recorded | `PromptRegistry` (content-hash ids, parent links, append-only ledger) | test_registry_register_lineage_ledger |
 | Hard USD spend cap | `BudgetTracker` raises `BudgetExceeded`; unknown models raise instead of costing $0 | test_noise_band_and_budget |
+| Prompt bloat blocked | gate caps candidate length at 1.5x the ROOT prompt (anchored to root so drift cannot compound across accepted generations) | test_gate_blocks_prompt_bloat |
 | Generator never sees gold pages or labels | adversary context assembled from taxonomy + schema + suite diffs only (Phase 4) | pending |
 | Synthetic pages never enter the gold set | `freeze` only reads goldset/ pages; suite lives in suites/ | structural |
 
@@ -47,6 +48,30 @@ config with weights and critical fields. This boundary is what makes the harness
 - `is_specialty_coffee` is report-only (weight 0) until R11 survives a labeling pass.
 - Verbatim fields keep the page's source language (R15); the production prompt was
   amended accordingly before root registration.
+
+## What the optimizer edits, and why length is gated
+
+v1 editable surface: the system prompt text only. Not editable: the schema, decoding
+params, the model under test, anything in the referee path. This makes the loop a prompt
+optimization harness in the same family as OPRO/GEPA, and inherits their failure mode:
+the cheapest "mutation" is always to append more instructions. Length is material for
+three reasons: per-page cost and latency scale with prompt tokens across every production
+request; long instruction lists measurably dilute instruction-following on smaller models
+(the model under test is a mini-class model); and unbounded growth is reward hacking
+(memorizing pressure-suite quirks as special cases rather than generalizing). Hence the
+1.5x-of-root length gate. Page-text input tokens are not gated: they are fixed by the
+production trimming policy (COFFEE_VALUE_MAX_PAGE_TEXT_CHARS), which lives in the
+non-editable referee path.
+
+## First loop run: the gate earning its keep (2026-07-07)
+
+Run1 (3 generations, 12 candidates, $4.16): every candidate improved or held the
+pressure suite yet regressed critical gold fields, coffee.variety and price.listed_price
+systematically. The mutation family that wins synthetic pressure pages (labeled-field
+precedence rules) trades away rare-variety verbatim capture and multi-variant price
+selection on real pages. Without the frozen-gold critical-field gate, generation 1 would
+have shipped a prompt that looks +0.8% better and silently breaks price extraction.
+Documented NOOP; honest per plan definition-of-done item 5.
 
 ## Known limitations
 

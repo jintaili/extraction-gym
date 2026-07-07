@@ -116,6 +116,13 @@ gym's root artifact (one-line change on the schema-v2-extraction branch, pending
 open PR). Resolved by curator: source language kept everywhere. Prompt amended on the
 schema-v2-extraction branch (translate instructions removed); PR #1 updated.
 
+## R16. Roast style is not roast level (CONFIRMED 2026-07-07, curator)
+
+roast_level records development level (Light, Medium-Dark, Agtron values). Brew-style
+roast designations ("Filter", "Espresso roast", "Whole bean coffee roasted for filter")
+are NOT roast levels: roast_level is null when only a style is stated. Applied
+retroactively to the Brick and Coffee Collective pages.
+
 ## Decision log
 
 | date | page id | field | decision | rule affected |
@@ -123,5 +130,9 @@ schema-v2-extraction branch (translate instructions removed); PR #1 updated.
 | 2026-07-05 | 2f273f134c | coffee.sensory_text | stitched non-adjacent blocks, pending R12 | R7 |
 | 2026-07-05 | 2f273f134c | coffee.producer_or_farm | chose producer over farm, pending R13 | new |
 | 2026-07-05 | 2f273f134c | price.bags_count | 1 canonicalized to null for single bags | R4 |
+| 2026-07-07 | 4cdd06ccd9 | display_tasting_notes | curator: headline Notas only, evolution notes stay in sensory_text | R14 |
+| 2026-07-07 | 3e5d836124 | roaster_location/country | curator: Lancaster facility mention suffices; NOT propagated to sibling pages lacking the mention | evidence rule |
+| 2026-07-07 | cc79f136ae | page_type | curator confirmed coffee_product for subscription-only product page | new |
+| 2026-07-07 | 3 CC pages | roast_level | 'roasted for filter' nulled retroactively | R16 |
 
 Append one line per adjudication that required judgment beyond the rules above.

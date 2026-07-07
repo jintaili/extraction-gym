@@ -22,7 +22,7 @@ draft_label:
   - Gesha
   coffee.producer_or_farm: Dwight Aguilar; Nueva Allianza
   coffee.altitude: 1820 masl
-  coffee.roast_level: Whole bean coffee roasted for filter
+  coffee.roast_level: null # filter is not a roast level (R16, retroactive)
   coffee.harvest_period: null
   coffee.is_blend: false
   coffee.is_espresso: false

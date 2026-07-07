@@ -22,7 +22,7 @@ draft_label:
   - Typica
   coffee.producer_or_farm: Familia Ccapa
   coffee.altitude: null
-  coffee.roast_level: Whole bean coffee roasted for filter
+  coffee.roast_level: null # filter is not a roast level (R16, retroactive)
   coffee.harvest_period: null
   coffee.is_blend: false
   coffee.is_espresso: false

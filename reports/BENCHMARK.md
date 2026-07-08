@@ -56,10 +56,16 @@ critical-field regression blocking, and a prompt-length cap (GEPA's winner is 17
 chars, 3.0x root; the gym gate would refuse it on length alone before reading a single
 score).
 
-## Costs
+## Costs (audited)
 
-Root baseline + noise band: ~$0.8. Gym run1: $4.16. GEPA (incl. one killed partial run,
-disk-cache resume): ~$8-12 est. Transplant eval: ~$0.2. All within the $80 session cap.
+Computed from recorded evidence, not estimates. (a) Every gym extraction call is cached
+with exact token counts: 1,115 entries = $3.42 exact. (b) Budget-tracker ledger rows:
+adversary rounds $1.44 + run1 loop $4.16 exact. (c) GEPA bounded worst-case (2x412
+rollouts even though the second run replayed from disk cache, 4x42 gold evals, 40
+reflection calls at 30k-in/8k-out gpt-5.5 pricing): $18.23 upper bound. Total, with
+(a)/(b) overlaps deliberately double-counted: **$27.24 conservative upper bound against
+the $80 cap** ($52.76 headroom). True spend is lower (overlap double-counting plus GEPA
+cache replay).
 
 ## Reproduce
 

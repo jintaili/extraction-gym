@@ -1,0 +1,68 @@
+{
+  "pages": 42,
+  "mean_composite_delta": 0.00028787186883251427,
+  "bootstrap_ci95": [
+    -0.020233923547987993,
+    0.01791230087667129
+  ],
+  "noise_threshold_2x": 0.008024272261298301,
+  "critical_regressions": [
+    {
+      "field": "page_type",
+      "incumbent": 0.9761904761904762,
+      "candidate": 0.9285714285714286,
+      "band": 0.0
+    },
+    {
+      "field": "coffee.process_method",
+      "incumbent": 0.9204166666666665,
+      "candidate": 0.875,
+      "band": 0.011916958038395884
+    },
+    {
+      "field": "coffee.variety",
+      "incumbent": 0.9477272727272726,
+      "candidate": 0.875,
+      "band": 0.011966340150705594
+    },
+    {
+      "field": "price.package_grams",
+      "incumbent": 0.95,
+      "candidate": 0.925,
+      "band": 0.011785113019775802
+    }
+  ],
+  "mcnemar_critical_fields": {
+    "page_type": {
+      "improved": 0,
+      "regressed": 2,
+      "p": 0.5
+    },
+    "coffee.origin_country": {
+      "improved": 1,
+      "regressed": 1,
+      "p": 1.0
+    },
+    "coffee.process_method": {
+      "improved": 3,
+      "regressed": 3,
+      "p": 1.0
+    },
+    "coffee.variety": {
+      "improved": 0,
+      "regressed": 4,
+      "p": 0.125
+    },
+    "price.listed_price": {
+      "improved": 0,
+      "regressed": 0,
+      "p": 1.0
+    },
+    "price.package_grams": {
+      "improved": 0,
+      "regressed": 1,
+      "p": 1.0
+    }
+  },
+  "verdict": "FAIL"
+}

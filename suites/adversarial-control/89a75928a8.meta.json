@@ -1,0 +1,150 @@
+{
+  "page_id": "89a75928a8",
+  "category": "Cross-sell specs mistaken for the main coffee",
+  "invented_category": true,
+  "target_artifact_id": "fd1a72082e",
+  "generator_model": "gpt-5.5",
+  "judge_model": "gpt-5.4",
+  "judges": {
+    "consistency": {
+      "unsupported_fields": [],
+      "notes": "All non-null/non-empty ground-truth labels are supported by the page text. The 250g / $22.00 values are supported by the selected/default variant and embedded product variant data. Boolean fields are consistent with page statements: single-origin Ethiopia with one origin listed supports not a blend; intended for filter methods supports not espresso; no decaf/co-ferment/infusion indicated supports false for those fields."
+    },
+    "realism": {
+      "score": 5,
+      "reasons": "This reads very plausibly as an html-to-text rendering of a real specialty coffee product page. The structure is highly typical: site header/navigation, product title, price, size/grind selectors, stock/shipping note, tasting notes, roast level, origin details, descriptive copy, brew recipe, variant block, related products, and footer. The voice fits specialty coffee well—concise, sensory, slightly romantic but not overblown. Origin data is coherent and realistic: Guji/Uraga, washed process, Kurume and Dega varieties, 2,100–2,300 masl, and a Jan–Feb harvest window all make sense for an Ethiopian washed lot. The producer line naming a washing station plus smallholders is also standard for Ethiopia. Pricing is believable for a US roaster: $22 for 250g and $78 for 1kg is in range, and the 1kg price scaling feels commercially realistic. The variant data block looks consistent with what a scraped Shopify-style product might expose: IDs, titles, SKU patterns, USD pricing, and package grams. Minor tiny tell: only Whole Bean appears as a grind option while still presenting a Grind selector, which is common enough on real sites, so not a real issue. Overall it is coherent, polished, and very close to indistinguishable from a real roaster page."
+    }
+  },
+  "label": {
+    "page_type": "coffee_product",
+    "is_specialty_coffee": true,
+    "coffee.coffee_name": "Ethiopia Raro Boda Washed",
+    "coffee.roaster": "Moss & Ember Coffee",
+    "coffee.roaster_location": "Portland, Oregon, USA",
+    "coffee.roaster_country": "USA",
+    "coffee.origin_country": "Ethiopia",
+    "coffee.origin_region": "Guji, Uraga",
+    "coffee.process_method": [
+      "Washed"
+    ],
+    "coffee.variety": [
+      "Kurume",
+      "Dega"
+    ],
+    "coffee.producer_or_farm": "Raro Boda Washing Station & smallholder members",
+    "coffee.altitude": "2,100-2,300 masl",
+    "coffee.roast_level": "Light / Filter",
+    "coffee.harvest_period": "January-February 2025",
+    "coffee.is_blend": false,
+    "coffee.is_espresso": false,
+    "coffee.is_decaf": false,
+    "coffee.is_coferment_or_infused": false,
+    "coffee.sensory_text": "Tasting notes: Jasmine, apricot, bergamot, honey\nIn the cup we find jasmine aromatics, ripe apricot sweetness, a flash of bergamot, and a honeyed finish.",
+    "coffee.display_tasting_notes": "Jasmine, apricot, bergamot, honey",
+    "coffee.producer_text": "Lots from family gardens around Uraga are delivered to the Raro Boda station, where ripe cherry is sorted, depulped, fermented under water, and dried slowly on raised beds.",
+    "price.listed_price": 22.0,
+    "price.listed_currency": "USD",
+    "price.bag_size_value": 250.0,
+    "price.bag_size_unit": "g",
+    "price.package_grams": 250.0,
+    "price.bags_count": null,
+    "price.price_type": "one_time",
+    "price.availability": "in_stock"
+  },
+  "incumbent": {
+    "model": "gpt-4o-mini",
+    "hit_fields": [
+      "coffee.producer_text"
+    ],
+    "extraction": {
+      "page_type": "coffee_product",
+      "is_specialty_coffee": true,
+      "coffee": {
+        "coffee_name": "Ethiopia Raro Boda Washed",
+        "roaster": "Moss & Ember Coffee",
+        "roaster_location": "Portland, Oregon, USA",
+        "roaster_country": "USA",
+        "origin_country": "Ethiopia",
+        "origin_region": "Guji, Uraga",
+        "process_method": [
+          "Washed"
+        ],
+        "variety": [
+          "Kurume",
+          "Dega"
+        ],
+        "producer_or_farm": "Raro Boda Washing Station & smallholder members",
+        "altitude": "2,100-2,300 masl",
+        "roast_level": "Light / Filter",
+        "harvest_period": "January-February 2025",
+        "is_blend": false,
+        "is_espresso": false,
+        "is_decaf": false,
+        "is_coferment_or_infused": false,
+        "sensory_text": "In the cup we find jasmine aromatics, ripe apricot sweetness, a flash of bergamot, and a honeyed finish.",
+        "display_tasting_notes": "Jasmine, apricot, bergamot, honey",
+        "producer_text": "Raro Boda is the kind of washed Ethiopia that made us fall in love with coffee in the first place: fragrant, clean, and lifted. Lots from family gardens around Uraga are delivered to the Raro Boda station, where ripe cherry is sorted, depulped, fermented under water, and dried slowly on raised beds.",
+        "source_snippets": [
+          {
+            "field": "name",
+            "snippet": "Ethiopia Raro Boda Washed"
+          },
+          {
+            "field": "origin",
+            "snippet": "Ethiopia"
+          },
+          {
+            "field": "process",
+            "snippet": "Washed"
+          },
+          {
+            "field": "variety",
+            "snippet": "Kurume, Dega"
+          },
+          {
+            "field": "price",
+            "snippet": "$22.00"
+          },
+          {
+            "field": "bag_size",
+            "snippet": "250g bag"
+          },
+          {
+            "field": "tasting_notes",
+            "snippet": "Jasmine, apricot, bergamot, honey"
+          },
+          {
+            "field": "producer",
+            "snippet": "Raro Boda Washing Station & smallholder members"
+          },
+          {
+            "field": "altitude",
+            "snippet": "2,100-2,300 masl"
+          }
+        ]
+      },
+      "price": {
+        "listed_price": 22.0,
+        "listed_currency": "USD",
+        "original_listed_price": null,
+        "original_listed_currency": null,
+        "bag_size_value": 250.0,
+        "bag_size_unit": "g",
+        "package_grams": 250.0,
+        "bags_count": null,
+        "price_100g_usd": 8.8,
+        "price_type": "one_time",
+        "availability": "in_stock",
+        "assumptions": [
+          "currency assumed USD from $",
+          "default variant selected"
+        ]
+      },
+      "quality": {
+        "extraction_quality": "good",
+        "missing_fields": [],
+        "warnings": []
+      }
+    }
+  }
+}

@@ -15,18 +15,28 @@ gym's deterministic per-field scorers with value-critical weighting.
 | gold access during search | none (aggregate gate scores only) | none |
 | referee | gym scorers on frozen gold v1 | identical |
 
-## Results
+## Results (three optimizers, one referee)
 
-| configuration | gold composite | vs production root | gate verdict |
-|---|---|---|---|
-| root prompt, production runtime | **0.8920** | baseline | (incumbent) |
-| root prompt, DSPy runtime | 0.8537 | -0.0383 | n/a (runtime tax) |
-| GEPA-optimized, DSPy runtime | 0.8754 | -0.0166 | n/a |
-| GEPA-optimized, transplanted to production | 0.8923 | +0.0003 | **FAIL** |
-| gym loop best candidate (run1, 12 tried) | 0.8975 | +0.0055 | **FAIL** (all 12) |
+![optimizer gap](optimizer-gap-chart.png)
 
-GEPA run: auto=light, 412 rollouts, 26 iterations. Gym run1: 3 generations, 12
-candidates, $4.16.
+| configuration | internal belief | deployed gold (production) | vs root | gate verdict |
+|---|---|---|---|---|
+| root prompt, production runtime | - | **0.8920** | baseline | (incumbent) |
+| root prompt, DSPy runtime | - | 0.8537 | -0.0383 | n/a (runtime tax) |
+| gym loop best of 12 (run1) | 0.9553 (suite) | 0.8975 | +0.0055 | **FAIL** (all 12) |
+| GEPA winner (light, 412 rollouts) | 0.9703 | 0.8923 | +0.0003 | **FAIL** (4 critical regressions) |
+| MIPROv2 winner (light, demo-free) | 0.9513 | 0.8592 | **-0.0328** | **FAIL** (4 critical regressions) |
+
+Fairness contract held for all three: same root prompt as the starting point, same model
+under test (gpt-4o-mini), same frontier model (gpt-5.5) for mutation/reflection/proposal,
+training signal from the adversarial pressure suite only, gold never visible to the
+search, verdicts issued on the transplanted artifact in the production runtime.
+
+MIPROv2 adds a pathology GEPA didn't show: instead of bloating (GEPA: 17,459 chars,
+3.0x root), it COMPRESSED the prompt to 4,501 chars (0.73x root) and discarded guidance
+the production task needs - a -3.3 point regression that its own metric scored 0.9513.
+Opposite mutation styles, identical failure signature at the gate: coffee.variety and
+price.listed_price regress in all three optimizers' winners.
 
 ## The three findings
 
@@ -55,6 +65,25 @@ referee that cannot be fooled: frozen human-verified gold, variance-aware thresh
 critical-field regression blocking, and a prompt-length cap (GEPA's winner is 17,459
 chars, 3.0x root; the gym gate would refuse it on length alone before reading a single
 score).
+
+## Gate sensitivity: the positive control
+
+Every verdict above is a rejection, so: does the gate ever accept? Control experiment:
+the root prompt was ablated along three axes the adversary demonstrably surfaces
+(verbatim-variety, default-variant selection, blend guidance; artifact fd1a72082e,
+gold 0.8571 = -3.5 points, ~9x noise band), then the identical loop ran against it.
+
+Result (control1, strict protocol, $3.12): the loop's candidates recovered most of the
+induced damage - best candidate 0.8954 on gold, ABOVE the un-ablated root - yet all 9
+were rejected. Diagnosis, visible in the ledger: (a) suite dilution - acceptance requires
+pressure-suite improvement, but the suite still carried 30+ root-era pages the control
+already aces, so genuine recovery was averaged away (by design, gold is non-regression
+only: you cannot climb ON the referee); (b) at n=42, one flipped page moves a field mean
+by ~0.024, beyond most per-field bands, so single-page wobbles on non-ablated fields
+block. A second control (control2) with a dedicated per-incumbent suite isolates (a);
+its result is appended when complete. Honest reading either way: gate sensitivity is
+governed by suite composition and per-field band quantization at small n - both now
+measured, neither hidden.
 
 ## Costs (audited)
 

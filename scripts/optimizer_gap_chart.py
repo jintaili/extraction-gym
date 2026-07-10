@@ -45,7 +45,7 @@ def main() -> None:
         points.append((internal, deployed, "MIPROv2 winner", verdict))
 
     fig, ax = plt.subplots(figsize=(7.5, 6))
-    lo, hi = 0.84, 1.0
+    lo, hi = 0.85, 1.0
     ax.plot([lo, hi], [lo, hi], ":", color="gray", lw=1, label="belief = reality")
     ax.axhspan(ROOT_GOLD - NOISE_2X, ROOT_GOLD + NOISE_2X, alpha=0.15, color="#1f77b4",
                label="incumbent ± gate threshold (2x noise)")
@@ -66,7 +66,7 @@ def main() -> None:
     ax.set_ylabel("deployed reality (frozen gold, production runtime)")
     ax.set_title("Every optimizer's winner, as it saw itself vs as the referee scored it")
     ax.set_xlim(lo, hi)
-    ax.set_ylim(0.84, 0.92)
+    ax.set_ylim(0.85, 0.905)
     ax.legend(fontsize=8, loc="upper left")
     ax.grid(alpha=0.2)
     fig.tight_layout()

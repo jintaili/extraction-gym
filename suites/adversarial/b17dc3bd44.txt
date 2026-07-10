@@ -1,0 +1,63 @@
+Title: Wholesale Guatemala La Bolsa Washed | North Fork Coffee Roasters
+
+Skip to content
+North Fork Coffee Roasters
+Wholesale portal
+Coffee
+Cold brew
+Training
+Log in
+Cart (0)
+
+WHOLESALE ONLY — prices shown by case or bulk bag. Retail customers: please visit our main shop.
+
+Guatemala La Bolsa — Washed Bourbon & Caturra
+
+$129.60 / case
+Default selection: Case of 12 x 12oz bags — whole bean
+As low as $9.70 per 12oz bag at 10+ cases. Tier discounts apply in cart.
+
+Size
+[ ] Case of 12 x 12oz bags
+[ ] 5 lb bulk bag
+Grind
+[ ] Whole bean
+[ ] Auto drip
+
+Producer: Finca La Bolsa
+Country: Guatemala
+Region: Huehuetenango
+Process: washed
+Variety: Bourbon, Caturra
+Altitude: 1,500–1,800 masl
+Harvest: March–May 2024
+Roast profile: light-medium filter
+Tasting notes: red apple, caramel, orange blossom
+
+Quantity tier pricing (wholesale)
+12oz bag cases (12 bags per case):
+1–3 cases: $129.60 per case ($10.80 per bag)
+4–9 cases: $123.00 per case ($10.25 per bag)
+10+ cases: $116.40 per case ($9.70 per bag)
+
+5 lb bulk bags:
+1–5 bags: $63.00 each
+6–19 bags: $59.50 each
+20+ bags: $56.00 each
+
+This washed lot from Finca La Bolsa is a clean, structured Guatemala we roast for everyday wholesale menus. In the cup we find red apple and orange blossom up front, with a caramel sweetness that carries through a crisp finish. It is approachable enough for batch brew but still has the clarity we want on a rotating single-origin bar.
+
+La Bolsa sits high in Huehuetenango, where cool nights and limestone-rich soils help the Bourbon and Caturra trees develop dense, sweet cherries. The coffee is depulped, fermented, washed, and dried slowly on patios before being prepared for export.
+
+Wholesale notes: the price at the top of this page is the first-tier price for the selected default case. Larger orders automatically receive the tiered case price shown above. Custom packing available by request.
+
+Embedded product variant data:
+- id=804221; title=Case of 12 x 12oz bags / Whole bean; name=Guatemala La Bolsa — Washed Bourbon & Caturra - Case of 12 x 12oz bags / Whole bean; sku=NF-WH-GT-LB-12OZCASE-WB; price=129.60 USD; package_grams=4082.328g; bags_count=12 [default_for_inference]
+- id=804222; title=Case of 12 x 12oz bags / Auto drip; name=Guatemala La Bolsa — Washed Bourbon & Caturra - Case of 12 x 12oz bags / Auto drip; sku=NF-WH-GT-LB-12OZCASE-AD; price=129.60 USD; package_grams=4082.328g; bags_count=12
+- id=804223; title=5 lb bulk bag / Whole bean; name=Guatemala La Bolsa — Washed Bourbon & Caturra - 5 lb bulk bag / Whole bean; sku=NF-WH-GT-LB-5LB-WB; price=63.00 USD; package_grams=2267.962g
+- id=804224; title=5 lb bulk bag / Auto drip; name=Guatemala La Bolsa — Washed Bourbon & Caturra - 5 lb bulk bag / Auto drip; sku=NF-WH-GT-LB-5LB-AD; price=63.00 USD; package_grams=2267.962g
+
+North Fork Coffee Roasters
+1127 SE Alder St, Portland, Oregon, USA
+Wholesale support: wholesale@northfork.example
+Privacy Policy | Terms | Accessibility

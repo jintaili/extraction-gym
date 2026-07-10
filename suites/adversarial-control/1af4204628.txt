@@ -1,0 +1,74 @@
+Title: Guatemala La Bolsa Washed Bourbon/Caturra - Wholesale 5 lb | Canal Street Coffee Roasters
+
+Skip to content
+FREE LOCAL DELIVERY OVER $150   |   Richmond cafe hours   |   Account
+Search
+Cart (0)
+Wholesale
+Coffee
+Equipment
+Training
+Contact
+
+Canal Street Coffee Roasters
+Richmond, Virginia
+
+GUATEMALA LA BOLSA - WHOLESALE
+Washed Bourbon & Caturra
+
+Wholesale customers only. Prices below are for roasted whole bean coffee packed in valve bags for cafe service.
+
+$92.00 USD
+Size: 5 lb bag
+Grind: Whole Bean
+Default selection: 5 lb / Whole Bean
+Quantity breaks are calculated in the cart.
+
+Tiered wholesale pricing:
+1 bag: $92.00 per 5 lb bag
+2-5 bags: $88.00 per 5 lb bag
+6+ bags: $84.00 per 5 lb bag
+Note: the 6+ bag price is not a sale price and only applies when six or more 5 lb bags of this coffee are in the cart.
+
+Add to cart
+In stock - roasted Monday through Thursday
+
+Producer: Finca La Bolsa
+Country: Guatemala
+Region: La Libertad, Huehuetenango
+Process: Washed
+Variety: Bourbon, Caturra
+Altitude: 1500-1700 masl
+Harvest: January-March 2025
+Roast: Medium-light filter roast
+
+Tasting notes: red apple, milk chocolate, almond, orange blossom
+
+About this coffee
+La Bolsa sits outside La Libertad in Huehuetenango, where cool nights and limestone-rich soils make for a structured, sweet cup. This lot is a straightforward washed separation of Bourbon and Caturra, selected for cafe batch brew and retail refill bins where consistency matters.
+
+We roast this coffee to a medium-light profile: developed enough for caramel and milk chocolate sweetness, but still bright with red apple and a soft orange blossom finish. It is not a blend and it is not decaffeinated.
+
+Wholesale ordering notes
+This page is intended for approved wholesale accounts. If you are buying one 250g retail bag, please use the retail Guatemala La Bolsa page instead. Tiered prices shown here are volume breaks for 5 lb bags only and do not change the coffee specification.
+
+You may also like
+Batch Brew Filters
+Retail Guatemala La Bolsa 250g
+Espresso Blend Wholesale 5 lb
+
+Embedded product variant data:
+- id=94180231; title=5 lb / Whole Bean; name=Guatemala La Bolsa - Wholesale - 5 lb / Whole Bean; sku=CSCR-GT-LABOLSA-WHS-5LB-WB; price=92.00 USD; package_grams=2268.000g [default_for_inference]
+- id=94180232; title=5 lb / Ground for Batch Brew; name=Guatemala La Bolsa - Wholesale - 5 lb / Ground for Batch Brew; sku=CSCR-GT-LABOLSA-WHS-5LB-BATCH; price=92.00 USD; package_grams=2268.000g
+
+Wholesale tier data:
+- variant_id=94180231; min_qty=1; unit_price=92.00 USD
+- variant_id=94180231; min_qty=2; unit_price=88.00 USD
+- variant_id=94180231; min_qty=6; unit_price=84.00 USD
+- variant_id=94180232; min_qty=1; unit_price=92.00 USD
+- variant_id=94180232; min_qty=2; unit_price=88.00 USD
+- variant_id=94180232; min_qty=6; unit_price=84.00 USD
+
+Footer
+Canal Street Coffee Roasters, 118 Canal St, Richmond VA 23220
+Privacy Policy | Terms | Wholesale Login

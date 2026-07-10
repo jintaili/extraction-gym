@@ -1,0 +1,149 @@
+{
+  "page_id": "abc965143c",
+  "category": "region-ambiguous origin (place name that exists in two producing countries)",
+  "invented_category": false,
+  "target_artifact_id": "fd1a72082e",
+  "generator_model": "gpt-5.5",
+  "judge_model": "gpt-5.4",
+  "judges": {
+    "consistency": {
+      "unsupported_fields": [],
+      "notes": "All non-null, non-empty ground-truth labels are supported by the page text. Product title, roaster, location/country, origin, process, variety, producer/farm, altitude, roast level, harvest period, tasting notes, producer text, price/currency, bag size/package grams, and availability are explicitly stated. Enum/inference fields are also supported: page_type is a coffee product page; 'Small-batch speciality coffee' supports is_specialty_coffee=true; single-origin farm lot supports is_blend=false; 'Filter roast' supports is_espresso=false; no decaf indication supports is_decaf=false; no co-ferment/infusion indication supports is_coferment_or_infused=false; product page pricing implies price_type=one_time."
+    },
+    "realism": {
+      "score": 5,
+      "reasons": "Very plausible as an html-to-text rendering of a real specialty roaster product page. The structure is exactly what you’d expect: navigation, product title, roast type, price, bag size, tasting notes, origin details, quantity/add-to-cart, shipping, related products, variant data, and footer. The voice is credible for UK specialty coffee—clean, lightly editorial, not overblown, and uses industry-standard terms like washed, Bourbon/Caturra, masl, wet mill, tiled tanks, raised beds, and paper-filter brewer. The origin details cohere well: Santa Rosa / Pueblo Nuevo Viñas / Guatemala is believable, the altitude and harvest window are sensible, and the explanatory aside distinguishing this Santa Rosa from other origins feels like the kind of practical clarification a real roaster might include. Process description is internally consistent for a washed Guatemala lot. Pricing also looks realistic for a UK roaster: £14.50 for 250g and £49.00 for 1kg is within normal specialty ranges and the 1kg discount is believable. The variant block is especially convincing: IDs, SKUs, names, and package weights all align naturally with the page, with no obvious contradictions. Minor tiny tells only: 'speciality' in the masthead but 'specialty' in the task framing is irrelevant, and '250g wholebean' appearing as the visible selection while the variant block also includes 1kg is normal for a text render. Overall, this is essentially indistinguishable from a real roaster product page."
+    }
+  },
+  "label": {
+    "page_type": "coffee_product",
+    "is_specialty_coffee": true,
+    "coffee.coffee_name": "Guatemala Santa Rosa — Finca El Zapote",
+    "coffee.roaster": "Moor & Vale Coffee Roasters",
+    "coffee.roaster_location": "Leeds",
+    "coffee.roaster_country": "United Kingdom",
+    "coffee.origin_country": "Guatemala",
+    "coffee.origin_region": "Santa Rosa",
+    "coffee.process_method": [
+      "Washed"
+    ],
+    "coffee.variety": [
+      "Bourbon",
+      "Caturra"
+    ],
+    "coffee.producer_or_farm": "Finca El Zapote, García Family",
+    "coffee.altitude": "1,650–1,850 masl",
+    "coffee.roast_level": "Filter roast",
+    "coffee.harvest_period": "January–March 2025",
+    "coffee.is_blend": false,
+    "coffee.is_espresso": false,
+    "coffee.is_decaf": false,
+    "coffee.is_coferment_or_infused": false,
+    "coffee.sensory_text": "Tasting notes: orange blossom, red apple, panela\n\nIn the cup we find orange blossom aromatics, a crisp red apple acidity and panela sweetness.",
+    "coffee.display_tasting_notes": "orange blossom, red apple, panela",
+    "coffee.producer_text": "This lot comes from Finca El Zapote in Santa Rosa, Guatemala. Santa Rosa is one of those place names you will see on coffee bags from more than one origin, so for clarity: this is the department in south-eastern Guatemala, on the slopes around Pueblo Nuevo Viñas, not a Honduran Santa Rosa lot. The farm’s high elevations and cool nights give a clean, structured cup with a soft floral opening and a brown-sugar finish.\n\nThe García family pick Bourbon and Caturra cherries by hand and deliver them to the farm’s small wet mill the same afternoon. After depulping, the coffee is fermented in tiled tanks, washed with spring water and dried slowly on raised beds until stable for export.",
+    "price.listed_price": 14.5,
+    "price.listed_currency": "GBP",
+    "price.bag_size_value": 250.0,
+    "price.bag_size_unit": "g",
+    "price.package_grams": 250.0,
+    "price.bags_count": null,
+    "price.price_type": "one_time",
+    "price.availability": "in_stock"
+  },
+  "incumbent": {
+    "model": "gpt-4o-mini",
+    "hit_fields": [
+      "coffee.producer_text"
+    ],
+    "extraction": {
+      "page_type": "coffee_product",
+      "is_specialty_coffee": true,
+      "coffee": {
+        "coffee_name": "Guatemala Santa Rosa — Finca El Zapote",
+        "roaster": "Moor & Vale Coffee Roasters",
+        "roaster_location": "Leeds",
+        "roaster_country": "United Kingdom",
+        "origin_country": "Guatemala",
+        "origin_region": "Santa Rosa",
+        "process_method": [
+          "Washed"
+        ],
+        "variety": [
+          "Bourbon",
+          "Caturra"
+        ],
+        "producer_or_farm": "Finca El Zapote, García Family",
+        "altitude": "1,650–1,850 masl",
+        "roast_level": "Filter roast",
+        "harvest_period": "January–March 2025",
+        "is_blend": false,
+        "is_espresso": false,
+        "is_decaf": false,
+        "is_coferment_or_infused": false,
+        "sensory_text": "In the cup we find orange blossom aromatics, a crisp red apple acidity and panela sweetness.",
+        "display_tasting_notes": "orange blossom, red apple, panela",
+        "producer_text": "This lot comes from Finca El Zapote in Santa Rosa, Guatemala. The García family pick Bourbon and Caturra cherries by hand and deliver them to the farm’s small wet mill the same afternoon. After depulping, the coffee is fermented in tiled tanks, washed with spring water and dried slowly on raised beds until stable for export.",
+        "source_snippets": [
+          {
+            "field": "origin",
+            "snippet": "Country: Guatemala"
+          },
+          {
+            "field": "region",
+            "snippet": "Region: Santa Rosa"
+          },
+          {
+            "field": "process",
+            "snippet": "Process: Washed"
+          },
+          {
+            "field": "variety",
+            "snippet": "Variety: Bourbon, Caturra"
+          },
+          {
+            "field": "price",
+            "snippet": "£14.50"
+          },
+          {
+            "field": "bag_size",
+            "snippet": "250g wholebean"
+          },
+          {
+            "field": "tasting_notes",
+            "snippet": "Tasting notes: orange blossom, red apple, panela"
+          },
+          {
+            "field": "producer",
+            "snippet": "Producer: Finca El Zapote, García Family"
+          },
+          {
+            "field": "altitude",
+            "snippet": "Altitude: 1,650–1,850 masl"
+          }
+        ]
+      },
+      "price": {
+        "listed_price": 14.5,
+        "listed_currency": "GBP",
+        "original_listed_price": null,
+        "original_listed_currency": null,
+        "bag_size_value": 250.0,
+        "bag_size_unit": "g",
+        "package_grams": 250.0,
+        "bags_count": null,
+        "price_100g_usd": null,
+        "price_type": "one_time",
+        "availability": "in_stock",
+        "assumptions": [
+          "currency assumed GBP from £"
+        ]
+      },
+      "quality": {
+        "extraction_quality": "good",
+        "missing_fields": [],
+        "warnings": []
+      }
+    }
+  }
+}

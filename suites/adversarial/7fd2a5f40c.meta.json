@@ -1,0 +1,135 @@
+{
+  "page_id": "7fd2a5f40c",
+  "category": "region-ambiguous origin (place name that exists in two producing countries)",
+  "invented_category": false,
+  "target_artifact_id": "fd1a72082e",
+  "generator_model": "gpt-5.5",
+  "judge_model": "gpt-5.4",
+  "judges": {
+    "consistency": {
+      "unsupported_fields": [],
+      "notes": "All non-null/non-empty ground-truth labels are supported by the page text or embedded variant data. Price/bag fields match the default 250g variant at $23.00 CAD. 'is_specialty_coffee' is supported by the roaster/product context. Boolean negatives are supported or entailed by the absence of blend/espresso/decaf/co-ferment indications alongside explicit filter-roast washed single-origin details."
+    },
+    "realism": {
+      "score": 4,
+      "reasons": "This is quite plausible as an html-to-text rendering of a real roaster product page. The structure is very typical: navigation, product title, price, size variants, add-to-cart, origin/process/variety/altitude metadata, tasting notes, story copy, brewing recommendation, shipping note, and footer. The voice reads like contemporary specialty coffee ecommerce copy—clean, lightly educational, not overly florid, with believable details such as municipality, producer name, harvest window, fermentation time, and roast-use guidance.\n\nThe coffee details are coherent: Guatemala / Santa Rosa / San Rafael Las Flores aligns plausibly, Bourbon and Caturra are common varieties, fully washed is standard, and the altitude and flavor notes fit a washed Guatemalan profile. The processing description is also believable and appropriately specific without sounding absurdly technical.\n\nThe variant block is mostly realistic too: 250g and 1kg are standard sizes, the pricing relationship is believable, and the SKUs look like something a small roaster might use. The \"Current lot: Filter roast\" line and the note that it is roasted for filter brewing also fit real specialty sites.\n\nMinor tells keep it from a 5. \"North Pier Coffee Roasters\" in Montréal paired with the very generic address \"112 Rue des Érables\" feels placeholder-ish. The exact phrasing of the embedded variant data, especially \"default_for_inference\" and \"package_grams=250.000g,\" reads more like synthetic extraction metadata than customer-facing site text. Also, the title line uses a vertical bar SEO-style page title while the body product heading drops the roaster name, which is realistic for scraping, but the combination feels a bit constructed. Overall: very plausible, with a few metadata-ish artifacts."
+    }
+  },
+  "label": {
+    "page_type": "coffee_product",
+    "is_specialty_coffee": true,
+    "coffee.coffee_name": "Guatemala Santa Rosa",
+    "coffee.roaster": "North Pier Coffee Roasters",
+    "coffee.roaster_location": "Montréal, QC",
+    "coffee.roaster_country": "Canada",
+    "coffee.origin_country": "Guatemala",
+    "coffee.origin_region": "Santa Rosa",
+    "coffee.process_method": [
+      "Fully washed"
+    ],
+    "coffee.variety": [
+      "Bourbon",
+      "Caturra"
+    ],
+    "coffee.producer_or_farm": "Marta Elena Pérez, Finca Las Nubes",
+    "coffee.altitude": "1,550–1,780 masl",
+    "coffee.roast_level": "Filter roast",
+    "coffee.harvest_period": "January–March 2025",
+    "coffee.is_blend": false,
+    "coffee.is_espresso": false,
+    "coffee.is_decaf": false,
+    "coffee.is_coferment_or_infused": false,
+    "coffee.sensory_text": "Tasting notes: red apple, panela, orange blossom, cocoa nib\n\nThis coffee comes to us from Finca Las Nubes, a family-run farm tucked into the high ridges above San Rafael Las Flores in the department of Santa Rosa, Guatemala. Santa Rosa can be a confusing name on a coffee map — there are well-known coffee towns with the same name in other producing countries — but this lot is from southeastern Guatemala, where volcanic soils and cool nights help the cup stay sweet and structured.\n\nMarta Elena Pérez and her team pick ripe cherries in several passes, depulp the coffee the same day, and ferment it in tiled tanks for 18–24 hours before washing and drying on raised beds. The result is a balanced washed Guatemala with a clean citrus lift and a soft brown-sugar sweetness.",
+    "coffee.display_tasting_notes": "red apple, panela, orange blossom, cocoa nib",
+    "coffee.producer_text": "This coffee comes to us from Finca Las Nubes, a family-run farm tucked into the high ridges above San Rafael Las Flores in the department of Santa Rosa, Guatemala. Santa Rosa can be a confusing name on a coffee map — there are well-known coffee towns with the same name in other producing countries — but this lot is from southeastern Guatemala, where volcanic soils and cool nights help the cup stay sweet and structured.\n\nMarta Elena Pérez and her team pick ripe cherries in several passes, depulp the coffee the same day, and ferment it in tiled tanks for 18–24 hours before washing and drying on raised beds.",
+    "price.listed_price": 23.0,
+    "price.listed_currency": "CAD",
+    "price.bag_size_value": 250.0,
+    "price.bag_size_unit": "g",
+    "price.package_grams": 250.0,
+    "price.bags_count": null,
+    "price.price_type": "one_time",
+    "price.availability": "in_stock"
+  },
+  "incumbent": {
+    "model": "gpt-4o-mini",
+    "hit_fields": [
+      "coffee.sensory_text",
+      "coffee.producer_text"
+    ],
+    "extraction": {
+      "page_type": "coffee_product",
+      "is_specialty_coffee": true,
+      "coffee": {
+        "coffee_name": "Guatemala Santa Rosa",
+        "roaster": "North Pier Coffee Roasters",
+        "roaster_location": "Montréal, QC",
+        "roaster_country": "Canada",
+        "origin_country": "Guatemala",
+        "origin_region": "Santa Rosa",
+        "process_method": [
+          "Fully washed"
+        ],
+        "variety": [
+          "Bourbon",
+          "Caturra"
+        ],
+        "producer_or_farm": "Marta Elena Pérez, Finca Las Nubes",
+        "altitude": "1,550–1,780 masl",
+        "roast_level": "Medium-Light",
+        "harvest_period": "January–March 2025",
+        "is_blend": false,
+        "is_espresso": false,
+        "is_decaf": false,
+        "is_coferment_or_infused": false,
+        "sensory_text": "red apple, panela, orange blossom, cocoa nib",
+        "display_tasting_notes": "red apple, panela, orange blossom, cocoa nib",
+        "producer_text": "Finca Las Nubes, a family-run farm tucked into the high ridges above San Rafael Las Flores in the department of Santa Rosa, Guatemala. Marta Elena Pérez and her team pick ripe cherries in several passes, depulp the coffee the same day, and ferment it in tiled tanks for 18–24 hours before washing and drying on raised beds.",
+        "source_snippets": [
+          {
+            "field": "origin",
+            "snippet": "Origin: Guatemala"
+          },
+          {
+            "field": "process",
+            "snippet": "Process: Fully washed"
+          },
+          {
+            "field": "variety",
+            "snippet": "Variety: Bourbon, Caturra"
+          },
+          {
+            "field": "producer",
+            "snippet": "Producer: Marta Elena Pérez, Finca Las Nubes"
+          },
+          {
+            "field": "altitude",
+            "snippet": "Altitude: 1,550–1,780 masl"
+          }
+        ]
+      },
+      "price": {
+        "listed_price": 23.0,
+        "listed_currency": "CAD",
+        "original_listed_price": null,
+        "original_listed_currency": null,
+        "bag_size_value": 250.0,
+        "bag_size_unit": "g",
+        "package_grams": 250.0,
+        "bags_count": null,
+        "price_100g_usd": null,
+        "price_type": "one_time",
+        "availability": "in_stock",
+        "assumptions": [
+          "currency assumed CAD from $",
+          "default variant selected"
+        ]
+      },
+      "quality": {
+        "extraction_quality": "good",
+        "missing_fields": [],
+        "warnings": []
+      }
+    }
+  }
+}

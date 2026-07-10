@@ -29,6 +29,7 @@ config with weights and critical fields. This boundary is what makes the harness
 | Human-verified labels with stated residual error | `labelize` requires review_status VERIFIED; `colddiff` measures cold-vs-final change rate; `freeze` embeds it in MANIFEST | test_colddiff_counts_changes |
 | Improvements must exceed 2x measured noise | `stats.compare` NOOP inside the band | test_compare_verdicts |
 | Critical-field regression blocks regardless of composite | `stats.compare` FAIL path | test_compare_verdicts |
+| Loop acceptance (gate v2, 2026-07-10): repairs must significantly exceed breakages on incumbent-failure fields; critical gold bands quantum-aware | `optimizer/loop.py gate_candidate_v2` | test_gate_v2 suite |
 | Re-running unchanged evals costs zero API calls | content-hash extraction cache keyed on actual prompt hash | test_evaluate_artifact_scores_and_caches |
 | Every artifact immutable, one mutation, lineage recorded | `PromptRegistry` (content-hash ids, parent links, append-only ledger) | test_registry_register_lineage_ledger |
 | Hard USD spend cap | `BudgetTracker` raises `BudgetExceeded`; unknown models raise instead of costing $0 | test_noise_band_and_budget |
@@ -62,6 +63,22 @@ request; long instruction lists measurably dilute instruction-following on small
 1.5x-of-root length gate. Page-text input tokens are not gated: they are fixed by the
 production trimming policy (COFFEE_VALUE_MAX_PAGE_TEXT_CHARS), which lives in the
 non-editable referee path.
+
+## Gate v2 (2026-07-10): fixing measured insensitivity without touching the firewall
+
+The positive-control experiment (reports/BENCHMARK.md) measured gate v1 at perfect
+specificity and zero sensitivity: 18/18 genuine repairs rejected, including two that
+beat the healthy root on gold. Mechanisms: (1) suite-COMPOSITE acceptance dilutes
+targeted fixes (a failing page still scores ~0.97, so the +0.01 band is unreachable);
+(2) per-field critical bands at n=42 block on single-page flips indistinguishable from
+extraction stochasticity. Gate v2 changes exactly those two mechanisms: suite acceptance
+becomes a one-sided sign test on repairs-vs-breakages over incumbent-failure fields
+(p<0.05), and critical gold regressions block beyond 1.5x the one-page quantum. What
+did NOT change: gold is never a training signal (optimizer still never sees gold pages
+or labels), gold composite non-regression, the length cap, and every artifact/ledger
+rule. v1 stays available (--gate v1); every result reported before 2026-07-10 used v1
+and stands as reported. Validation: v2 re-accepts control repairs (control3) while
+still rejecting all 12 of run1's regressive candidates on replay.
 
 ## First loop run: the gate earning its keep (2026-07-07)
 

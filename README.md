@@ -99,9 +99,11 @@ a cross-family label audit in progress. 30 tests.
 
 ## Honest limitations
 
-Single task and single model under test so far; residual label error as stated in the
-manifest; a synthetic-to-real distribution gap for adversary pages; judge and generator
-currently share a provider family (different models; cross-family judging planned).
+Single model under test per adapter; residual label error as stated in each manifest; a
+synthetic-to-real distribution gap for adversary pages; the acceptance gate is highly
+specific but weakly sensitive under the strict protocol (measured by the positive
+control; gate-v2 direction in reports/BENCHMARK.md). Retired since first writing:
+second adapter (SROIE) and cross-family judging (`--judge-provider anthropic`) now exist.
 Companion projects: [coffee-value-app](https://github.com/jintaili/coffee-value-app)
 (inference service) and
 [coffee-value-autoresearch](https://github.com/jintaili/coffee-value-autoresearch)

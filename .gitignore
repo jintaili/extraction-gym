@@ -9,3 +9,4 @@ runs/*
 .env
 goldset/sroie-v1/pages/
 goldset/sroie-v1/labels-official/
+goldset/sroie-v1/audit/disputes.yaml

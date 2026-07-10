@@ -50,12 +50,34 @@ class JudgeResult:
 
 
 class Judges:
-    def __init__(self, *, client: AsyncOpenAI, model: str, realism_threshold: int = 4) -> None:
-        self.client = client
+    """provider="openai" uses the given AsyncOpenAI client; provider="anthropic" builds an
+    AsyncAnthropic client from the environment (cross-family judging: removes the
+    correlated-blind-spot caveat when the generator is an OpenAI model)."""
+
+    def __init__(
+        self, *, client: AsyncOpenAI | None = None, model: str, realism_threshold: int = 4,
+        provider: str = "openai",
+    ) -> None:
+        self.provider = provider
         self.model = model
         self.realism_threshold = realism_threshold
+        if provider == "anthropic":
+            from anthropic import AsyncAnthropic
+
+            self.client = AsyncAnthropic()
+        else:
+            self.client = client
 
     async def _parse(self, system: str, user: str, fmt):
+        if self.provider == "anthropic":
+            response = await self.client.messages.parse(
+                model=self.model, max_tokens=2048, system=system,
+                messages=[{"role": "user", "content": user}], output_format=fmt,
+            )
+            parsed = response.parsed_output
+            if parsed is None:
+                raise RuntimeError(f"judge returned no parsed {fmt.__name__}")
+            return parsed, response.usage.input_tokens, response.usage.output_tokens
         response = await self.client.responses.parse(
             model=self.model,
             input=[{"role": "system", "content": system}, {"role": "user", "content": user}],

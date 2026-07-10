@@ -82,6 +82,7 @@ def main() -> None:
     adv.add_argument("--suite", default="suites/adversarial")
     adv.add_argument("--generator-model", default="gpt-5.5")
     adv.add_argument("--judge-model", default="gpt-5.4")
+    adv.add_argument("--judge-provider", default="openai", choices=["openai", "anthropic"])
     adv.add_argument("--max-usd", type=float, default=15.0)
 
     evs = sub.add_parser("evalsuite", help="Evaluate an artifact on the adversarial pressure suite")
@@ -421,7 +422,7 @@ def _cmd_adversary(args: argparse.Namespace) -> None:
             count=args.count,
             target=target,
             generator=AdversaryGenerator(client=extractor.client, model=args.generator_model),
-            judges=Judges(client=extractor.client, model=args.judge_model),
+            judges=Judges(client=extractor.client, model=args.judge_model, provider=args.judge_provider),
             incumbent_extract_fn=extractor.extract,
             incumbent_model=load_settings().extraction_model,
             suite=SuiteStore(Path(args.suite)),

@@ -75,7 +75,8 @@ Documented NOOP; honest per plan definition-of-done item 5.
 
 ## Known limitations
 
-Single task, single model under test, residual label error as stated in the manifest,
-synthetic-to-real distribution gap for adversary pages, judge and generator currently
-share a provider family (different models; cross-family judging planned when a second
-provider key is available).
+Single model under test per adapter, residual label error as stated in each manifest,
+synthetic-to-real distribution gap for adversary pages. Two limitations retired since
+first writing: a second adapter (SROIE receipts) exists under adapters/sroie, and
+cross-family judging is available (gym adversary --judge-provider anthropic, validated
+live: an Anthropic judge over an OpenAI generator's pages).

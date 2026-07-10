@@ -1,0 +1,67 @@
+{
+  "sample_receipts": 40,
+  "fields_compared": 160,
+  "auto_accepted": 119,
+  "disputes": 41,
+  "official_label_errors_found": 9,
+  "label_error_lower_bound": 0.0563,
+  "note": "LOWER BOUND: triple-agreement auto-accepts were not human-read, and training-data contamination correlates model votes with official labels.",
+  "corrections": [
+    {
+      "page_id": "sroie-036",
+      "field": "total",
+      "official": "26:58",
+      "audited": "26.58"
+    },
+    {
+      "page_id": "sroie-054",
+      "field": "address",
+      "official": "NO 290, JALAN AIR PANAS, SETAPAK, 53200, KUALA LUMPUR.",
+      "audited": "NO 290, JALAN AIR PANAS, SETAPAK, 53200, KUALA LUMPUR"
+    },
+    {
+      "page_id": "sroie-087",
+      "field": "company",
+      "official": "GARDENIA BAKERIESKL)SDN BHD (139386",
+      "audited": "GARDENIA BAKERIESKL)SDN BHD (139386 X)"
+    },
+    {
+      "page_id": "sroie-216",
+      "field": "address",
+      "official": "NO 290, JALAN AIR PANAS, SETAPAK, 53200, KUALA LUMPUR.",
+      "audited": "NO 290, JALAN AIR PANAS, SETAPAK, 53200, KUALA LUMPUR"
+    },
+    {
+      "page_id": "sroie-231",
+      "field": "company",
+      "official": "SAYANG YOU STATION SDN BHD",
+      "audited": "JUWITA WEDDINGS (366310-U)"
+    },
+    {
+      "page_id": "sroie-252",
+      "field": "address",
+      "official": "$117, Second Floor, Aeon Tebrau City, 1, Jalan Desa Tebrau, Taman Desa Tebrau; 81100 Johor Bahru, Johor.",
+      "audited": "$117, Second Floor, Aeon Tebrau City, 1, Jalan Desa Tebrau, Taman Desa Tebrau, 81100 Johor Bahru, Johor"
+    },
+    {
+      "page_id": "sroie-280",
+      "field": "address",
+      "official": "LOT 276 JALAN BANTING 43800 DENGKIL, SELANGOR.",
+      "audited": "LOT 276 JALAN BANTING 43800 DENGKIL, SELANGOR"
+    },
+    {
+      "page_id": "sroie-316",
+      "field": "address",
+      "official": "No.3, Jalan SS21/39,47400 Petaling Jaya Selangor",
+      "audited": "Level 6, Bangunan TH, Damansara Uptown3, No.3, Jalan SS21/39, 47400 Petaling Jaya, Selangor"
+    },
+    {
+      "page_id": "sroie-331",
+      "field": "address",
+      "official": "Lot 3, Jalan Pelabur 23/1, 40300 Shah Alam Selangor.",
+      "audited": "Lot 3, Jalan Pelabur 23/1, 40300 Shah Alam Selangor"
+    }
+  ],
+  "arbitration_notes": [],
+  "notes_hint": "notes tagged ocr-inherited document official labels that faithfully reproduce OCR errors: not annotation mistakes, a separate noise species"
+}

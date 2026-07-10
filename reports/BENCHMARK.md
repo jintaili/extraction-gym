@@ -103,6 +103,31 @@ anti-Goodhart firewall (gold still never a training target) while giving recover
 signal that composite averaging cannot wash out. Grow the gold set to loosen the
 one-page quantum.
 
+## Second adapter: SROIE receipts, and a measured label-error bound
+
+To convert "the harness is task-agnostic" from claim to fact, a second adapter
+(adapters/sroie) runs the same referee machinery on the most-cited key-information
+benchmark: ICDAR-2019 SROIE receipts (347 official test receipts, 4 fields; data
+checksum-pinned, never redistributed). Naive-prompt baselines: gpt-4o-mini 0.7776,
+claude-haiku-4-5 0.8122 (normalized exact match, value-weighted).
+
+The label audit is the standalone finding. Protocol: two prelabel models from different
+provider families labeled every receipt blind; on a seeded 40-receipt sample (160
+fields), 119 fields where both models matched the official label were auto-accepted and
+41 disputes went to human arbitration. Result: 9 official-label errors confirmed, a
+measured LOWER BOUND of 5.6% on SROIE official-label error - lower bound because the
+119 auto-accepts were never human-read and both models saw SROIE in training, so their
+agreement with an official label is partly recitation (contamination correlates the
+votes in exactly the direction that hides errors). Errors found include a total of
+'26:58' (colon for decimal point), a truncated company registration suffix, and an
+address missing two printed lines. A second, separate noise species was characterized:
+official labels that faithfully reproduce OCR errors (e.g. '(EDAI BUKU' where the
+receipt image says 'KEDAI BUKU') - correct behavior for a text-channel benchmark, but
+folklore counts it as label noise. And one methodological lesson worth its own line:
+the audit's first run flagged apparent label errors that were actually OUR OWN
+reconstruction bug (fixed-threshold line clustering scrambled high-resolution receipts)
+- caught by verbatim-on-page checks before any claim was made. Audit the auditor first.
+
 ## Costs (audited)
 
 Computed from recorded evidence, not estimates. (a) Every gym extraction call is cached

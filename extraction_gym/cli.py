@@ -118,6 +118,14 @@ def main() -> None:
     lp.add_argument("--judge-model", default="gpt-5.4")
     lp.add_argument("--optimizer-model", default="gpt-5.5")
 
+    mp = sub.add_parser("miprov2", help="Run the DSPy/MIPROv2 baseline (demo-free) under harness rules")
+    mp.add_argument("--registry", default="registry")
+    mp.add_argument("--root", required=True)
+    mp.add_argument("--goldset", default="goldset/v1")
+    mp.add_argument("--suite", default="suites/adversarial")
+    mp.add_argument("--auto", default="light", choices=["light", "medium", "heavy"])
+    mp.add_argument("--out", default="reports/miprov2-baseline.json")
+
     gp = sub.add_parser("gepa", help="Run the DSPy/GEPA baseline under harness rules")
     gp.add_argument("--registry", default="registry")
     gp.add_argument("--root", required=True, help="root artifact id (starting prompt)")
@@ -167,6 +175,8 @@ def main() -> None:
         _cmd_loop(args)
     elif args.command == "gepa":
         _cmd_gepa(args)
+    elif args.command == "miprov2":
+        _cmd_miprov2(args)
 
 
 def _cmd_snapshot(args: argparse.Namespace) -> None:
@@ -637,6 +647,26 @@ def _cmd_gepa(args: argparse.Namespace) -> None:
           f"(parse failures {result['dspy_runtime_root_on_gold']['parse_failures']})")
     print(f"GEPA-optimized on gold:    {result['gepa_optimized_on_gold']['composite_mean']:.4f} "
           f"(parse failures {result['gepa_optimized_on_gold']['parse_failures']})")
+    print(f"written: {out}")
+
+
+def _cmd_miprov2(args: argparse.Namespace) -> None:
+    import json
+
+    from coffee_value_app.config import load_settings
+
+    from extraction_gym.baselines.dspy_miprov2 import run_miprov2
+    from extraction_gym.core.registry import PromptRegistry
+
+    root = PromptRegistry(Path(args.registry)).get(args.root)
+    result = run_miprov2(
+        root_prompt=root.text, suite_root=Path(args.suite), goldset=Path(args.goldset),
+        api_key=load_settings().openai_api_key, auto=args.auto,
+    )
+    out = Path(args.out)
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print(f"MIPROv2-optimized on gold: {result['miprov2_optimized_on_gold']['composite_mean']:.4f}")
     print(f"written: {out}")
 
 

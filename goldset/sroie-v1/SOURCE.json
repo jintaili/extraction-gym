@@ -1,0 +1,6 @@
+{
+  "mirror": "https://huggingface.co/datasets/sizhkhy/SROIE/resolve/main/data/test-00000-of-00001.parquet",
+  "parquet_sha256": "6209cabc9ca0a445e018bf2591f7af2cef93b96c3a93c08924a08663bb717f96",
+  "receipts": 347,
+  "note": "data gitignored; fetch with python -m extraction_gym.adapters.sroie.fetch_data"
+}

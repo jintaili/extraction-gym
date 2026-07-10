@@ -1,0 +1,605 @@
+protocol: triple-agreement auto-accept; human arbitrates disputes; result is a LOWER BOUND (training-data contamination
+  correlates the votes)
+seed: 20260709
+sample_receipts: 40
+fields_compared: 160
+auto_accepted: 119
+disputes:
+- page_id: sroie-013
+  field: total
+  candidates:
+    official: RM36.96
+    gpt-4o-mini: RM36.96
+    claude-haiku-4-5: RM36.95
+  verbatim_on_page:
+    official: true
+    gpt-4o-mini: true
+    claude-haiku-4-5: true
+  drafted_recommendation: official (page-supported)
+  resolution: null
+  receipt_excerpt: 'Total RM36.96
+
+    Bavance: RM36.96
+
+    Rounded : RM36.95'
+- page_id: sroie-020
+  field: company
+  candidates:
+    official: (EDAI BUKU NEW ACHEIVERS
+    gpt-4o-mini: EDAI BUKU NEW ACHEIVERS
+    claude-haiku-4-5: LEDAI BUKU NEW ACHIEVERS
+  verbatim_on_page:
+    official: true
+    gpt-4o-mini: true
+    claude-haiku-4-5: false
+  drafted_recommendation: official (page-supported)
+  resolution: null
+  receipt_excerpt: (EDAI BUKU NEW ACHEIVERS
+- page_id: sroie-020
+  field: address
+  candidates:
+    official: NO. 12 & 14, JALAN JINJANG 27/54 TAMAN ALAM MEGAH, SEKSYEN 27 40400 SHAH ALAM, SELANGOR D. E.
+    gpt-4o-mini: 'NO. 12 & 14, JALAN JINJANG 27/54
+
+      TAMAN ALAM MEGAH, SEKSYEN 27
+
+      40400 SHAH ALAM, SELANGOR D. E.'
+    claude-haiku-4-5: NO. 12 & 14, JALAN JINJANG 27/54, TAMAN ALAM MEGAH, SEKSYEN 27, 40400 SHAH ALAM, SELANGOR
+      D. E.
+  verbatim_on_page:
+    official: true
+    gpt-4o-mini: true
+    claude-haiku-4-5: false
+  drafted_recommendation: official (page-supported)
+  resolution: null
+  receipt_excerpt: NO. 12 & 14, JALAN JINJANG 27/54
+- page_id: sroie-036
+  field: company
+  candidates:
+    official: GARDENIA BAKERIES (KL) SDN BHD
+    gpt-4o-mini: GARDENIA BAKERIES (KL) SDN BHD (139386 X)
+    claude-haiku-4-5: GARDENIA BAKERIES (KL) SDN BHD
+  verbatim_on_page:
+    official: true
+    gpt-4o-mini: true
+    claude-haiku-4-5: true
+  drafted_recommendation: official (page-supported)
+  resolution: null
+  receipt_excerpt: GARDENIA BAKERIES (KL) SDN BHD (139386 X)
+- page_id: sroie-036
+  field: total
+  candidates:
+    official: '26:58'
+    gpt-4o-mini: '26:58'
+    claude-haiku-4-5: '26.58'
+  verbatim_on_page:
+    official: true
+    gpt-4o-mini: true
+    claude-haiku-4-5: false
+  drafted_recommendation: official (page-supported)
+  resolution: null
+  receipt_excerpt: 'Total Payable: 26:58'
+- page_id: sroie-054
+  field: address
+  candidates:
+    official: NO 290, JALAN AIR PANAS, SETAPAK, 53200, KUALA LUMPUR.
+    gpt-4o-mini: NO 290, JALAN AIR PANAS, SETAPAK, 53200, KUALA LUMPUR.
+    claude-haiku-4-5: NO 290, JALAN AIR PANAS, SETAPAK, 53200, KUALA LUMPUR
+  verbatim_on_page:
+    official: true
+    gpt-4o-mini: true
+    claude-haiku-4-5: true
+  drafted_recommendation: official (page-supported)
+  resolution: null
+  receipt_excerpt: NO 290, JALAN AIR PANAS,
+- page_id: sroie-084
+  field: company
+  candidates:
+    official: AMANO MALAYSIA SDN BHD
+    gpt-4o-mini: AMANO MALAYSIA SDN BHD (682288-V)
+    claude-haiku-4-5: AMANO MALAYSIA SDN BHD (682288-V)
+  verbatim_on_page:
+    official: true
+    gpt-4o-mini: true
+    claude-haiku-4-5: true
+  drafted_recommendation: official (page-supported)
+  resolution: null
+  receipt_excerpt: AMANO MALAYSIA SDN BHD (682288-V)
+- page_id: sroie-087
+  field: company
+  candidates:
+    official: GARDENIA BAKERIESKL)SDN BHD (139386
+    gpt-4o-mini: GARDENIA BAKERIESKL)SDN BHD (139386 X)
+    claude-haiku-4-5: GARDENIA BAKERIESKL)SDN BHD (139386 X)
+  verbatim_on_page:
+    official: true
+    gpt-4o-mini: true
+    claude-haiku-4-5: true
+  drafted_recommendation: official (page-supported)
+  resolution: null
+  receipt_excerpt: GARDENIA BAKERIESKL)SDN BHD (139386 X)
+- page_id: sroie-116
+  field: address
+  candidates:
+    official: No 8, Jalan 7/118B, Desa Tun Razak 56000 Kuala Lumpur, Malaysia
+    gpt-4o-mini: 'No 8, Jalan 7/118B, Desa Tun Razak
+
+      56000 Kuala Lumpur, Malaysia'
+    claude-haiku-4-5: No 8, Jalan 7/118B, Desa Tun Razak, 56000 Kuala Lumpur, Malaysia
+  verbatim_on_page:
+    official: true
+    gpt-4o-mini: true
+    claude-haiku-4-5: false
+  drafted_recommendation: official (page-supported)
+  resolution: null
+  receipt_excerpt: No 8, Jalan 7/118B, Desa Tun Razak
+- page_id: sroie-116
+  field: total
+  candidates:
+    official: '7.95'
+    gpt-4o-mini: 7. 95
+    claude-haiku-4-5: RM 7.95
+  verbatim_on_page:
+    official: true
+    gpt-4o-mini: true
+    claude-haiku-4-5: false
+  drafted_recommendation: official (page-supported)
+  resolution: null
+  receipt_excerpt: 'CBE Rubber Band200gm 7.95 T
+
+    Total RM Incl. of GST 7. 95'
+- page_id: sroie-139
+  field: company
+  candidates:
+    official: TS TOOLS HARDWARE & MACHINERY SOR EED
+    gpt-4o-mini: TS TOOLS HARDWARE & MACHINERY
+    claude-haiku-4-5: TS TOOLS HARDWARE & MACHINERY SOR EED
+  verbatim_on_page:
+    official: true
+    gpt-4o-mini: true
+    claude-haiku-4-5: true
+  drafted_recommendation: official (page-supported)
+  resolution: null
+  receipt_excerpt: TS TOOLS HARDWARE & MACHINERY SOR EED
+- page_id: sroie-143
+  field: date
+  candidates:
+    official: 15/01/2019
+    gpt-4o-mini: 15/01/2019 11:05:16 AM
+    claude-haiku-4-5: 15/01/2019
+  verbatim_on_page:
+    official: true
+    gpt-4o-mini: true
+    claude-haiku-4-5: true
+  drafted_recommendation: official (page-supported)
+  resolution: null
+  receipt_excerpt: 'Date : 15/01/2019 11:05:16 AM'
+- page_id: sroie-151
+  field: company
+  candidates:
+    official: GARDENIA BAKERIES (KL.) SDN BHD
+    gpt-4o-mini: GARDENIA BAKERIES (KL.) SDN BHD (139386 X)
+    claude-haiku-4-5: GARDENIA BAKERIES (KL.) SDN BHD (139386 X)
+  verbatim_on_page:
+    official: true
+    gpt-4o-mini: true
+    claude-haiku-4-5: true
+  drafted_recommendation: official (page-supported)
+  resolution: null
+  receipt_excerpt: GARDENIA BAKERIES (KL.) SDN BHD (139386 X)
+- page_id: sroie-166
+  field: date
+  candidates:
+    official: 09/05/2018
+    gpt-4o-mini: '09/05/2018 #1 12:22 PM'
+    claude-haiku-4-5: 09/05/2018
+  verbatim_on_page:
+    official: true
+    gpt-4o-mini: true
+    claude-haiku-4-5: true
+  drafted_recommendation: official (page-supported)
+  resolution: null
+  receipt_excerpt: 'Date : 09/05/2018 #1 12:22 PM
+
+    PRN ON : 09/05/2018 12:23 PM
+
+    *** 09/05/2018 12:23 PM ***'
+- page_id: sroie-178
+  field: total
+  candidates:
+    official: '90.00'
+    gpt-4o-mini: '90.00'
+    claude-haiku-4-5: '100.00'
+  verbatim_on_page:
+    official: true
+    gpt-4o-mini: true
+    claude-haiku-4-5: true
+  drafted_recommendation: official (page-supported)
+  resolution: null
+  receipt_excerpt: '339300051 × 2 90.00 S
+
+    NET TOTAL 90.00
+
+    CASH : 100.00'
+- page_id: sroie-186
+  field: total
+  candidates:
+    official: '5.30'
+    gpt-4o-mini: '30'
+    claude-haiku-4-5: '30'
+  verbatim_on_page:
+    official: true
+    gpt-4o-mini: true
+    claude-haiku-4-5: true
+  drafted_recommendation: official (page-supported)
+  resolution: null
+  receipt_excerpt: '3674 10 0.53 5.30 S
+
+    GST 0.30
+
+    TOTAL = 30
+
+    SR 5.00 6 0.30
+
+    TAX TOTAL: 0.30'
+- page_id: sroie-208
+  field: date
+  candidates:
+    official: 01-02-2018
+    gpt-4o-mini: 01-02-2018 09:52:50 AM
+    claude-haiku-4-5: 01-02-2018
+  verbatim_on_page:
+    official: true
+    gpt-4o-mini: true
+    claude-haiku-4-5: true
+  drafted_recommendation: official (page-supported)
+  resolution: null
+  receipt_excerpt: 01-02-2018 09:52:50 AM
+- page_id: sroie-208
+  field: address
+  candidates:
+    official: NO. 1 Jalan Euro 1 Off Jalan Batu Tiga Sungai Buloh Seksyen U3 Shah Alam, 40150
+    gpt-4o-mini: NO. 1 Jalan Euro 1 Off Jalan Batu Tiga Sungai Buloh Seksyen U3 Shah Alam, 40150
+    claude-haiku-4-5: NO. 1 Jalan Euro 1, Off Jalan Batu Tiga, Sungai Buloh Seksyen U3 Shah Alam, 40150
+  verbatim_on_page:
+    official: true
+    gpt-4o-mini: true
+    claude-haiku-4-5: false
+  drafted_recommendation: official (page-supported)
+  resolution: null
+  receipt_excerpt: NO. 1 Jalan Euro 1
+- page_id: sroie-216
+  field: address
+  candidates:
+    official: NO 290, JALAN AIR PANAS, SETAPAK, 53200, KUALA LUMPUR.
+    gpt-4o-mini: 'NO 290, JALAN AIR PANAS,
+
+      SETAPAK,
+
+      53200, KUALA LUMPUR.'
+    claude-haiku-4-5: NO 290, JALAN AIR PANAS, SETAPAK, 53200, KUALA LUMPUR
+  verbatim_on_page:
+    official: true
+    gpt-4o-mini: true
+    claude-haiku-4-5: true
+  drafted_recommendation: official (page-supported)
+  resolution: null
+  receipt_excerpt: NO 290, JALAN AIR PANAS,
+- page_id: sroie-218
+  field: address
+  candidates:
+    official: 'LOT 1851-A & 1851-B, JALAN KPB 6, KAWASAN PERINDUSTRIAN BALAKONG: 43300, SERI KEMBANGAN, SELANGOR'
+    gpt-4o-mini: 'LOT 1851-A & 1851-B, JALAN KPB 6, KAWASAN PERINDUSTRIAN BALAKONG: 43300, SERI KEMBANGAN, SELANGOR'
+    claude-haiku-4-5: LOT 1851-A & 1851-B, JALAN KPB 6, KAWASAN PERINDUSTRIAN BALAKONG, 43300, SERI KEMBANGAN, SELANGOR
+  verbatim_on_page:
+    official: true
+    gpt-4o-mini: true
+    claude-haiku-4-5: false
+  drafted_recommendation: official (page-supported)
+  resolution: null
+  receipt_excerpt: LOT 1851-A & 1851-B, JALAN KPB 6,
+- page_id: sroie-231
+  field: company
+  candidates:
+    official: SAYANG YOU STATION SDN BHD
+    gpt-4o-mini: JUWITA WEDDINGS (366310-U)
+    claude-haiku-4-5: JUWITA WEDDINGS (366310-U)
+  verbatim_on_page:
+    official: true
+    gpt-4o-mini: true
+    claude-haiku-4-5: true
+  drafted_recommendation: official (page-supported)
+  resolution: null
+  receipt_excerpt: 'JUWITA WEDDINGS (366310-U)
+
+    SAYANG YOU STATION SDN BHD
+
+    Cashier : Juwita Weddings'
+- page_id: sroie-231
+  field: date
+  candidates:
+    official: 28-Feb-2018
+    gpt-4o-mini: 28-Feb-2018 16:37:04
+    claude-haiku-4-5: 28-Feb-2018
+  verbatim_on_page:
+    official: true
+    gpt-4o-mini: true
+    claude-haiku-4-5: true
+  drafted_recommendation: official (page-supported)
+  resolution: null
+  receipt_excerpt: 'Receipt Date : 28-Feb-2018 16:37:04'
+- page_id: sroie-248
+  field: company
+  candidates:
+    official: ECONSAVE CASH & CARRY (FC) $/3
+    gpt-4o-mini: ECONSAVE CASH & CARRY (FC) $/3 (930311-W)
+    claude-haiku-4-5: ECONSAVE CASH & CARRY (FC)
+  verbatim_on_page:
+    official: true
+    gpt-4o-mini: true
+    claude-haiku-4-5: true
+  drafted_recommendation: official (page-supported)
+  resolution: null
+  receipt_excerpt: ECONSAVE CASH & CARRY (FC) $/3 (930311-W)
+- page_id: sroie-252
+  field: address
+  candidates:
+    official: $117, Second Floor, Aeon Tebrau City, 1, Jalan Desa Tebrau, Taman Desa Tebrau; 81100 Johor Bahru,
+      Johor.
+    gpt-4o-mini: '$117, Second Floor,
+
+      Aeon Tebrau City,
+
+      1, Jalan Desa Tebrau,
+
+      Taman Desa Tebrau;
+
+      81100 Johor Bahru, Johor.'
+    claude-haiku-4-5: $117, Second Floor, Aeon Tebrau City, 1, Jalan Desa Tebrau, Taman Desa Tebrau, 81100 Johor
+      Bahru, Johor
+  verbatim_on_page:
+    official: true
+    gpt-4o-mini: true
+    claude-haiku-4-5: false
+  drafted_recommendation: official (page-supported)
+  resolution: null
+  receipt_excerpt: $117, Second Floor,
+- page_id: sroie-263
+  field: date
+  candidates:
+    official: 27/04/2018
+    gpt-4o-mini: 27/04/2018 15:20:22
+    claude-haiku-4-5: 27/04/2018
+  verbatim_on_page:
+    official: true
+    gpt-4o-mini: true
+    claude-haiku-4-5: true
+  drafted_recommendation: official (page-supported)
+  resolution: null
+  receipt_excerpt: 'ORD #17 -REG #13- 27/04/2018 15:20:22'
+- page_id: sroie-263
+  field: address
+  candidates:
+    official: Level 6, Bangunan TH, Damansara Uptown3 No.3, Jalan SS21/39, 47400 Petaling Jaya Selangor
+    gpt-4o-mini: Level 6, Bangunan TH, Damansara Uptown3 No.3, Jalan SS21/39, 47400 Petaling Jaya Selangor
+    claude-haiku-4-5: Level 6, Bangunan TH, Damansara Uptown3, No.3, Jalan SS21/39, 47400 Petaling Jaya, Selangor
+  verbatim_on_page:
+    official: true
+    gpt-4o-mini: true
+    claude-haiku-4-5: false
+  drafted_recommendation: official (page-supported)
+  resolution: null
+  receipt_excerpt: Level 6, Bangunan TH, Damansara Uptown3
+- page_id: sroie-269
+  field: date
+  candidates:
+    official: 07 Jun 2018
+    gpt-4o-mini: 07 Jun 2018 18:23
+    claude-haiku-4-5: 07 Jun 2018 18:23
+  verbatim_on_page:
+    official: true
+    gpt-4o-mini: true
+    claude-haiku-4-5: true
+  drafted_recommendation: official (page-supported)
+  resolution: null
+  receipt_excerpt: 07 Jun 2018 18:23
+- page_id: sroie-280
+  field: address
+  candidates:
+    official: LOT 276 JALAN BANTING 43800 DENGKIL, SELANGOR.
+    gpt-4o-mini: 'LOT 276 JALAN BANTING
+
+      43800 DENGKIL, SELANGOR.'
+    claude-haiku-4-5: LOT 276 JALAN BANTING 43800 DENGKIL, SELANGOR
+  verbatim_on_page:
+    official: true
+    gpt-4o-mini: true
+    claude-haiku-4-5: true
+  drafted_recommendation: official (page-supported)
+  resolution: null
+  receipt_excerpt: LOT 276 JALAN BANTING
+- page_id: sroie-299
+  field: company
+  candidates:
+    official: GARDENIA BAKERIES (KL) SDN BHD
+    gpt-4o-mini: GARDENIA BAKERIES (KL) SDN BHD ( 139386 X)
+    claude-haiku-4-5: GARDENIA BAKERIES (KL) SDN BHD ( 139386 X)
+  verbatim_on_page:
+    official: true
+    gpt-4o-mini: true
+    claude-haiku-4-5: true
+  drafted_recommendation: official (page-supported)
+  resolution: null
+  receipt_excerpt: GARDENIA BAKERIES (KL) SDN BHD ( 139386 X)
+- page_id: sroie-301
+  field: company
+  candidates:
+    official: THE TOAST F&B SDN BHD
+    gpt-4o-mini: THE TOAST F&B SDN BHD (965752-T)
+    claude-haiku-4-5: THE TOAST F&B SDN BHD (965752-T)
+  verbatim_on_page:
+    official: true
+    gpt-4o-mini: true
+    claude-haiku-4-5: true
+  drafted_recommendation: official (page-supported)
+  resolution: null
+  receipt_excerpt: THE TOAST F&B SDN BHD (965752-T)
+- page_id: sroie-301
+  field: address
+  candidates:
+    official: LOT 211082111 JALAN PERMAS UTARA BANDAR BARU PERMAS 81750, JOHOR BAHRU JOHOR
+    gpt-4o-mini: 'LOT 211082111 JALAN PERMAS UTARA
+
+      BANDAR BARU PERMAS
+
+      81750, JOHOR BAHRU JOHOR'
+    claude-haiku-4-5: LOT 211082111 JALAN PERMAS UTAMA BANDAR BARU PERMAS 81750, JOHOR BAHRU JOHOR
+  verbatim_on_page:
+    official: true
+    gpt-4o-mini: true
+    claude-haiku-4-5: false
+  drafted_recommendation: official (page-supported)
+  resolution: null
+  receipt_excerpt: LOT 211082111 JALAN PERMAS UTARA
+- page_id: sroie-306
+  field: date
+  candidates:
+    official: 26-04-2018
+    gpt-4o-mini: 26-04-2018
+    claude-haiku-4-5: 26-04-2018 14:52
+  verbatim_on_page:
+    official: true
+    gpt-4o-mini: true
+    claude-haiku-4-5: true
+  drafted_recommendation: official (page-supported)
+  resolution: null
+  receipt_excerpt: REG 26-04-2018 14:52
+- page_id: sroie-306
+  field: total
+  candidates:
+    official: RM42.88
+    gpt-4o-mini: RM42.88
+    claude-haiku-4-5: RM42.90
+  verbatim_on_page:
+    official: true
+    gpt-4o-mini: true
+    claude-haiku-4-5: true
+  drafted_recommendation: official (page-supported)
+  resolution: null
+  receipt_excerpt: 'TOTAL RM42.88
+
+    CASH RM42.90'
+- page_id: sroie-308
+  field: company
+  candidates:
+    official: GARDENIA BAKERIES (KL) SDN BHD
+    gpt-4o-mini: GARDENIA BAKERIES (KL) SDN BHD (139386 X)
+    claude-haiku-4-5: GARDENIA BAKERIES (KL) SDN BHD
+  verbatim_on_page:
+    official: true
+    gpt-4o-mini: true
+    claude-haiku-4-5: true
+  drafted_recommendation: official (page-supported)
+  resolution: null
+  receipt_excerpt: GARDENIA BAKERIES (KL) SDN BHD (139386 X)
+- page_id: sroie-314
+  field: date
+  candidates:
+    official: 30/01/2018
+    gpt-4o-mini: 30/01/2018 14:48:23
+    claude-haiku-4-5: 30/01/2018
+  verbatim_on_page:
+    official: true
+    gpt-4o-mini: true
+    claude-haiku-4-5: true
+  drafted_recommendation: official (page-supported)
+  resolution: null
+  receipt_excerpt: 30/01/2018 14:48:23
+- page_id: sroie-316
+  field: address
+  candidates:
+    official: No.3, Jalan SS21/39,47400 Petaling Jaya Selangor
+    gpt-4o-mini: 'Level 6, Bangunan TH, Damansara Uptown3
+
+      No.3, Jalan SS21/39,47400 Petaling Jaya
+
+      Selangor'
+    claude-haiku-4-5: Level 6, Bangunan TH, Damansara Uptown3, No.3, Jalan SS21/39, 47400 Petaling Jaya, Selangor
+  verbatim_on_page:
+    official: true
+    gpt-4o-mini: true
+    claude-haiku-4-5: false
+  drafted_recommendation: official (page-supported)
+  resolution: null
+  receipt_excerpt: 'Level 6, Bangunan TH, Damansara Uptown3
+
+    No.3, Jalan SS21/39,47400 Petaling Jaya'
+- page_id: sroie-331
+  field: company
+  candidates:
+    official: GARDENIA BAKERIES (KL) SDN BHD
+    gpt-4o-mini: GARDENIA BAKERIES (KL) SDN BHD (139386 X)
+    claude-haiku-4-5: GARDENIA BAKERIES (KL) SDN BHD (139386 X)
+  verbatim_on_page:
+    official: true
+    gpt-4o-mini: true
+    claude-haiku-4-5: true
+  drafted_recommendation: official (page-supported)
+  resolution: null
+  receipt_excerpt: GARDENIA BAKERIES (KL) SDN BHD (139386 X)
+- page_id: sroie-331
+  field: address
+  candidates:
+    official: Lot 3, Jalan Pelabur 23/1, 40300 Shah Alam Selangor.
+    gpt-4o-mini: 'Lot 3, Jalan Pelabur 23/1,
+
+      40300 Shah Alam Selangor.'
+    claude-haiku-4-5: Lot 3, Jalan Pelabur 23/1, 40300 Shah Alam Selangor
+  verbatim_on_page:
+    official: true
+    gpt-4o-mini: true
+    claude-haiku-4-5: true
+  drafted_recommendation: official (page-supported)
+  resolution: null
+  receipt_excerpt: Lot 3, Jalan Pelabur 23/1,
+- page_id: sroie-344
+  field: company
+  candidates:
+    official: NSK TRADE CITY-SELAYANG
+    gpt-4o-mini: NSK TRADE CITY-SELAYANG (626470-P)
+    claude-haiku-4-5: NSK TRADE CITY-SELAYANG (626470-P)
+  verbatim_on_page:
+    official: true
+    gpt-4o-mini: true
+    claude-haiku-4-5: true
+  drafted_recommendation: official (page-supported)
+  resolution: null
+  receipt_excerpt: NSK TRADE CITY-SELAYANG (626470-P)
+- page_id: sroie-344
+  field: date
+  candidates:
+    official: 27-10-2017
+    gpt-4o-mini: 27-10-2017 10:51:52 AM
+    claude-haiku-4-5: 27-10-2017
+  verbatim_on_page:
+    official: true
+    gpt-4o-mini: true
+    claude-haiku-4-5: true
+  drafted_recommendation: official (page-supported)
+  resolution: null
+  receipt_excerpt: 27-10-2017 10:51:52 AM
+- page_id: sroie-344
+  field: address
+  candidates:
+    official: LOT 4674 & 4675 SELAYANG BATU 8 JALAN IPOH 68100 BATU CAVES
+    gpt-4o-mini: WISMA YAP TIEH (TAG) LOT 4674 & 4675 SELAYANG BATU 8 JALAN IPOH 68100 BATU CAVES
+    claude-haiku-4-5: LOT 4674 & 4675 SELAYANG BATU 8 JALAN IPOH 68100 BATU CAVES
+  verbatim_on_page:
+    official: true
+    gpt-4o-mini: true
+    claude-haiku-4-5: true
+  drafted_recommendation: official (page-supported)
+  resolution: null
+  receipt_excerpt: 'WISMA YAP TIEH (TAG)
+
+    LOT 4674 & 4675 SELAYANG BATU 8'

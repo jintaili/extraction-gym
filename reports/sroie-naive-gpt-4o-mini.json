@@ -1,0 +1,2449 @@
+{
+  "provider": "gpt-4o-mini",
+  "pages": 347,
+  "composite_mean": 0.7776176753121994,
+  "field_means": {
+    "company": 0.6974063400576369,
+    "date": 0.5850144092219021,
+    "address": 0.8789625360230547,
+    "total": 0.9596541786743515
+  },
+  "composite_by_page": {
+    "sroie-000": 1.0,
+    "sroie-001": 1.0,
+    "sroie-002": 0.5,
+    "sroie-003": 0.8333333333333334,
+    "sroie-004": 1.0,
+    "sroie-005": 0.5,
+    "sroie-006": 0.3333333333333333,
+    "sroie-007": 0.8333333333333334,
+    "sroie-008": 0.6666666666666666,
+    "sroie-009": 0.3333333333333333,
+    "sroie-010": 0.8333333333333334,
+    "sroie-011": 0.5,
+    "sroie-012": 1.0,
+    "sroie-013": 1.0,
+    "sroie-014": 0.6666666666666666,
+    "sroie-015": 0.8333333333333334,
+    "sroie-016": 0.8333333333333334,
+    "sroie-017": 0.8333333333333334,
+    "sroie-018": 0.6666666666666666,
+    "sroie-019": 0.6666666666666666,
+    "sroie-020": 0.8333333333333334,
+    "sroie-021": 0.6666666666666666,
+    "sroie-022": 0.6666666666666666,
+    "sroie-023": 0.6666666666666666,
+    "sroie-024": 0.8333333333333334,
+    "sroie-025": 0.5,
+    "sroie-026": 0.6666666666666666,
+    "sroie-027": 0.16666666666666666,
+    "sroie-028": 1.0,
+    "sroie-029": 1.0,
+    "sroie-030": 0.5,
+    "sroie-031": 1.0,
+    "sroie-032": 0.6666666666666666,
+    "sroie-033": 1.0,
+    "sroie-034": 1.0,
+    "sroie-035": 1.0,
+    "sroie-036": 0.8333333333333334,
+    "sroie-037": 0.8333333333333334,
+    "sroie-038": 0.6666666666666666,
+    "sroie-039": 1.0,
+    "sroie-040": 0.6666666666666666,
+    "sroie-041": 0.8333333333333334,
+    "sroie-042": 0.5,
+    "sroie-043": 0.6666666666666666,
+    "sroie-044": 0.6666666666666666,
+    "sroie-045": 0.6666666666666666,
+    "sroie-046": 0.5,
+    "sroie-047": 0.6666666666666666,
+    "sroie-048": 1.0,
+    "sroie-049": 0.8333333333333334,
+    "sroie-050": 0.8333333333333334,
+    "sroie-051": 0.6666666666666666,
+    "sroie-052": 1.0,
+    "sroie-053": 0.6666666666666666,
+    "sroie-054": 1.0,
+    "sroie-055": 1.0,
+    "sroie-056": 1.0,
+    "sroie-057": 0.5,
+    "sroie-058": 1.0,
+    "sroie-059": 1.0,
+    "sroie-060": 0.6666666666666666,
+    "sroie-061": 1.0,
+    "sroie-062": 1.0,
+    "sroie-063": 0.6666666666666666,
+    "sroie-064": 0.6666666666666666,
+    "sroie-065": 0.8333333333333334,
+    "sroie-066": 1.0,
+    "sroie-067": 0.8333333333333334,
+    "sroie-068": 0.6666666666666666,
+    "sroie-069": 0.6666666666666666,
+    "sroie-070": 1.0,
+    "sroie-071": 0.6666666666666666,
+    "sroie-072": 1.0,
+    "sroie-073": 1.0,
+    "sroie-074": 0.5,
+    "sroie-075": 0.6666666666666666,
+    "sroie-076": 0.5,
+    "sroie-077": 1.0,
+    "sroie-078": 0.8333333333333334,
+    "sroie-079": 0.8333333333333334,
+    "sroie-080": 1.0,
+    "sroie-081": 1.0,
+    "sroie-082": 1.0,
+    "sroie-083": 0.8333333333333334,
+    "sroie-084": 0.8333333333333334,
+    "sroie-085": 0.6666666666666666,
+    "sroie-086": 1.0,
+    "sroie-087": 0.8333333333333334,
+    "sroie-088": 0.6666666666666666,
+    "sroie-089": 0.6666666666666666,
+    "sroie-090": 1.0,
+    "sroie-091": 1.0,
+    "sroie-092": 0.6666666666666666,
+    "sroie-093": 0.6666666666666666,
+    "sroie-094": 0.6666666666666666,
+    "sroie-095": 1.0,
+    "sroie-096": 0.6666666666666666,
+    "sroie-097": 0.5,
+    "sroie-098": 1.0,
+    "sroie-099": 0.5,
+    "sroie-100": 0.6666666666666666,
+    "sroie-101": 0.8333333333333334,
+    "sroie-102": 0.5,
+    "sroie-103": 1.0,
+    "sroie-104": 1.0,
+    "sroie-105": 1.0,
+    "sroie-106": 1.0,
+    "sroie-107": 0.6666666666666666,
+    "sroie-108": 0.3333333333333333,
+    "sroie-109": 0.6666666666666666,
+    "sroie-110": 0.6666666666666666,
+    "sroie-111": 0.6666666666666666,
+    "sroie-112": 0.6666666666666666,
+    "sroie-113": 0.5,
+    "sroie-114": 1.0,
+    "sroie-115": 1.0,
+    "sroie-116": 0.6666666666666666,
+    "sroie-117": 0.5,
+    "sroie-118": 0.8333333333333334,
+    "sroie-119": 0.6666666666666666,
+    "sroie-120": 0.8333333333333334,
+    "sroie-121": 0.6666666666666666,
+    "sroie-122": 1.0,
+    "sroie-123": 0.6666666666666666,
+    "sroie-124": 0.6666666666666666,
+    "sroie-125": 0.6666666666666666,
+    "sroie-126": 0.6666666666666666,
+    "sroie-127": 1.0,
+    "sroie-128": 0.5,
+    "sroie-129": 0.6666666666666666,
+    "sroie-130": 1.0,
+    "sroie-131": 1.0,
+    "sroie-132": 0.5,
+    "sroie-133": 0.5,
+    "sroie-134": 1.0,
+    "sroie-135": 0.8333333333333334,
+    "sroie-136": 1.0,
+    "sroie-137": 1.0,
+    "sroie-138": 0.5,
+    "sroie-139": 0.8333333333333334,
+    "sroie-140": 0.6666666666666666,
+    "sroie-141": 0.6666666666666666,
+    "sroie-142": 1.0,
+    "sroie-143": 0.6666666666666666,
+    "sroie-144": 1.0,
+    "sroie-145": 0.6666666666666666,
+    "sroie-146": 0.6666666666666666,
+    "sroie-147": 1.0,
+    "sroie-148": 0.5,
+    "sroie-149": 0.6666666666666666,
+    "sroie-150": 0.8333333333333334,
+    "sroie-151": 0.8333333333333334,
+    "sroie-152": 0.6666666666666666,
+    "sroie-153": 0.8333333333333334,
+    "sroie-154": 0.8333333333333334,
+    "sroie-155": 1.0,
+    "sroie-156": 1.0,
+    "sroie-157": 0.6666666666666666,
+    "sroie-158": 0.6666666666666666,
+    "sroie-159": 0.8333333333333334,
+    "sroie-160": 0.8333333333333334,
+    "sroie-161": 0.6666666666666666,
+    "sroie-162": 0.6666666666666666,
+    "sroie-163": 1.0,
+    "sroie-164": 1.0,
+    "sroie-165": 1.0,
+    "sroie-166": 0.6666666666666666,
+    "sroie-167": 1.0,
+    "sroie-168": 0.6666666666666666,
+    "sroie-169": 1.0,
+    "sroie-170": 1.0,
+    "sroie-171": 0.5,
+    "sroie-172": 0.6666666666666666,
+    "sroie-173": 1.0,
+    "sroie-174": 0.8333333333333334,
+    "sroie-175": 1.0,
+    "sroie-176": 1.0,
+    "sroie-177": 0.6666666666666666,
+    "sroie-178": 1.0,
+    "sroie-179": 0.8333333333333334,
+    "sroie-180": 0.6666666666666666,
+    "sroie-181": 1.0,
+    "sroie-182": 0.6666666666666666,
+    "sroie-183": 1.0,
+    "sroie-184": 0.5,
+    "sroie-185": 0.6666666666666666,
+    "sroie-186": 0.6666666666666666,
+    "sroie-187": 1.0,
+    "sroie-188": 0.6666666666666666,
+    "sroie-189": 1.0,
+    "sroie-190": 0.6666666666666666,
+    "sroie-191": 1.0,
+    "sroie-192": 0.8333333333333334,
+    "sroie-193": 1.0,
+    "sroie-194": 0.5,
+    "sroie-195": 0.6666666666666666,
+    "sroie-196": 0.6666666666666666,
+    "sroie-197": 1.0,
+    "sroie-198": 0.6666666666666666,
+    "sroie-199": 0.6666666666666666,
+    "sroie-200": 0.6666666666666666,
+    "sroie-201": 1.0,
+    "sroie-202": 0.5,
+    "sroie-203": 0.6666666666666666,
+    "sroie-204": 0.6666666666666666,
+    "sroie-205": 0.6666666666666666,
+    "sroie-206": 0.3333333333333333,
+    "sroie-207": 0.8333333333333334,
+    "sroie-208": 0.6666666666666666,
+    "sroie-209": 0.8333333333333334,
+    "sroie-210": 1.0,
+    "sroie-211": 1.0,
+    "sroie-212": 0.6666666666666666,
+    "sroie-213": 0.8333333333333334,
+    "sroie-214": 0.8333333333333334,
+    "sroie-215": 0.6666666666666666,
+    "sroie-216": 1.0,
+    "sroie-217": 0.5,
+    "sroie-218": 1.0,
+    "sroie-219": 1.0,
+    "sroie-220": 1.0,
+    "sroie-221": 1.0,
+    "sroie-222": 0.8333333333333334,
+    "sroie-223": 0.6666666666666666,
+    "sroie-224": 0.6666666666666666,
+    "sroie-225": 0.6666666666666666,
+    "sroie-226": 0.6666666666666666,
+    "sroie-227": 1.0,
+    "sroie-228": 1.0,
+    "sroie-229": 1.0,
+    "sroie-230": 1.0,
+    "sroie-231": 0.5,
+    "sroie-232": 1.0,
+    "sroie-233": 0.6666666666666666,
+    "sroie-234": 0.5,
+    "sroie-235": 0.6666666666666666,
+    "sroie-236": 1.0,
+    "sroie-237": 0.8333333333333334,
+    "sroie-238": 0.8333333333333334,
+    "sroie-239": 0.5,
+    "sroie-240": 0.6666666666666666,
+    "sroie-241": 1.0,
+    "sroie-242": 1.0,
+    "sroie-243": 0.6666666666666666,
+    "sroie-244": 0.8333333333333334,
+    "sroie-245": 0.8333333333333334,
+    "sroie-246": 1.0,
+    "sroie-247": 0.8333333333333334,
+    "sroie-248": 0.8333333333333334,
+    "sroie-249": 1.0,
+    "sroie-250": 0.6666666666666666,
+    "sroie-251": 1.0,
+    "sroie-252": 1.0,
+    "sroie-253": 0.5,
+    "sroie-254": 0.5,
+    "sroie-255": 0.5,
+    "sroie-256": 0.5,
+    "sroie-257": 0.6666666666666666,
+    "sroie-258": 0.6666666666666666,
+    "sroie-259": 0.5,
+    "sroie-260": 0.6666666666666666,
+    "sroie-261": 1.0,
+    "sroie-262": 0.6666666666666666,
+    "sroie-263": 0.6666666666666666,
+    "sroie-264": 1.0,
+    "sroie-265": 0.6666666666666666,
+    "sroie-266": 0.6666666666666666,
+    "sroie-267": 0.6666666666666666,
+    "sroie-268": 1.0,
+    "sroie-269": 0.6666666666666666,
+    "sroie-270": 0.6666666666666666,
+    "sroie-271": 0.8333333333333334,
+    "sroie-272": 0.8333333333333334,
+    "sroie-273": 0.6666666666666666,
+    "sroie-274": 0.8333333333333334,
+    "sroie-275": 0.6666666666666666,
+    "sroie-276": 0.6666666666666666,
+    "sroie-277": 0.6666666666666666,
+    "sroie-278": 0.5,
+    "sroie-279": 0.8333333333333334,
+    "sroie-280": 1.0,
+    "sroie-281": 0.6666666666666666,
+    "sroie-282": 0.6666666666666666,
+    "sroie-283": 0.8333333333333334,
+    "sroie-284": 0.8333333333333334,
+    "sroie-285": 0.8333333333333334,
+    "sroie-286": 0.6666666666666666,
+    "sroie-287": 1.0,
+    "sroie-288": 0.6666666666666666,
+    "sroie-289": 1.0,
+    "sroie-290": 0.8333333333333334,
+    "sroie-291": 1.0,
+    "sroie-292": 0.8333333333333334,
+    "sroie-293": 1.0,
+    "sroie-294": 0.6666666666666666,
+    "sroie-295": 0.5,
+    "sroie-296": 1.0,
+    "sroie-297": 0.6666666666666666,
+    "sroie-298": 0.8333333333333334,
+    "sroie-299": 0.8333333333333334,
+    "sroie-300": 0.6666666666666666,
+    "sroie-301": 0.8333333333333334,
+    "sroie-302": 0.6666666666666666,
+    "sroie-303": 0.5,
+    "sroie-304": 0.6666666666666666,
+    "sroie-305": 1.0,
+    "sroie-306": 1.0,
+    "sroie-307": 0.5,
+    "sroie-308": 0.8333333333333334,
+    "sroie-309": 0.8333333333333334,
+    "sroie-310": 1.0,
+    "sroie-311": 1.0,
+    "sroie-312": 0.6666666666666666,
+    "sroie-313": 0.6666666666666666,
+    "sroie-314": 0.6666666666666666,
+    "sroie-315": 0.6666666666666666,
+    "sroie-316": 0.8333333333333334,
+    "sroie-317": 1.0,
+    "sroie-318": 0.8333333333333334,
+    "sroie-319": 0.8333333333333334,
+    "sroie-320": 0.6666666666666666,
+    "sroie-321": 0.8333333333333334,
+    "sroie-322": 0.6666666666666666,
+    "sroie-323": 0.8333333333333334,
+    "sroie-324": 0.6666666666666666,
+    "sroie-325": 1.0,
+    "sroie-326": 0.8333333333333334,
+    "sroie-327": 0.5,
+    "sroie-328": 1.0,
+    "sroie-329": 1.0,
+    "sroie-330": 0.5,
+    "sroie-331": 0.8333333333333334,
+    "sroie-332": 0.6666666666666666,
+    "sroie-333": 0.8333333333333334,
+    "sroie-334": 0.3333333333333333,
+    "sroie-335": 1.0,
+    "sroie-336": 0.6666666666666666,
+    "sroie-337": 1.0,
+    "sroie-338": 1.0,
+    "sroie-339": 0.6666666666666666,
+    "sroie-340": 0.8333333333333334,
+    "sroie-341": 0.6666666666666666,
+    "sroie-342": 0.6666666666666666,
+    "sroie-343": 0.5,
+    "sroie-344": 0.3333333333333333,
+    "sroie-345": 0.6666666666666666,
+    "sroie-346": 0.6666666666666666
+  },
+  "scores_by_page": {
+    "sroie-000": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-001": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-002": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 0.0,
+      "total": 1.0
+    },
+    "sroie-003": {
+      "company": 0.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-004": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-005": {
+      "company": 0.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-006": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 0.0
+    },
+    "sroie-007": {
+      "company": 0.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-008": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-009": {
+      "company": 0.0,
+      "date": 1.0,
+      "address": 0.0,
+      "total": 0.0
+    },
+    "sroie-010": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 0.0,
+      "total": 1.0
+    },
+    "sroie-011": {
+      "company": 0.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-012": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-013": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-014": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-015": {
+      "company": 0.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-016": {
+      "company": 0.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-017": {
+      "company": 0.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-018": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-019": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-020": {
+      "company": 0.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-021": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-022": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-023": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-024": {
+      "company": 0.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-025": {
+      "company": 0.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-026": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-027": {
+      "company": 0.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 0.0
+    },
+    "sroie-028": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-029": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-030": {
+      "company": 0.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-031": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-032": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-033": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-034": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-035": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-036": {
+      "company": 0.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-037": {
+      "company": 0.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-038": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-039": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-040": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-041": {
+      "company": 0.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-042": {
+      "company": 0.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-043": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-044": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-045": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-046": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 0.0,
+      "total": 1.0
+    },
+    "sroie-047": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-048": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-049": {
+      "company": 0.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-050": {
+      "company": 0.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-051": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-052": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-053": {
+      "company": 0.0,
+      "date": 1.0,
+      "address": 0.0,
+      "total": 1.0
+    },
+    "sroie-054": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-055": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-056": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-057": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 0.0,
+      "total": 1.0
+    },
+    "sroie-058": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-059": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-060": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-061": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-062": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-063": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 0.0
+    },
+    "sroie-064": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-065": {
+      "company": 0.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-066": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-067": {
+      "company": 0.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-068": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-069": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-070": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-071": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-072": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-073": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-074": {
+      "company": 0.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-075": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 0.0
+    },
+    "sroie-076": {
+      "company": 0.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-077": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-078": {
+      "company": 0.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-079": {
+      "company": 0.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-080": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-081": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-082": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-083": {
+      "company": 0.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-084": {
+      "company": 0.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-085": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-086": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-087": {
+      "company": 0.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-088": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-089": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-090": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-091": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-092": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-093": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-094": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-095": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-096": {
+      "company": 0.0,
+      "date": 1.0,
+      "address": 0.0,
+      "total": 1.0
+    },
+    "sroie-097": {
+      "company": 0.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-098": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-099": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 0.0,
+      "total": 1.0
+    },
+    "sroie-100": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-101": {
+      "company": 0.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-102": {
+      "company": 0.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-103": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-104": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-105": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-106": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-107": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-108": {
+      "company": 0.0,
+      "date": 0.0,
+      "address": 0.0,
+      "total": 1.0
+    },
+    "sroie-109": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-110": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-111": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-112": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-113": {
+      "company": 0.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-114": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-115": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-116": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 0.0
+    },
+    "sroie-117": {
+      "company": 0.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-118": {
+      "company": 0.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-119": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-120": {
+      "company": 0.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-121": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-122": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-123": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-124": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-125": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-126": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-127": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-128": {
+      "company": 0.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-129": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-130": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-131": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-132": {
+      "company": 0.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-133": {
+      "company": 0.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-134": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-135": {
+      "company": 0.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-136": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-137": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-138": {
+      "company": 0.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-139": {
+      "company": 0.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-140": {
+      "company": 0.0,
+      "date": 1.0,
+      "address": 0.0,
+      "total": 1.0
+    },
+    "sroie-141": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-142": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-143": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-144": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-145": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-146": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-147": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-148": {
+      "company": 0.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-149": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-150": {
+      "company": 0.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-151": {
+      "company": 0.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-152": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-153": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 0.0,
+      "total": 1.0
+    },
+    "sroie-154": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 0.0,
+      "total": 1.0
+    },
+    "sroie-155": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-156": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-157": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-158": {
+      "company": 0.0,
+      "date": 1.0,
+      "address": 0.0,
+      "total": 1.0
+    },
+    "sroie-159": {
+      "company": 0.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-160": {
+      "company": 0.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-161": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-162": {
+      "company": 0.0,
+      "date": 1.0,
+      "address": 0.0,
+      "total": 1.0
+    },
+    "sroie-163": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-164": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-165": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-166": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-167": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-168": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-169": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-170": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-171": {
+      "company": 0.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-172": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-173": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-174": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 0.0,
+      "total": 1.0
+    },
+    "sroie-175": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-176": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-177": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-178": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-179": {
+      "company": 0.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-180": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-181": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-182": {
+      "company": 0.0,
+      "date": 1.0,
+      "address": 0.0,
+      "total": 1.0
+    },
+    "sroie-183": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-184": {
+      "company": 0.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 0.0
+    },
+    "sroie-185": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-186": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 0.0
+    },
+    "sroie-187": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-188": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-189": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-190": {
+      "company": 0.0,
+      "date": 1.0,
+      "address": 0.0,
+      "total": 1.0
+    },
+    "sroie-191": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-192": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 0.0,
+      "total": 1.0
+    },
+    "sroie-193": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-194": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 0.0,
+      "total": 0.0
+    },
+    "sroie-195": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-196": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-197": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-198": {
+      "company": 0.0,
+      "date": 1.0,
+      "address": 0.0,
+      "total": 1.0
+    },
+    "sroie-199": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-200": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-201": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-202": {
+      "company": 0.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-203": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-204": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-205": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-206": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 0.0
+    },
+    "sroie-207": {
+      "company": 0.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-208": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-209": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 0.0,
+      "total": 1.0
+    },
+    "sroie-210": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-211": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-212": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 0.0
+    },
+    "sroie-213": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 0.0,
+      "total": 1.0
+    },
+    "sroie-214": {
+      "company": 0.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-215": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-216": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-217": {
+      "company": 0.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 0.0
+    },
+    "sroie-218": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-219": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-220": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-221": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-222": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 0.0,
+      "total": 1.0
+    },
+    "sroie-223": {
+      "company": 0.0,
+      "date": 1.0,
+      "address": 0.0,
+      "total": 1.0
+    },
+    "sroie-224": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 0.0
+    },
+    "sroie-225": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-226": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-227": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-228": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-229": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-230": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-231": {
+      "company": 0.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-232": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-233": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-234": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 0.0,
+      "total": 1.0
+    },
+    "sroie-235": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-236": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-237": {
+      "company": 0.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-238": {
+      "company": 0.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-239": {
+      "company": 0.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-240": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-241": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-242": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-243": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-244": {
+      "company": 0.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-245": {
+      "company": 0.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-246": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-247": {
+      "company": 0.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-248": {
+      "company": 0.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-249": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-250": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-251": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-252": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-253": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 0.0,
+      "total": 1.0
+    },
+    "sroie-254": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 0.0,
+      "total": 1.0
+    },
+    "sroie-255": {
+      "company": 0.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-256": {
+      "company": 0.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-257": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-258": {
+      "company": 0.0,
+      "date": 1.0,
+      "address": 0.0,
+      "total": 1.0
+    },
+    "sroie-259": {
+      "company": 0.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-260": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 0.0
+    },
+    "sroie-261": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-262": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-263": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-264": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-265": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-266": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-267": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-268": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-269": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-270": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-271": {
+      "company": 0.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-272": {
+      "company": 0.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-273": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-274": {
+      "company": 0.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-275": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-276": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-277": {
+      "company": 0.0,
+      "date": 1.0,
+      "address": 0.0,
+      "total": 1.0
+    },
+    "sroie-278": {
+      "company": 0.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-279": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 0.0,
+      "total": 1.0
+    },
+    "sroie-280": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-281": {
+      "company": 0.0,
+      "date": 1.0,
+      "address": 0.0,
+      "total": 1.0
+    },
+    "sroie-282": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-283": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 0.0,
+      "total": 1.0
+    },
+    "sroie-284": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 0.0,
+      "total": 1.0
+    },
+    "sroie-285": {
+      "company": 0.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-286": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-287": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-288": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-289": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-290": {
+      "company": 0.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-291": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-292": {
+      "company": 0.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-293": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-294": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-295": {
+      "company": 0.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-296": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-297": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-298": {
+      "company": 0.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-299": {
+      "company": 0.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-300": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-301": {
+      "company": 0.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-302": {
+      "company": 0.0,
+      "date": 1.0,
+      "address": 0.0,
+      "total": 1.0
+    },
+    "sroie-303": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 0.0,
+      "total": 1.0
+    },
+    "sroie-304": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-305": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-306": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-307": {
+      "company": 0.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-308": {
+      "company": 0.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-309": {
+      "company": 0.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-310": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-311": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-312": {
+      "company": 0.0,
+      "date": 1.0,
+      "address": 0.0,
+      "total": 1.0
+    },
+    "sroie-313": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-314": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-315": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-316": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 0.0,
+      "total": 1.0
+    },
+    "sroie-317": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-318": {
+      "company": 0.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-319": {
+      "company": 0.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-320": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-321": {
+      "company": 0.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-322": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-323": {
+      "company": 0.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-324": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-325": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-326": {
+      "company": 0.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-327": {
+      "company": 0.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-328": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-329": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-330": {
+      "company": 0.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-331": {
+      "company": 0.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-332": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-333": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 0.0,
+      "total": 1.0
+    },
+    "sroie-334": {
+      "company": 0.0,
+      "date": 0.0,
+      "address": 0.0,
+      "total": 1.0
+    },
+    "sroie-335": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-336": {
+      "company": 0.0,
+      "date": 1.0,
+      "address": 0.0,
+      "total": 1.0
+    },
+    "sroie-337": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-338": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-339": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-340": {
+      "company": 1.0,
+      "date": 1.0,
+      "address": 0.0,
+      "total": 1.0
+    },
+    "sroie-341": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-342": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-343": {
+      "company": 0.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-344": {
+      "company": 0.0,
+      "date": 0.0,
+      "address": 0.0,
+      "total": 1.0
+    },
+    "sroie-345": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    },
+    "sroie-346": {
+      "company": 1.0,
+      "date": 0.0,
+      "address": 1.0,
+      "total": 1.0
+    }
+  },
+  "usage": {
+    "input_tokens": 49082,
+    "output_tokens": 7081,
+    "api_calls": 110
+  }
+}

@@ -7,3 +7,5 @@ __pycache__/
 runs/*
 !runs/**/ledger.jsonl
 .env
+goldset/sroie-v1/pages/
+goldset/sroie-v1/labels-official/

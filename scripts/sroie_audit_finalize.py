@@ -5,8 +5,10 @@
 
 Run AFTER the human fills `resolution:` on every dispute:
   resolution: official            # official label correct
-  resolution: models              # model consensus correct, official wrong
-  resolution: "<exact value>"     # neither; human supplies the correct value
+  resolution: gpt-4o-mini         # that model's value is correct
+  resolution: claude-haiku-4-5    # that model's value is correct
+  resolution: models              # both models agree AND their value is correct
+  resolution: "<exact value>"     # none of the above; human supplies the value
 """
 
 from __future__ import annotations
@@ -26,12 +28,24 @@ def main() -> None:
         raise SystemExit(f"{len(unresolved)} disputes unresolved; first: "
                          f"{unresolved[0]['page_id']}/{unresolved[0]['field']}")
 
+    from extraction_gym.adapters.sroie.scoring import score_page
+
     corrections = []
     for d in doc["disputes"]:
         r = d["resolution"]
         if r == "official":
             continue
-        value = d["candidates"]["gpt-4o-mini"] if r == "models" else r
+        if r == "models":
+            f = d["field"]
+            a, b = d["candidates"]["gpt-4o-mini"], d["candidates"]["claude-haiku-4-5"]
+            if score_page({f: a}, {f: b})[f] != 1.0:
+                raise SystemExit(f"{d['page_id']}/{f}: resolution 'models' but the two models "
+                                 f"disagree ({a!r} vs {b!r}); name the model or give the value")
+            value = a
+        elif r in ("gpt-4o-mini", "claude-haiku-4-5"):
+            value = d["candidates"][r]
+        else:
+            value = r
         corrections.append({"page_id": d["page_id"], "field": d["field"],
                             "official": d["candidates"]["official"], "audited": value})
 

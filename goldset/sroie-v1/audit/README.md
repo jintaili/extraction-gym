@@ -1,11 +1,18 @@
 # SROIE label audit: arbitration instructions (HITL, ~20-30 min)
 
 Open `disputes.yaml`. It has 41 disputes (of 160 sampled fields; 119 triple-agreed and
-were auto-accepted). For each dispute, set `resolution:` to one of:
+were auto-accepted). Each dispute has a `case:` line telling you the situation (models agree with each
+other / one model matches official / all three differ). Set `resolution:` to one of:
 
 - `official` - the official SROIE label is correct
-- `models` - the model consensus is correct and the official label is wrong
-- `"<exact value>"` - neither is right; supply the correct value from the excerpt
+- `gpt-4o-mini` - that model's value is the correct one
+- `claude-haiku-4-5` - that model's value is the correct one
+- `models` - shorthand valid only when the two models agree with each other
+- `"<exact value>"` - none of the candidates is right; supply the value from the excerpt
+
+Note a dispute only means "not both models matched official" - in 28 of the 41, one
+model DOES match official and the other differs; usually those resolve to `official`
+unless the odd one out is actually right.
 
 How to decide, per field:
 

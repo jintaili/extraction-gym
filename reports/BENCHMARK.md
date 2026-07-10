@@ -80,10 +80,28 @@ pressure-suite improvement, but the suite still carried 30+ root-era pages the c
 already aces, so genuine recovery was averaged away (by design, gold is non-regression
 only: you cannot climb ON the referee); (b) at n=42, one flipped page moves a field mean
 by ~0.024, beyond most per-field bands, so single-page wobbles on non-ablated fields
-block. A second control (control2) with a dedicated per-incumbent suite isolates (a);
-its result is appended when complete. Honest reading either way: gate sensitivity is
-governed by suite composition and per-field band quantization at small n - both now
-measured, neither hidden.
+block.
+
+Control2 ($3.29) isolated (a) with a dedicated per-incumbent suite - and eliminated it as
+the primary mechanism: even on pages generated exclusively against the control, the
+incumbent's suite composite sits at ~0.97, because a "hit" breaks one or two weighted
+fields out of ~29 and the page composite stays high. The +0.01 composite band leaves no
+headroom on a small, mostly-correct suite regardless of purity. Control2's best candidate
+scored 0.8995 on gold - the highest score of the entire project, above the healthy root's
+0.8920 - and was rejected. 9 more candidates, 0 acceptances.
+
+Consolidated sensitivity result: across 18 control candidates (both runs), the gate's
+specificity remained perfect (nothing false shipped anywhere in this project) and its
+sensitivity was zero - it refused genuine repairs, including two candidates that beat
+the healthy root. The mechanism is fully characterized: acceptance is scored on suite
+COMPOSITE, which dilutes targeted fixes across all fields of all pages; and per-field
+gold bands at n=42 block on single-page quanta. The principled fix (gate v2, future
+work, deliberately not applied mid-experiment): score candidates on incumbent-failure
+fields specifically - of the fields the incumbent gets wrong on the suite, what fraction
+does the candidate fix - keeping gold non-regression exactly as is. That preserves the
+anti-Goodhart firewall (gold still never a training target) while giving recovery a
+signal that composite averaging cannot wash out. Grow the gold set to loosen the
+one-page quantum.
 
 ## Costs (audited)
 

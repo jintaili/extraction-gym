@@ -90,7 +90,12 @@ rated its winner 0.9703; transplanted into the production runtime that winner sc
 +0.0003 over the incumbent with four critical-field regressions — GEPA's acceptance
 criterion would have shipped it, this harness's gate refuses it. The shipped production
 prompt is CI-pinned to its attested artifact (coffee-value-app
-tests/test_prompt_attestation.py). 27 tests.
+tests/test_prompt_attestation.py). MIPROv2 joined the benchmark (n=3: same failure
+signature, opposite mutation pathology - compression instead of bloat, -3.3 points
+deployed). A positive-control experiment measured the gate itself: perfect specificity,
+zero sensitivity under the strict protocol, mechanism quantified and a gate-v2 direction
+documented (reports/BENCHMARK.md). Second adapter: SROIE receipts (adapters/sroie), with
+a cross-family label audit in progress. 30 tests.
 
 ## Honest limitations
 

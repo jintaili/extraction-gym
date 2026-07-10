@@ -90,18 +90,39 @@ headroom on a small, mostly-correct suite regardless of purity. Control2's best 
 scored 0.8995 on gold - the highest score of the entire project, above the healthy root's
 0.8920 - and was rejected. 9 more candidates, 0 acceptances.
 
-Consolidated sensitivity result: across 18 control candidates (both runs), the gate's
-specificity remained perfect (nothing false shipped anywhere in this project) and its
-sensitivity was zero - it refused genuine repairs, including two candidates that beat
-the healthy root. The mechanism is fully characterized: acceptance is scored on suite
-COMPOSITE, which dilutes targeted fixes across all fields of all pages; and per-field
-gold bands at n=42 block on single-page quanta. The principled fix (gate v2, future
-work, deliberately not applied mid-experiment): score candidates on incumbent-failure
-fields specifically - of the fields the incumbent gets wrong on the suite, what fraction
-does the candidate fix - keeping gold non-regression exactly as is. That preserves the
-anti-Goodhart firewall (gold still never a training target) while giving recovery a
-signal that composite averaging cannot wash out. Grow the gold set to loosen the
-one-page quantum.
+Consolidated v1 sensitivity result: across 18 control candidates (both runs), gate v1's
+specificity remained perfect and its sensitivity was zero - it refused genuine repairs,
+including two candidates that beat the healthy root. Mechanisms: suite-COMPOSITE
+acceptance dilutes targeted fixes; per-field gold bands at n=42 block on single-page
+quanta.
+
+### Gate v2 (2026-07-10): the fix, and its two-sided validation
+
+Rather than leave a measured defect in place, the gate was revised and versioned (v1
+remains available; all pre-2026-07-10 results stand as reported). v2 replaces the suite
+composite band with a one-sided sign test on repairs-vs-breakages over incumbent-failure
+fields (p < 0.05), and blocks critical gold regressions only beyond 1.5x the one-page
+quantum. The anti-Goodhart firewall is untouched: gold is still never a training signal.
+
+Validation, both directions:
+
+- Rejects known-bad (run1 replay, 0/12 accepted): v2 refuses every regressive candidate
+  from the original loop - and now on evidence rather than threshold: their repair
+  ledgers show they break roughly as many suite fields as they repair (4:11, 6:13, ...).
+- Control repair run (control3, $2.91, NOOP): still no acceptance - but every rejection
+  is now legible and evidence-based. Candidates repaired 0-3 suite fields while breaking
+  2-5, and two carried genuine two-page listed_price regressions on gold. One candidate
+  scored 0.8995 on gold with 0 repairs and 3 breakages on the suite: good aggregate,
+  demonstrably churny mechanics - exactly what a repair-based gate should refuse.
+
+Consolidated conclusion: v2 removed both measured gate pathologies; the remaining
+bottleneck is upstream of the gate. The single-focused-mutation optimizer cannot repair
+a three-axis ablation without collateral damage, and a small per-incumbent suite offers
+few repair opportunities per generation (~5-10 fields). System sensitivity factorizes as
+gate calibration x mutation quality x suite size; v1 conflated all three, v2 separates
+them and leaves the latter two visibly attributed. Growing the gold set loosens the
+quantum; richer mutation strategies (multi-edit, or repair-targeted proposals) are the
+next lever.
 
 ## Second adapter: SROIE receipts, and a measured label-error bound
 

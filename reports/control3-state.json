@@ -1,0 +1,189 @@
+{
+  "run_id": "control3",
+  "incumbent_id": "fd1a72082e",
+  "generation": 3,
+  "no_improve_streak": 3,
+  "spend_usd": 2.9068402499999983,
+  "history": [
+    {
+      "generation": 0,
+      "incumbent_id": "fd1a72082e",
+      "suite_incumbent": 0.9650643163100734,
+      "gold_incumbent": 0.8570707062899355,
+      "adversary": {
+        "generated": 8,
+        "sanity_discard": 0,
+        "consistency_discard": 5,
+        "realism_discard": 0,
+        "accepted": 3,
+        "hits": 2
+      },
+      "candidates": [
+        {
+          "artifact_id": "51aa10a838",
+          "mutation_note": "Tightened the sensory_text guidance to require inclusion of product note lists/headline flavor notes and to exclude non-sensory origin, process, roast, brew, and marketing sentences unless they are primarily sensory.",
+          "suite": 0.9656094443408788,
+          "gold": 0.8619655534424734,
+          "accepted": false,
+          "gate_reasons": [
+            "suite repair test not significant: 1 repairs vs 2 breakages (one-sided p=0.875, need <0.05)"
+          ],
+          "gate": "v2",
+          "repairs": 1,
+          "breakages": 2,
+          "p": 0.875
+        },
+        {
+          "artifact_id": "fb29dc685c",
+          "mutation_note": "Tightened the sensory_text guidance to include explicit tasting-note lists plus sensory cup-description sentences, and to exclude adjacent origin/process/brewing/marketing prose that lacks sensory descriptors.",
+          "suite": 0.9654090266348297,
+          "gold": 0.8883638748109022,
+          "accepted": false,
+          "gate_reasons": [
+            "suite repair test not significant: 1 repairs vs 4 breakages (one-sided p=0.969, need <0.05)",
+            "critical gold field regression: price.listed_price 0.975 -> 0.925 (beyond 0.038 = max(band, 1.5/n))"
+          ],
+          "gate": "v2",
+          "repairs": 1,
+          "breakages": 4,
+          "p": 0.9688
+        },
+        {
+          "artifact_id": "9e5afbae5d",
+          "mutation_note": "Expanded the sensory_text guidance to require collecting labeled/near-title tasting notes plus cup/flavor descriptions in page order, while excluding brew recipes and non-sensory origin/process/marketing prose or trimming to sensory clauses when mixed.",
+          "suite": 0.9636143757688651,
+          "gold": 0.8901716081663098,
+          "accepted": false,
+          "gate_reasons": [
+            "suite repair test not significant: 1 repairs vs 4 breakages (one-sided p=0.969, need <0.05)",
+            "critical gold field regression: price.listed_price 0.975 -> 0.925 (beyond 0.038 = max(band, 1.5/n))"
+          ],
+          "gate": "v2",
+          "repairs": 1,
+          "breakages": 4,
+          "p": 0.9688
+        }
+      ],
+      "accepted": null
+    },
+    {
+      "generation": 1,
+      "incumbent_id": "fd1a72082e",
+      "suite_incumbent": 0.9614890237444077,
+      "gold_incumbent": 0.8570707062899355,
+      "adversary": {
+        "generated": 8,
+        "sanity_discard": 0,
+        "consistency_discard": 6,
+        "realism_discard": 0,
+        "accepted": 2,
+        "hits": 2
+      },
+      "candidates": [
+        {
+          "artifact_id": "1340920310",
+          "mutation_note": "Tightened the sensory_text instruction to include headline tasting-note lists plus sensory cup/flavor sentences, while excluding adjacent origin, producer, process, roast-intent, and brew-recipe prose unless the text itself is sensory.",
+          "suite": 0.9625475196799665,
+          "gold": 0.8886536981243415,
+          "accepted": false,
+          "gate_reasons": [
+            "suite repair test not significant: 3 repairs vs 2 breakages (one-sided p=0.500, need <0.05)"
+          ],
+          "gate": "v2",
+          "repairs": 3,
+          "breakages": 2,
+          "p": 0.5
+        },
+        {
+          "artifact_id": "017edfb1a0",
+          "mutation_note": "Expanded the sensory_text instruction to include labeled/prominent tasting note lists while excluding adjacent non-sensory prose and extracting only sensory clauses from mixed paragraphs.",
+          "suite": 0.9608085379622195,
+          "gold": 0.8819874467048417,
+          "accepted": false,
+          "gate_reasons": [
+            "suite repair test not significant: 2 repairs vs 4 breakages (one-sided p=0.891, need <0.05)"
+          ],
+          "gate": "v2",
+          "repairs": 2,
+          "breakages": 4,
+          "p": 0.8906
+        },
+        {
+          "artifact_id": "3660082487",
+          "mutation_note": "Tightened the sensory_text guidance to always include prominent labeled/top tasting notes and cup-descriptor sentences while excluding origin/processing/brewing/roast/marketing context unless the sentence itself is sensory.",
+          "suite": 0.9588356587084818,
+          "gold": 0.8707897165424987,
+          "accepted": false,
+          "gate_reasons": [
+            "suite repair test not significant: 2 repairs vs 5 breakages (one-sided p=0.938, need <0.05)"
+          ],
+          "gate": "v2",
+          "repairs": 2,
+          "breakages": 5,
+          "p": 0.9375
+        }
+      ],
+      "accepted": null
+    },
+    {
+      "generation": 2,
+      "incumbent_id": "fd1a72082e",
+      "suite_incumbent": 0.9637202723390328,
+      "gold_incumbent": 0.8570707062899355,
+      "adversary": {
+        "generated": 8,
+        "sanity_discard": 0,
+        "consistency_discard": 5,
+        "realism_discard": 0,
+        "accepted": 3,
+        "hits": 0
+      },
+      "candidates": [
+        {
+          "artifact_id": "90cdbb49b8",
+          "mutation_note": "Tightened the sensory_text instruction to include explicit product tasting-note lines plus sensory cup sentences, while excluding non-sensory production/roast/brew prose and related-product notes.",
+          "suite": 0.9649804788222219,
+          "gold": 0.8858981348480817,
+          "accepted": false,
+          "gate_reasons": [
+            "suite repair test not significant: 2 repairs vs 2 breakages (one-sided p=0.688, need <0.05)",
+            "critical gold field regression: price.listed_price 0.975 -> 0.925 (beyond 0.038 = max(band, 1.5/n))"
+          ],
+          "gate": "v2",
+          "repairs": 2,
+          "breakages": 2,
+          "p": 0.6875
+        },
+        {
+          "artifact_id": "a53e7314ad",
+          "mutation_note": "Tightened the sensory_text guidance to require inclusion of explicit tasting-note blocks and to exclude non-sensory origin/process/brew prose except for sentences or clauses that actually describe cup attributes.",
+          "suite": 0.965300471600035,
+          "gold": 0.8880501066115569,
+          "accepted": false,
+          "gate_reasons": [
+            "suite repair test not significant: 2 repairs vs 5 breakages (one-sided p=0.938, need <0.05)"
+          ],
+          "gate": "v2",
+          "repairs": 2,
+          "breakages": 5,
+          "p": 0.9375
+        },
+        {
+          "artifact_id": "862964892a",
+          "mutation_note": "Tightened the sensory_text guidance to include explicit product tasting-note lists/taglines and only sensory cup-description sentences/clauses, excluding adjacent origin/process/brew/context and related-product notes.",
+          "suite": 0.962922177254274,
+          "gold": 0.8995197958593437,
+          "accepted": false,
+          "gate_reasons": [
+            "suite repair test not significant: 0 repairs vs 3 breakages (one-sided p=1.000, need <0.05)"
+          ],
+          "gate": "v2",
+          "repairs": 0,
+          "breakages": 3,
+          "p": 1.0
+        }
+      ],
+      "accepted": null
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "accepted": 0,
+  "total": 12,
+  "expect": 0,
+  "rows": [
+    {
+      "artifact_id": "b414a86257",
+      "accepted": false,
+      "reasons": [
+        "suite repair test not significant: 4 repairs vs 11 breakages (one-sided p=0.982, need <0.05)",
+        "critical gold field regression: price.listed_price 1.000 -> 0.925 (beyond 0.038 = max(band, 1.5/n))"
+      ],
+      "repairs": 4,
+      "breakages": 11,
+      "p": 0.9824
+    },
+    {
+      "artifact_id": "2e7bf9417f",
+      "accepted": false,
+      "reasons": [
+        "suite repair test not significant: 7 repairs vs 11 breakages (one-sided p=0.881, need <0.05)"
+      ],
+      "repairs": 7,
+      "breakages": 11,
+      "p": 0.8811
+    },
+    {
+      "artifact_id": "b7b4197de5",
+      "accepted": false,
+      "reasons": [
+        "suite repair test not significant: 5 repairs vs 6 breakages (one-sided p=0.726, need <0.05)",
+        "critical gold field regression: price.listed_price 1.000 -> 0.950 (beyond 0.038 = max(band, 1.5/n))"
+      ],
+      "repairs": 5,
+      "breakages": 6,
+      "p": 0.7256
+    },
+    {
+      "artifact_id": "e7d00eb5db",
+      "accepted": false,
+      "reasons": [
+        "suite repair test not significant: 10 repairs vs 9 breakages (one-sided p=0.500, need <0.05)"
+      ],
+      "repairs": 10,
+      "breakages": 9,
+      "p": 0.5
+    },
+    {
+      "artifact_id": "60ae8537eb",
+      "accepted": false,
+      "reasons": [
+        "suite repair test not significant: 5 repairs vs 7 breakages (one-sided p=0.806, need <0.05)"
+      ],
+      "repairs": 5,
+      "breakages": 7,
+      "p": 0.8062
+    },
+    {
+      "artifact_id": "663914a8ae",
+      "accepted": false,
+      "reasons": [
+        "suite repair test not significant: 6 repairs vs 13 breakages (one-sided p=0.968, need <0.05)",
+        "critical gold field regression: coffee.variety 0.948 -> 0.903 (beyond 0.038 = max(band, 1.5/n))"
+      ],
+      "repairs": 6,
+      "breakages": 13,
+      "p": 0.9682
+    },
+    {
+      "artifact_id": "0e41fee71c",
+      "accepted": false,
+      "reasons": [
+        "suite repair test not significant: 11 repairs vs 8 breakages (one-sided p=0.324, need <0.05)",
+        "critical gold field regression: price.listed_price 1.000 -> 0.950 (beyond 0.038 = max(band, 1.5/n))"
+      ],
+      "repairs": 11,
+      "breakages": 8,
+      "p": 0.3238
+    },
+    {
+      "artifact_id": "5a9491d3c3",
+      "accepted": false,
+      "reasons": [
+        "suite repair test not significant: 13 repairs vs 12 breakages (one-sided p=0.500, need <0.05)",
+        "critical gold field regression: price.listed_price 1.000 -> 0.950 (beyond 0.038 = max(band, 1.5/n))"
+      ],
+      "repairs": 13,
+      "breakages": 12,
+      "p": 0.5
+    },
+    {
+      "artifact_id": "c6576928f1",
+      "accepted": false,
+      "reasons": [
+        "suite repair test not significant: 6 repairs vs 8 breakages (one-sided p=0.788, need <0.05)",
+        "critical gold field regression: price.listed_price 1.000 -> 0.925 (beyond 0.038 = max(band, 1.5/n))"
+      ],
+      "repairs": 6,
+      "breakages": 8,
+      "p": 0.788
+    },
+    {
+      "artifact_id": "feb1bb428e",
+      "accepted": false,
+      "reasons": [
+        "suite repair test not significant: 10 repairs vs 9 breakages (one-sided p=0.500, need <0.05)"
+      ],
+      "repairs": 10,
+      "breakages": 9,
+      "p": 0.5
+    },
+    {
+      "artifact_id": "c3298538c0",
+      "accepted": false,
+      "reasons": [
+        "suite repair test not significant: 4 repairs vs 9 breakages (one-sided p=0.954, need <0.05)",
+        "critical gold field regression: price.listed_price 1.000 -> 0.950 (beyond 0.038 = max(band, 1.5/n))"
+      ],
+      "repairs": 4,
+      "breakages": 9,
+      "p": 0.9539
+    },
+    {
+      "artifact_id": "cfffd6d5a4",
+      "accepted": false,
+      "reasons": [
+        "suite repair test not significant: 4 repairs vs 7 breakages (one-sided p=0.887, need <0.05)",
+        "critical gold field regression: coffee.variety 0.948 -> 0.906 (beyond 0.038 = max(band, 1.5/n))"
+      ],
+      "repairs": 4,
+      "breakages": 7,
+      "p": 0.8867
+    }
+  ]
+}

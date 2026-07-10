@@ -29,6 +29,11 @@ How to decide, per field:
   lines; the excerpt shows candidates in context.
 - `address`: the full printed address block.
 - `drafted_recommendation` is a heuristic (verbatim-on-page checks), not authority.
+- OCR-corrupted values (e.g. official label `(EDAI BUKU...` where the receipt image
+  surely says `KEDAI BUKU...`): resolve as `official` - the rule is faithfulness to the
+  TEXT the extractor receives, not to the image nobody in this pipeline can see. Add
+  `note: ocr-inherited (image likely says ...)` on that dispute; these are tallied as a
+  separate noise category in the final report, distinct from annotation mistakes.
 
 When all 41 have resolutions, run:
 

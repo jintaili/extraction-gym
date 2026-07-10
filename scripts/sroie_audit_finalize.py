@@ -70,6 +70,8 @@ def main() -> None:
 
     fields_total = doc["fields_compared"]
     error_rate = len(corrections) / fields_total
+    notes = [{"page_id": d["page_id"], "field": d["field"], "note": d["note"]}
+             for d in doc["disputes"] if d.get("note")]
     result = {
         "sample_receipts": doc["sample_receipts"],
         "fields_compared": fields_total,
@@ -80,6 +82,9 @@ def main() -> None:
         "note": "LOWER BOUND: triple-agreement auto-accepts were not human-read, and "
                 "training-data contamination correlates model votes with official labels.",
         "corrections": corrections,
+        "arbitration_notes": notes,
+        "notes_hint": "notes tagged ocr-inherited document official labels that faithfully "
+                      "reproduce OCR errors: not annotation mistakes, a separate noise species",
     }
     (GOLD / "audit" / "result.json").write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n")
     print(f"label-error lower bound: {error_rate:.3%} "

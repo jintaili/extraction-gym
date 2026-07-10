@@ -47,6 +47,16 @@ def paired_bootstrap_ci(
     return mean_delta, means[int(0.025 * iterations)], means[int(0.975 * iterations)]
 
 
+def binom_one_sided_p(repairs: int, breakages: int) -> float:
+    """One-sided sign test: P(this many or more repairs among the flips | fair coin).
+    Directional by design - the hypothesis is that the candidate repairs more than it
+    breaks, so a one-sided test is appropriate."""
+    n = repairs + breakages
+    if n == 0:
+        return 1.0
+    return sum(math.comb(n, i) for i in range(breakages + 1)) / 2**n
+
+
 def mcnemar_p(b01: int, b10: int) -> float:
     """Exact binomial McNemar test on discordant pair counts."""
     n = b01 + b10

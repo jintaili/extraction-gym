@@ -16,12 +16,13 @@ disputes:
     gpt-4o-mini: true
     claude-haiku-4-5: true
   drafted_recommendation: official (page-supported)
-  resolution: null
+  resolution: official
   receipt_excerpt: 'Total RM36.96
 
     Bavance: RM36.96
 
     Rounded : RM36.95'
+  case: gpt-4o-mini matches official; claude-haiku-4-5 differs
 - page_id: sroie-020
   field: company
   candidates:
@@ -33,8 +34,9 @@ disputes:
     gpt-4o-mini: true
     claude-haiku-4-5: false
   drafted_recommendation: official (page-supported)
-  resolution: null
+  resolution: official #  note: ocr-inherited (image likely says KEDAI BUKU NEW ACHEIVERS).
   receipt_excerpt: (EDAI BUKU NEW ACHEIVERS
+  case: all three differ
 - page_id: sroie-020
   field: address
   candidates:
@@ -51,8 +53,9 @@ disputes:
     gpt-4o-mini: true
     claude-haiku-4-5: false
   drafted_recommendation: official (page-supported)
-  resolution: null
+  resolution: official
   receipt_excerpt: NO. 12 & 14, JALAN JINJANG 27/54
+  case: gpt-4o-mini matches official; claude-haiku-4-5 differs
 - page_id: sroie-036
   field: company
   candidates:
@@ -64,8 +67,9 @@ disputes:
     gpt-4o-mini: true
     claude-haiku-4-5: true
   drafted_recommendation: official (page-supported)
-  resolution: null
+  resolution: official
   receipt_excerpt: GARDENIA BAKERIES (KL) SDN BHD (139386 X)
+  case: claude-haiku-4-5 matches official; gpt-4o-mini differs
 - page_id: sroie-036
   field: total
   candidates:
@@ -77,8 +81,9 @@ disputes:
     gpt-4o-mini: true
     claude-haiku-4-5: false
   drafted_recommendation: official (page-supported)
-  resolution: null
+  resolution: claude-haiku-4-5
   receipt_excerpt: 'Total Payable: 26:58'
+  case: gpt-4o-mini matches official; claude-haiku-4-5 differs
 - page_id: sroie-054
   field: address
   candidates:
@@ -90,8 +95,9 @@ disputes:
     gpt-4o-mini: true
     claude-haiku-4-5: true
   drafted_recommendation: official (page-supported)
-  resolution: null
+  resolution: claude-haiku-4-5
   receipt_excerpt: NO 290, JALAN AIR PANAS,
+  case: gpt-4o-mini matches official; claude-haiku-4-5 differs
 - page_id: sroie-084
   field: company
   candidates:
@@ -103,8 +109,9 @@ disputes:
     gpt-4o-mini: true
     claude-haiku-4-5: true
   drafted_recommendation: official (page-supported)
-  resolution: null
+  resolution: official
   receipt_excerpt: AMANO MALAYSIA SDN BHD (682288-V)
+  case: models agree with each other, differ from official
 - page_id: sroie-087
   field: company
   candidates:
@@ -116,8 +123,9 @@ disputes:
     gpt-4o-mini: true
     claude-haiku-4-5: true
   drafted_recommendation: official (page-supported)
-  resolution: null
+  resolution: models
   receipt_excerpt: GARDENIA BAKERIESKL)SDN BHD (139386 X)
+  case: models agree with each other, differ from official
 - page_id: sroie-116
   field: address
   candidates:
@@ -131,8 +139,9 @@ disputes:
     gpt-4o-mini: true
     claude-haiku-4-5: false
   drafted_recommendation: official (page-supported)
-  resolution: null
+  resolution: official
   receipt_excerpt: No 8, Jalan 7/118B, Desa Tun Razak
+  case: gpt-4o-mini matches official; claude-haiku-4-5 differs
 - page_id: sroie-116
   field: total
   candidates:
@@ -144,10 +153,11 @@ disputes:
     gpt-4o-mini: true
     claude-haiku-4-5: false
   drafted_recommendation: official (page-supported)
-  resolution: null
+  resolution: official
   receipt_excerpt: 'CBE Rubber Band200gm 7.95 T
 
     Total RM Incl. of GST 7. 95'
+  case: claude-haiku-4-5 matches official; gpt-4o-mini differs
 - page_id: sroie-139
   field: company
   candidates:
@@ -159,8 +169,9 @@ disputes:
     gpt-4o-mini: true
     claude-haiku-4-5: true
   drafted_recommendation: official (page-supported)
-  resolution: null
+  resolution: official
   receipt_excerpt: TS TOOLS HARDWARE & MACHINERY SOR EED
+  case: claude-haiku-4-5 matches official; gpt-4o-mini differs
 - page_id: sroie-143
   field: date
   candidates:
@@ -172,8 +183,9 @@ disputes:
     gpt-4o-mini: true
     claude-haiku-4-5: true
   drafted_recommendation: official (page-supported)
-  resolution: null
+  resolution: official
   receipt_excerpt: 'Date : 15/01/2019 11:05:16 AM'
+  case: claude-haiku-4-5 matches official; gpt-4o-mini differs
 - page_id: sroie-151
   field: company
   candidates:
@@ -185,8 +197,9 @@ disputes:
     gpt-4o-mini: true
     claude-haiku-4-5: true
   drafted_recommendation: official (page-supported)
-  resolution: null
+  resolution: official
   receipt_excerpt: GARDENIA BAKERIES (KL.) SDN BHD (139386 X)
+  case: models agree with each other, differ from official
 - page_id: sroie-166
   field: date
   candidates:
@@ -198,12 +211,13 @@ disputes:
     gpt-4o-mini: true
     claude-haiku-4-5: true
   drafted_recommendation: official (page-supported)
-  resolution: null
+  resolution: official
   receipt_excerpt: 'Date : 09/05/2018 #1 12:22 PM
 
     PRN ON : 09/05/2018 12:23 PM
 
     *** 09/05/2018 12:23 PM ***'
+  case: claude-haiku-4-5 matches official; gpt-4o-mini differs
 - page_id: sroie-178
   field: total
   candidates:
@@ -215,12 +229,13 @@ disputes:
     gpt-4o-mini: true
     claude-haiku-4-5: true
   drafted_recommendation: official (page-supported)
-  resolution: null
+  resolution: official
   receipt_excerpt: '339300051 × 2 90.00 S
 
     NET TOTAL 90.00
 
     CASH : 100.00'
+  case: gpt-4o-mini matches official; claude-haiku-4-5 differs
 - page_id: sroie-186
   field: total
   candidates:
@@ -232,7 +247,7 @@ disputes:
     gpt-4o-mini: true
     claude-haiku-4-5: true
   drafted_recommendation: official (page-supported)
-  resolution: null
+  resolution: official
   receipt_excerpt: '3674 10 0.53 5.30 S
 
     GST 0.30
@@ -242,6 +257,7 @@ disputes:
     SR 5.00 6 0.30
 
     TAX TOTAL: 0.30'
+  case: models agree with each other, differ from official
 - page_id: sroie-208
   field: date
   candidates:
@@ -253,8 +269,9 @@ disputes:
     gpt-4o-mini: true
     claude-haiku-4-5: true
   drafted_recommendation: official (page-supported)
-  resolution: null
+  resolution: official
   receipt_excerpt: 01-02-2018 09:52:50 AM
+  case: claude-haiku-4-5 matches official; gpt-4o-mini differs
 - page_id: sroie-208
   field: address
   candidates:
@@ -266,8 +283,9 @@ disputes:
     gpt-4o-mini: true
     claude-haiku-4-5: false
   drafted_recommendation: official (page-supported)
-  resolution: null
+  resolution: official
   receipt_excerpt: NO. 1 Jalan Euro 1
+  case: gpt-4o-mini matches official; claude-haiku-4-5 differs
 - page_id: sroie-216
   field: address
   candidates:
@@ -283,8 +301,9 @@ disputes:
     gpt-4o-mini: true
     claude-haiku-4-5: true
   drafted_recommendation: official (page-supported)
-  resolution: null
+  resolution: claude-haiku-4-5
   receipt_excerpt: NO 290, JALAN AIR PANAS,
+  case: gpt-4o-mini matches official; claude-haiku-4-5 differs
 - page_id: sroie-218
   field: address
   candidates:
@@ -296,8 +315,9 @@ disputes:
     gpt-4o-mini: true
     claude-haiku-4-5: false
   drafted_recommendation: official (page-supported)
-  resolution: null
+  resolution: official
   receipt_excerpt: LOT 1851-A & 1851-B, JALAN KPB 6,
+  case: gpt-4o-mini matches official; claude-haiku-4-5 differs
 - page_id: sroie-231
   field: company
   candidates:
@@ -309,12 +329,13 @@ disputes:
     gpt-4o-mini: true
     claude-haiku-4-5: true
   drafted_recommendation: official (page-supported)
-  resolution: null
+  resolution: models  # this is ambiguous so not sure how much to rely on it
   receipt_excerpt: 'JUWITA WEDDINGS (366310-U)
 
     SAYANG YOU STATION SDN BHD
 
     Cashier : Juwita Weddings'
+  case: models agree with each other, differ from official
 - page_id: sroie-231
   field: date
   candidates:
@@ -326,8 +347,9 @@ disputes:
     gpt-4o-mini: true
     claude-haiku-4-5: true
   drafted_recommendation: official (page-supported)
-  resolution: null
+  resolution: official
   receipt_excerpt: 'Receipt Date : 28-Feb-2018 16:37:04'
+  case: claude-haiku-4-5 matches official; gpt-4o-mini differs
 - page_id: sroie-248
   field: company
   candidates:
@@ -339,8 +361,9 @@ disputes:
     gpt-4o-mini: true
     claude-haiku-4-5: true
   drafted_recommendation: official (page-supported)
-  resolution: null
+  resolution: official
   receipt_excerpt: ECONSAVE CASH & CARRY (FC) $/3 (930311-W)
+  case: all three differ
 - page_id: sroie-252
   field: address
   candidates:
@@ -362,8 +385,9 @@ disputes:
     gpt-4o-mini: true
     claude-haiku-4-5: false
   drafted_recommendation: official (page-supported)
-  resolution: null
+  resolution: claude-haiku-4-5
   receipt_excerpt: $117, Second Floor,
+  case: gpt-4o-mini matches official; claude-haiku-4-5 differs
 - page_id: sroie-263
   field: date
   candidates:
@@ -375,8 +399,9 @@ disputes:
     gpt-4o-mini: true
     claude-haiku-4-5: true
   drafted_recommendation: official (page-supported)
-  resolution: null
+  resolution: official
   receipt_excerpt: 'ORD #17 -REG #13- 27/04/2018 15:20:22'
+  case: claude-haiku-4-5 matches official; gpt-4o-mini differs
 - page_id: sroie-263
   field: address
   candidates:
@@ -388,8 +413,9 @@ disputes:
     gpt-4o-mini: true
     claude-haiku-4-5: false
   drafted_recommendation: official (page-supported)
-  resolution: null
+  resolution: official
   receipt_excerpt: Level 6, Bangunan TH, Damansara Uptown3
+  case: gpt-4o-mini matches official; claude-haiku-4-5 differs
 - page_id: sroie-269
   field: date
   candidates:
@@ -401,8 +427,9 @@ disputes:
     gpt-4o-mini: true
     claude-haiku-4-5: true
   drafted_recommendation: official (page-supported)
-  resolution: null
+  resolution: official
   receipt_excerpt: 07 Jun 2018 18:23
+  case: models agree with each other, differ from official
 - page_id: sroie-280
   field: address
   candidates:
@@ -416,8 +443,9 @@ disputes:
     gpt-4o-mini: true
     claude-haiku-4-5: true
   drafted_recommendation: official (page-supported)
-  resolution: null
+  resolution: claude-haiku-4-5
   receipt_excerpt: LOT 276 JALAN BANTING
+  case: gpt-4o-mini matches official; claude-haiku-4-5 differs
 - page_id: sroie-299
   field: company
   candidates:
@@ -429,8 +457,9 @@ disputes:
     gpt-4o-mini: true
     claude-haiku-4-5: true
   drafted_recommendation: official (page-supported)
-  resolution: null
+  resolution: official
   receipt_excerpt: GARDENIA BAKERIES (KL) SDN BHD ( 139386 X)
+  case: models agree with each other, differ from official
 - page_id: sroie-301
   field: company
   candidates:
@@ -442,8 +471,9 @@ disputes:
     gpt-4o-mini: true
     claude-haiku-4-5: true
   drafted_recommendation: official (page-supported)
-  resolution: null
+  resolution: official
   receipt_excerpt: THE TOAST F&B SDN BHD (965752-T)
+  case: models agree with each other, differ from official
 - page_id: sroie-301
   field: address
   candidates:
@@ -459,8 +489,9 @@ disputes:
     gpt-4o-mini: true
     claude-haiku-4-5: false
   drafted_recommendation: official (page-supported)
-  resolution: null
+  resolution: official
   receipt_excerpt: LOT 211082111 JALAN PERMAS UTARA
+  case: gpt-4o-mini matches official; claude-haiku-4-5 differs
 - page_id: sroie-306
   field: date
   candidates:
@@ -472,8 +503,9 @@ disputes:
     gpt-4o-mini: true
     claude-haiku-4-5: true
   drafted_recommendation: official (page-supported)
-  resolution: null
+  resolution: official
   receipt_excerpt: REG 26-04-2018 14:52
+  case: gpt-4o-mini matches official; claude-haiku-4-5 differs
 - page_id: sroie-306
   field: total
   candidates:
@@ -485,10 +517,11 @@ disputes:
     gpt-4o-mini: true
     claude-haiku-4-5: true
   drafted_recommendation: official (page-supported)
-  resolution: null
+  resolution: official
   receipt_excerpt: 'TOTAL RM42.88
 
     CASH RM42.90'
+  case: gpt-4o-mini matches official; claude-haiku-4-5 differs
 - page_id: sroie-308
   field: company
   candidates:
@@ -500,8 +533,9 @@ disputes:
     gpt-4o-mini: true
     claude-haiku-4-5: true
   drafted_recommendation: official (page-supported)
-  resolution: null
+  resolution: official
   receipt_excerpt: GARDENIA BAKERIES (KL) SDN BHD (139386 X)
+  case: claude-haiku-4-5 matches official; gpt-4o-mini differs
 - page_id: sroie-314
   field: date
   candidates:
@@ -513,8 +547,9 @@ disputes:
     gpt-4o-mini: true
     claude-haiku-4-5: true
   drafted_recommendation: official (page-supported)
-  resolution: null
+  resolution: official
   receipt_excerpt: 30/01/2018 14:48:23
+  case: claude-haiku-4-5 matches official; gpt-4o-mini differs
 - page_id: sroie-316
   field: address
   candidates:
@@ -530,10 +565,11 @@ disputes:
     gpt-4o-mini: true
     claude-haiku-4-5: false
   drafted_recommendation: official (page-supported)
-  resolution: null
+  resolution: claude-haiku-4-5
   receipt_excerpt: 'Level 6, Bangunan TH, Damansara Uptown3
 
     No.3, Jalan SS21/39,47400 Petaling Jaya'
+  case: all three differ
 - page_id: sroie-331
   field: company
   candidates:
@@ -545,8 +581,9 @@ disputes:
     gpt-4o-mini: true
     claude-haiku-4-5: true
   drafted_recommendation: official (page-supported)
-  resolution: null
+  resolution: official
   receipt_excerpt: GARDENIA BAKERIES (KL) SDN BHD (139386 X)
+  case: models agree with each other, differ from official
 - page_id: sroie-331
   field: address
   candidates:
@@ -560,8 +597,9 @@ disputes:
     gpt-4o-mini: true
     claude-haiku-4-5: true
   drafted_recommendation: official (page-supported)
-  resolution: null
+  resolution: claude-haiku-4-5
   receipt_excerpt: Lot 3, Jalan Pelabur 23/1,
+  case: gpt-4o-mini matches official; claude-haiku-4-5 differs
 - page_id: sroie-344
   field: company
   candidates:
@@ -573,8 +611,9 @@ disputes:
     gpt-4o-mini: true
     claude-haiku-4-5: true
   drafted_recommendation: official (page-supported)
-  resolution: null
+  resolution: official
   receipt_excerpt: NSK TRADE CITY-SELAYANG (626470-P)
+  case: models agree with each other, differ from official
 - page_id: sroie-344
   field: date
   candidates:
@@ -586,8 +625,9 @@ disputes:
     gpt-4o-mini: true
     claude-haiku-4-5: true
   drafted_recommendation: official (page-supported)
-  resolution: null
+  resolution: official
   receipt_excerpt: 27-10-2017 10:51:52 AM
+  case: claude-haiku-4-5 matches official; gpt-4o-mini differs
 - page_id: sroie-344
   field: address
   candidates:
@@ -599,7 +639,14 @@ disputes:
     gpt-4o-mini: true
     claude-haiku-4-5: true
   drafted_recommendation: official (page-supported)
-  resolution: null
+  resolution: official
   receipt_excerpt: 'WISMA YAP TIEH (TAG)
 
     LOT 4674 & 4675 SELAYANG BATU 8'
+  case: claude-haiku-4-5 matches official; gpt-4o-mini differs
+resolution_options:
+- official
+- gpt-4o-mini
+- claude-haiku-4-5
+- models (only when both models agree)
+- <exact value>

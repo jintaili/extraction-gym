@@ -118,6 +118,8 @@ def main() -> None:
     lp.add_argument("--generator-model", default="gpt-5.5")
     lp.add_argument("--judge-model", default="gpt-5.4")
     lp.add_argument("--optimizer-model", default="gpt-5.5")
+    lp.add_argument("--gate", default="v2", choices=["v1", "v2"],
+                    help="v1: suite-composite band (original); v2: repair sign test (2026-07-10)")
 
     mp = sub.add_parser("miprov2", help="Run the DSPy/MIPROv2 baseline (demo-free) under harness rules")
     mp.add_argument("--registry", default="registry")
@@ -607,7 +609,7 @@ def _cmd_loop(args: argparse.Namespace) -> None:
     deps = LoopDeps(
         registry=registry, runs_dir=runs_dir, adversary_round_fn=adversary_round_fn,
         suite_eval_fn=suite_eval_fn, gold_eval_fn=gold_eval_fn, propose_fn=propose_fn,
-        exemplars_fn=exemplars_fn, gold_band=gold_band, suite_band=0.01,
+        exemplars_fn=exemplars_fn, gold_band=gold_band, suite_band=0.01, gate=args.gate,
     )
 
     def _sync_spend(st):

@@ -17,6 +17,7 @@ async def evaluate_on_suite(
     import json
 
     composites = {}
+    scores_by_page = {}
     for meta_path in sorted(suite_root.glob("*.meta.json")):
         meta = json.loads(meta_path.read_text(encoding="utf-8"))
         page_id = meta["page_id"]
@@ -40,6 +41,7 @@ async def evaluate_on_suite(
             canonicalize_label(meta["label"]), canonicalize_label(label_fields(cached["extraction"]))
         )
         composites[page_id] = composite(scores)
+        scores_by_page[page_id] = scores
     if not composites:
         raise RuntimeError(f"no pages in suite {suite_root}")
     return {
@@ -47,4 +49,5 @@ async def evaluate_on_suite(
         "pages": len(composites),
         "composite_mean": sum(composites.values()) / len(composites),
         "composite_by_page": composites,
+        "scores_by_page": scores_by_page,
     }

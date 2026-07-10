@@ -1,0 +1,166 @@
+{
+  "run_id": "control1",
+  "incumbent_id": "fd1a72082e",
+  "generation": 3,
+  "no_improve_streak": 3,
+  "spend_usd": 3.1244504499999977,
+  "history": [
+    {
+      "generation": 0,
+      "incumbent_id": "fd1a72082e",
+      "suite_incumbent": 0.9488626065147263,
+      "gold_incumbent": 0.8570707062899355,
+      "adversary": {
+        "generated": 8,
+        "sanity_discard": 0,
+        "consistency_discard": 3,
+        "realism_discard": 0,
+        "accepted": 5,
+        "hits": 5
+      },
+      "candidates": [
+        {
+          "artifact_id": "244021ef55",
+          "mutation_note": "Replaced the sensory_text guidance with a more explicit rule to include current-product tasting-note lines plus sensory prose, ignore stale/meta/unrelated snippets, and use only the explicit notes on wholesale/tiered pages when present.",
+          "suite": 0.9511485715568908,
+          "gold": 0.8746615062310392,
+          "accepted": false,
+          "gate_reasons": [
+            "pressure-suite improvement +0.0023 does not exceed band 0.01",
+            "critical gold field regression: page_type 0.976 -> 0.952"
+          ]
+        },
+        {
+          "artifact_id": "438a663583",
+          "mutation_note": "Expanded the sensory_text instruction to prioritize current body tasting-note blocks, append relevant retail cup-description paragraphs, ignore stale/meta/related content, and use labeled notes only on wholesale/tiered pages.",
+          "suite": 0.9501446040895689,
+          "gold": 0.8828259210686511,
+          "accepted": false,
+          "gate_reasons": [
+            "pressure-suite improvement +0.0013 does not exceed band 0.01",
+            "critical gold field regression: coffee.origin_country 0.825 -> 0.775",
+            "critical gold field regression: coffee.variety 0.930 -> 0.910",
+            "critical gold field regression: price.listed_price 0.975 -> 0.950"
+          ]
+        },
+        {
+          "artifact_id": "a4a978aca6",
+          "mutation_note": "Tightened the sensory_text instruction to always preserve explicit tasting-note fields, append relevant sensory cup prose on normal retail coffee pages, and avoid replacing structured notes with wholesale/tier-pricing promotional prose.",
+          "suite": 0.9432572539133575,
+          "gold": 0.8846970769717017,
+          "accepted": false,
+          "gate_reasons": [
+            "pressure-suite improvement -0.0056 does not exceed band 0.01",
+            "critical gold field regression: price.listed_price 0.975 -> 0.925"
+          ]
+        }
+      ],
+      "accepted": null
+    },
+    {
+      "generation": 1,
+      "incumbent_id": "fd1a72082e",
+      "suite_incumbent": 0.9489400095231725,
+      "gold_incumbent": 0.8570707062899355,
+      "adversary": {
+        "generated": 8,
+        "sanity_discard": 0,
+        "consistency_discard": 2,
+        "realism_discard": 0,
+        "accepted": 6,
+        "hits": 4
+      },
+      "candidates": [
+        {
+          "artifact_id": "85d64bbfdc",
+          "mutation_note": "Tightened the sensory_text guidance to always include explicit tasting notes first, exclude standalone taglines/meta, and only append the first sensory-focused product paragraph rather than later prose after production details.",
+          "suite": 0.9561803274615629,
+          "gold": 0.8867146962215012,
+          "accepted": false,
+          "gate_reasons": [
+            "pressure-suite improvement +0.0072 does not exceed band 0.01",
+            "critical gold field regression: coffee.process_method 0.919 -> 0.886"
+          ]
+        },
+        {
+          "artifact_id": "50da0e19e7",
+          "mutation_note": "Replaced the sensory_text guidance bullet with a more explicit rule for including labeled tasting notes first, selectively appending cup-description prose, and excluding teasers/meta/wholesale service prose.",
+          "suite": 0.954650534899899,
+          "gold": 0.8559879123192919,
+          "accepted": false,
+          "gate_reasons": [
+            "pressure-suite improvement +0.0057 does not exceed band 0.01",
+            "critical gold field regression: page_type 0.976 -> 0.952",
+            "critical gold field regression: coffee.variety 0.930 -> 0.906",
+            "critical gold field regression: price.listed_price 0.975 -> 0.900"
+          ]
+        },
+        {
+          "artifact_id": "dcb772de64",
+          "mutation_note": "Tightened the sensory_text instruction to prioritize labeled tasting notes, optionally append nearby non-duplicative cup-profile prose, and exclude meta descriptions, teasers, brewing/roast/process prose, recommendations, and duplicate paraphrases.",
+          "suite": 0.9555203138491698,
+          "gold": 0.8860967832429281,
+          "accepted": false,
+          "gate_reasons": [
+            "pressure-suite improvement +0.0066 does not exceed band 0.01",
+            "critical gold field regression: price.listed_price 0.975 -> 0.950"
+          ]
+        }
+      ],
+      "accepted": null
+    },
+    {
+      "generation": 2,
+      "incumbent_id": "fd1a72082e",
+      "suite_incumbent": 0.9485125498986485,
+      "gold_incumbent": 0.8570707062899355,
+      "adversary": {
+        "generated": 8,
+        "sanity_discard": 0,
+        "consistency_discard": 7,
+        "realism_discard": 0,
+        "accepted": 1,
+        "hits": 1
+      },
+      "candidates": [
+        {
+          "artifact_id": "ca10237ac5",
+          "mutation_note": "Replaced the sensory_text bullet with a more specific priority rule for labeled tasting notes, adjacent cup-description prose, teaser copy, and wholesale pages.",
+          "suite": 0.9527375447679508,
+          "gold": 0.8907945393398212,
+          "accepted": false,
+          "gate_reasons": [
+            "pressure-suite improvement +0.0042 does not exceed band 0.01",
+            "critical gold field regression: coffee.variety 0.930 -> 0.918",
+            "critical gold field regression: price.listed_price 0.975 -> 0.950"
+          ]
+        },
+        {
+          "artifact_id": "3796535956",
+          "mutation_note": "Tightened the sensory_text guidance to prioritize labeled tasting notes, optionally append substantive cup-description prose, exclude teaser marketing, and use only labeled notes on wholesale/tiered pages when present.",
+          "suite": 0.9523173454675876,
+          "gold": 0.8821426834456083,
+          "accepted": false,
+          "gate_reasons": [
+            "pressure-suite improvement +0.0038 does not exceed band 0.01",
+            "critical gold field regression: coffee.variety 0.930 -> 0.901",
+            "critical gold field regression: price.listed_price 0.975 -> 0.950"
+          ]
+        },
+        {
+          "artifact_id": "3a5ac7e203",
+          "mutation_note": "Tightened the sensory_text guidance to always prioritize and include explicit tasting-note fields verbatim, append only clearly sensory retail cup-description prose, and avoid taglines/wholesale prose when explicit notes are present.",
+          "suite": 0.9485796533746017,
+          "gold": 0.8954379493413621,
+          "accepted": false,
+          "gate_reasons": [
+            "pressure-suite improvement +0.0001 does not exceed band 0.01",
+            "critical gold field regression: coffee.variety 0.930 -> 0.907",
+            "critical gold field regression: price.listed_price 0.975 -> 0.950"
+          ]
+        }
+      ],
+      "accepted": null
+    }
+  ]
+}

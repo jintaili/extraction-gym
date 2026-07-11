@@ -1,0 +1,152 @@
+{
+  "page_id": "046e195b7a",
+  "category": "subscription-savings price shown above selected one-time purchase price",
+  "invented_category": true,
+  "target_artifact_id": "ce68bd4c4e",
+  "generator_model": "gpt-5.5",
+  "judge_model": "gpt-5.4",
+  "judges": {
+    "consistency": {
+      "unsupported_fields": [],
+      "notes": "All non-null, non-empty, non-'unknown' labels are supported by the page text or embedded product data. 'coffee.roaster_country' is supported indirectly by 'Minneapolis, MN' implying USA."
+    },
+    "realism": {
+      "score": 5,
+      "reasons": "Very plausible as a real specialty roaster product page. The structure matches common Shopify-style coffee pages: breadcrumb, title/vendor, size selector, one-time vs subscription purchase, quantity/add-to-cart, tasting notes, roast style, origin details, producer/process/variety/altitude/harvest, producer story, brew recipe, related products, and footer. The voice is natural and on-brand for specialty coffee—specific but not overwrought. Origin details are coherent: Aponte in Nariño, Inga community smallholders, red honey processing, common Colombian varieties, and an altitude/harvest window that fit. The descriptive copy about depulping with mucilage and drying on raised beds is believable, as is the filter-roast positioning. Variant data is also credible: 250g at $22.50 and 1kg at $78.00 is a realistic pricing spread, SKU formatting looks normal, and the subscription discount cleanly yields $20.25 for the 250g bag. Minor tell: the selling plan appears to apply only to the 250g default variant while 1kg lacks visible subscription treatment, which is possible but slightly neat/simplified in this text rendering. Overall, though, it is indistinguishable from a real roaster page."
+    }
+  },
+  "label": {
+    "page_type": "coffee_product",
+    "is_specialty_coffee": true,
+    "coffee.coffee_name": "Colombia Aponte Red Honey",
+    "coffee.roaster": "Northline Coffee Roasters",
+    "coffee.roaster_location": "Minneapolis, MN",
+    "coffee.roaster_country": "USA",
+    "coffee.origin_country": "Colombia",
+    "coffee.origin_region": "Aponte, Nariño",
+    "coffee.process_method": [
+      "red honey"
+    ],
+    "coffee.variety": [
+      "Caturra",
+      "Castillo",
+      "Colombia"
+    ],
+    "coffee.producer_or_farm": "Inga community smallholders",
+    "coffee.altitude": "1,900–2,150 masl",
+    "coffee.roast_level": "Filter roast",
+    "coffee.harvest_period": "September–November 2024",
+    "coffee.is_blend": false,
+    "coffee.is_espresso": false,
+    "coffee.is_decaf": false,
+    "coffee.is_coferment_or_infused": false,
+    "coffee.sensory_text": "Tasting notes: Strawberry jam, panela, hibiscus, red apple\nIn the cup we taste a layered red-fruit sweetness that reminds us of strawberry jam, panela, hibiscus tea and a crisp red apple finish.",
+    "coffee.display_tasting_notes": "Strawberry jam, panela, hibiscus, red apple",
+    "coffee.producer_text": "The Inga are an Indigenous community farming small parcels on steep volcanic slopes near Aponte. Coffee is collected as parchment from participating families and kept together as a traceable community lot by the local association.",
+    "price.listed_price": 22.5,
+    "price.listed_currency": "USD",
+    "price.bag_size_value": 250.0,
+    "price.bag_size_unit": "g",
+    "price.package_grams": 250.0,
+    "price.bags_count": null,
+    "price.price_type": "one_time",
+    "price.availability": "in_stock"
+  },
+  "incumbent": {
+    "model": "gpt-4o-mini",
+    "hit_fields": [
+      "coffee.producer_text"
+    ],
+    "extraction": {
+      "page_type": "coffee_product",
+      "is_specialty_coffee": true,
+      "coffee": {
+        "coffee_name": "Colombia Aponte Red Honey",
+        "roaster": "Northline Coffee Roasters",
+        "roaster_location": "Minneapolis, MN",
+        "roaster_country": "unknown",
+        "origin_country": "Colombia",
+        "origin_region": "Aponte, Nariño",
+        "process_method": [
+          "red honey"
+        ],
+        "variety": [
+          "Caturra",
+          "Castillo",
+          "Colombia"
+        ],
+        "producer_or_farm": "Inga community smallholders",
+        "altitude": "1,900–2,150 masl",
+        "roast_level": "Filter roast",
+        "harvest_period": "September–November 2024",
+        "is_blend": false,
+        "is_espresso": false,
+        "is_decaf": false,
+        "is_coferment_or_infused": false,
+        "sensory_text": "In the cup we taste a layered red-fruit sweetness that reminds us of strawberry jam, panela, hibiscus tea and a crisp red apple finish.",
+        "display_tasting_notes": "Strawberry jam, panela, hibiscus, red apple",
+        "producer_text": "This red honey lot comes from the Inga community around Aponte in the highlands of Nariño. Coffee is collected as parchment from participating families and kept together as a traceable community lot by the local association.",
+        "source_snippets": [
+          {
+            "field": "name",
+            "snippet": "Colombia Aponte Red Honey"
+          },
+          {
+            "field": "origin",
+            "snippet": "Colombia"
+          },
+          {
+            "field": "process",
+            "snippet": "red honey"
+          },
+          {
+            "field": "variety",
+            "snippet": "Caturra, Castillo, Colombia"
+          },
+          {
+            "field": "price",
+            "snippet": "$22.50"
+          },
+          {
+            "field": "bag_size",
+            "snippet": "250g"
+          },
+          {
+            "field": "tasting_notes",
+            "snippet": "Strawberry jam, panela, hibiscus, red apple"
+          },
+          {
+            "field": "producer",
+            "snippet": "Inga community smallholders"
+          },
+          {
+            "field": "altitude",
+            "snippet": "1,900–2,150 masl"
+          }
+        ]
+      },
+      "price": {
+        "listed_price": 22.5,
+        "listed_currency": "USD",
+        "original_listed_price": null,
+        "original_listed_currency": null,
+        "bag_size_value": 250.0,
+        "bag_size_unit": "g",
+        "package_grams": 250.0,
+        "bags_count": null,
+        "price_100g_usd": 9.0,
+        "price_type": "one_time",
+        "availability": "in_stock",
+        "assumptions": [
+          "currency assumed USD from $",
+          "default variant selected"
+        ]
+      },
+      "quality": {
+        "extraction_quality": "good",
+        "missing_fields": [],
+        "warnings": []
+      }
+    }
+  }
+}

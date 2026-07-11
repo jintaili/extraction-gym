@@ -96,6 +96,22 @@ The general lesson: **system sensitivity factorizes into gate calibration x muta
 quality x test-suite size.** The naive setup conflates all three; separating them is
 what made the failure attributable.
 
+## One last attempt to earn a "yes"
+
+After fixing the gate I gave my own loop every advantage - the strongest proposer model
+available, fed a complete diagnosis (every failing field, grouped by pattern, plus the
+full text of every failing page) instead of a few excerpts - and pointed it at the
+production prompt one final time, with a pre-committed budget and stop rule.
+
+It closed the search-quality gap: its edits were surgical, and for the first time
+candidates repaired more test fields than they broke. It still never passed - because
+every candidate that improved text extraction (the biggest weakness) measurably broke
+price extraction on real pages. On a small model, prompt instructions compete for the
+model's attention; the ledgers show the trade directly. That's the improvement frontier
+for this prompt: not better search, not better gating - the single-prompt design itself.
+The honest next moves (a feedback loop that tells the proposer why its last edit failed,
+or splitting extraction into separate passes) are documented and out of scope.
+
 ## Does this generalize past coffee? A second task, and a bonus finding
 
 To test the harness on something standard, I added an adapter for SROIE - the

@@ -1,0 +1,141 @@
+{
+  "page_id": "2601bdc7a6",
+  "category": "multi-variant page where the default variant is a small sampler",
+  "invented_category": false,
+  "target_artifact_id": "ce68bd4c4e",
+  "generator_model": "gpt-5.5",
+  "judge_model": "gpt-5.4",
+  "judges": {
+    "consistency": {
+      "unsupported_fields": [],
+      "notes": "All non-null, non-empty ground-truth label values are supported by the page text. Product title, roaster, location/country, origin, region, process, variety, producer, altitude, roast level, harvest, tasting notes, sensory/producer text, selected 50g variant price and size, currency, package grams, one-time purchase context, and availability are all explicitly stated or directly supported by the page and embedded variant data."
+    },
+    "realism": {
+      "score": 5,
+      "reasons": "This reads very plausibly as an html-to-text extraction of a real specialty coffee roaster product page. The structure is exactly what you’d expect: header/navigation, product title, price, size variants, add-to-cart CTA, concise marketing copy, technical coffee details, fuller origin/process description, shipping/grind note, embedded variant block, and footer/contact info. The voice is on-brand for specialty coffee—clean, restrained, and specific without sounding overblown. The origin data is coherent: Bombe village in Bensa/Sidama, washed process, Ethiopian selection 74158, high elevation, smallholder delivery to a washing station, and floral/citrus/tea tasting notes all fit together naturally. Pricing is believable for a modern US roaster, including a 50g sampler and 1kg discount scaling. The variant data block also looks realistic and internally consistent, with sensible IDs, SKUs, package weights, and availability flags. If there’s any minor tell, it’s that ‘default_for_inference’ is a bit artificial as a label, but that looks like an annotation added after extraction rather than fake page content. Overall, this is very close to indistinguishable from a real product page rendering."
+    }
+  },
+  "label": {
+    "page_type": "coffee_product",
+    "is_specialty_coffee": true,
+    "coffee.coffee_name": "Bombe Washed Ethiopia",
+    "coffee.roaster": "Northline Coffee Roasters",
+    "coffee.roaster_location": "Seattle, WA",
+    "coffee.roaster_country": "USA",
+    "coffee.origin_country": "Ethiopia",
+    "coffee.origin_region": "Bensa, Sidama",
+    "coffee.process_method": [
+      "Washed"
+    ],
+    "coffee.variety": [
+      "74158"
+    ],
+    "coffee.producer_or_farm": "Bombe Village smallholders",
+    "coffee.altitude": "1,920–2,020 masl",
+    "coffee.roast_level": "Light",
+    "coffee.harvest_period": "2024 harvest",
+    "coffee.is_blend": false,
+    "coffee.is_espresso": false,
+    "coffee.is_decaf": false,
+    "coffee.is_coferment_or_infused": false,
+    "coffee.sensory_text": "Tasting Notes: Apricot, jasmine, lemon candy, black tea\n\nThis coffee comes from smallholder growers around Bombe village, where ripe cherry is delivered to a local washing station and sorted before fermentation, washing, and slow drying on raised beds. The high elevation and cool nights give the cup a lifted floral aroma and a clean tea-like finish.\n\nWe roast this lot lightly to emphasize clarity and citrus sweetness. Expect a delicate cup with apricot, jasmine, lemon candy, and black tea when brewed as pour-over or batch brew.",
+    "coffee.display_tasting_notes": "Apricot, jasmine, lemon candy, black tea",
+    "coffee.producer_text": "This coffee comes from smallholder growers around Bombe village, where ripe cherry is delivered to a local washing station and sorted before fermentation, washing, and slow drying on raised beds. The high elevation and cool nights give the cup a lifted floral aroma and a clean tea-like finish.",
+    "price.listed_price": 7.5,
+    "price.listed_currency": "USD",
+    "price.bag_size_value": 50.0,
+    "price.bag_size_unit": "g",
+    "price.package_grams": 50.0,
+    "price.bags_count": null,
+    "price.price_type": "one_time",
+    "price.availability": "in_stock"
+  },
+  "incumbent": {
+    "model": "gpt-4o-mini",
+    "hit_fields": [
+      "coffee.sensory_text",
+      "coffee.producer_text"
+    ],
+    "extraction": {
+      "page_type": "coffee_product",
+      "is_specialty_coffee": true,
+      "coffee": {
+        "coffee_name": "Bombe Washed Ethiopia",
+        "roaster": "Northline Coffee Roasters",
+        "roaster_location": "Seattle, WA, USA",
+        "roaster_country": "USA",
+        "origin_country": "Ethiopia",
+        "origin_region": "Bensa, Sidama",
+        "process_method": [
+          "Washed"
+        ],
+        "variety": [
+          "74158"
+        ],
+        "producer_or_farm": "Bombe Village smallholders",
+        "altitude": "1,920–2,020 masl",
+        "roast_level": "Light",
+        "harvest_period": "2024 harvest",
+        "is_blend": false,
+        "is_espresso": false,
+        "is_decaf": false,
+        "is_coferment_or_infused": false,
+        "sensory_text": "A bright washed lot from the hills above Bombe village in Bensa, roasted for filter brewing. Tasting Notes: Apricot, jasmine, lemon candy, black tea. The high elevation and cool nights give the cup a lifted floral aroma and a clean tea-like finish. Expect a delicate cup with apricot, jasmine, lemon candy, and black tea when brewed as pour-over or batch brew.",
+        "display_tasting_notes": "Apricot, jasmine, lemon candy, black tea",
+        "producer_text": "This coffee comes from smallholder growers around Bombe village, where ripe cherry is delivered to a local washing station and sorted before fermentation, washing, and slow drying on raised beds.",
+        "source_snippets": [
+          {
+            "field": "origin",
+            "snippet": "Ethiopia"
+          },
+          {
+            "field": "process",
+            "snippet": "Washed"
+          },
+          {
+            "field": "variety",
+            "snippet": "74158"
+          },
+          {
+            "field": "tasting_notes",
+            "snippet": "Tasting Notes: Apricot, jasmine, lemon candy, black tea"
+          },
+          {
+            "field": "producer",
+            "snippet": "Bombe Village smallholders"
+          },
+          {
+            "field": "altitude",
+            "snippet": "1,920–2,020 masl"
+          },
+          {
+            "field": "harvest",
+            "snippet": "2024 harvest"
+          }
+        ]
+      },
+      "price": {
+        "listed_price": 7.5,
+        "listed_currency": "USD",
+        "original_listed_price": null,
+        "original_listed_currency": null,
+        "bag_size_value": 50.0,
+        "bag_size_unit": "g",
+        "package_grams": 50.0,
+        "bags_count": null,
+        "price_100g_usd": 15.0,
+        "price_type": "one_time",
+        "availability": "in_stock",
+        "assumptions": [
+          "currency assumed USD from $",
+          "default variant selected"
+        ]
+      },
+      "quality": {
+        "extraction_quality": "good",
+        "missing_fields": [],
+        "warnings": []
+      }
+    }
+  }
+}

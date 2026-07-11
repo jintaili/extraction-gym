@@ -1,0 +1,137 @@
+{
+  "page_id": "972239ca5b",
+  "category": "previous-crop archive spec collision",
+  "invented_category": true,
+  "target_artifact_id": "ce68bd4c4e",
+  "generator_model": "gpt-5.5",
+  "judge_model": "gpt-5.4",
+  "judges": {
+    "consistency": {
+      "unsupported_fields": [],
+      "notes": "All non-null/non-empty ground-truth labels are supported by the page text. Product title and body support the coffee attributes; footer supports roaster location/country; embedded variant data supports USD currency, 250g package size, package_grams, and availability. Boolean labels are supported as follows: is_blend=false (single-origin farm coffee, not described as a blend), is_espresso=false (page says profiled for filter brewing and recommends house blend instead for espresso), is_decaf=false (no decaf indication and presented as regular coffee), is_coferment_or_infused=false (washed Typica Mejorado with no co-ferment/infusion mentioned), is_specialty_coffee=true (specialty-style single-origin offering with detailed producer/origin/process/variety/altitude/harvest/tasting notes)."
+    },
+    "realism": {
+      "score": 5,
+      "reasons": "This reads very plausibly as an html-to-text rendering of a real specialty coffee product page. The structure is highly typical: site nav, product title, country, price, bag size, stock/roast-day note, grind/roast fields, tasting notes, origin details, descriptive copy, brew recommendation, shipping info, variant block, and footer. The voice matches specialty coffee ecommerce well—concise, sensory, slightly polished but not overblown. Origin data is coherent and specific: producer, farm, region, washed process, Typica Mejorado, and 1,700–1,850 masl all fit Ecuadorian specialty coffee norms. The tasting notes also align with that profile. The archive note about a prior Sidra/honey release is a nice realistic touch and internally consistent. Pricing is believable for a premium Ecuador lot in 250g and 1kg formats. The variant data block looks machine-extracted but still realistic, with sensible IDs, SKUs, weights, prices, and availability. Minor tell: 'default_for_inference' is a bit synthetic/annotation-like rather than something a user-facing extraction would normally show, but it’s small and doesn’t meaningfully damage realism."
+    }
+  },
+  "label": {
+    "page_type": "coffee_product",
+    "is_specialty_coffee": true,
+    "coffee.coffee_name": "Finca Cruz Loma",
+    "coffee.roaster": "North Pier Coffee",
+    "coffee.roaster_location": "Vancouver, BC",
+    "coffee.roaster_country": "Canada",
+    "coffee.origin_country": "Ecuador",
+    "coffee.origin_region": "Nanegalito, Pichincha",
+    "coffee.process_method": [
+      "Washed"
+    ],
+    "coffee.variety": [
+      "Typica Mejorado"
+    ],
+    "coffee.producer_or_farm": "Grace Morales, Finca Cruz Loma",
+    "coffee.altitude": "1,700-1,850 masl",
+    "coffee.roast_level": "Light / Filter",
+    "coffee.harvest_period": "July-September 2025",
+    "coffee.is_blend": false,
+    "coffee.is_espresso": false,
+    "coffee.is_decaf": false,
+    "coffee.is_coferment_or_infused": false,
+    "coffee.sensory_text": "Tasting Notes: tangerine, jasmine, panela, apricot\n\nThis small lot from Grace Morales' Finca Cruz Loma is one of the clearest Ecuadorian coffees we've roasted this season. The washed process keeps the cup bright and layered: first tangerine and apricot, then a delicate jasmine lift, with panela sweetness carrying through the finish.",
+    "coffee.display_tasting_notes": "tangerine, jasmine, panela, apricot",
+    "coffee.producer_text": "Grace farms on the cloud-forest slopes outside Nanegalito, where cool nights and slow maturation help preserve acidity. We are roasting this as a light filter profile to keep the florals forward while building enough sweetness for an easy morning cup.",
+    "price.listed_price": 22.0,
+    "price.listed_currency": "USD",
+    "price.bag_size_value": 250.0,
+    "price.bag_size_unit": "g",
+    "price.package_grams": 250.0,
+    "price.bags_count": null,
+    "price.price_type": "one_time",
+    "price.availability": "in_stock"
+  },
+  "incumbent": {
+    "model": "gpt-4o-mini",
+    "hit_fields": [
+      "coffee.sensory_text",
+      "coffee.producer_text"
+    ],
+    "extraction": {
+      "page_type": "coffee_product",
+      "is_specialty_coffee": true,
+      "coffee": {
+        "coffee_name": "Finca Cruz Loma - Ecuador Washed Typica Mejorado",
+        "roaster": "North Pier Coffee",
+        "roaster_location": "Vancouver, BC",
+        "roaster_country": "Canada",
+        "origin_country": "Ecuador",
+        "origin_region": "Nanegalito, Pichincha",
+        "process_method": [
+          "Washed"
+        ],
+        "variety": [
+          "Typica Mejorado"
+        ],
+        "producer_or_farm": "Grace Morales, Finca Cruz Loma",
+        "altitude": "1,700-1,850 masl",
+        "roast_level": "Light / Filter",
+        "harvest_period": "July-September 2025",
+        "is_blend": false,
+        "is_espresso": false,
+        "is_decaf": false,
+        "is_coferment_or_infused": false,
+        "sensory_text": "tangerine, jasmine, panela, apricot",
+        "display_tasting_notes": "tangerine, jasmine, panela, apricot",
+        "producer_text": "This small lot from Grace Morales' Finca Cruz Loma is one of the clearest Ecuadorian coffees we've roasted this season. The washed process keeps the cup bright and layered: first tangerine and apricot, then a delicate jasmine lift, with panela sweetness carrying through the finish. Grace farms on the cloud-forest slopes outside Nanegalito, where cool nights and slow maturation help preserve acidity. We are roasting this as a light filter profile to keep the florals forward while building enough sweetness for an easy morning cup.",
+        "source_snippets": [
+          {
+            "field": "name",
+            "snippet": "Finca Cruz Loma - Ecuador Washed Typica Mejorado"
+          },
+          {
+            "field": "origin",
+            "snippet": "Ecuador"
+          },
+          {
+            "field": "process",
+            "snippet": "Washed"
+          },
+          {
+            "field": "variety",
+            "snippet": "Typica Mejorado"
+          },
+          {
+            "field": "price",
+            "snippet": "$22.00"
+          },
+          {
+            "field": "bag_size",
+            "snippet": "250g"
+          }
+        ]
+      },
+      "price": {
+        "listed_price": 22.0,
+        "listed_currency": "USD",
+        "original_listed_price": null,
+        "original_listed_currency": null,
+        "bag_size_value": 250.0,
+        "bag_size_unit": "g",
+        "package_grams": 250.0,
+        "bags_count": null,
+        "price_100g_usd": 8.8,
+        "price_type": "one_time",
+        "availability": "in_stock",
+        "assumptions": [
+          "currency assumed USD from $",
+          "default variant selected"
+        ]
+      },
+      "quality": {
+        "extraction_quality": "good",
+        "missing_fields": [],
+        "warnings": []
+      }
+    }
+  }
+}

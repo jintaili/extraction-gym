@@ -1,0 +1,53 @@
+Title: Bombe Washed Ethiopia | Northline Coffee Roasters
+
+Skip to content
+Menu
+Shop Coffee
+Subscriptions
+Brew Guides
+Cart (0)
+Search
+
+Northline Coffee Roasters
+Seattle, WA, USA
+
+Bombe Washed Ethiopia
+
+From $7.50 USD
+
+Size
+[selected] 50g Sampler
+250g Bag
+1kg Bag
+
+Add to cart
+
+A bright washed lot from the hills above Bombe village in Bensa, roasted for filter brewing.
+
+Tasting Notes: Apricot, jasmine, lemon candy, black tea
+Roast Level: Light
+Origin: Ethiopia
+Region: Bensa, Sidama
+Producer: Bombe Village smallholders
+Process: Washed
+Variety: 74158
+Altitude: 1,920–2,020 masl
+Harvest: 2024 harvest
+Recommended for: Filter
+
+This coffee comes from smallholder growers around Bombe village, where ripe cherry is delivered to a local washing station and sorted before fermentation, washing, and slow drying on raised beds. The high elevation and cool nights give the cup a lifted floral aroma and a clean tea-like finish.
+
+We roast this lot lightly to emphasize clarity and citrus sweetness. Expect a delicate cup with apricot, jasmine, lemon candy, and black tea when brewed as pour-over or batch brew.
+
+Ships whole bean unless you select a grind option at checkout.
+
+Embedded product variant data:
+- id=901771; title=50g Sampler; name=Bombe Washed Ethiopia - 50g Sampler; sku=NCR-BOMBE-50; price=7.50 USD; package_grams=50.000g; available=true [default_for_inference]
+- id=901772; title=250g Bag; name=Bombe Washed Ethiopia - 250g Bag; sku=NCR-BOMBE-250; price=24.00 USD; package_grams=250.000g; available=true
+- id=901773; title=1kg Bag; name=Bombe Washed Ethiopia - 1kg Bag; sku=NCR-BOMBE-1000; price=82.00 USD; package_grams=1000.000g; available=true
+
+Footer
+Northline Coffee Roasters
+1418 S Lane St, Seattle, WA, USA
+Privacy Policy
+Instagram

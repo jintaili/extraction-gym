@@ -1,0 +1,153 @@
+{
+  "run_id": "passrun1",
+  "incumbent_id": "ce68bd4c4e",
+  "generation": 3,
+  "no_improve_streak": 3,
+  "spend_usd": 8.014453150000001,
+  "history": [
+    {
+      "generation": 0,
+      "incumbent_id": "ce68bd4c4e",
+      "suite_incumbent": 0.9472492750677967,
+      "gold_incumbent": 0.8920001273656579,
+      "adversary": {
+        "generated": 8,
+        "sanity_discard": 0,
+        "consistency_discard": 5,
+        "realism_discard": 0,
+        "accepted": 3,
+        "hits": 2
+      },
+      "candidates": [
+        {
+          "artifact_id": "9bc57f8f6b",
+          "mutation_note": "Rewrote the sensory_text bullet to require both the verbatim labeled tasting-notes line (exact capitalization) and the untruncated cup-description prose, excluding marketing taglines and brew recipes, offsetting length by condensing the display_tasting_notes bullet.",
+          "suite": 0.9579142277488476,
+          "gold": 0.8877588994791503,
+          "accepted": false,
+          "gate_reasons": [
+            "suite repair test not significant: 14 repairs vs 11 breakages (one-sided p=0.345, need <0.05)",
+            "critical gold field regression: price.listed_price 1.000 -> 0.950 (beyond 0.038 = max(band, 1.5/n))"
+          ],
+          "gate": "v2",
+          "repairs": 14,
+          "breakages": 11,
+          "p": 0.345
+        },
+        {
+          "artifact_id": "9b35272a8b",
+          "mutation_note": "Rewrote only the sensory_text and producer_text bullets to demand the labeled tasting-notes line plus complete, untrimmed cup-description paragraphs (excluding taglines, brew recipes, farm/process prose) and whole farm/process paragraphs without flavor or roast/brew sentences.",
+          "suite": 0.9515262871555505,
+          "gold": 0.8630145448442013,
+          "accepted": false,
+          "gate_reasons": [
+            "suite repair test not significant: 12 repairs vs 20 breakages (one-sided p=0.945, need <0.05)",
+            "gold composite regression beyond 2x band 0.0080",
+            "critical gold field regression: price.listed_price 1.000 -> 0.950 (beyond 0.038 = max(band, 1.5/n))"
+          ],
+          "gate": "v2",
+          "repairs": 12,
+          "breakages": 20,
+          "p": 0.9449
+        }
+      ],
+      "accepted": null
+    },
+    {
+      "generation": 1,
+      "incumbent_id": "ce68bd4c4e",
+      "suite_incumbent": 0.9475459147063745,
+      "gold_incumbent": 0.8920001273656579,
+      "adversary": {
+        "generated": 8,
+        "sanity_discard": 0,
+        "consistency_discard": 6,
+        "realism_discard": 0,
+        "accepted": 2,
+        "hits": 2
+      },
+      "candidates": [
+        {
+          "artifact_id": "665c5fc402",
+          "mutation_note": "Rewrote the sensory_text and producer_text bullets to require the labeled tasting-notes line plus all whole flavor sentences (excluding brew recipes/taglines) and whole producer/geography paragraphs (excluding flavor/brew-advice sentences), trimming one assumptions example to keep length neutral.",
+          "suite": 0.9542530955152868,
+          "gold": 0.8877898714413336,
+          "accepted": false,
+          "gate_reasons": [
+            "suite repair test not significant: 10 repairs vs 11 breakages (one-sided p=0.668, need <0.05)",
+            "critical gold field regression: price.listed_price 1.000 -> 0.925 (beyond 0.038 = max(band, 1.5/n))",
+            "critical gold field regression: price.package_grams 0.950 -> 0.900 (beyond 0.038 = max(band, 1.5/n))"
+          ],
+          "gate": "v2",
+          "repairs": 10,
+          "breakages": 11,
+          "p": 0.6682
+        },
+        {
+          "artifact_id": "93a7424f45",
+          "mutation_note": "Rewrote only the sensory_text and producer_text bullets to require verbatim whole-paragraph extraction: keep the labeled tasting-notes line plus all cup-description paragraphs (excluding taglines/brew recipes), and copy all sourcing paragraphs in full (excluding roast/brew advice), allowing overlap between the two fields.",
+          "suite": 0.9470024326275506,
+          "gold": 0.8743381016263282,
+          "accepted": false,
+          "gate_reasons": [
+            "suite repair test not significant: 10 repairs vs 23 breakages (one-sided p=0.993, need <0.05)",
+            "gold composite regression beyond 2x band 0.0080",
+            "critical gold field regression: price.listed_price 1.000 -> 0.950 (beyond 0.038 = max(band, 1.5/n))"
+          ],
+          "gate": "v2",
+          "repairs": 10,
+          "breakages": 23,
+          "p": 0.9932
+        }
+      ],
+      "accepted": null
+    },
+    {
+      "generation": 2,
+      "incumbent_id": "ce68bd4c4e",
+      "suite_incumbent": 0.948607074777149,
+      "gold_incumbent": 0.8920001273656579,
+      "adversary": {
+        "generated": 8,
+        "sanity_discard": 0,
+        "consistency_discard": 6,
+        "realism_discard": 0,
+        "accepted": 2,
+        "hits": 2
+      },
+      "candidates": [
+        {
+          "artifact_id": "c7ff469589",
+          "mutation_note": "Rewrote the sensory_text and producer_text bullets to require the exact labeled tasting-notes line plus whole verbatim flavor/producer paragraphs (no paraphrase, sentence-trimming, brew tips, or flavor-free teasers), trimming the adjacent display_tasting_notes bullet to offset length.",
+          "suite": 0.9540533921922855,
+          "gold": 0.8887622416342524,
+          "accepted": false,
+          "gate_reasons": [
+            "suite repair test not significant: 14 repairs vs 16 breakages (one-sided p=0.708, need <0.05)"
+          ],
+          "gate": "v2",
+          "repairs": 14,
+          "breakages": 16,
+          "p": 0.7077
+        },
+        {
+          "artifact_id": "f15a120409",
+          "mutation_note": "Rewrote only the sensory_text and producer_text bullets to require the labeled tasting-notes line plus complete cup-description paragraphs (sensory) and complete unabridged producer/processing paragraphs (producer), copying whole sentences and excluding marketing taglines and brew tips.",
+          "suite": 0.9524959990501348,
+          "gold": 0.881102877406745,
+          "accepted": false,
+          "gate_reasons": [
+            "suite repair test not significant: 15 repairs vs 22 breakages (one-sided p=0.906, need <0.05)",
+            "gold composite regression beyond 2x band 0.0080",
+            "critical gold field regression: price.listed_price 1.000 -> 0.925 (beyond 0.038 = max(band, 1.5/n))"
+          ],
+          "gate": "v2",
+          "repairs": 15,
+          "breakages": 22,
+          "p": 0.9061
+        }
+      ],
+      "accepted": null
+    }
+  ]
+}

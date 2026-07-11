@@ -1,0 +1,152 @@
+{
+  "page_id": "964dae57cc",
+  "category": "sold-out product with a stale price still displayed",
+  "invented_category": false,
+  "target_artifact_id": "ce68bd4c4e",
+  "generator_model": "gpt-5.5",
+  "judge_model": "gpt-5.4",
+  "judges": {
+    "consistency": {
+      "unsupported_fields": [],
+      "notes": "All non-null, non-empty ground-truth labels are supported by the page text or embedded variant data. The sensory_text and producer_text match the page excerpts exactly as shown. Price, currency, bag size, package grams, and sold_out availability are supported by the displayed product info and default variant data."
+    },
+    "realism": {
+      "score": 5,
+      "reasons": "Very plausible as an html-to-text rendering of a real specialty coffee product page. The structure is exactly what you'd expect from a Shopify-style roaster page: header nav, breadcrumb, product title/vendor, price, size, sold-out state, specs, tasting notes, story copy, details, recommendations, embedded variant data, and footer. The coffee details are coherent and credible for specialty Ethiopia: Guji/Hambela Wamena, Benti Nenka washing station, natural process, varieties 74110/74112, altitude 2,100–2,250 masl, and a 2024/2025 harvest all fit current roaster-language norms. The tasting notes and descriptive copy sound natural and appropriately marketing-oriented without overdoing it. The note explaining that the listed price is retained despite sold-out status is also believable. Variant block is realistic: 250g and 1kg options, sensible SKU formatting, reasonable pricing, and both unavailable. Minor tiny tell: calling it a 'washing station' while selling a natural lot is not wrong in coffee context, but to a casual reader it can read slightly contradictory; still, this is standard terminology for Ethiopian collection/processing sites. Overall, it is highly convincing."
+    }
+  },
+  "label": {
+    "page_type": "coffee_product",
+    "is_specialty_coffee": true,
+    "coffee.coffee_name": "Ethiopia Benti Nenka Natural",
+    "coffee.roaster": "Lumen Coffee Roasters",
+    "coffee.roaster_location": "Portland, Oregon",
+    "coffee.roaster_country": "USA",
+    "coffee.origin_country": "Ethiopia",
+    "coffee.origin_region": "Guji, Hambela Wamena",
+    "coffee.process_method": [
+      "Natural"
+    ],
+    "coffee.variety": [
+      "74110",
+      "74112"
+    ],
+    "coffee.producer_or_farm": "Benti Nenka washing station",
+    "coffee.altitude": "2,100-2,250 masl",
+    "coffee.roast_level": "Light",
+    "coffee.harvest_period": "2024/2025",
+    "coffee.is_blend": false,
+    "coffee.is_espresso": false,
+    "coffee.is_decaf": false,
+    "coffee.is_coferment_or_infused": false,
+    "coffee.sensory_text": "Tasting Notes\nstrawberry jam, bergamot, cacao nib, honey\n\nThis lot is all the reasons we love high elevation Guji: perfumed florals up front, a round berry sweetness through the middle, and a clean cocoa finish as it cools.",
+    "coffee.display_tasting_notes": "strawberry jam, bergamot, cacao nib, honey",
+    "coffee.producer_text": "Benti Nenka washing station works with smallholder growers around Hambela Wamena who cultivate Ethiopian landrace selections 74110 and 74112 on steep garden plots. Ripe cherries were hand sorted and dried slowly on raised beds for 18-22 days, with careful turning during the heat of the day.",
+    "price.listed_price": 24.0,
+    "price.listed_currency": "USD",
+    "price.bag_size_value": 250.0,
+    "price.bag_size_unit": "g",
+    "price.package_grams": 250.0,
+    "price.bags_count": null,
+    "price.price_type": "one_time",
+    "price.availability": "sold_out"
+  },
+  "incumbent": {
+    "model": "gpt-4o-mini",
+    "hit_fields": [
+      "coffee.sensory_text"
+    ],
+    "extraction": {
+      "page_type": "coffee_product",
+      "is_specialty_coffee": true,
+      "coffee": {
+        "coffee_name": "Ethiopia Benti Nenka Natural",
+        "roaster": "Lumen Coffee Roasters",
+        "roaster_location": "Portland, Oregon, USA",
+        "roaster_country": "USA",
+        "origin_country": "Ethiopia",
+        "origin_region": "Guji, Hambela Wamena",
+        "process_method": [
+          "Natural"
+        ],
+        "variety": [
+          "74110",
+          "74112"
+        ],
+        "producer_or_farm": "Benti Nenka washing station",
+        "altitude": "2,100-2,250 masl",
+        "roast_level": "Light",
+        "harvest_period": "2024/2025",
+        "is_blend": false,
+        "is_espresso": false,
+        "is_decaf": false,
+        "is_coferment_or_infused": false,
+        "sensory_text": "strawberry jam, bergamot, cacao nib, honey",
+        "display_tasting_notes": "strawberry jam, bergamot, cacao nib, honey",
+        "producer_text": "Benti Nenka washing station works with smallholder growers around Hambela Wamena who cultivate Ethiopian landrace selections 74110 and 74112 on steep garden plots. Ripe cherries were hand sorted and dried slowly on raised beds for 18-22 days, with careful turning during the heat of the day.",
+        "source_snippets": [
+          {
+            "field": "name",
+            "snippet": "Ethiopia Benti Nenka Natural"
+          },
+          {
+            "field": "origin",
+            "snippet": "Ethiopia"
+          },
+          {
+            "field": "process",
+            "snippet": "Natural"
+          },
+          {
+            "field": "variety",
+            "snippet": "74110, 74112"
+          },
+          {
+            "field": "price",
+            "snippet": "$24.00"
+          },
+          {
+            "field": "bag_size",
+            "snippet": "250g"
+          },
+          {
+            "field": "tasting_notes",
+            "snippet": "strawberry jam, bergamot, cacao nib, honey"
+          },
+          {
+            "field": "producer",
+            "snippet": "Benti Nenka washing station"
+          },
+          {
+            "field": "altitude",
+            "snippet": "2,100-2,250 masl"
+          }
+        ]
+      },
+      "price": {
+        "listed_price": 24.0,
+        "listed_currency": "USD",
+        "original_listed_price": null,
+        "original_listed_currency": null,
+        "bag_size_value": 250.0,
+        "bag_size_unit": "g",
+        "package_grams": 250.0,
+        "bags_count": null,
+        "price_100g_usd": 9.6,
+        "price_type": "one_time",
+        "availability": "sold_out",
+        "assumptions": [
+          "currency assumed USD from $",
+          "default variant selected"
+        ]
+      },
+      "quality": {
+        "extraction_quality": "good",
+        "missing_fields": [],
+        "warnings": [
+          "sold out"
+        ]
+      }
+    }
+  }
+}

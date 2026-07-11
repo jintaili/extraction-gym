@@ -1,0 +1,143 @@
+{
+  "page_id": "ef80ada576",
+  "category": "brew recipe dose misread as bag size",
+  "invented_category": true,
+  "target_artifact_id": "ce68bd4c4e",
+  "generator_model": "gpt-5.5",
+  "judge_model": "gpt-5.4",
+  "judges": {
+    "consistency": {
+      "unsupported_fields": [],
+      "notes": "All non-null, non-empty ground-truth labels are supported by the page text or embedded variant data. Enum inferences supported: specialty coffee is supported by detailed origin/producer/process/variety/altitude/harvest tasting info; is_blend=false follows from single origin Guatemala and single variety Pacamara; is_espresso=false is supported by 'this roast is dialled for filter' and recommendation to use another coffee for espresso; is_decaf=false supported by no decaf indication on this product and contrasted with a separate decaf product; is_coferment_or_infused=false supported by standard washed-process description with no co-fermentation/infusion mentioned."
+    },
+    "realism": {
+      "score": 5,
+      "reasons": "This reads very plausibly as an html-to-text extraction of a real specialty coffee product page. The structure is exactly what you’d expect: top nav, product title, price, size/grind selectors, availability, tasting notes, origin metadata, descriptive copy, farm background, brew guidance, shipping info, related products, variant block, and footer. The voice is natural and on-brand for specialty coffee—concise, sensory, and lightly educational without sounding over-generated. Coffee details are coherent: El Injerto is a well-known Guatemalan farm, Pacamara is a plausible premium variety there, washed process and Huehuetenango fit, altitude is believable, and the tasting notes align with a washed high-elevation Pacamara. The harvest window and filter-roast positioning also feel realistic. Pricing is credible for a premium competition-grade/rare-lot coffee in the UK specialty market, and the 1kg price scaling is plausible. The variant data block looks believable too: IDs, SKUs, naming conventions, and package weights are all consistent with e-commerce exports. Minor tiny tells only: 'default_for_inference' is not a normal customer-facing artifact, and 'Northstar Coffee Roasters — Leeds, United Kingdom' plus footer duplication feels a bit synthesized from multiple page elements. But those are very small and compatible with scraped/rendered text."
+    }
+  },
+  "label": {
+    "page_type": "coffee_product",
+    "is_specialty_coffee": true,
+    "coffee.coffee_name": "Guatemala El Injerto Pacamara",
+    "coffee.roaster": "Northstar Coffee Roasters",
+    "coffee.roaster_location": "Leeds",
+    "coffee.roaster_country": "United Kingdom",
+    "coffee.origin_country": "Guatemala",
+    "coffee.origin_region": "Huehuetenango",
+    "coffee.process_method": [
+      "Washed"
+    ],
+    "coffee.variety": [
+      "Pacamara"
+    ],
+    "coffee.producer_or_farm": "Finca El Injerto",
+    "coffee.altitude": "1,650–1,850 masl",
+    "coffee.roast_level": "Filter roast",
+    "coffee.harvest_period": "January–March 2025",
+    "coffee.is_blend": false,
+    "coffee.is_espresso": false,
+    "coffee.is_decaf": false,
+    "coffee.is_coferment_or_infused": false,
+    "coffee.sensory_text": "Tasting notes: blood orange, panela, jasmine\n\nA vivid washed Pacamara from the Aguirre family's Finca El Injerto in Huehuetenango. This lot opens with fragrant jasmine and a clear blood orange acidity, finishing with a soft panela sweetness. We have roasted it for filter brewing to highlight the florals and the structured citrus character that makes this farm so loved.",
+    "coffee.display_tasting_notes": "blood orange, panela, jasmine",
+    "coffee.producer_text": "Finca El Injerto sits high in the mountains of Huehuetenango and has been operated by the Aguirre family for generations. The farm separates varieties and elevations carefully, and this Pacamara selection was fully washed after fermentation before being dried slowly on patios.",
+    "price.listed_price": 21.5,
+    "price.listed_currency": "GBP",
+    "price.bag_size_value": 250.0,
+    "price.bag_size_unit": "g",
+    "price.package_grams": 250.0,
+    "price.bags_count": null,
+    "price.price_type": "one_time",
+    "price.availability": "in_stock"
+  },
+  "incumbent": {
+    "model": "gpt-4o-mini",
+    "hit_fields": [
+      "coffee.sensory_text"
+    ],
+    "extraction": {
+      "page_type": "coffee_product",
+      "is_specialty_coffee": true,
+      "coffee": {
+        "coffee_name": "Guatemala El Injerto Pacamara",
+        "roaster": "Northstar Coffee Roasters",
+        "roaster_location": "Leeds",
+        "roaster_country": "United Kingdom",
+        "origin_country": "Guatemala",
+        "origin_region": "Huehuetenango",
+        "process_method": [
+          "Washed"
+        ],
+        "variety": [
+          "Pacamara"
+        ],
+        "producer_or_farm": "Finca El Injerto",
+        "altitude": "1,650–1,850 masl",
+        "roast_level": "Filter roast",
+        "harvest_period": "January–March 2025",
+        "is_blend": false,
+        "is_espresso": false,
+        "is_decaf": false,
+        "is_coferment_or_infused": false,
+        "sensory_text": "A vivid washed Pacamara from the Aguirre family's Finca El Injerto in Huehuetenango. This lot opens with fragrant jasmine and a clear blood orange acidity, finishing with a soft panela sweetness.",
+        "display_tasting_notes": "blood orange, panela, jasmine",
+        "producer_text": "Finca El Injerto sits high in the mountains of Huehuetenango and has been operated by the Aguirre family for generations. The farm separates varieties and elevations carefully, and this Pacamara selection was fully washed after fermentation before being dried slowly on patios.",
+        "source_snippets": [
+          {
+            "field": "origin",
+            "snippet": "Guatemala"
+          },
+          {
+            "field": "process",
+            "snippet": "Washed"
+          },
+          {
+            "field": "variety",
+            "snippet": "Pacamara"
+          },
+          {
+            "field": "price",
+            "snippet": "£21.50"
+          },
+          {
+            "field": "bag_size",
+            "snippet": "250g"
+          },
+          {
+            "field": "tasting_notes",
+            "snippet": "blood orange, panela, jasmine"
+          },
+          {
+            "field": "producer",
+            "snippet": "Finca El Injerto"
+          },
+          {
+            "field": "altitude",
+            "snippet": "1,650–1,850 masl"
+          }
+        ]
+      },
+      "price": {
+        "listed_price": 21.5,
+        "listed_currency": "GBP",
+        "original_listed_price": null,
+        "original_listed_currency": null,
+        "bag_size_value": 250.0,
+        "bag_size_unit": "g",
+        "package_grams": 250.0,
+        "bags_count": null,
+        "price_100g_usd": null,
+        "price_type": "one_time",
+        "availability": "in_stock",
+        "assumptions": [
+          "currency assumed GBP from £"
+        ]
+      },
+      "quality": {
+        "extraction_quality": "good",
+        "missing_fields": [],
+        "warnings": []
+      }
+    }
+  }
+}

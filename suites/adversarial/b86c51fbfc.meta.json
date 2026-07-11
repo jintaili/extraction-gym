@@ -1,0 +1,148 @@
+{
+  "page_id": "b86c51fbfc",
+  "category": "Related-product decaf contamination",
+  "invented_category": true,
+  "target_artifact_id": "ce68bd4c4e",
+  "generator_model": "gpt-5.5",
+  "judge_model": "gpt-5.4",
+  "judges": {
+    "consistency": {
+      "unsupported_fields": [],
+      "notes": "All non-null, non-empty ground-truth labels are supported by the page text or embedded variant data. The default variant supports the 250g / $22.50 USD pricing fields. 'Madison, Wisconsin' is stated directly, and 'United States' follows from the full address ending in USA. 'is_specialty_coffee' is supported by the page being a single-origin coffee product with detailed origin/process/variety/altitude/harvest info. 'is_espresso': false is supported because the page says it is roasted for filter brewing, though it can also be used as a single-origin espresso."
+    },
+    "realism": {
+      "score": 5,
+      "reasons": "Very plausible as an html-to-text rendering of a real specialty coffee product page. The structure is exactly what you’d expect: site nav, shipping banner, product title, price, size variants, stock/shipping note, tasting notes, roast level, origin details, descriptive copy, brew recommendation, roaster address, related products, footer, and an extracted variant block. The coffee details are coherent and specific in a realistic way: Bensa/Bombe/Sidama, community smallholders, washing station, Ethiopian varieties 74110/74112, washed process steps, altitude range, and harvest timing all fit specialty coffee conventions. The voice is natural and market-typical without sounding exaggerated. Pricing also feels believable: $22.50 for 250g and $78 for 1kg is in range for a quality Ethiopian washed coffee, with a sensible bulk discount. The embedded variant data is formatted like something derived from storefront metadata and matches the visible options cleanly. Only very minor tells keep it from being absolutely indistinguishable, such as the slightly neat/composed extraction and the explicit '[default_for_inference]' marker, which feels more synthetic than consumer-facing text."
+    }
+  },
+  "label": {
+    "page_type": "coffee_product",
+    "is_specialty_coffee": true,
+    "coffee.coffee_name": "Bensa Bombe Washed Ethiopia",
+    "coffee.roaster": "Northline Coffee Roasters",
+    "coffee.roaster_location": "Madison, Wisconsin",
+    "coffee.roaster_country": "United States",
+    "coffee.origin_country": "Ethiopia",
+    "coffee.origin_region": "Bensa, Sidama",
+    "coffee.process_method": [
+      "Washed"
+    ],
+    "coffee.variety": [
+      "74110",
+      "74112"
+    ],
+    "coffee.producer_or_farm": "Bombe community smallholders, processed at Qonqona Washing Station",
+    "coffee.altitude": "1,900–2,100 masl",
+    "coffee.roast_level": "Light",
+    "coffee.harvest_period": "2024/25",
+    "coffee.is_blend": false,
+    "coffee.is_espresso": false,
+    "coffee.is_decaf": false,
+    "coffee.is_coferment_or_infused": false,
+    "coffee.sensory_text": "Tasting notes: Peach tea, Meyer lemon, jasmine honey\nWe love this coffee for its clean, tea-like structure and sparkling citrus sweetness. Expect peach tea, Meyer lemon, jasmine honey, and a soft bergamot finish as the cup cools.",
+    "coffee.display_tasting_notes": "Peach tea, Meyer lemon, jasmine honey",
+    "coffee.producer_text": "This washed lot comes from smallholder growers around Bombe in the Bensa district of Sidama. Cherries are delivered daily to Qonqona Washing Station, where they are floated, depulped, fermented in water, and dried slowly on raised beds.",
+    "price.listed_price": 22.5,
+    "price.listed_currency": "USD",
+    "price.bag_size_value": 250.0,
+    "price.bag_size_unit": "g",
+    "price.package_grams": 250.0,
+    "price.bags_count": null,
+    "price.price_type": "one_time",
+    "price.availability": "in_stock"
+  },
+  "incumbent": {
+    "model": "gpt-4o-mini",
+    "hit_fields": [],
+    "extraction": {
+      "page_type": "coffee_product",
+      "is_specialty_coffee": true,
+      "coffee": {
+        "coffee_name": "Bensa Bombe Washed Ethiopia",
+        "roaster": "Northline Coffee Roasters",
+        "roaster_location": "1208 Williamson St, Madison, WI 53703",
+        "roaster_country": "USA",
+        "origin_country": "Ethiopia",
+        "origin_region": "Bensa, Sidama",
+        "process_method": [
+          "Washed"
+        ],
+        "variety": [
+          "74110",
+          "74112"
+        ],
+        "producer_or_farm": "Bombe community smallholders, processed at Qonqona Washing Station",
+        "altitude": "1,900–2,100 masl",
+        "roast_level": "Light",
+        "harvest_period": "2024/25",
+        "is_blend": false,
+        "is_espresso": true,
+        "is_decaf": false,
+        "is_coferment_or_infused": false,
+        "sensory_text": "We love this coffee for its clean, tea-like structure and sparkling citrus sweetness. Expect peach tea, Meyer lemon, jasmine honey, and a soft bergamot finish as the cup cools.",
+        "display_tasting_notes": "Peach tea, Meyer lemon, jasmine honey",
+        "producer_text": "This washed lot comes from smallholder growers around Bombe in the Bensa district of Sidama. Cherries are delivered daily to Qonqona Washing Station, where they are floated, depulped, fermented in water, and dried slowly on raised beds.",
+        "source_snippets": [
+          {
+            "field": "name",
+            "snippet": "Bensa Bombe Washed Ethiopia"
+          },
+          {
+            "field": "origin",
+            "snippet": "Ethiopia"
+          },
+          {
+            "field": "process",
+            "snippet": "Washed"
+          },
+          {
+            "field": "variety",
+            "snippet": "74110, 74112"
+          },
+          {
+            "field": "price",
+            "snippet": "$22.50"
+          },
+          {
+            "field": "bag_size",
+            "snippet": "250g"
+          },
+          {
+            "field": "tasting_notes",
+            "snippet": "Peach tea, Meyer lemon, jasmine honey"
+          },
+          {
+            "field": "producer",
+            "snippet": "Bombe community smallholders, processed at Qonqona Washing Station"
+          },
+          {
+            "field": "altitude",
+            "snippet": "1,900–2,100 masl"
+          }
+        ]
+      },
+      "price": {
+        "listed_price": 22.5,
+        "listed_currency": "USD",
+        "original_listed_price": null,
+        "original_listed_currency": null,
+        "bag_size_value": 250.0,
+        "bag_size_unit": "g",
+        "package_grams": 250.0,
+        "bags_count": null,
+        "price_100g_usd": 9.0,
+        "price_type": "one_time",
+        "availability": "in_stock",
+        "assumptions": [
+          "currency assumed USD from $",
+          "default variant selected"
+        ]
+      },
+      "quality": {
+        "extraction_quality": "good",
+        "missing_fields": [],
+        "warnings": []
+      }
+    }
+  }
+}

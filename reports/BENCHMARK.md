@@ -124,6 +124,29 @@ them and leaves the latter two visibly attributed. Growing the gold set loosens 
 quantum; richer mutation strategies (multi-edit, or repair-targeted proposals) are the
 next lever.
 
+### The pass attempt (2026-07-11): strongest proposer, full diagnosis, honest NOOP
+
+With the gate validated, one final experiment asked whether the pipeline can produce a
+shippable improvement at all, giving the optimizer every advantage: the strongest
+available proposer (claude-fable-5, effort=high), and a structured failure inventory -
+every weighted field the incumbent gets wrong on the suite, grouped by pattern, plus
+the complete verbatim text of every failing page - in place of four raw excerpts.
+
+Result (passrun1, $8.01, 6 candidates over 3 generations): NOOP, and the most
+informative one yet. The upgraded proposer closed the search-quality gap - repairs now
+rival or exceed breakages (14:11, 14:16, 15:22 vs the old proposer's 4:11) and its
+edits were genuinely surgical. What remained is a wall the ledgers make visible:
+EVERY candidate that strengthened text-extraction instructions (targeting sensory_text,
+the dominant failure cluster) regressed price fields on real gold pages by 2-3 pages
+(listed_price 1.000 -> 0.925-0.950; package_grams similarly). On a mini-class model,
+prompt instructions compete: demanding more complete verbatim text extraction degrades
+variant/price selection. The improvement frontier of this prompt is blocked by
+cross-field coupling, not by search quality (fixed), not by gate calibration (fixed and
+validated). Documented next levers, out of scope by the stop rule: (a) close the
+feedback loop - the proposer never sees WHY its previous edit failed; (b) structural
+change - split extraction into a text pass and a price pass, which is outside the
+single-prompt mutation surface by design.
+
 ## Second adapter: SROIE receipts, and a measured label-error bound
 
 To convert "the harness is task-agnostic" from claim to fact, a second adapter

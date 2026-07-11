@@ -76,6 +76,108 @@ def build_mutate_user_prompt(incumbent_text: str, exemplars: list[dict], history
     )
 
 
+def build_failure_inventory(
+    suite_root, incumbent_id: str, scores_by_page: dict, model: str, cache,
+) -> str:
+    """Structured failure inventory: every weighted field the incumbent gets wrong on
+    the suite, grouped by field with expected-vs-got values, followed by the FULL
+    verbatim text of every failing page. Passing pages are omitted entirely."""
+    import json
+    from pathlib import Path
+
+    from extraction_gym.adapters.coffee.scoring import FIELD_SPECS
+    from extraction_gym.adversary.round import CONTINUOUS_FIELDS, CONTINUOUS_HIT_BELOW, HIT_WEIGHT_THRESHOLD
+    from extraction_gym.core.cache import ExtractionCache
+    from extraction_gym.core.prelabel import canonicalize_label
+
+    suite_root = Path(suite_root)
+    by_field: dict[str, list[dict]] = {}
+    failing_pages: dict[str, str] = {}
+    for page_id, scores in scores_by_page.items():
+        meta = json.loads((suite_root / f"{page_id}.meta.json").read_text(encoding="utf-8"))
+        text = (suite_root / f"{page_id}.txt").read_text(encoding="utf-8")
+        got = None
+        key = ExtractionCache.key(page_text=text, prompt_id=incumbent_id, model=model,
+                                  params={"decoding": "default"})
+        cached = cache.get(key)
+        if cached:
+            got = canonicalize_label(label_fields(cached["extraction"]))
+        gold = canonicalize_label(meta["label"])
+        for field, score in scores.items():
+            if score is None or FIELD_SPECS[field][1] < HIT_WEIGHT_THRESHOLD:
+                continue
+            threshold = CONTINUOUS_HIT_BELOW if field in CONTINUOUS_FIELDS else 0.999
+            if score < threshold:
+                by_field.setdefault(field, []).append({
+                    "page": page_id, "expected": gold.get(field),
+                    "got": got.get(field) if got else "(unavailable)",
+                })
+                failing_pages[page_id] = text
+
+    lines = [f"FAILURE INVENTORY: incumbent fails {sum(len(v) for v in by_field.values())} "
+             f"weighted fields across {len(failing_pages)} of {len(scores_by_page)} suite pages.\n"]
+    for field, fails in sorted(by_field.items(), key=lambda kv: -len(kv[1])):
+        lines.append(f"## {field} - wrong on {len(fails)} pages:")
+        for f in fails:
+            lines.append(f"  {f['page']}: expected {json.dumps(f['expected'], ensure_ascii=False)}"
+                         f" | got {json.dumps(f['got'], ensure_ascii=False)}")
+    lines.append("\nFULL TEXT OF EVERY FAILING PAGE (passing pages omitted):")
+    for page_id, text in sorted(failing_pages.items()):
+        lines.append(f"\n===== PAGE {page_id} =====\n{text}")
+    return "\n".join(lines)
+
+
+ANTHROPIC_MUTATE_SYSTEM = """You improve a production system prompt for an LLM extractor. You will see the \
+current prompt, a structured inventory of every field it currently gets wrong on a test suite, and the full \
+text of every failing page.
+
+Propose exactly ONE narrow, surgical edit to the prompt that targets the largest failure cluster(s) you can \
+fix WITHOUT touching guidance for behaviors that currently work. Hard constraints: do not rewrite or reorder \
+unrelated sections; do not change the schema, field names, or output format; keep total prompt length no \
+longer than the original. Return the complete edited prompt, a one-sentence mutation_note, and a short \
+rationale naming which inventory clusters the edit targets."""
+
+
+class AnthropicMutationProposer:
+    """Fable 5 proposer: structured outputs via output_config.format; effort=high
+    (bounded single-shot editing task - higher effort risks over-engineered edits);
+    thinking is always on for this model and must not be configured."""
+
+    def __init__(self, *, model: str = "claude-fable-5", effort: str = "high") -> None:
+        from anthropic import AsyncAnthropic
+
+        self.client = AsyncAnthropic()
+        self.model = model
+        self.effort = effort
+
+    async def propose(
+        self, *, incumbent_text: str, exemplars, history_summary: str = ""
+    ) -> ProposedMutation:
+        import json as _json
+
+        inventory = exemplars if isinstance(exemplars, str) else _json.dumps(exemplars, ensure_ascii=False)
+        schema = MutationProposal.model_json_schema()
+        response = await self.client.messages.create(
+            model=self.model,
+            max_tokens=16000,
+            output_config={"effort": self.effort,
+                           "format": {"type": "json_schema", "schema": schema}},
+            system=ANTHROPIC_MUTATE_SYSTEM,
+            messages=[{"role": "user", "content":
+                       f"CURRENT PROMPT:\n---\n{incumbent_text}\n---\n\n"
+                       f"LEDGER HISTORY:\n{history_summary or '(first mutation)'}\n\n{inventory}"}],
+        )
+        if response.stop_reason == "refusal":
+            raise RuntimeError("proposer request was refused")
+        text = next(b.text for b in response.content if b.type == "text")
+        parsed = MutationProposal.model_validate_json(text)
+        return ProposedMutation(
+            rationale=parsed.rationale, mutation_note=parsed.mutation_note,
+            new_prompt=parsed.new_prompt,
+            input_tokens=response.usage.input_tokens, output_tokens=response.usage.output_tokens,
+        )
+
+
 class MutationProposer:
     def __init__(self, *, client: AsyncOpenAI, model: str) -> None:
         self.client = client

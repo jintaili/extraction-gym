@@ -64,7 +64,7 @@ def _deps(tmp_path, registry, suite_scores, gold_scores, proposals):
 
     return LoopDeps(registry=registry, runs_dir=tmp_path / "runs", adversary_round_fn=adversary,
                     suite_eval_fn=suite_eval, gold_eval_fn=gold_eval, propose_fn=propose,
-                    exemplars_fn=lambda: [], gold_band=BAND, suite_band=0.01, gate="v1")
+                    exemplars_fn=lambda *a: [], gold_band=BAND, suite_band=0.01, gate="v1")
 
 
 def test_loop_accepts_promotes_and_checkpoints(tmp_path):

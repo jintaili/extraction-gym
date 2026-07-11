@@ -1,0 +1,147 @@
+{
+  "page_id": "a47cba47f3",
+  "category": "multi-variant page where the default variant is a small sampler",
+  "invented_category": false,
+  "target_artifact_id": "fd1a72082e",
+  "generator_model": "gpt-5.5",
+  "judge_model": "gpt-5.4",
+  "judges": {
+    "consistency": {
+      "unsupported_fields": [],
+      "notes": "All non-null, non-empty ground-truth labels are supported by the page text. The page explicitly shows the coffee name, roaster, Portland, Oregon location, U.S. address in footer, origin, region, washed process, varieties 74110 and 74112, producer, altitude, roast level, harvest period, tasting notes, producer text, default selected 100g sampler variant at $8.50 USD, package grams 100g, and in-stock availability. Enum inferences are also supported: not a blend (single-origin Ethiopia with one producer), not espresso (explicitly not recommended as a dedicated espresso roast), not decaf (no decaf indication on a standard coffee product page), not co-ferment/infused (described as washed with standard processing only), and specialty coffee is supported by the specialty roaster/product context and detailed origin/process/tasting information."
+    },
+    "realism": {
+      "score": 5,
+      "reasons": "Very plausible as an html-to-text rendering of a real specialty coffee product page. The structure is exactly what a Shopify-style roaster page often looks like: breadcrumb, product title, roaster/location, price-from, size selector, quantity, stock, tasting notes, spec block, descriptive copy, brew recommendations, shipping note, embedded variants, and footer. The voice is credible for specialty coffee—clean, moderately polished, and not overblown. Origin details are coherent and specific: Worka Chelbesa in Gedeb/Gedeo/Yirgacheffe, washed process, Ethiopian varieties 74110/74112, and altitude/harvest timing all fit known patterns for this origin. The cup profile is also realistic for a washed high-elevation Gedeo coffee. The explanatory paragraph about hand-sorting, depulping, fermentation, and raised-bed drying reads like standard but believable roaster copy. Pricing is plausible for a US specialty roaster, including a 100g sampler and 1kg option. The variant block is internally consistent with titles, SKUs, gram weights, and prices, and looks like reasonable extracted metadata. Minor tell: 'Not recommended as a dedicated espresso roast' is slightly more explicit than many pages, but still believable. Overall, this is close to indistinguishable from a real roaster product page."
+    }
+  },
+  "label": {
+    "page_type": "coffee_product",
+    "is_specialty_coffee": true,
+    "coffee.coffee_name": "Ethiopia Worka Chelbesa",
+    "coffee.roaster": "North Arrow Coffee",
+    "coffee.roaster_location": "Portland, Oregon",
+    "coffee.roaster_country": "United States",
+    "coffee.origin_country": "Ethiopia",
+    "coffee.origin_region": "Gedeb, Gedeo Zone, Yirgacheffe",
+    "coffee.process_method": [
+      "Washed"
+    ],
+    "coffee.variety": [
+      "74110",
+      "74112"
+    ],
+    "coffee.producer_or_farm": "Worka Chelbesa washing station",
+    "coffee.altitude": "1,950–2,200 masl",
+    "coffee.roast_level": "Light",
+    "coffee.harvest_period": "October–December 2024",
+    "coffee.is_blend": false,
+    "coffee.is_espresso": false,
+    "coffee.is_decaf": false,
+    "coffee.is_coferment_or_infused": false,
+    "coffee.sensory_text": "Bergamot • Lemon candy • Peach tea • Jasmine\n\nThis washed lot from Worka Chelbesa is everything we hope for from fresh-crop Gedeo coffees: crystalline citrus, a tea-like body, and florals that keep opening as the cup cools. We are tasting bergamot, lemon candy, peach tea, and jasmine, with a clean honeyed finish.",
+    "coffee.display_tasting_notes": "Bergamot • Lemon candy • Peach tea • Jasmine",
+    "coffee.producer_text": "The Worka Chelbesa washing station serves smallholder growers around Gedeb, where garden plots are planted with 74110 and 74112 selections. Cherries are hand-sorted before depulping, fermented under clean water, and dried slowly on raised beds. The high elevation and careful washing give this coffee its lifted aromatics and precise acidity.",
+    "price.listed_price": 8.5,
+    "price.listed_currency": "USD",
+    "price.bag_size_value": 100.0,
+    "price.bag_size_unit": "g",
+    "price.package_grams": 100.0,
+    "price.bags_count": null,
+    "price.price_type": "one_time",
+    "price.availability": "in_stock"
+  },
+  "incumbent": {
+    "model": "gpt-4o-mini",
+    "hit_fields": [],
+    "extraction": {
+      "page_type": "coffee_product",
+      "is_specialty_coffee": true,
+      "coffee": {
+        "coffee_name": "Ethiopia Worka Chelbesa",
+        "roaster": "North Arrow Coffee",
+        "roaster_location": "Portland, Oregon",
+        "roaster_country": "United States",
+        "origin_country": "Ethiopia",
+        "origin_region": "Gedeb, Gedeo Zone, Yirgacheffe",
+        "process_method": [
+          "Washed"
+        ],
+        "variety": [
+          "74110",
+          "74112"
+        ],
+        "producer_or_farm": "Worka Chelbesa washing station",
+        "altitude": "1,950–2,200 masl",
+        "roast_level": "Light",
+        "harvest_period": "October–December 2024",
+        "is_blend": false,
+        "is_espresso": false,
+        "is_decaf": false,
+        "is_coferment_or_infused": false,
+        "sensory_text": "This washed lot from Worka Chelbesa is everything we hope for from fresh-crop Gedeo coffees: crystalline citrus, a tea-like body, and florals that keep opening as the cup cools. We are tasting bergamot, lemon candy, peach tea, and jasmine, with a clean honeyed finish.",
+        "display_tasting_notes": "Bergamot, Lemon candy, Peach tea, Jasmine",
+        "producer_text": "The Worka Chelbesa washing station serves smallholder growers around Gedeb, where garden plots are planted with 74110 and 74112 selections. Cherries are hand-sorted before depulping, fermented under clean water, and dried slowly on raised beds. The high elevation and careful washing give this coffee its lifted aromatics and precise acidity.",
+        "source_snippets": [
+          {
+            "field": "name",
+            "snippet": "Ethiopia Worka Chelbesa"
+          },
+          {
+            "field": "origin",
+            "snippet": "Ethiopia"
+          },
+          {
+            "field": "process",
+            "snippet": "Washed"
+          },
+          {
+            "field": "variety",
+            "snippet": "74110, 74112"
+          },
+          {
+            "field": "price",
+            "snippet": "8.50 USD"
+          },
+          {
+            "field": "bag_size",
+            "snippet": "100g Sampler"
+          },
+          {
+            "field": "tasting_notes",
+            "snippet": "Bergamot • Lemon candy • Peach tea • Jasmine"
+          },
+          {
+            "field": "producer",
+            "snippet": "Worka Chelbesa washing station"
+          },
+          {
+            "field": "altitude",
+            "snippet": "1,950–2,200 masl"
+          }
+        ]
+      },
+      "price": {
+        "listed_price": 8.5,
+        "listed_currency": "USD",
+        "original_listed_price": null,
+        "original_listed_currency": null,
+        "bag_size_value": 100.0,
+        "bag_size_unit": "g",
+        "package_grams": 100.0,
+        "bags_count": null,
+        "price_100g_usd": 8.5,
+        "price_type": "one_time",
+        "availability": "in_stock",
+        "assumptions": [
+          "currency assumed USD from $"
+        ]
+      },
+      "quality": {
+        "extraction_quality": "good",
+        "missing_fields": [],
+        "warnings": []
+      }
+    }
+  }
+}

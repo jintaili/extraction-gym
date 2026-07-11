@@ -118,6 +118,8 @@ def main() -> None:
     lp.add_argument("--generator-model", default="gpt-5.5")
     lp.add_argument("--judge-model", default="gpt-5.4")
     lp.add_argument("--optimizer-model", default="gpt-5.5")
+    lp.add_argument("--optimizer-provider", default="openai", choices=["openai", "anthropic"],
+                    help="anthropic: Fable-5 proposer fed the structured failure inventory")
     lp.add_argument("--gate", default="v2", choices=["v1", "v2"],
                     help="v1: suite-composite band (original); v2: repair sign test (2026-07-10)")
 
@@ -549,7 +551,12 @@ def _cmd_loop(args: argparse.Namespace) -> None:
     from extraction_gym.eval.runner import evaluate_artifact
     from extraction_gym.eval.suite_eval import evaluate_on_suite
     from extraction_gym.optimizer.loop import LoopDeps, run_loop
-    from extraction_gym.optimizer.mutate import MutationProposer, failure_exemplars_from_suite
+    from extraction_gym.optimizer.mutate import (
+        AnthropicMutationProposer,
+        MutationProposer,
+        build_failure_inventory,
+        failure_exemplars_from_suite,
+    )
     from extraction_gym.optimizer.state import LoopState
 
     registry = PromptRegistry(Path(args.registry))
@@ -567,7 +574,10 @@ def _cmd_loop(args: argparse.Namespace) -> None:
     budget.spent_usd = state.spend_usd
     generator = AdversaryGenerator(client=extractor.client, model=args.generator_model)
     judges = Judges(client=extractor.client, model=args.judge_model)
-    proposer = MutationProposer(client=extractor.client, model=args.optimizer_model)
+    if args.optimizer_provider == "anthropic":
+        proposer = AnthropicMutationProposer(model=args.optimizer_model)
+    else:
+        proposer = MutationProposer(client=extractor.client, model=args.optimizer_model)
     gold_band = json.loads(Path(args.noise).read_text(encoding="utf-8"))
 
     async def adversary_round_fn(incumbent):
@@ -598,7 +608,12 @@ def _cmd_loop(args: argparse.Namespace) -> None:
         budget.add(args.optimizer_model, proposal.input_tokens, proposal.output_tokens)
         return proposal
 
-    def exemplars_fn():
+    def exemplars_fn(incumbent=None, suite_report=None):
+        if args.optimizer_provider == "anthropic" and suite_report is not None:
+            return build_failure_inventory(
+                suite_root, incumbent.artifact_id, suite_report["scores_by_page"],
+                model_under_test, cache,
+            )
         metas = []
         for meta_path in sorted(suite_root.glob("*.meta.json")):
             meta = json.loads(meta_path.read_text(encoding="utf-8"))

@@ -31,7 +31,7 @@ class LoopDeps:
     suite_eval_fn: Callable[[PromptArtifact], Awaitable[dict]]  # {"composite_mean": float}
     gold_eval_fn: Callable[[PromptArtifact], Awaitable[dict]] | None  # full report or None
     propose_fn: Callable[..., Awaitable[ProposedMutation]]
-    exemplars_fn: Callable[[], list[dict]]
+    exemplars_fn: Callable[..., object]  # (incumbent, suite_report) -> list[dict] | str
     gold_band: dict  # {"composite_std": float, "field_stds": {...}}
     suite_band: float = 0.01
     gate: str = "v2"  # "v1" (composite band) or "v2" (repair test); see gate_candidate_v2
@@ -172,7 +172,9 @@ async def run_generation(state: LoopState, deps: LoopDeps, *, candidates_per_gen
     )
     for _ in range(candidates_per_gen):
         proposal = await deps.propose_fn(
-            incumbent_text=incumbent.text, exemplars=deps.exemplars_fn(), history_summary=history_summary
+            incumbent_text=incumbent.text,
+            exemplars=deps.exemplars_fn(incumbent, suite_inc_report),
+            history_summary=history_summary
         )
         candidate = deps.registry.register(
             text=proposal.new_prompt, parent_id=incumbent.artifact_id,

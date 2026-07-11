@@ -1,0 +1,145 @@
+{
+  "page_id": "771a2d48f8",
+  "category": "region-ambiguous origin (place name that exists in two producing countries)",
+  "invented_category": false,
+  "target_artifact_id": "fd1a72082e",
+  "generator_model": "gpt-5.5",
+  "judge_model": "gpt-5.4",
+  "judges": {
+    "consistency": {
+      "unsupported_fields": [],
+      "notes": "All non-null, non-unknown, non-empty ground-truth labels are supported by the page text. Product text and embedded variant data support the coffee attributes, price (24.50 USD), 250g package size, one-time purchase option, and availability=true implying in stock."
+    },
+    "realism": {
+      "score": 5,
+      "reasons": "This reads very plausibly as an html-to-text extraction of a real specialty coffee product page. The structure is highly typical: site chrome at top, product title, price, size/default variant, purchase options, tasting notes, roast/origin details, quantity/add to cart, descriptive copy, brew suggestion, related products, variant block, and footer. The coffee details are coherent and realistic for specialty roasters: Pink Bourbon from Santa Barbara, Antioquia; named producer and farm; washed process; believable altitude; light/filter roast framing; and tasting notes that match the profile. The processing description (hand-sorting, pulped, 28-hour fermentation in tiled tanks, washed, raised-bed drying) sounds specific without becoming implausible. The harvest window of May–July 2025 is believable depending on page timing. Pricing is also credible: $24.50 for 250g and $88 for 1kg fits specialty market norms, and the 1kg discount relative to four 250g bags feels realistic. The variant data block looks like something derived from a backend/export, with ids, sku patterns, availability flags, and package gram weights. Voice is consistent and restrained, not overly florid or synthetic. Only very minor tells exist, such as the unusually neat extraction and the explicit '[default_for_inference]' tag, which feels more like added metadata than consumer-facing page text, but that does not materially reduce plausibility."
+    }
+  },
+  "label": {
+    "page_type": "coffee_product",
+    "is_specialty_coffee": true,
+    "coffee.coffee_name": "Colombia Santa Barbara Pink Bourbon",
+    "coffee.roaster": "Northline Coffee Roasters",
+    "coffee.roaster_location": null,
+    "coffee.roaster_country": "unknown",
+    "coffee.origin_country": "Colombia",
+    "coffee.origin_region": "Santa Barbara, Antioquia",
+    "coffee.process_method": [
+      "Washed"
+    ],
+    "coffee.variety": [
+      "Pink Bourbon"
+    ],
+    "coffee.producer_or_farm": "Maria Isabel Henao, Finca El Cedro",
+    "coffee.altitude": "1,850–1,950 masl",
+    "coffee.roast_level": "Light / Filter",
+    "coffee.harvest_period": "May–July 2025",
+    "coffee.is_blend": false,
+    "coffee.is_espresso": false,
+    "coffee.is_decaf": false,
+    "coffee.is_coferment_or_infused": false,
+    "coffee.sensory_text": "red apple, orange blossom, panela",
+    "coffee.display_tasting_notes": "red apple, orange blossom, panela",
+    "coffee.producer_text": "This lot comes from the hills above the town of Santa Barbara in Antioquia, Colombia, where Maria Isabel Henao cultivates Pink Bourbon on the small family farm Finca El Cedro. The cooler nights at this elevation help stretch maturation, giving the cup a bright, layered sweetness.\n\nAfter hand-sorting ripe cherries, the coffee was pulped, fermented in tiled tanks for 28 hours, washed with clean spring water, and dried slowly on raised beds. We roasted this lot for filter brewing to highlight its crisp red-apple acidity, florals, and a panela-like finish.",
+    "price.listed_price": 24.5,
+    "price.listed_currency": "USD",
+    "price.bag_size_value": 250.0,
+    "price.bag_size_unit": "g",
+    "price.package_grams": 250.0,
+    "price.bags_count": null,
+    "price.price_type": "one_time",
+    "price.availability": "in_stock"
+  },
+  "incumbent": {
+    "model": "gpt-4o-mini",
+    "hit_fields": [],
+    "extraction": {
+      "page_type": "coffee_product",
+      "is_specialty_coffee": true,
+      "coffee": {
+        "coffee_name": "Colombia Santa Barbara Pink Bourbon",
+        "roaster": "Northline Coffee Roasters",
+        "roaster_location": "Santa Barbara, Antioquia",
+        "roaster_country": "unknown",
+        "origin_country": "Colombia",
+        "origin_region": "Santa Barbara, Antioquia",
+        "process_method": [
+          "Washed"
+        ],
+        "variety": [
+          "Pink Bourbon"
+        ],
+        "producer_or_farm": "Maria Isabel Henao, Finca El Cedro",
+        "altitude": "1,850–1,950 masl",
+        "roast_level": "Light / Filter",
+        "harvest_period": "May–July 2025",
+        "is_blend": false,
+        "is_espresso": false,
+        "is_decaf": false,
+        "is_coferment_or_infused": false,
+        "sensory_text": "Tasting Notes: red apple, orange blossom, panela",
+        "display_tasting_notes": "red apple, orange blossom, panela",
+        "producer_text": "This lot comes from the hills above the town of Santa Barbara in Antioquia, Colombia, where Maria Isabel Henao cultivates Pink Bourbon on the small family farm Finca El Cedro. The cooler nights at this elevation help stretch maturation, giving the cup a bright, layered sweetness. After hand-sorting ripe cherries, the coffee was pulped, fermented in tiled tanks for 28 hours, washed with clean spring water, and dried slowly on raised beds. We roasted this lot for filter brewing to highlight its crisp red-apple acidity, florals, and a panela-like finish.",
+        "source_snippets": [
+          {
+            "field": "name",
+            "snippet": "Colombia Santa Barbara Pink Bourbon"
+          },
+          {
+            "field": "origin",
+            "snippet": "Colombia"
+          },
+          {
+            "field": "process",
+            "snippet": "Washed"
+          },
+          {
+            "field": "variety",
+            "snippet": "Pink Bourbon"
+          },
+          {
+            "field": "price",
+            "snippet": "$24.50"
+          },
+          {
+            "field": "bag_size",
+            "snippet": "250g whole bean"
+          },
+          {
+            "field": "tasting_notes",
+            "snippet": "Tasting Notes: red apple, orange blossom, panela"
+          },
+          {
+            "field": "producer",
+            "snippet": "Maria Isabel Henao, Finca El Cedro"
+          },
+          {
+            "field": "altitude",
+            "snippet": "1,850–1,950 masl"
+          }
+        ]
+      },
+      "price": {
+        "listed_price": 24.5,
+        "listed_currency": "USD",
+        "original_listed_price": null,
+        "original_listed_currency": null,
+        "bag_size_value": 250.0,
+        "bag_size_unit": "g",
+        "package_grams": 250.0,
+        "bags_count": null,
+        "price_100g_usd": 9.8,
+        "price_type": "one_time",
+        "availability": "in_stock",
+        "assumptions": [
+          "currency assumed USD from $24.50"
+        ]
+      },
+      "quality": {
+        "extraction_quality": "good",
+        "missing_fields": [],
+        "warnings": []
+      }
+    }
+  }
+}

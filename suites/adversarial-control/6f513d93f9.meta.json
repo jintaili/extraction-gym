@@ -1,0 +1,137 @@
+{
+  "page_id": "6f513d93f9",
+  "category": "decaf mentioned only in a variant name",
+  "invented_category": false,
+  "target_artifact_id": "fd1a72082e",
+  "generator_model": "gpt-5.5",
+  "judge_model": "gpt-5.4",
+  "judges": {
+    "consistency": {
+      "unsupported_fields": [],
+      "notes": "All non-null, non-empty ground-truth labels are supported by the page text or embedded variant data. The title supports the roaster name string variant ('Northline Coffee Roasters'), 'Roasted in Edinburgh' supports roaster_location, GBP/£ supports listed_currency, the default variant supports 250g and £17.50, and the product page context supports availability/in stock via 'Add to cart'."
+    },
+    "realism": {
+      "score": 5,
+      "reasons": "This is highly plausible as an html-to-text rendering of a real specialty coffee product page. The structure is very typical: site header/navigation, product title, price, size/grind selectors, add-to-cart, tasting notes, origin details, descriptive copy, brew recommendation, related products, variant block, and footer policies. The voice matches contemporary specialty coffee ecommerce well—concise, sensory-forward, and lightly educational without sounding overwritten.\n\nThe coffee details are coherent and realistic. Kenya / Nyeri / Gachatha FCS / Gachatha Factory is a believable and internally consistent origin chain. AA grade, washed process, SL28/SL34/Ruiru 11/Batian, and 1,700–1,900 masl all fit a Kenyan lot profile. Harvest timing and tasting notes like blackcurrant and pink grapefruit are very standard for a quality Nyeri washed coffee. The processing description—sorting, fully washed, fermented, raised-bed drying—is also credible.\n\nThe commercial details also read as real. £17.50 for 250g and £60 for 1kg are plausible UK specialty roaster prices for a Kenyan filter offering. \"Roast: Filter\" and grind options are normal. Free UK shipping threshold and \"Roasted in Edinburgh\" further ground it in a realistic DTC roaster context.\n\nThe variant data block is mostly believable and matches common ecommerce exports. IDs, names, SKUs, prices, and package grams are consistent. The one slightly unusual element is the variant \"250g + Decaf Sample,\" which is less standard as a true product variant and more often implemented as a bundle, add-on, or separate line item. Still, it is not implausible, and the rest of the data is clean enough that this only counts as a very minor tell, not enough to lower the score."
+    }
+  },
+  "label": {
+    "page_type": "coffee_product",
+    "is_specialty_coffee": true,
+    "coffee.coffee_name": "Kenya Gachatha AA",
+    "coffee.roaster": "Northline Coffee Roasters",
+    "coffee.roaster_location": "Edinburgh",
+    "coffee.roaster_country": "United Kingdom",
+    "coffee.origin_country": "Kenya",
+    "coffee.origin_region": "Nyeri",
+    "coffee.process_method": [
+      "Washed"
+    ],
+    "coffee.variety": [
+      "SL28",
+      "SL34",
+      "Ruiru 11",
+      "Batian"
+    ],
+    "coffee.producer_or_farm": "Gachatha Farmers Cooperative Society",
+    "coffee.altitude": "1,700–1,900 masl",
+    "coffee.roast_level": "Filter",
+    "coffee.harvest_period": "June–August 2024",
+    "coffee.is_blend": false,
+    "coffee.is_espresso": false,
+    "coffee.is_decaf": false,
+    "coffee.is_coferment_or_infused": false,
+    "coffee.sensory_text": "Tasting notes: blackcurrant, pink grapefruit, cane sugar",
+    "coffee.display_tasting_notes": "blackcurrant, pink grapefruit, cane sugar",
+    "coffee.producer_text": "Gachatha Factory is part of the Gachatha Farmers Cooperative Society and receives cherry from smallholder members farming on the fertile slopes between the Aberdare range and Mount Kenya. After careful sorting, the coffee is fully washed, fermented, and dried slowly on raised beds to preserve clarity.",
+    "price.listed_price": 17.5,
+    "price.listed_currency": "GBP",
+    "price.bag_size_value": 250.0,
+    "price.bag_size_unit": "g",
+    "price.package_grams": 250.0,
+    "price.bags_count": null,
+    "price.price_type": "one_time",
+    "price.availability": "in_stock"
+  },
+  "incumbent": {
+    "model": "gpt-4o-mini",
+    "hit_fields": [
+      "coffee.sensory_text"
+    ],
+    "extraction": {
+      "page_type": "coffee_product",
+      "is_specialty_coffee": true,
+      "coffee": {
+        "coffee_name": "Kenya Gachatha AA",
+        "roaster": "Northline Coffee Roasters",
+        "roaster_location": null,
+        "roaster_country": "unknown",
+        "origin_country": "Kenya",
+        "origin_region": "Nyeri",
+        "process_method": [
+          "Washed"
+        ],
+        "variety": [
+          "SL28",
+          "SL34",
+          "Ruiru 11",
+          "Batian"
+        ],
+        "producer_or_farm": "Gachatha Farmers Cooperative Society",
+        "altitude": "1,700–1,900 masl",
+        "roast_level": "Filter",
+        "harvest_period": "June–August 2024",
+        "is_blend": false,
+        "is_espresso": false,
+        "is_decaf": false,
+        "is_coferment_or_infused": false,
+        "sensory_text": "A bright and layered lot from Gachatha Factory in Nyeri, selected for its sparkling acidity and clean sweetness. Expect a classic Kenyan cup profile: blackcurrant up front, pink grapefruit through the middle, and a long cane-sugar finish as it cools.",
+        "display_tasting_notes": "blackcurrant, pink grapefruit, cane sugar",
+        "producer_text": "Gachatha Factory is part of the Gachatha Farmers Cooperative Society and receives cherry from smallholder members farming on the fertile slopes between the Aberdare range and Mount Kenya. After careful sorting, the coffee is fully washed, fermented, and dried slowly on raised beds to preserve clarity.",
+        "source_snippets": [
+          {
+            "field": "origin",
+            "snippet": "Origin: Kenya"
+          },
+          {
+            "field": "process",
+            "snippet": "Process: Washed"
+          },
+          {
+            "field": "variety",
+            "snippet": "Variety: SL28, SL34, Ruiru 11, Batian"
+          },
+          {
+            "field": "altitude",
+            "snippet": "Altitude: 1,700–1,900 masl"
+          },
+          {
+            "field": "tasting_notes",
+            "snippet": "Tasting notes: blackcurrant, pink grapefruit, cane sugar"
+          }
+        ]
+      },
+      "price": {
+        "listed_price": 17.5,
+        "listed_currency": "GBP",
+        "original_listed_price": null,
+        "original_listed_currency": null,
+        "bag_size_value": 250.0,
+        "bag_size_unit": "g",
+        "package_grams": 250.0,
+        "bags_count": null,
+        "price_100g_usd": null,
+        "price_type": "one_time",
+        "availability": "unknown",
+        "assumptions": [
+          "currency assumed GBP from £"
+        ]
+      },
+      "quality": {
+        "extraction_quality": "good",
+        "missing_fields": [],
+        "warnings": []
+      }
+    }
+  }
+}
